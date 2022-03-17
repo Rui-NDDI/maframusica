@@ -1,0 +1,95 @@
+# Ignore third party dependencies.
+/bin/
+/drush/contrib/
+/node_modules/
+/vendor/
+/web/core/
+/web/libraries/
+/web/modules/contrib/
+/web/profiles/contrib/
+/web/themes/contrib/
+
+# Ignore dist build location
+/dist/
+
+# Ignore user's local files
+/local/
+
+# Ignore sensitive information
+/web/sites/sites.php
+/web/sites/*/settings.override.php
+
+# Ignore Drupal's file directories.
+/web/sites/*/files/
+/private/
+
+# Ignore SimpleTest multi-site environment.
+/web/sites/simpletest/
+
+# Ignore environment specific settings
+/.env
+/behat.yml
+/grumphp.yml
+/phpcs.xml
+/runner.yml
+/web/sites/default/services.yml
+/.phpunit.result.cache
+
+# Used by the CI for artifacts.
+/debug/
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.rdb
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+.vscode
+Thumbs.db
+._*
+.php_cs.cache
+.docksal
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# IDEA Files #
+##########
+.idea
+
+# TEMP #
+#######
+tmp
+!/.php_cs.cache
+/.php_cs.cache
+.csslintrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitattributes
+.ht.router.php
+.htaccess
+INSTALL.txt
+README.txt
+autoload.php
+example.gitignore
+index.php
+robots.txt
+update.php
+web.config
+web/sites/example.sites.php
+web/sites/example.settings.local.php
+web/sites/development.services.yml
+web/sites/default/default.settings.php
+web/sites/default/default.services.yml
+web/README.md
