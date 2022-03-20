@@ -8,10 +8,8 @@ display:
       fields:
         info:
           label: 'Descrição do bloco'
-          separator: ', '
         type:
           label: 'Tipo Bloco'
-          separator: ', '
         changed:
           label: Atualizado
         operations:
@@ -30,8 +28,6 @@ display:
           submit_button: Aplicar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       empty:
         area_text_custom:
           content: 'Não existem blocos personalizados disponíveis.'

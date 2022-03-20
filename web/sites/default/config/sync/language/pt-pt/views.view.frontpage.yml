@@ -20,12 +20,8 @@ display:
           submit_button: Aplicar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       empty:
         title:
           title: 'Bem-vindo a [site:name]'
-  feed_1:
-    display_title: Feed
   page_1:
     display_title: Página
