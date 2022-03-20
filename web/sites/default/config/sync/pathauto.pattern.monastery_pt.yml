@@ -1,0 +1,33 @@
+uuid: 29d47cbf-36f1-434c-ae60-ea16d73b8ef5
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: monastery_pt
+label: 'Monastery PT'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'mosteiro/[term:name]'
+selection_criteria:
+  9e3ade45-4942-45fa-894c-5ea7ba460533:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 9e3ade45-4942-45fa-894c-5ea7ba460533
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      monastery: monastery
+  c5fdc8ea-b682-4099-84f8-2dd284949236:
+    id: language
+    negate: false
+    uuid: c5fdc8ea-b682-4099-84f8-2dd284949236
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      pt-pt: pt-pt
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language
