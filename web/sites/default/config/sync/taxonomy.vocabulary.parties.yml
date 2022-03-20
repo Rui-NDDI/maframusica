@@ -1,0 +1,8 @@
+uuid: 97e6508e-0e10-4645-81e0-3b3382cfc016
+langcode: en
+status: true
+dependencies: {  }
+name: Parties
+vid: parties
+description: ''
+weight: 0

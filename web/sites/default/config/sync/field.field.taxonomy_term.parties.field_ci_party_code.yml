@@ -1,0 +1,21 @@
+uuid: 3b98d0a2-a9f7-41b4-a91b-a9b5d423539e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ci_party_code
+    - taxonomy.vocabulary.parties
+  module:
+    - options
+id: taxonomy_term.parties.field_ci_party_code
+field_name: field_ci_party_code
+entity_type: taxonomy_term
+bundle: parties
+label: 'CI Party Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

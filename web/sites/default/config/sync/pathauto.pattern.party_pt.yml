@@ -1,0 +1,33 @@
+uuid: 5ceaacf3-952c-4833-bd25-a989b15371f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: party_pt
+label: 'Party PT'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'festa/[term:name]'
+selection_criteria:
+  ea0d1421-4d2a-488c-812c-39ccacf4ef3f:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: ea0d1421-4d2a-488c-812c-39ccacf4ef3f
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      parties: parties
+  db4a0337-b133-4354-a99a-44e5ef5f787e:
+    id: language
+    negate: false
+    uuid: db4a0337-b133-4354-a99a-44e5ef5f787e
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      pt-pt: pt-pt
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language
