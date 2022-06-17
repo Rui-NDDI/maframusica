@@ -5,11 +5,16 @@ display:
     display_title: Predefinido
     display_options:
       title: 'Conteúdo recente'
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: Aplicar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       empty:
         area_text_custom:
           content: 'Conteúdo não disponível'

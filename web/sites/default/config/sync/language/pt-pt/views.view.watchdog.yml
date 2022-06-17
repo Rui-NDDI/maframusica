@@ -1,3 +1,4 @@
+label: Watchdog
 description: 'Mensagens de registo recentes'
 display:
   default:
@@ -15,12 +16,18 @@ display:
           label: Data
         message:
           label: Mensagem
+          alter:
+            alt: '{{ message }}'
         name:
           label: Utilizador
+          separator: ', '
         link:
           label: Operações
       pager:
         options:
+          tags:
+            next: ››
+            previous: ‹‹
           expose:
             items_per_page_label: 'Itens por página'
             items_per_page_options_all_label: '- Todos -'
@@ -30,6 +37,8 @@ display:
           submit_button: Filtro
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       empty:
         area:
           admin_label: 'Não há mensagens no registo.'
