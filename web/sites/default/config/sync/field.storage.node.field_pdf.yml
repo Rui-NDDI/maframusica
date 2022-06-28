@@ -1,0 +1,23 @@
+uuid: b41eda6c-953a-4f21-8322-dd752561f8c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_pdf
+field_name: field_pdf
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: s3
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

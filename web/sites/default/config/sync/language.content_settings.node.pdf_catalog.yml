@@ -1,0 +1,16 @@
+uuid: 92fefb71-03e8-4df2-aa1c-9f869ea7e152
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pdf_catalog
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.pdf_catalog
+target_entity_type_id: node
+target_bundle: pdf_catalog
+default_langcode: site_default
+language_alterable: false

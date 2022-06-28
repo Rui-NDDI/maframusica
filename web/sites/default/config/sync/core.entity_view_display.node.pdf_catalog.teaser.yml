@@ -1,0 +1,33 @@
+uuid: ed965a3c-228a-499d-9731-a215e1e892e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pdf_catalog.body
+    - field.field.node.pdf_catalog.field_pdf
+    - node.type.pdf_catalog
+  module:
+    - text
+    - user
+id: node.pdf_catalog.teaser
+targetEntityType: node
+bundle: pdf_catalog
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_pdf: true
+  langcode: true
