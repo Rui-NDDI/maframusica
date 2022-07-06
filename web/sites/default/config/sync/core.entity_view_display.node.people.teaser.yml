@@ -5,8 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.people.body
+    - field.field.node.people.field_date_last_change
     - field.field.node.people.field_dates
+    - field.field.node.people.field_entity_type
     - field.field.node.people.field_function
+    - field.field.node.people.field_hyperlinks
+    - field.field.node.people.field_information_authorship
+    - field.field.node.people.field_other_name_designations
+    - field.field.node.people.field_revised_by
     - node.type.people
   module:
     - text
@@ -30,6 +36,12 @@ content:
     weight: 100
     region: content
 hidden:
+  field_date_last_change: true
   field_dates: true
+  field_entity_type: true
   field_function: true
+  field_hyperlinks: true
+  field_information_authorship: true
+  field_other_name_designations: true
+  field_revised_by: true
   langcode: true

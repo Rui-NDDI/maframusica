@@ -1,0 +1,23 @@
+uuid: 8f166577-31cd-488d-9605-332fbf6f1924
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hyperlinks
+    - node.type.people
+  module:
+    - link
+id: node.people.field_hyperlinks
+field_name: field_hyperlinks
+entity_type: node
+bundle: people
+label: Hyperlinks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link
