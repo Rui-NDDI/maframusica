@@ -1,0 +1,81 @@
+uuid: f5c31e51-2356-4e83-80f0-08923785aa72
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_function
+field_name: field_function
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: abbot
+      label: Abbot
+    -
+      value: abbess
+      label: Abbess
+    -
+      value: author
+      label: Author
+    -
+      value: composer
+      label: Composer
+    -
+      value: copyist
+      label: Copyist
+    -
+      value: editor
+      label: Editor
+    -
+      value: bookbinder
+      label: Bookbinder
+    -
+      value: writer
+      label: Writer
+    -
+      value: friar
+      label: Friar
+    -
+      value: freire
+      label: Freire
+    -
+      value: illuminator
+      label: Illuminator
+    -
+      value: printer
+      label: Printer
+    -
+      value: monk
+      label: Monk
+    -
+      value: priest
+      label: Priest
+    -
+      value: previous
+      label: Previous
+    -
+      value: prioress
+      label: Prioress
+    -
+      value: owner
+      label: Owner
+    -
+      value: notary
+      label: Notary
+    -
+      value: witness
+      label: Witness
+    -
+      value: translator
+      label: Translator
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

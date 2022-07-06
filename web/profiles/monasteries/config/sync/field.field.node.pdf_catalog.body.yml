@@ -1,0 +1,23 @@
+uuid: 35cf4fde-b2b6-42d1-b8bf-5d107a350407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pdf_catalog
+  module:
+    - text
+id: node.pdf_catalog.body
+field_name: body
+entity_type: node
+bundle: pdf_catalog
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

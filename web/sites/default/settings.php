@@ -755,17 +755,20 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 switch (getenv('SB_ENVIRONMENT')){
   case 'live':
   case 'prod':
+    $settings['config_readonly'] = TRUE;
     $config['laf']['env'] = 'prod';
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
     break;
 
   case 'test':
   case 'stag':
+    $settings['config_readonly'] = TRUE;
     $config['laf']['env'] = 'stag';
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
     break;
 
   default:
+    $settings['config_readonly'] = FALSE;
     $config['laf']['env'] = 'dev';
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.services.yml';
     $settings['extension_discovery_scan_tests'] = FALSE;
@@ -811,7 +814,7 @@ $databases['default']['default'] = [
   'prefix' => '',
   'username' => getenv('SB_MYSQL_USER'),
 ];
-$settings['config_sync_directory'] = 'sites/default/config/sync';
+$settings['config_sync_directory'] = 'profiles/monasteries/config/sync';
 $settings['trusted_host_patterns'][] = getenv('SB_TRUSTED_HOST');
 
 

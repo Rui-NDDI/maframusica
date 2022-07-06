@@ -1,6 +1,14 @@
 # mosteiros
 Mosteiro Lorvão, Alcobaça e Arouca (Perfil Histórico)
 
-Here we go!
+## Instructions
 
-![giphy](https://user-images.githubusercontent.com/1868037/158854131-3cc218f1-aae2-4b6a-8097-d7595e2af912.gif)
+### First config import is recommended to be done via drush by running:
+```
+drush site:install monastery --existing-config
+```
+
+### Quick tip: generating a hash salt for Drupal
+```
+drush php-eval 'echo \Drupal\Component\Utility\Crypt::hashBase64(55) . "\n";'
+```

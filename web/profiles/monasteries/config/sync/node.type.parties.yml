@@ -1,0 +1,17 @@
+uuid: adeb1e4f-f3a8-419c-ac7c-0a281043760a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Parties
+type: parties
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
