@@ -63,8 +63,8 @@ module:
   content_translation: 10
   views: 10
   paragraphs: 11
-  standard: 1000
+  monasteries: 1000
 theme:
   bartik: 0
   seven: 0
-profile: standard
+profile: monasteries

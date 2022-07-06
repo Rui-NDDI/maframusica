@@ -814,7 +814,7 @@ $databases['default']['default'] = [
   'prefix' => '',
   'username' => getenv('SB_MYSQL_USER'),
 ];
-$settings['config_sync_directory'] = 'sites/default/config/sync';
+$settings['config_sync_directory'] = 'profiles/monasteries/config/sync';
 $settings['trusted_host_patterns'][] = getenv('SB_TRUSTED_HOST');
 
 
