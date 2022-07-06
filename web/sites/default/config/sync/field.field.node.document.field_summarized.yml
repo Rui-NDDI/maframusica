@@ -1,0 +1,19 @@
+uuid: f553d333-725b-479f-a456-00cedca502c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summarized
+    - node.type.document
+id: node.document.field_summarized
+field_name: field_summarized
+entity_type: node
+bundle: document
+label: Summarized
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

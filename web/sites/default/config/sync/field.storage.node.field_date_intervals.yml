@@ -1,0 +1,45 @@
+uuid: c0a3e0a5-036a-4a7c-ae6b-a273b3116f83
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_date_intervals
+field_name: field_date_intervals
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 1201-1250
+      label: 1201-1250
+    -
+      value: 1251-1300
+      label: 1251-1300
+    -
+      value: 1301-1350
+      label: 1301-1350
+    -
+      value: 1351-1400
+      label: 1351-1400
+    -
+      value: 1401-1450
+      label: 1401-1450
+    -
+      value: 1451-1500
+      label: 1451-1500
+    -
+      value: 1501-1550
+      label: 1501-1550
+    -
+      value: 1551-1600
+      label: 1551-1600
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

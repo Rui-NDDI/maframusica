@@ -1,0 +1,19 @@
+uuid: 343310e2-fd75-4615-9547-5c741c90f031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_witnesses
+    - node.type.document
+id: node.document.field_witnesses
+field_name: field_witnesses
+entity_type: node
+bundle: document
+label: Witnesses
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
