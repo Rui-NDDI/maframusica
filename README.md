@@ -5,7 +5,7 @@ Mosteiro Lorvão, Alcobaça e Arouca (Perfil Histórico)
 
 ### First config import is recommended to be done via drush by running:
 ```
-drush site:install monastery --existing-config
+./vendor/bin/drush site:install monasteries --existing-config
 ```
 
 ### Quick tip: generating a hash salt for Drupal
