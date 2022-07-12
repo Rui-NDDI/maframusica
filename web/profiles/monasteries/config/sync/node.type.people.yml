@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: People
+name: Entities/People
 type: people
 description: 'Use this content type for creating people''s profile pages.'
 help: ''

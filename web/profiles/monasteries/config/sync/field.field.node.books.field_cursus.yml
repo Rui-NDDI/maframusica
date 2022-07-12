@@ -1,0 +1,29 @@
+uuid: 80c16acf-fc6c-4473-8700-8f5e481e4d59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cursus
+    - node.type.books
+    - taxonomy.vocabulary.cursus
+id: node.books.field_cursus
+field_name: field_cursus
+entity_type: node
+bundle: books
+label: Cursus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cursus: cursus
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

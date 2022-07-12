@@ -1,0 +1,14 @@
+uuid: 6c48d801-6226-45d9-b7a9-b79491200628
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.music
+id: taxonomy_vocabulary_music
+entity_type_id: taxonomy_vocabulary
+entity_id: music
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

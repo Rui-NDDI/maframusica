@@ -1,0 +1,16 @@
+uuid: fa1a7a5a-84fb-49b0-96bf-c5428c1fae1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.archive
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.archive
+target_entity_type_id: taxonomy_term
+target_bundle: archive
+default_langcode: site_default
+language_alterable: true

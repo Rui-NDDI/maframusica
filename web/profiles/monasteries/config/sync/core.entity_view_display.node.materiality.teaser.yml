@@ -138,8 +138,8 @@ hidden:
   field_references: true
   field_regularity: true
   field_reinforcements: true
-  field_sewing_supports: true
   field_sewing_order: true
+  field_sewing_supports: true
   field_standard_dimension_folio: true
   field_tabs: true
   field_tanning: true

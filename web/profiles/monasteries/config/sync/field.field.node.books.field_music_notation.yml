@@ -1,0 +1,29 @@
+uuid: ccaf59e7-2234-4584-89ed-d5966a1620aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_music_notation
+    - node.type.books
+    - taxonomy.vocabulary.music_notation
+id: node.books.field_music_notation
+field_name: field_music_notation
+entity_type: node
+bundle: books
+label: 'Music notation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      music_notation: music_notation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

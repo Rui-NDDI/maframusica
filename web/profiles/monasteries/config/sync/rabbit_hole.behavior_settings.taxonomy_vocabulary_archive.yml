@@ -1,0 +1,14 @@
+uuid: 6aac1678-e8c0-4ab4-905d-e62057640533
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.archive
+id: taxonomy_vocabulary_archive
+entity_type_id: taxonomy_vocabulary
+entity_id: archive
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

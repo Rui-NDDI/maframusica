@@ -1,0 +1,29 @@
+uuid: 9607d0d8-9e38-4dfd-a7d8-32ac08433c88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subcategory
+    - node.type.books
+    - taxonomy.vocabulary.book_subcategory
+id: node.books.field_subcategory
+field_name: field_subcategory
+entity_type: node
+bundle: books
+label: Subcategory
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book_subcategory: book_subcategory
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

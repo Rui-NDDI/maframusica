@@ -1,0 +1,19 @@
+uuid: 2af3079f-2d40-41fd-b17b-d023d131c304
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_date
+    - node.type.books
+id: node.books.field_book_date
+field_name: field_book_date
+entity_type: node
+bundle: books
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

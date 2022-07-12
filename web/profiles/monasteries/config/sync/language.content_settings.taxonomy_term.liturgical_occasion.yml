@@ -1,0 +1,16 @@
+uuid: 069cf5b8-6d3d-4f0f-ab98-5a26da1c30f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.liturgical_occasion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.liturgical_occasion
+target_entity_type_id: taxonomy_term
+target_bundle: liturgical_occasion
+default_langcode: site_default
+language_alterable: true
