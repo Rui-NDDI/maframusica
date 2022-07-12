@@ -1,0 +1,8 @@
+uuid: 351fb282-ddd4-42c2-938e-dfa47d80c38e
+langcode: en
+status: true
+dependencies: {  }
+name: Material
+vid: material
+description: 'Contains all the materials to be used in the materiality.'
+weight: 0

@@ -1,0 +1,23 @@
+uuid: 6eca456d-8e11-4e22-9522-e72d7ac21c8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_empty_hole_end_tunnel
+    - paragraphs.paragraphs_type.folders
+id: paragraph.folders.field_empty_hole_end_tunnel
+field_name: field_empty_hole_end_tunnel
+entity_type: paragraph
+bundle: folders
+label: 'Empty hole end entrance tunnel'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

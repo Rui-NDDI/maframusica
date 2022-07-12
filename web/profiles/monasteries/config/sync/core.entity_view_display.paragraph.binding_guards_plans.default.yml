@@ -1,0 +1,98 @@
+uuid: 0144d483-9c40-497d-bd95-aaf1da5fb7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.binding_guards_plans.field_color
+    - field.field.paragraph.binding_guards_plans.field_description
+    - field.field.paragraph.binding_guards_plans.field_elements_plan_type
+    - field.field.paragraph.binding_guards_plans.field_guards_registration
+    - field.field.paragraph.binding_guards_plans.field_guards_typology
+    - field.field.paragraph.binding_guards_plans.field_has_counterguards
+    - field.field.paragraph.binding_guards_plans.field_has_steering_guards
+    - field.field.paragraph.binding_guards_plans.field_materiality_support
+    - field.field.paragraph.binding_guards_plans.field_nature
+    - paragraphs.paragraphs_type.binding_guards_plans
+  module:
+    - options
+    - text
+id: paragraph.binding_guards_plans.default
+targetEntityType: paragraph
+bundle: binding_guards_plans
+mode: default
+content:
+  field_color:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_elements_plan_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_guards_registration:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_guards_typology:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_has_counterguards:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_has_steering_guards:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_materiality_support:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_nature:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

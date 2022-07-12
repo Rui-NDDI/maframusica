@@ -1,0 +1,23 @@
+uuid: bcaa6be9-59e4-4bf1-902c-99f602a39c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_has_counterguards
+    - paragraphs.paragraphs_type.binding_guards_plans
+id: paragraph.binding_guards_plans.field_has_counterguards
+field_name: field_has_counterguards
+entity_type: paragraph
+bundle: binding_guards_plans
+label: 'Has counterguards?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

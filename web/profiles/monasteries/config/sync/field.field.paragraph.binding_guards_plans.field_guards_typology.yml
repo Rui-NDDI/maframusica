@@ -1,0 +1,29 @@
+uuid: 25677589-1663-4356-b32e-9296bbcddc74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_guards_typology
+    - paragraphs.paragraphs_type.binding_guards_plans
+    - taxonomy.vocabulary.guards_typology
+id: paragraph.binding_guards_plans.field_guards_typology
+field_name: field_guards_typology
+entity_type: paragraph
+bundle: binding_guards_plans
+label: 'Guards typology'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      guards_typology: guards_typology
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

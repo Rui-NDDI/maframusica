@@ -1,0 +1,14 @@
+uuid: 55f18f44-0690-409a-8cf6-b8eea00e2e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.binders
+id: taxonomy_vocabulary_binders
+entity_type_id: taxonomy_vocabulary
+entity_id: binders
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

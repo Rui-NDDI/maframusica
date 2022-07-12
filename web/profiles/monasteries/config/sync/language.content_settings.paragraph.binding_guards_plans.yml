@@ -1,0 +1,18 @@
+uuid: b9f8a0b6-6157-4027-b945-93257f1c28c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.binding_guards_plans
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.binding_guards_plans
+target_entity_type_id: paragraph
+target_bundle: binding_guards_plans
+default_langcode: site_default
+language_alterable: true

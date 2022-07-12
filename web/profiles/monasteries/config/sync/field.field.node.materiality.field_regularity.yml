@@ -1,0 +1,29 @@
+uuid: 3ecabac6-4f4f-4e18-99c5-182f1282da32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regularity
+    - node.type.materiality
+    - taxonomy.vocabulary.regularity
+id: node.materiality.field_regularity
+field_name: field_regularity
+entity_type: node
+bundle: materiality
+label: Regularity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      regularity: regularity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

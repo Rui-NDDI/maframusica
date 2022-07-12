@@ -1,0 +1,14 @@
+uuid: cb3ec62b-a4ac-4dbc-ab2e-10904525c2ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.typology_sewing_holders
+id: taxonomy_vocabulary_typology_sewing_holders
+entity_type_id: taxonomy_vocabulary
+entity_id: typology_sewing_holders
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

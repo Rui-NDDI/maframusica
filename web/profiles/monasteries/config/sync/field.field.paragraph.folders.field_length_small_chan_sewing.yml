@@ -1,0 +1,23 @@
+uuid: 432c8bb6-df2a-4f9f-a33a-8dcc65a7dcf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_length_small_chan_sewing
+    - paragraphs.paragraphs_type.folders
+id: paragraph.folders.field_length_small_chan_sewing
+field_name: field_length_small_chan_sewing
+entity_type: paragraph
+bundle: folders
+label: 'Length smallest channel sewing supports (back cover)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

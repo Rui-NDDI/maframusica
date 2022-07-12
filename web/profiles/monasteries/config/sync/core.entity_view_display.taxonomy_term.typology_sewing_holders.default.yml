@@ -1,0 +1,14 @@
+uuid: 7de928af-0370-476a-b712-f793c9e8fbdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.typology_sewing_holders
+id: taxonomy_term.typology_sewing_holders.default
+targetEntityType: taxonomy_term
+bundle: typology_sewing_holders
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

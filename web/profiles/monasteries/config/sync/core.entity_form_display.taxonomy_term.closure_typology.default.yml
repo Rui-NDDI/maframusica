@@ -1,0 +1,41 @@
+uuid: b443cd3a-897f-4b6b-bbaa-5332857ce104
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.closure_typology
+id: taxonomy_term.closure_typology.default
+targetEntityType: taxonomy_term
+bundle: closure_typology
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,16 @@
+uuid: fc2720b2-ed60-44c1-8021-cdd049522cc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tool_brands
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.tool_brands
+target_entity_type_id: taxonomy_term
+target_bundle: tool_brands
+default_langcode: current_interface
+language_alterable: true

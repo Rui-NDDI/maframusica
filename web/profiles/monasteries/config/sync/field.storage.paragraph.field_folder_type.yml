@@ -1,0 +1,27 @@
+uuid: bf6167f4-36c1-4741-8b1a-c5afb78aca94
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_folder_type
+field_name: field_folder_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: previous
+      label: Previous
+    -
+      value: posterior
+      label: Posterior
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 8de1a304-46a1-414c-a595-67a7f6f6b545
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sewing_order
+field_name: field_sewing_order
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: start-end
+      label: 'Start to end'
+    -
+      value: end-start
+      label: 'End to start'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

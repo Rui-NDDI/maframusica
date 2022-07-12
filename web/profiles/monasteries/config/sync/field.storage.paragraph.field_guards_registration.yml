@@ -1,0 +1,20 @@
+uuid: ca5f964f-8d4e-42d6-b08b-04751b8f75c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_guards_registration
+field_name: field_guards_registration
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

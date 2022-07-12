@@ -1,0 +1,123 @@
+uuid: 6c2de82b-6409-4957-acb0-7796b88282ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.closure.field_closure_type
+    - field.field.paragraph.closure.field_color
+    - field.field.paragraph.closure.field_decoration
+    - field.field.paragraph.closure.field_folder_articulation
+    - field.field.paragraph.closure.field_leading_orientation
+    - field.field.paragraph.closure.field_material_metal_comp_plate
+    - field.field.paragraph.closure.field_material_no_metal_comp
+    - field.field.paragraph.closure.field_nature
+    - field.field.paragraph.closure.field_no_metal_comp_attach_flap
+    - field.field.paragraph.closure.field_shape_metal_comp_plates
+    - field.field.paragraph.closure.field_typology
+    - paragraphs.paragraphs_type.closure
+id: paragraph.closure.default
+targetEntityType: paragraph
+bundle: closure
+mode: default
+content:
+  field_closure_type:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_color:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_decoration:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_folder_articulation:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_leading_orientation:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_material_metal_comp_plate:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_material_no_metal_comp:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nature:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_no_metal_comp_attach_flap:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shape_metal_comp_plates:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_typology:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

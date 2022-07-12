@@ -1,0 +1,8 @@
+uuid: 056b0b59-d798-4595-ab7c-235c6bbf3239
+langcode: en
+status: true
+dependencies: {  }
+name: 'Articulation cover'
+vid: articulation_cover
+description: 'Contains all the articulation types from the cover to be used on the materiality.'
+weight: 0

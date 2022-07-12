@@ -1,0 +1,29 @@
+uuid: 5122a2b1-7193-4171-85c3-a6507a42c5e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_uv_vis_nir_spectrum
+    - media.type.image
+    - taxonomy.vocabulary.pigment
+id: taxonomy_term.pigment.field_uv_vis_nir_spectrum
+field_name: field_uv_vis_nir_spectrum
+entity_type: taxonomy_term
+bundle: pigment
+label: 'UV-Vis-NIR spectrum'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

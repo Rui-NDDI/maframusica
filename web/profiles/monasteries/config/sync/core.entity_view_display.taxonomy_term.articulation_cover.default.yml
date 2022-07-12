@@ -1,0 +1,14 @@
+uuid: b4b01795-c607-4e59-baf1-b6204963dadb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.articulation_cover
+id: taxonomy_term.articulation_cover.default
+targetEntityType: taxonomy_term
+bundle: articulation_cover
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

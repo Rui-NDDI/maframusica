@@ -1,0 +1,21 @@
+uuid: 518b207a-716d-4a0a-883c-2f456d740f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decorative_finial
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_decorative_finial
+field_name: field_decorative_finial
+entity_type: node
+bundle: materiality
+label: 'Decorative finial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

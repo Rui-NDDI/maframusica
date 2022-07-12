@@ -1,0 +1,14 @@
+uuid: 5bc889ee-1e4c-47ae-8ef3-9eb70748d302
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.edge_treatments
+id: taxonomy_vocabulary_edge_treatments
+entity_type_id: taxonomy_vocabulary
+entity_id: edge_treatments
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

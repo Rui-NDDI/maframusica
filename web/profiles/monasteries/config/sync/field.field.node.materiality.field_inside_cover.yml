@@ -1,0 +1,23 @@
+uuid: ffe44e7c-691d-4c9f-82a7-8ab966c97c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inside_cover
+    - node.type.materiality
+id: node.materiality.field_inside_cover
+field_name: field_inside_cover
+entity_type: node
+bundle: materiality
+label: 'Inside cover'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

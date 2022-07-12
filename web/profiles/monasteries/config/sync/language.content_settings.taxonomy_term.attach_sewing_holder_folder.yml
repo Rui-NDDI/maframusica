@@ -1,0 +1,18 @@
+uuid: da5acde5-5c15-429f-9305-d9649de1fb07
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.attach_sewing_holder_folder
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.attach_sewing_holder_folder
+target_entity_type_id: taxonomy_term
+target_bundle: attach_sewing_holder_folder
+default_langcode: current_interface
+language_alterable: true

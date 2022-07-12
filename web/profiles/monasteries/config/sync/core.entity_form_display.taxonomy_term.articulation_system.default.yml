@@ -1,0 +1,41 @@
+uuid: 174f7ce0-1f7b-4482-ae82-331836c2aa95
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.articulation_system
+id: taxonomy_term.articulation_system.default
+targetEntityType: taxonomy_term
+bundle: articulation_system
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,8 @@
+uuid: 5528c23d-4ba7-4ac7-b930-ddf2b7c07855
+langcode: en
+status: true
+dependencies: {  }
+name: Regularity
+vid: regularity
+description: 'Contains all the regularity types to be used on the materiality.'
+weight: 0

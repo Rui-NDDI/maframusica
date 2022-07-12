@@ -1,0 +1,8 @@
+uuid: eb27008f-bc90-4d9c-a59d-a6dfb13cbb2a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Typology (sewing holders)'
+vid: typology_sewing_holders
+description: 'Contains all the typology sewing holders to be used on the materiality.'
+weight: 0

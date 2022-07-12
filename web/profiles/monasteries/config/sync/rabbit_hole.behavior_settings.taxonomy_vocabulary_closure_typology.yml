@@ -1,0 +1,14 @@
+uuid: 5bd5e7ac-108c-4b7f-bb4a-2f31f3856fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.closure_typology
+id: taxonomy_vocabulary_closure_typology
+entity_type_id: taxonomy_vocabulary
+entity_id: closure_typology
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

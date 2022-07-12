@@ -1,0 +1,20 @@
+uuid: e777e75a-9dcf-4162-94f2-0b062542a3c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_tanning_tongue_reinforce
+field_name: field_tanning_tongue_reinforce
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

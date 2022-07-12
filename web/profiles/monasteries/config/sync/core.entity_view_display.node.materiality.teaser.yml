@@ -1,0 +1,155 @@
+uuid: baafaa68-e5b8-47df-95d8-6ac24dda4626
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.materiality.field_articulation_cover
+    - field.field.node.materiality.field_articulation_system
+    - field.field.node.materiality.field_associated_finial_point
+    - field.field.node.materiality.field_associated_sewing_holder
+    - field.field.node.materiality.field_associated_tranchefil
+    - field.field.node.materiality.field_attach_sewing_hold_folder
+    - field.field.node.materiality.field_avg_dist_head_foot_sewing
+    - field.field.node.materiality.field_avg_dist_sewing_stations
+    - field.field.node.materiality.field_bifolios_notebook
+    - field.field.node.materiality.field_binders
+    - field.field.node.materiality.field_book_body_composition
+    - field.field.node.materiality.field_bookbinding_elements
+    - field.field.node.materiality.field_brooches
+    - field.field.node.materiality.field_category_book_body
+    - field.field.node.materiality.field_closures
+    - field.field.node.materiality.field_collation
+    - field.field.node.materiality.field_color
+    - field.field.node.materiality.field_color_finial_thread
+    - field.field.node.materiality.field_color_skin_finial
+    - field.field.node.materiality.field_cover_decoration
+    - field.field.node.materiality.field_current_number
+    - field.field.node.materiality.field_decoration_type
+    - field.field.node.materiality.field_decorative_finial
+    - field.field.node.materiality.field_dimensions_book_body
+    - field.field.node.materiality.field_dyestuff
+    - field.field.node.materiality.field_finial
+    - field.field.node.materiality.field_folders
+    - field.field.node.materiality.field_folio_dimensions
+    - field.field.node.materiality.field_format
+    - field.field.node.materiality.field_holes_number
+    - field.field.node.materiality.field_image
+    - field.field.node.materiality.field_inside_cover
+    - field.field.node.materiality.field_label_brand_typology
+    - field.field.node.materiality.field_loads
+    - field.field.node.materiality.field_local_seam_attach_gutter
+    - field.field.node.materiality.field_location
+    - field.field.node.materiality.field_material
+    - field.field.node.materiality.field_materiality_support
+    - field.field.node.materiality.field_materiality_type
+    - field.field.node.materiality.field_nature
+    - field.field.node.materiality.field_number_folios
+    - field.field.node.materiality.field_number_reinforcements
+    - field.field.node.materiality.field_observations
+    - field.field.node.materiality.field_original_number
+    - field.field.node.materiality.field_others_not_associated
+    - field.field.node.materiality.field_overturned_cover_posterior
+    - field.field.node.materiality.field_overturned_cover_previous
+    - field.field.node.materiality.field_path_around_sewing_holder
+    - field.field.node.materiality.field_pigment
+    - field.field.node.materiality.field_referenced_book
+    - field.field.node.materiality.field_references
+    - field.field.node.materiality.field_regularity
+    - field.field.node.materiality.field_reinforcements
+    - field.field.node.materiality.field_sewing_holders
+    - field.field.node.materiality.field_sewing_order
+    - field.field.node.materiality.field_standard_dimension_folio
+    - field.field.node.materiality.field_tabs
+    - field.field.node.materiality.field_tanning
+    - field.field.node.materiality.field_thread_season
+    - field.field.node.materiality.field_thread_size_thicknes
+    - field.field.node.materiality.field_torsion
+    - field.field.node.materiality.field_tranchefils
+    - field.field.node.materiality.field_typology_according_books
+    - field.field.node.materiality.field_typology_according_loop
+    - field.field.node.materiality.field_typology_according_route
+    - field.field.node.materiality.field_typology_cover
+    - field.field.node.materiality.field_which_side
+    - node.type.materiality
+  module:
+    - user
+id: node.materiality.teaser
+targetEntityType: node
+bundle: materiality
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_articulation_cover: true
+  field_articulation_system: true
+  field_associated_finial_point: true
+  field_associated_sewing_holder: true
+  field_associated_tranchefil: true
+  field_attach_sewing_hold_folder: true
+  field_avg_dist_head_foot_sewing: true
+  field_avg_dist_sewing_stations: true
+  field_bifolios_notebook: true
+  field_binders: true
+  field_book_body_composition: true
+  field_bookbinding_elements: true
+  field_brooches: true
+  field_category_book_body: true
+  field_closures: true
+  field_collation: true
+  field_color: true
+  field_color_finial_thread: true
+  field_color_skin_finial: true
+  field_cover_decoration: true
+  field_current_number: true
+  field_decoration_type: true
+  field_decorative_finial: true
+  field_dimensions_book_body: true
+  field_dyestuff: true
+  field_finial: true
+  field_folders: true
+  field_folio_dimensions: true
+  field_format: true
+  field_holes_number: true
+  field_image: true
+  field_inside_cover: true
+  field_label_brand_typology: true
+  field_loads: true
+  field_local_seam_attach_gutter: true
+  field_location: true
+  field_material: true
+  field_materiality_support: true
+  field_materiality_type: true
+  field_nature: true
+  field_number_folios: true
+  field_number_reinforcements: true
+  field_observations: true
+  field_original_number: true
+  field_others_not_associated: true
+  field_overturned_cover_posterior: true
+  field_overturned_cover_previous: true
+  field_path_around_sewing_holder: true
+  field_pigment: true
+  field_referenced_book: true
+  field_references: true
+  field_regularity: true
+  field_reinforcements: true
+  field_sewing_holders: true
+  field_sewing_order: true
+  field_standard_dimension_folio: true
+  field_tabs: true
+  field_tanning: true
+  field_thread_season: true
+  field_thread_size_thicknes: true
+  field_torsion: true
+  field_tranchefils: true
+  field_typology_according_books: true
+  field_typology_according_loop: true
+  field_typology_according_route: true
+  field_typology_cover: true
+  field_which_side: true
+  langcode: true

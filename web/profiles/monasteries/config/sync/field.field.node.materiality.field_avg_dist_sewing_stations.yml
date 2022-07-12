@@ -1,0 +1,21 @@
+uuid: b54debc1-29d7-45cc-9833-0acf8bd75597
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_avg_dist_sewing_stations
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_avg_dist_sewing_stations
+field_name: field_avg_dist_sewing_stations
+entity_type: node
+bundle: materiality
+label: 'Average distance between sewing stations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

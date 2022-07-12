@@ -1,0 +1,21 @@
+uuid: 3f56adee-3ce1-4044-a621-d8f8ea793b51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overturned_cover_previous
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_overturned_cover_previous
+field_name: field_overturned_cover_previous
+entity_type: node
+bundle: materiality
+label: 'Overturned cover (previous plan)'
+description: 'This can be a simple one or a double (external cover)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

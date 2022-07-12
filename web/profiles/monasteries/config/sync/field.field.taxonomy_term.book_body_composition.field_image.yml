@@ -1,0 +1,29 @@
+uuid: 62f006cd-5122-4e42-848d-bb3e0070d1c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - media.type.image
+    - taxonomy.vocabulary.book_body_composition
+id: taxonomy_term.book_body_composition.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: book_body_composition
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

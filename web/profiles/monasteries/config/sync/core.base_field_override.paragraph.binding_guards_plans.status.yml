@@ -1,0 +1,22 @@
+uuid: 186e34ba-7602-4ac0-9460-4ebd0673a4ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.binding_guards_plans
+id: paragraph.binding_guards_plans.status
+field_name: status
+entity_type: paragraph
+bundle: binding_guards_plans
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

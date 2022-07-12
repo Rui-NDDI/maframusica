@@ -1,0 +1,21 @@
+uuid: 71900ab0-0990-4f4e-b721-4502988637e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thread_size_thicknes
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_thread_size_thicknes
+field_name: field_thread_size_thicknes
+entity_type: node
+bundle: materiality
+label: 'Thread dimensions (thickness)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

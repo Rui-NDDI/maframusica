@@ -1,0 +1,8 @@
+uuid: 45273186-7c88-4afd-ad94-6562163ac119
+langcode: en
+status: true
+dependencies: {  }
+name: 'Typology (according route)'
+vid: typology_according_route
+description: 'Contains all the typologies (according route) to be used on the materiality.'
+weight: 0

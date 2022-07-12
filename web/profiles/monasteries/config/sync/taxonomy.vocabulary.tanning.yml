@@ -1,0 +1,8 @@
+uuid: 91682c34-d915-4e6f-95b2-01bc74d8fd8b
+langcode: en
+status: true
+dependencies: {  }
+name: Tanning
+vid: tanning
+description: 'Contains all the tanning forms to be used on the materiality.'
+weight: 0

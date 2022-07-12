@@ -1,0 +1,29 @@
+uuid: cc913966-f83b-4583-9d4c-009b03ed4cda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nature_tongue_reinforce
+    - paragraphs.paragraphs_type.tranchefil
+    - taxonomy.vocabulary.nature
+id: paragraph.tranchefil.field_nature_tongue_reinforce
+field_name: field_nature_tongue_reinforce
+entity_type: paragraph
+bundle: tranchefil
+label: 'Nature - tongue and/or reinforcement(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nature: nature
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 566cce60-04b9-4c1b-bbf9-0f7532f49ffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_avg_dist_head_foot_sewing
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_avg_dist_head_foot_sewing
+field_name: field_avg_dist_head_foot_sewing
+entity_type: node
+bundle: materiality
+label: 'Average distance between head/foot and nearest sewing station'
+description: 'Average head/foot distance (in percentage) to the nearest sewing station and the average distance between sewing stations.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

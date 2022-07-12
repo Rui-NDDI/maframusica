@@ -1,0 +1,14 @@
+uuid: c6dd75b7-e5b5-422c-bb08-17e3c778950a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pebbles
+id: taxonomy_vocabulary_pebbles
+entity_type_id: taxonomy_vocabulary
+entity_id: pebbles
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

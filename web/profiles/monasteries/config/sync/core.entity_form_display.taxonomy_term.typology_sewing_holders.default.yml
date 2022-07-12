@@ -1,0 +1,41 @@
+uuid: 840bdfb0-e728-4567-b879-45d97423aacb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.typology_sewing_holders
+id: taxonomy_term.typology_sewing_holders.default
+targetEntityType: taxonomy_term
+bundle: typology_sewing_holders
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

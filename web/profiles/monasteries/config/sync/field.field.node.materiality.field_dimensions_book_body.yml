@@ -1,0 +1,19 @@
+uuid: 0f5deccc-da82-4395-afd0-f115c0b8aa12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dimensions_book_body
+    - node.type.materiality
+id: node.materiality.field_dimensions_book_body
+field_name: field_dimensions_book_body
+entity_type: node
+bundle: materiality
+label: 'Dimensions book body'
+description: '[CxLxA] (mm)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

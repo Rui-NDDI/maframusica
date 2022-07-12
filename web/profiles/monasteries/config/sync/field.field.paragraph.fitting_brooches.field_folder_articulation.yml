@@ -1,0 +1,29 @@
+uuid: 6bd2b1a5-ac6d-4404-9cf9-0a652f43ac4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_folder_articulation
+    - paragraphs.paragraphs_type.fitting_brooches
+    - taxonomy.vocabulary.folder_articulation
+id: paragraph.fitting_brooches.field_folder_articulation
+field_name: field_folder_articulation
+entity_type: paragraph
+bundle: fitting_brooches
+label: 'Folder articulation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      folder_articulation: folder_articulation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

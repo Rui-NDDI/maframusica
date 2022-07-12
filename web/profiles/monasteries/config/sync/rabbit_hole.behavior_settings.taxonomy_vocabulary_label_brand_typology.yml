@@ -1,0 +1,14 @@
+uuid: 3610947d-19ab-41c5-a110-733f33361694
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.label_brand_typology
+id: taxonomy_vocabulary_label_brand_typology
+entity_type_id: taxonomy_vocabulary
+entity_id: label_brand_typology
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

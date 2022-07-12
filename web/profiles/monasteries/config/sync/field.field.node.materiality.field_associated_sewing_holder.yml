@@ -1,0 +1,23 @@
+uuid: f7449686-6caf-489e-91da-f5ae5e141370
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_sewing_holder
+    - node.type.materiality
+id: node.materiality.field_associated_sewing_holder
+field_name: field_associated_sewing_holder
+entity_type: node
+bundle: materiality
+label: 'Associated with sewing holder'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

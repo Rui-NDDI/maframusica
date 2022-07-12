@@ -1,0 +1,14 @@
+uuid: 0e228d29-4f8b-45aa-95b9-5336afa48932
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cover_decoration
+id: taxonomy_term.cover_decoration.default
+targetEntityType: taxonomy_term
+bundle: cover_decoration
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

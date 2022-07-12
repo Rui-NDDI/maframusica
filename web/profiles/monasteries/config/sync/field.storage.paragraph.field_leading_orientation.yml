@@ -1,0 +1,20 @@
+uuid: 2a25f225-a1c3-46bf-951a-3f20cce65116
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_leading_orientation
+field_name: field_leading_orientation
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

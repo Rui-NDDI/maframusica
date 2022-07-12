@@ -1,0 +1,36 @@
+uuid: e27f045f-9054-4c16-9e60-3f8d90d0b762
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_path_around_sewing_holder
+field_name: field_path_around_sewing_holder
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: a
+      label: A
+    -
+      value: b
+      label: B
+    -
+      value: c
+      label: C
+    -
+      value: d
+      label: D
+    -
+      value: e
+      label: E
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

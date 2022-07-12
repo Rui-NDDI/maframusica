@@ -1,0 +1,39 @@
+uuid: ad526519-9fca-4b8c-8a8b-21bdb85138a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_typology
+field_name: field_typology
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: a
+      label: A
+    -
+      value: b
+      label: B
+    -
+      value: c
+      label: C
+    -
+      value: d
+      label: D
+    -
+      value: e
+      label: E
+    -
+      value: f
+      label: F
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

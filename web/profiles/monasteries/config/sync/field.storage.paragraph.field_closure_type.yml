@@ -1,0 +1,33 @@
+uuid: 34941153-55db-4b76-9a2b-af13c5473a03
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_closure_type
+field_name: field_closure_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bottom
+      label: Bottom
+    -
+      value: equals
+      label: Equals
+    -
+      value: multiple
+      label: Multiple
+    -
+      value: higher
+      label: Higher
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

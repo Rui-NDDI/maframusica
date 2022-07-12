@@ -1,0 +1,20 @@
+uuid: 593053ec-d852-446d-a98a-8209b8f4b044
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_raman_spectrum
+field_name: field_raman_spectrum
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,41 @@
+uuid: 8ea34a68-bbee-4dec-ba1e-25f2fa9dc46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.attach_sewing_holder_folder
+id: taxonomy_term.attach_sewing_holder_folder.default
+targetEntityType: taxonomy_term
+bundle: attach_sewing_holder_folder
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

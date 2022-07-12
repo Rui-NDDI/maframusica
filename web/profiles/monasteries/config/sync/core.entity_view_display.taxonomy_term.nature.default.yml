@@ -1,0 +1,14 @@
+uuid: 180d8e06-5a71-47e6-b6b5-f7e0a429640a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nature
+id: taxonomy_term.nature.default
+targetEntityType: taxonomy_term
+bundle: nature
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

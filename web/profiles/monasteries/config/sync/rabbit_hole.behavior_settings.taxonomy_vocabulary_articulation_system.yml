@@ -1,0 +1,14 @@
+uuid: 3a36a5c0-e356-40ad-bfa5-177a04bcd907
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.articulation_system
+id: taxonomy_vocabulary_articulation_system
+entity_type_id: taxonomy_vocabulary
+entity_id: articulation_system
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

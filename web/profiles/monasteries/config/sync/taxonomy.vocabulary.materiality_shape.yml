@@ -1,0 +1,8 @@
+uuid: 1d735e8a-2811-44ff-b8d8-aebcad3492cc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Materiality shape'
+vid: materiality_shape
+description: 'Contains all the shape types to be used on the materiality.'
+weight: 0

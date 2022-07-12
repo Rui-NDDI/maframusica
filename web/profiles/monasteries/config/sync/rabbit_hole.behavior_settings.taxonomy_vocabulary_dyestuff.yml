@@ -1,0 +1,14 @@
+uuid: 78c539bb-9ea2-4b8f-a002-395f2432ccf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dyestuff
+id: taxonomy_vocabulary_dyestuff
+entity_type_id: taxonomy_vocabulary
+entity_id: dyestuff
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

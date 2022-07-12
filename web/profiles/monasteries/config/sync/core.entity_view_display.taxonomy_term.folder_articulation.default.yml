@@ -1,0 +1,14 @@
+uuid: 5c029898-1904-454d-9e7a-99127a35df14
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.folder_articulation
+id: taxonomy_term.folder_articulation.default
+targetEntityType: taxonomy_term
+bundle: folder_articulation
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

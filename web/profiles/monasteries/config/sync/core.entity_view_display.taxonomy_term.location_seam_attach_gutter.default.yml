@@ -1,0 +1,14 @@
+uuid: 47e99d2b-ec8c-4a3c-a180-1d34e06f51bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location_seam_attach_gutter
+id: taxonomy_term.location_seam_attach_gutter.default
+targetEntityType: taxonomy_term
+bundle: location_seam_attach_gutter
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

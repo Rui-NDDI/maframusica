@@ -1,0 +1,14 @@
+uuid: bd2d9b5a-ed7d-403d-9c70-0b383f563517
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.articulation_cover
+id: taxonomy_vocabulary_articulation_cover
+entity_type_id: taxonomy_vocabulary
+entity_id: articulation_cover
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

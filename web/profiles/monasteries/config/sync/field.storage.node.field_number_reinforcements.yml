@@ -1,0 +1,20 @@
+uuid: 8fd8f51b-c663-49b1-9199-1a2347cbe8cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_number_reinforcements
+field_name: field_number_reinforcements
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 346cef6a-f1f9-4220-b2a8-ef3b0390bf4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_brooch_typology
+field_name: field_brooch_typology
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

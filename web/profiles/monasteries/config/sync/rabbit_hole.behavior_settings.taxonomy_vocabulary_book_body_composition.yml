@@ -1,0 +1,14 @@
+uuid: 59dfe9ec-121d-412c-a984-66ae2c266262
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.book_body_composition
+id: taxonomy_vocabulary_book_body_composition
+entity_type_id: taxonomy_vocabulary
+entity_id: book_body_composition
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

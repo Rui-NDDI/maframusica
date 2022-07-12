@@ -1,0 +1,41 @@
+uuid: 15cb55c3-b4b2-4d37-b303-36ab8781bc8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materiality_shape
+id: taxonomy_term.materiality_shape.default
+targetEntityType: taxonomy_term
+bundle: materiality_shape
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,14 @@
+uuid: 9bd6d88e-cca0-4918-a0d2-ca3cb71792bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.typology_according_route
+id: taxonomy_term.typology_according_route.default
+targetEntityType: taxonomy_term
+bundle: typology_according_route
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

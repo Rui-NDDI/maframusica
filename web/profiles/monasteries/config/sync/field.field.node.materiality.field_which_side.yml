@@ -1,0 +1,21 @@
+uuid: 90e7b8e2-db6b-4ad3-ba87-2b18060add61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_which_side
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_which_side
+field_name: field_which_side
+entity_type: node
+bundle: materiality
+label: 'Which side?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

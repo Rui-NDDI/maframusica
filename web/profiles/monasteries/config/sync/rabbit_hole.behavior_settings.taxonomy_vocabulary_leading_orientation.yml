@@ -1,0 +1,14 @@
+uuid: 12b98635-35b4-4e29-bbb7-668ae7884477
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.leading_orientation
+id: taxonomy_vocabulary_leading_orientation
+entity_type_id: taxonomy_vocabulary
+entity_id: leading_orientation
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

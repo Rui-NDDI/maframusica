@@ -1,0 +1,19 @@
+uuid: afae81cc-4e49-4840-85df-d5304e1a1777
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_folder_dimensions_previous
+    - paragraphs.paragraphs_type.folders
+id: paragraph.folders.field_folder_dimensions_previous
+field_name: field_folder_dimensions_previous
+entity_type: paragraph
+bundle: folders
+label: 'Folder dimensions - previous plan'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

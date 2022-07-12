@@ -1,0 +1,18 @@
+uuid: 89bbd256-4eca-4198-b1aa-a22c8e71d4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.book_body_composition
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.book_body_composition
+target_entity_type_id: taxonomy_term
+target_bundle: book_body_composition
+default_langcode: current_interface
+language_alterable: true

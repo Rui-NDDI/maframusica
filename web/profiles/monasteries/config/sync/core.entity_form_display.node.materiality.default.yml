@@ -1,0 +1,819 @@
+uuid: f94b6922-82ee-4338-b8a5-d832c6f4563b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.materiality.field_articulation_cover
+    - field.field.node.materiality.field_articulation_system
+    - field.field.node.materiality.field_associated_finial_point
+    - field.field.node.materiality.field_associated_sewing_holder
+    - field.field.node.materiality.field_associated_tranchefil
+    - field.field.node.materiality.field_attach_sewing_hold_folder
+    - field.field.node.materiality.field_avg_dist_head_foot_sewing
+    - field.field.node.materiality.field_avg_dist_sewing_stations
+    - field.field.node.materiality.field_bifolios_notebook
+    - field.field.node.materiality.field_binders
+    - field.field.node.materiality.field_book_body_composition
+    - field.field.node.materiality.field_bookbinding_elements
+    - field.field.node.materiality.field_brooches
+    - field.field.node.materiality.field_category_book_body
+    - field.field.node.materiality.field_closures
+    - field.field.node.materiality.field_collation
+    - field.field.node.materiality.field_color
+    - field.field.node.materiality.field_color_finial_thread
+    - field.field.node.materiality.field_color_skin_finial
+    - field.field.node.materiality.field_cover_decoration
+    - field.field.node.materiality.field_current_number
+    - field.field.node.materiality.field_decoration_type
+    - field.field.node.materiality.field_decorative_finial
+    - field.field.node.materiality.field_dimensions_book_body
+    - field.field.node.materiality.field_dyestuff
+    - field.field.node.materiality.field_finial
+    - field.field.node.materiality.field_folders
+    - field.field.node.materiality.field_folio_dimensions
+    - field.field.node.materiality.field_format
+    - field.field.node.materiality.field_holes_number
+    - field.field.node.materiality.field_image
+    - field.field.node.materiality.field_inside_cover
+    - field.field.node.materiality.field_label_brand_typology
+    - field.field.node.materiality.field_loads
+    - field.field.node.materiality.field_local_seam_attach_gutter
+    - field.field.node.materiality.field_location
+    - field.field.node.materiality.field_material
+    - field.field.node.materiality.field_materiality_support
+    - field.field.node.materiality.field_materiality_type
+    - field.field.node.materiality.field_nature
+    - field.field.node.materiality.field_number_folios
+    - field.field.node.materiality.field_number_reinforcements
+    - field.field.node.materiality.field_observations
+    - field.field.node.materiality.field_original_number
+    - field.field.node.materiality.field_others_not_associated
+    - field.field.node.materiality.field_overturned_cover_posterior
+    - field.field.node.materiality.field_overturned_cover_previous
+    - field.field.node.materiality.field_path_around_sewing_holder
+    - field.field.node.materiality.field_pigment
+    - field.field.node.materiality.field_referenced_book
+    - field.field.node.materiality.field_references
+    - field.field.node.materiality.field_regularity
+    - field.field.node.materiality.field_reinforcements
+    - field.field.node.materiality.field_sewing_holders
+    - field.field.node.materiality.field_sewing_order
+    - field.field.node.materiality.field_standard_dimension_folio
+    - field.field.node.materiality.field_tabs
+    - field.field.node.materiality.field_tanning
+    - field.field.node.materiality.field_thread_season
+    - field.field.node.materiality.field_thread_size_thicknes
+    - field.field.node.materiality.field_torsion
+    - field.field.node.materiality.field_tranchefils
+    - field.field.node.materiality.field_typology_according_books
+    - field.field.node.materiality.field_typology_according_loop
+    - field.field.node.materiality.field_typology_according_route
+    - field.field.node.materiality.field_typology_cover
+    - field.field.node.materiality.field_which_side
+    - node.type.materiality
+  module:
+    - field_group
+    - link
+    - media_library
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_page_information
+        - group_page_content
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_page_information:
+      children:
+        - group_basic_settings
+      label: 'Page information'
+      region: content
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_page_content:
+      children: {  }
+      label: 'Page content'
+      region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_basic_settings:
+      children:
+        - langcode
+        - title
+        - field_materiality_type
+      label: 'Basic settings'
+      region: content
+      parent_name: group_page_information
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+id: node.materiality.default
+targetEntityType: node
+bundle: materiality
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_articulation_cover:
+    type: entity_reference_autocomplete
+    weight: 73
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_articulation_system:
+    type: entity_reference_autocomplete
+    weight: 51
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_associated_finial_point:
+    type: number
+    weight: 40
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_associated_sewing_holder:
+    type: number
+    weight: 41
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_associated_tranchefil:
+    type: number
+    weight: 42
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_attach_sewing_hold_folder:
+    type: entity_reference_autocomplete
+    weight: 48
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_avg_dist_head_foot_sewing:
+    type: options_select
+    weight: 44
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_avg_dist_sewing_stations:
+    type: options_select
+    weight: 43
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bifolios_notebook:
+    type: entity_reference_autocomplete
+    weight: 65
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_binders:
+    type: entity_reference_autocomplete
+    weight: 57
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_book_body_composition:
+    type: entity_reference_autocomplete
+    weight: 61
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bookbinding_elements:
+    type: paragraphs
+    weight: 66
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_brooches:
+    type: paragraphs
+    weight: 72
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_category_book_body:
+    type: entity_reference_autocomplete
+    weight: 54
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_closures:
+    type: paragraphs
+    weight: 68
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_collation:
+    type: link_default
+    weight: 60
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_color:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_color_finial_thread:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_color_skin_finial:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cover_decoration:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_current_number:
+    type: number
+    weight: 70
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_decoration_type:
+    type: entity_reference_autocomplete
+    weight: 56
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_decorative_finial:
+    type: options_select
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_dimensions_book_body:
+    type: string_textfield
+    weight: 63
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_dyestuff:
+    type: entity_reference_autocomplete
+    weight: 58
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_finial:
+    type: entity_reference_autocomplete
+    weight: 32
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_folders:
+    type: paragraphs
+    weight: 75
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_folio_dimensions:
+    type: string_textfield
+    weight: 64
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_format:
+    type: entity_reference_autocomplete
+    weight: 45
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_holes_number:
+    type: number
+    weight: 46
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 18
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_inside_cover:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_label_brand_typology:
+    type: entity_reference_autocomplete
+    weight: 74
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_loads:
+    type: entity_reference_autocomplete
+    weight: 53
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_local_seam_attach_gutter:
+    type: entity_reference_autocomplete
+    weight: 49
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_location:
+    type: entity_reference_autocomplete
+    weight: 69
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_material:
+    type: entity_reference_autocomplete
+    weight: 20
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_materiality_support:
+    type: entity_reference_autocomplete
+    weight: 59
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_materiality_type:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nature:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_folios:
+    type: number
+    weight: 50
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_reinforcements:
+    type: number
+    weight: 22
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_observations:
+    type: text_textarea
+    weight: 23
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_original_number:
+    type: number
+    weight: 71
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_others_not_associated:
+    type: number
+    weight: 47
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_overturned_cover_posterior:
+    type: options_select
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_overturned_cover_previous:
+    type: options_select
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_path_around_sewing_holder:
+    type: options_select
+    weight: 37
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pigment:
+    type: entity_reference_autocomplete
+    weight: 55
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_referenced_book:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_references:
+    type: text_textarea
+    weight: 25
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_regularity:
+    type: entity_reference_autocomplete
+    weight: 67
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reinforcements:
+    type: boolean_checkbox
+    weight: 26
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_sewing_holders:
+    type: entity_reference_autocomplete
+    weight: 52
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sewing_order:
+    type: options_select
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_standard_dimension_folio:
+    type: options_select
+    weight: 62
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tabs:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tanning:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_thread_season:
+    type: entity_reference_autocomplete
+    weight: 39
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_thread_size_thicknes:
+    type: options_select
+    weight: 36
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_torsion:
+    type: options_select
+    weight: 38
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tranchefils:
+    type: paragraphs
+    weight: 76
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_typology_according_books:
+    type: entity_reference_autocomplete
+    weight: 34
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_typology_according_loop:
+    type: entity_reference_autocomplete
+    weight: 33
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_typology_according_route:
+    type: entity_reference_autocomplete
+    weight: 35
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_typology_cover:
+    type: options_select
+    weight: 77
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_which_side:
+    type: options_select
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

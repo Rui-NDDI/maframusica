@@ -1,0 +1,23 @@
+uuid: 5ae93415-06d7-4828-a0ef-2baa2857b41f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_holes_number
+    - node.type.materiality
+id: node.materiality.field_holes_number
+field_name: field_holes_number
+entity_type: node
+bundle: materiality
+label: 'Number of holes (total)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: eb2d7f67-3658-42ca-b956-d44cef321b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_materiality_type
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_materiality_type
+field_name: field_materiality_type
+entity_type: node
+bundle: materiality
+label: 'Materiality type'
+description: 'Please select from the field above the type of materiality you want to create. This will show or hide fields according to your selection.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

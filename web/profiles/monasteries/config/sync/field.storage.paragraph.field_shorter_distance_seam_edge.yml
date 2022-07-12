@@ -1,0 +1,20 @@
+uuid: 13271c0c-a2ae-4cf6-998c-82b07e11be78
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_shorter_distance_seam_edge
+field_name: field_shorter_distance_seam_edge
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
