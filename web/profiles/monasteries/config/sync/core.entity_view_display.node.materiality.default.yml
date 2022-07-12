@@ -519,6 +519,13 @@ content:
     third_party_settings: {  }
     weight: 118
     region: content
+  field_sewing_order:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 124
+    region: content
   field_sewing_supports:
     type: entity_reference_label
     label: above
@@ -526,13 +533,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 146
-    region: content
-  field_sewing_order:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 124
     region: content
   field_standard_dimension_folio:
     type: list_default
