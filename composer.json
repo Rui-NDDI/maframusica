@@ -31,12 +31,12 @@
         "drupal/upgrade_status": "^3.14",
         "drush/drush": "^11.0",
         "oomphinc/composer-installers-extender": "^2.0",
+        "saidatom/dcq": "^0.0.1",
         "vlucas/phpdotenv": "^5.4"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.24",
         "palantirnet/drupal-rector": "^0.12.1",
-        "pfrenssen/phpcs-pre-push": "^1.1",
         "slevomat/coding-standard": "^7.0",
         "squizlabs/php_codesniffer": "^3.6"
     },
@@ -47,19 +47,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "pfrenssen/phpcs-pre-push",
-                "type": "git-hook",
-                "version": "1.1",
-                "source": {
-                    "type": "git",
-                    "url": "https://gist.github.com/1ec87c25930861654cc94251da69f14b.git",
-                    "reference": "master"
-                }
-            }
         }
     ],
     "minimum-stability": "dev",
@@ -77,7 +64,8 @@
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "phpro/grumphp-shim": true
         },
         "sort-packages": true
     },
