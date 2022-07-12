@@ -1,0 +1,29 @@
+uuid: eabc0baf-f6f0-4d8f-82bd-9b66a61a36fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.books
+    - taxonomy.vocabulary.book_type
+id: node.books.field_type
+field_name: field_type
+entity_type: node
+bundle: books
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book_type: book_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

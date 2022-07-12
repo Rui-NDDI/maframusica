@@ -1,0 +1,20 @@
+uuid: 99c47b8c-aee8-4814-bd39-56e8574908d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_completeness
+field_name: field_completeness
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

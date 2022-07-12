@@ -1,0 +1,21 @@
+uuid: 49962b33-6d6b-4e09-aeaf-69705eb25f0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_century
+    - node.type.books
+  module:
+    - options
+id: node.books.field_century
+field_name: field_century
+entity_type: node
+bundle: books
+label: Century
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

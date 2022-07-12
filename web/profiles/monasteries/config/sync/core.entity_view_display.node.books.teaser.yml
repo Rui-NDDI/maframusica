@@ -5,6 +5,36 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.books.body
+    - field.field.node.books.field_archive
+    - field.field.node.books.field_authorship
+    - field.field.node.books.field_book_date
+    - field.field.node.books.field_century
+    - field.field.node.books.field_completeness
+    - field.field.node.books.field_cursus
+    - field.field.node.books.field_date_last_change
+    - field.field.node.books.field_entities
+    - field.field.node.books.field_external_references
+    - field.field.node.books.field_font_type
+    - field.field.node.books.field_images
+    - field.field.node.books.field_liturgical_occasion
+    - field.field.node.books.field_main_place_of_use
+    - field.field.node.books.field_monastery
+    - field.field.node.books.field_music
+    - field.field.node.books.field_music_notation
+    - field.field.node.books.field_observations
+    - field.field.node.books.field_parties
+    - field.field.node.books.field_provenance
+    - field.field.node.books.field_publication_info
+    - field.field.node.books.field_references
+    - field.field.node.books.field_relative_record
+    - field.field.node.books.field_revised_by
+    - field.field.node.books.field_source
+    - field.field.node.books.field_subcategory
+    - field.field.node.books.field_text_language
+    - field.field.node.books.field_tradition
+    - field.field.node.books.field_type
+    - field.field.node.books.field_use
+    - field.field.node.books.field_writing_type
     - node.type.books
   module:
     - text
@@ -28,4 +58,34 @@ content:
     weight: 100
     region: content
 hidden:
+  field_archive: true
+  field_authorship: true
+  field_book_date: true
+  field_century: true
+  field_completeness: true
+  field_cursus: true
+  field_date_last_change: true
+  field_entities: true
+  field_external_references: true
+  field_font_type: true
+  field_images: true
+  field_liturgical_occasion: true
+  field_main_place_of_use: true
+  field_monastery: true
+  field_music: true
+  field_music_notation: true
+  field_observations: true
+  field_parties: true
+  field_provenance: true
+  field_publication_info: true
+  field_references: true
+  field_relative_record: true
+  field_revised_by: true
+  field_source: true
+  field_subcategory: true
+  field_text_language: true
+  field_tradition: true
+  field_type: true
+  field_use: true
+  field_writing_type: true
   langcode: true

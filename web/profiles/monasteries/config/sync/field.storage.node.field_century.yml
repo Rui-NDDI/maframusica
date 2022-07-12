@@ -1,0 +1,48 @@
+uuid: d934dfae-c7bf-4482-91a8-a351903f3084
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_century
+field_name: field_century
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: XI
+      label: XI
+    -
+      value: XII
+      label: XII
+    -
+      value: XIII
+      label: XIII
+    -
+      value: XIV
+      label: XIV
+    -
+      value: XV
+      label: XV
+    -
+      value: XVI
+      label: XVI
+    -
+      value: XVII
+      label: XVII
+    -
+      value: XVIII
+      label: XVIII
+    -
+      value: XIX
+      label: XIX
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

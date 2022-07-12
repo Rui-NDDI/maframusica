@@ -1,0 +1,33 @@
+uuid: 65323501-053a-4df9-a053-10a4bfcb6f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revised_by
+    - node.type.books
+id: node.books.field_revised_by
+field_name: field_revised_by
+entity_type: node
+bundle: books
+label: 'Revised by'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        content_editor: content_editor
+        administrator: '0'
+        content_contributor: '0'
+    include_anonymous: false
+field_type: entity_reference

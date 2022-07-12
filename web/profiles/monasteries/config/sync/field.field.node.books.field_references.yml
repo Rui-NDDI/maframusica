@@ -1,0 +1,21 @@
+uuid: 7afe87ea-f188-4236-9c03-5e88390e70cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_references
+    - node.type.books
+  module:
+    - text
+id: node.books.field_references
+field_name: field_references
+entity_type: node
+bundle: books
+label: References
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

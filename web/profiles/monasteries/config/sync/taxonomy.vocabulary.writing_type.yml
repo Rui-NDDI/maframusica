@@ -1,0 +1,8 @@
+uuid: a9b12ccb-3ebe-4f68-9230-95051faaf8c4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Writing type'
+vid: writing_type
+description: ''
+weight: 0

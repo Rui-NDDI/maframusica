@@ -4,8 +4,42 @@ status: true
 dependencies:
   config:
     - field.field.node.books.body
+    - field.field.node.books.field_archive
+    - field.field.node.books.field_authorship
+    - field.field.node.books.field_book_date
+    - field.field.node.books.field_century
+    - field.field.node.books.field_completeness
+    - field.field.node.books.field_cursus
+    - field.field.node.books.field_date_last_change
+    - field.field.node.books.field_entities
+    - field.field.node.books.field_external_references
+    - field.field.node.books.field_font_type
+    - field.field.node.books.field_images
+    - field.field.node.books.field_liturgical_occasion
+    - field.field.node.books.field_main_place_of_use
+    - field.field.node.books.field_monastery
+    - field.field.node.books.field_music
+    - field.field.node.books.field_music_notation
+    - field.field.node.books.field_observations
+    - field.field.node.books.field_parties
+    - field.field.node.books.field_provenance
+    - field.field.node.books.field_publication_info
+    - field.field.node.books.field_references
+    - field.field.node.books.field_relative_record
+    - field.field.node.books.field_revised_by
+    - field.field.node.books.field_source
+    - field.field.node.books.field_subcategory
+    - field.field.node.books.field_text_language
+    - field.field.node.books.field_tradition
+    - field.field.node.books.field_type
+    - field.field.node.books.field_use
+    - field.field.node.books.field_writing_type
+    - image.style.thumbnail
     - node.type.books
   module:
+    - datetime
+    - image
+    - link
     - path
     - text
 id: node.books.default
@@ -28,6 +62,286 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_archive:
+    type: entity_reference_autocomplete
+    weight: 122
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_authorship:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_book_date:
+    type: string_textfield
+    weight: 126
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_century:
+    type: options_select
+    weight: 145
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_completeness:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cursus:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_date_last_change:
+    type: datetime_default
+    weight: 127
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_entities:
+    type: entity_reference_autocomplete
+    weight: 128
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_external_references:
+    type: link_default
+    weight: 141
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_font_type:
+    type: entity_reference_autocomplete
+    weight: 147
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_images:
+    type: image_image
+    weight: 130
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_liturgical_occasion:
+    type: entity_reference_autocomplete
+    weight: 136
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_main_place_of_use:
+    type: entity_reference_autocomplete
+    weight: 138
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_monastery:
+    type: entity_reference_autocomplete
+    weight: 133
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_music:
+    type: entity_reference_autocomplete
+    weight: 134
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_music_notation:
+    type: entity_reference_autocomplete
+    weight: 149
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_observations:
+    type: text_textarea
+    weight: 135
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_parties:
+    type: entity_reference_autocomplete
+    weight: 129
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_provenance:
+    type: entity_reference_autocomplete
+    weight: 139
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_publication_info:
+    type: text_textarea
+    weight: 131
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_references:
+    type: text_textarea
+    weight: 140
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_relative_record:
+    type: entity_reference_autocomplete
+    weight: 142
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_revised_by:
+    type: entity_reference_autocomplete
+    weight: 143
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_source:
+    type: entity_reference_autocomplete
+    weight: 137
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subcategory:
+    type: entity_reference_autocomplete
+    weight: 144
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_language:
+    type: entity_reference_autocomplete
+    weight: 132
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tradition:
+    type: entity_reference_autocomplete
+    weight: 150
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_type:
+    type: entity_reference_autocomplete
+    weight: 148
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_use:
+    type: entity_reference_autocomplete
+    weight: 151
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_writing_type:
+    type: entity_reference_autocomplete
+    weight: 146
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

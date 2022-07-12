@@ -1,0 +1,14 @@
+uuid: 0bb0c9b7-61a2-4498-b777-885cd7d527a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.book_subcategory
+id: taxonomy_vocabulary_book_subcategory
+entity_type_id: taxonomy_vocabulary
+entity_id: book_subcategory
+action: page_not_found
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

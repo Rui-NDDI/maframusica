@@ -1,0 +1,21 @@
+uuid: 2e8872ff-a3b5-431b-a66a-92b2a299ee8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_last_change
+    - node.type.books
+  module:
+    - datetime
+id: node.books.field_date_last_change
+field_name: field_date_last_change
+entity_type: node
+bundle: books
+label: 'Date of last change'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

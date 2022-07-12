@@ -1,0 +1,29 @@
+uuid: 67b5f0a0-1eba-430c-9e07-4c725719c2fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_use
+    - node.type.books
+    - taxonomy.vocabulary.tradition
+id: node.books.field_use
+field_name: field_use
+entity_type: node
+bundle: books
+label: Use
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tradition: tradition
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
