@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.attach_sewing_holder_folder
-id: taxonomy_vocabulary_attach_sewing_holder_folder
+    - taxonomy.vocabulary.attach_sewing_support_folder
+id: taxonomy_vocabulary_attach_sewing_support_folder
 entity_type_id: taxonomy_vocabulary
-entity_id: attach_sewing_holder_folder
+entity_id: attach_sewing_support_folder
 action: page_not_found
 allow_override: 0
 redirect: ''

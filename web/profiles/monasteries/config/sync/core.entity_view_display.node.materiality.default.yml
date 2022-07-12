@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.materiality.field_articulation_cover
     - field.field.node.materiality.field_articulation_system
     - field.field.node.materiality.field_associated_finial_point
-    - field.field.node.materiality.field_associated_sewing_holder
+    - field.field.node.materiality.field_associated_sewing_support
     - field.field.node.materiality.field_associated_tranchefil
     - field.field.node.materiality.field_attach_sewing_hold_folder
     - field.field.node.materiality.field_avg_dist_head_foot_sewing
@@ -50,13 +50,13 @@ dependencies:
     - field.field.node.materiality.field_others_not_associated
     - field.field.node.materiality.field_overturned_cover_posterior
     - field.field.node.materiality.field_overturned_cover_previous
-    - field.field.node.materiality.field_path_around_sewing_holder
+    - field.field.node.materiality.field_path_around_sewing_support
     - field.field.node.materiality.field_pigment
     - field.field.node.materiality.field_referenced_book
     - field.field.node.materiality.field_references
     - field.field.node.materiality.field_regularity
     - field.field.node.materiality.field_reinforcements
-    - field.field.node.materiality.field_sewing_holders
+    - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_sewing_order
     - field.field.node.materiality.field_standard_dimension_folio
     - field.field.node.materiality.field_tabs
@@ -107,7 +107,7 @@ content:
     third_party_settings: {  }
     weight: 134
     region: content
-  field_associated_sewing_holder:
+  field_associated_sewing_support:
     type: number_integer
     label: above
     settings:
@@ -471,7 +471,7 @@ content:
     third_party_settings: {  }
     weight: 122
     region: content
-  field_path_around_sewing_holder:
+  field_path_around_sewing_support:
     type: list_default
     label: above
     settings: {  }
@@ -519,7 +519,7 @@ content:
     third_party_settings: {  }
     weight: 118
     region: content
-  field_sewing_holders:
+  field_sewing_supports:
     type: entity_reference_label
     label: above
     settings:

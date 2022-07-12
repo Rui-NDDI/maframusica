@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.typology_sewing_holders
-id: taxonomy_term.typology_sewing_holders.default
+    - taxonomy.vocabulary.typology_sewing_supports
+id: taxonomy_term.typology_sewing_supports.default
 targetEntityType: taxonomy_term
-bundle: typology_sewing_holders
+bundle: typology_sewing_supports
 mode: default
 content:
   langcode:

@@ -24,8 +24,8 @@ settings:
       value: sewing-holes-tranchefil
       label: 'Sewing holes and tranchefil'
     -
-      value: sewing-holder
-      label: 'Sewing holder'
+      value: sewing-support
+      label: 'Sewing support'
     -
       value: decor
       label: Decor

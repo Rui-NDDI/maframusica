@@ -5,8 +5,8 @@ dependencies:
   module:
     - node
     - taxonomy
-id: node.field_sewing_holders
-field_name: field_sewing_holders
+id: node.field_sewing_supports
+field_name: field_sewing_supports
 entity_type: node
 type: entity_reference
 settings:

@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.attach_sewing_holder_folder
-id: taxonomy_term.attach_sewing_holder_folder.default
+    - taxonomy.vocabulary.attach_sewing_support_folder
+id: taxonomy_term.attach_sewing_support_folder.default
 targetEntityType: taxonomy_term
-bundle: attach_sewing_holder_folder
+bundle: attach_sewing_support_folder
 mode: default
 content: {  }
 hidden:

@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.typology_sewing_holders
-id: taxonomy_vocabulary_typology_sewing_holders
+    - taxonomy.vocabulary.typology_sewing_supports
+id: taxonomy_vocabulary_typology_sewing_supports
 entity_type_id: taxonomy_vocabulary
-entity_id: typology_sewing_holders
+entity_id: typology_sewing_supports
 action: page_not_found
 allow_override: 0
 redirect: ''

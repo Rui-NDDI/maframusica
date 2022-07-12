@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sewing_holders
+    - field.storage.node.field_sewing_supports
     - node.type.materiality
-    - taxonomy.vocabulary.typology_sewing_holders
-id: node.materiality.field_sewing_holders
-field_name: field_sewing_holders
+    - taxonomy.vocabulary.typology_sewing_supports
+id: node.materiality.field_sewing_supports
+field_name: field_sewing_supports
 entity_type: node
 bundle: materiality
-label: 'Sewing holders'
+label: 'Sewing supports'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      typology_sewing_holders: typology_sewing_holders
+      typology_sewing_supports: typology_sewing_supports
     sort:
       field: name
       direction: asc

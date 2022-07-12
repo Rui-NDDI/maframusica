@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_associated_sewing_holder
-field_name: field_associated_sewing_holder
+id: node.field_associated_sewing_support
+field_name: field_associated_sewing_support
 entity_type: node
 type: integer
 settings:

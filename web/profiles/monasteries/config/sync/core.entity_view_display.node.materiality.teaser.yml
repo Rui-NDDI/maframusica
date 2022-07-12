@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.materiality.field_articulation_cover
     - field.field.node.materiality.field_articulation_system
     - field.field.node.materiality.field_associated_finial_point
-    - field.field.node.materiality.field_associated_sewing_holder
+    - field.field.node.materiality.field_associated_sewing_support
     - field.field.node.materiality.field_associated_tranchefil
     - field.field.node.materiality.field_attach_sewing_hold_folder
     - field.field.node.materiality.field_avg_dist_head_foot_sewing
@@ -51,13 +51,13 @@ dependencies:
     - field.field.node.materiality.field_others_not_associated
     - field.field.node.materiality.field_overturned_cover_posterior
     - field.field.node.materiality.field_overturned_cover_previous
-    - field.field.node.materiality.field_path_around_sewing_holder
+    - field.field.node.materiality.field_path_around_sewing_support
     - field.field.node.materiality.field_pigment
     - field.field.node.materiality.field_referenced_book
     - field.field.node.materiality.field_references
     - field.field.node.materiality.field_regularity
     - field.field.node.materiality.field_reinforcements
-    - field.field.node.materiality.field_sewing_holders
+    - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_sewing_order
     - field.field.node.materiality.field_standard_dimension_folio
     - field.field.node.materiality.field_tabs
@@ -88,7 +88,7 @@ hidden:
   field_articulation_cover: true
   field_articulation_system: true
   field_associated_finial_point: true
-  field_associated_sewing_holder: true
+  field_associated_sewing_support: true
   field_associated_tranchefil: true
   field_attach_sewing_hold_folder: true
   field_avg_dist_head_foot_sewing: true
@@ -132,13 +132,13 @@ hidden:
   field_others_not_associated: true
   field_overturned_cover_posterior: true
   field_overturned_cover_previous: true
-  field_path_around_sewing_holder: true
+  field_path_around_sewing_support: true
   field_pigment: true
   field_referenced_book: true
   field_references: true
   field_regularity: true
   field_reinforcements: true
-  field_sewing_holders: true
+  field_sewing_supports: true
   field_sewing_order: true
   field_standard_dimension_folio: true
   field_tabs: true

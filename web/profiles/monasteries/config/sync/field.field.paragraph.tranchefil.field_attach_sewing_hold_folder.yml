@@ -5,12 +5,12 @@ dependencies:
   config:
     - field.storage.paragraph.field_attach_sewing_hold_folder
     - paragraphs.paragraphs_type.tranchefil
-    - taxonomy.vocabulary.attach_sewing_holder_folder
+    - taxonomy.vocabulary.attach_sewing_support_folder
 id: paragraph.tranchefil.field_attach_sewing_hold_folder
 field_name: field_attach_sewing_hold_folder
 entity_type: paragraph
 bundle: tranchefil
-label: 'Attaching the sewing holder to the folder'
+label: 'Attaching the sewing support to the folder'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      attach_sewing_holder_folder: attach_sewing_holder_folder
+      attach_sewing_support_folder: attach_sewing_support_folder
     sort:
       field: name
       direction: asc
