@@ -20,6 +20,7 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/devel": "^4.1",
+        "drupal/field_group": "^3.2",
         "drupal/metatag": "^1.19",
         "drupal/paragraphs": "^1.13",
         "drupal/pathauto": "^1.9",
@@ -37,8 +38,7 @@
         "palantirnet/drupal-rector": "^0.12.1",
         "pfrenssen/phpcs-pre-push": "^1.1",
         "slevomat/coding-standard": "^7.0",
-        "squizlabs/php_codesniffer": "^3.6",
-        "vijaycs85/drupal-quality-checker": "^1.5"
+        "squizlabs/php_codesniffer": "^3.6"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -74,7 +74,6 @@
             "composer/installers": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "ergebnis/composer-normalize": true,
-            "phpro/grumphp": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
