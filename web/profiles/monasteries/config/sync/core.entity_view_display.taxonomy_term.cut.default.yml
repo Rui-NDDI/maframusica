@@ -1,0 +1,14 @@
+uuid: e56e85a5-7964-4f1c-b33a-ba6331f91993
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cut
+id: taxonomy_term.cut.default
+targetEntityType: taxonomy_term
+bundle: cut
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

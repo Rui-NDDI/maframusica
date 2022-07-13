@@ -1,0 +1,10 @@
+uuid: 6cb18d23-a119-4003-bc71-7c1b2c21948e
+langcode: en
+status: true
+dependencies: {  }
+id: binding_guards_plans
+label: 'Binding | Guards - Plans'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,29 @@
+uuid: 9cbf6acc-496e-45d5-be05-69cf022bca8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parties
+    - node.type.books
+    - node.type.parties
+id: node.books.field_parties
+field_name: field_parties
+entity_type: node
+bundle: books
+label: Parties
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      parties: parties
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

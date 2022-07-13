@@ -1,0 +1,29 @@
+uuid: 98ca5973-a528-443e-8132-e7a741be1e2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sewing_supports
+    - node.type.materiality
+    - taxonomy.vocabulary.typology_sewing_supports
+id: node.materiality.field_sewing_supports
+field_name: field_sewing_supports
+entity_type: node
+bundle: materiality
+label: 'Sewing supports'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      typology_sewing_supports: typology_sewing_supports
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: e05a0a2c-06c2-45f1-b1ec-056a71c6910f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_articulation_cover
+field_name: field_articulation_cover
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

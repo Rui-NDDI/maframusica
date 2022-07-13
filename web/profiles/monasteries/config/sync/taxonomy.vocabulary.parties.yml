@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Parties
 vid: parties
-description: ''
+description: 'Contains a list of parties within the site.'
 weight: 0

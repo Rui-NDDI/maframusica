@@ -1,0 +1,14 @@
+uuid: 339b30b5-630b-447d-8cb4-91ca15fbd646
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.attach_sewing_support_folder
+id: taxonomy_term.attach_sewing_support_folder.default
+targetEntityType: taxonomy_term
+bundle: attach_sewing_support_folder
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

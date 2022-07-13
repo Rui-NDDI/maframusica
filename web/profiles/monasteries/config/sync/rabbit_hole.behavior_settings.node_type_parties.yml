@@ -1,0 +1,14 @@
+uuid: 810d6d5e-8bdb-436d-b2a4-06f1f41861d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.parties
+id: node_type_parties
+entity_type_id: node_type
+entity_id: parties
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

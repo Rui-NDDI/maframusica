@@ -1,0 +1,14 @@
+uuid: a60a417c-4046-4740-aff3-c1e46de98bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cover_decoration
+id: taxonomy_vocabulary_cover_decoration
+entity_type_id: taxonomy_vocabulary
+entity_id: cover_decoration
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

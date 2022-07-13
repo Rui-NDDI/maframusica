@@ -1,0 +1,10 @@
+uuid: 5ea88903-1cc2-43fc-920c-902f29971ec1
+langcode: en
+status: true
+dependencies: {  }
+id: fitting_brooches
+label: 'Fitting | Brooches'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

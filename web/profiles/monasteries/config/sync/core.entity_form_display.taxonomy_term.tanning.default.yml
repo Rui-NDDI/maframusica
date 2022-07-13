@@ -1,0 +1,41 @@
+uuid: 84d62158-f9d7-4978-a11f-ea3e8fd22e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tanning
+id: taxonomy_term.tanning.default
+targetEntityType: taxonomy_term
+bundle: tanning
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

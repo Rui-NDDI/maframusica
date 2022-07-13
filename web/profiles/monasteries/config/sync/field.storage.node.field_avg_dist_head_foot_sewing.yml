@@ -1,0 +1,33 @@
+uuid: a0c54813-2cc9-4754-901c-9d2d68a7a028
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_avg_dist_head_foot_sewing
+field_name: field_avg_dist_head_foot_sewing
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: less_70
+      label: '<70%'
+    -
+      value: 70.1-80
+      label: '70,1%-80%'
+    -
+      value: 80.1-100
+      label: '80,1%-100%'
+    -
+      value: more_110.1
+      label: '>110,1%'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

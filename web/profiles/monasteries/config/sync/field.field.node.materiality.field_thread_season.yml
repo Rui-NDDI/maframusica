@@ -1,0 +1,29 @@
+uuid: 00a35b97-d79d-42af-be69-080dd3c24164
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thread_season
+    - node.type.materiality
+    - taxonomy.vocabulary.thread_season
+id: node.materiality.field_thread_season
+field_name: field_thread_season
+entity_type: node
+bundle: materiality
+label: 'Thread season'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thread_season: thread_season
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

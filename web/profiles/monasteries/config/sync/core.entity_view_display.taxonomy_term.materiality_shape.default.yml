@@ -1,0 +1,14 @@
+uuid: f199bdfc-bf57-435b-b69b-d5783276ccdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materiality_shape
+id: taxonomy_term.materiality_shape.default
+targetEntityType: taxonomy_term
+bundle: materiality_shape
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

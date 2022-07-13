@@ -1,0 +1,14 @@
+uuid: 3ae3e218-1f23-4613-b654-4a2d863e03c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.attach_sewing_support_folder
+id: taxonomy_vocabulary_attach_sewing_support_folder
+entity_type_id: taxonomy_vocabulary
+entity_id: attach_sewing_support_folder
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

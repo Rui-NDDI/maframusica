@@ -1,0 +1,29 @@
+uuid: 1329e966-435c-47fa-958c-5dd689de0e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cut
+    - paragraphs.paragraphs_type.folders
+    - taxonomy.vocabulary.cut
+id: paragraph.folders.field_cut
+field_name: field_cut
+entity_type: paragraph
+bundle: folders
+label: Cut
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cut: cut
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

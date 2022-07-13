@@ -1,0 +1,18 @@
+uuid: 91481f6e-e8d5-437d-944a-64c83e8ed0c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.decoration_type
+target_entity_type_id: taxonomy_term
+target_bundle: decoration_type
+default_langcode: current_interface
+language_alterable: true

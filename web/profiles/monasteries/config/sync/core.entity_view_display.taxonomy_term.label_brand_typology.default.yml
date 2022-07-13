@@ -1,0 +1,14 @@
+uuid: 335bcb5a-7c7a-4685-bee2-def46b2daedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.label_brand_typology
+id: taxonomy_term.label_brand_typology.default
+targetEntityType: taxonomy_term
+bundle: label_brand_typology
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

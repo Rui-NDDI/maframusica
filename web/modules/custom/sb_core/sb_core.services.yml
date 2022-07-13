@@ -1,0 +1,3 @@
+services:
+  sb_core.materiality_types_helper:
+    class: Drupal\sb_core\Utility\MaterialityTypesHelper

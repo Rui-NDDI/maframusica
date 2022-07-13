@@ -1,0 +1,29 @@
+uuid: 42be7a33-1a43-4bef-9b79-17aee33aa2ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_finial
+    - node.type.materiality
+    - taxonomy.vocabulary.finial
+id: node.materiality.field_finial
+field_name: field_finial
+entity_type: node
+bundle: materiality
+label: Finial
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      finial: finial
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

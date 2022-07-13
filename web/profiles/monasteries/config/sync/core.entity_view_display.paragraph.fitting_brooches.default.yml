@@ -1,0 +1,76 @@
+uuid: 073b3967-4f04-4770-a7a3-99d68e0c28c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fitting_brooches.field_brooch_type
+    - field.field.paragraph.fitting_brooches.field_brooch_typology
+    - field.field.paragraph.fitting_brooches.field_decoration
+    - field.field.paragraph.fitting_brooches.field_folder_articulation
+    - field.field.paragraph.fitting_brooches.field_material
+    - field.field.paragraph.fitting_brooches.field_materiality_shape
+    - field.field.paragraph.fitting_brooches.field_nature
+    - paragraphs.paragraphs_type.fitting_brooches
+  module:
+    - options
+id: paragraph.fitting_brooches.default
+targetEntityType: paragraph
+bundle: fitting_brooches
+mode: default
+content:
+  field_brooch_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_brooch_typology:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_decoration:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_folder_articulation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_material:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_materiality_shape:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_nature:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

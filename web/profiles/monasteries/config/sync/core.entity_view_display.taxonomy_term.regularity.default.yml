@@ -1,0 +1,14 @@
+uuid: 4ebb7953-3276-46af-ad06-64f2e94036ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regularity
+id: taxonomy_term.regularity.default
+targetEntityType: taxonomy_term
+bundle: regularity
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

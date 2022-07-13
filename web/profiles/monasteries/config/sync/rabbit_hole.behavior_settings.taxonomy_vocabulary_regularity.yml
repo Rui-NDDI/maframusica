@@ -1,0 +1,14 @@
+uuid: 7884ada7-acea-4c4b-a988-bbadb83df4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regularity
+id: taxonomy_vocabulary_regularity
+entity_type_id: taxonomy_vocabulary
+entity_id: regularity
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

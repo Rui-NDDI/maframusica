@@ -1,0 +1,21 @@
+uuid: 462fae3d-0b47-4f6a-a429-911c5f0609e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_path_around_sewing_support
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_path_around_sewing_support
+field_name: field_path_around_sewing_support
+entity_type: node
+bundle: materiality
+label: 'Path around sewing support'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: d252336c-2efa-46e1-9154-e23affc36ef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observations
+    - node.type.materiality
+  module:
+    - text
+id: node.materiality.field_observations
+field_name: field_observations
+entity_type: node
+bundle: materiality
+label: Observations
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

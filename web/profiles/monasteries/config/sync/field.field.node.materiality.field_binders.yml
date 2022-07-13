@@ -1,0 +1,29 @@
+uuid: c3d4a0df-7204-496c-9e28-8804002e9503
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_binders
+    - node.type.materiality
+    - taxonomy.vocabulary.binders
+id: node.materiality.field_binders
+field_name: field_binders
+entity_type: node
+bundle: materiality
+label: Binders
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      binders: binders
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

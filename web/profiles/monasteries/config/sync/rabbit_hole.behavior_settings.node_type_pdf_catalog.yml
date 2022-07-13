@@ -1,0 +1,14 @@
+uuid: 1cf1627e-f4b6-4230-b27f-e50b6ab070e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pdf_catalog
+id: node_type_pdf_catalog
+entity_type_id: node_type
+entity_id: pdf_catalog
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

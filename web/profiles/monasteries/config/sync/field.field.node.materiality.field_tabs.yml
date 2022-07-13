@@ -1,0 +1,21 @@
+uuid: 05d9d25c-5a7a-4d20-83bc-11c38891f923
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tabs
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_tabs
+field_name: field_tabs
+entity_type: node
+bundle: materiality
+label: Tabs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

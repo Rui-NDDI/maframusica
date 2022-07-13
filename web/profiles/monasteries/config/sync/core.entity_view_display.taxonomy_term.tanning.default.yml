@@ -1,0 +1,14 @@
+uuid: cf0e1a1d-db4f-42d2-ab90-08f64ce39439
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tanning
+id: taxonomy_term.tanning.default
+targetEntityType: taxonomy_term
+bundle: tanning
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,14 @@
+uuid: 49f1a8ee-da85-4475-83ca-9abe01ab85a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tool_brands
+id: taxonomy_vocabulary_tool_brands
+entity_type_id: taxonomy_vocabulary
+entity_id: tool_brands
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

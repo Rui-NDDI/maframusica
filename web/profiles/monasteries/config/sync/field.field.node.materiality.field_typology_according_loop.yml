@@ -1,0 +1,29 @@
+uuid: 0e9662e5-002c-48b9-9828-5c18e2f01ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typology_according_loop
+    - node.type.materiality
+    - taxonomy.vocabulary.typology_according_loop
+id: node.materiality.field_typology_according_loop
+field_name: field_typology_according_loop
+entity_type: node
+bundle: materiality
+label: 'Typology according to loop'
+description: (prevailing)
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      typology_according_loop: typology_according_loop
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

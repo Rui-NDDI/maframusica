@@ -1,0 +1,8 @@
+uuid: bb204f94-80a9-4ac9-bc7b-3507266b81e7
+langcode: en
+status: true
+dependencies: {  }
+name: Dyestuff
+vid: dyestuff
+description: 'Contains all the dyestuff types to be used on the materiality.'
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 152690bd-bfac-4f82-b850-886c5ba71dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materiality_book_body
+id: taxonomy_term.materiality_book_body.default
+targetEntityType: taxonomy_term
+bundle: materiality_book_body
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,14 @@
+uuid: ef3ff880-6edb-4e16-84a6-9faa4d551561
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location
+id: taxonomy_term.location.default
+targetEntityType: taxonomy_term
+bundle: location
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

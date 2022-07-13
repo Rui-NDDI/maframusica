@@ -1,0 +1,14 @@
+uuid: 5de544a7-c191-484b-b63d-6b647c19cc41
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tanning
+id: taxonomy_vocabulary_tanning
+entity_type_id: taxonomy_vocabulary
+entity_id: tanning
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

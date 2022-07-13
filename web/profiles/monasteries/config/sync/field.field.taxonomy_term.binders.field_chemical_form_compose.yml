@@ -1,0 +1,19 @@
+uuid: 8ebd390b-b8c4-4ae3-9fca-c6b4f0dbe328
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_chemical_form_compose
+    - taxonomy.vocabulary.binders
+id: taxonomy_term.binders.field_chemical_form_compose
+field_name: field_chemical_form_compose
+entity_type: taxonomy_term
+bundle: binders
+label: 'Chemical formula/composition'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

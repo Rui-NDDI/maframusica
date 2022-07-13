@@ -1,0 +1,21 @@
+uuid: 7e76af71-f02e-4999-b73c-8578b0a5b57c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typology_cover
+    - node.type.materiality
+  module:
+    - options
+id: node.materiality.field_typology_cover
+field_name: field_typology_cover
+entity_type: node
+bundle: materiality
+label: 'Typology cover'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

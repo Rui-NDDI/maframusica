@@ -1,0 +1,8 @@
+uuid: 22843753-eeaf-4bd1-a841-faaa50ecb42b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cover decoration'
+vid: cover_decoration
+description: 'Contains all the types of cover decorations to be used on the materiality.'
+weight: 0

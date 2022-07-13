@@ -1,0 +1,29 @@
+uuid: 204cc20a-82f0-4aeb-a7bd-f5b58550ec5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_identification_method
+    - taxonomy.vocabulary.identification_method
+    - taxonomy.vocabulary.pigment
+id: taxonomy_term.pigment.field_identification_method
+field_name: field_identification_method
+entity_type: taxonomy_term
+bundle: pigment
+label: 'Identification method'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      identification_method: identification_method
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

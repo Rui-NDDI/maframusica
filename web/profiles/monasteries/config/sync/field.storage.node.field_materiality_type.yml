@@ -1,0 +1,60 @@
+uuid: df43598d-f25d-4741-af9c-7136d419fe75
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_materiality_type
+field_name: field_materiality_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cover
+      label: Cover
+    -
+      value: sewing
+      label: Sewing
+    -
+      value: sewing-thread
+      label: 'Sewing thread'
+    -
+      value: sewing-holes-tranchefil
+      label: 'Sewing holes and tranchefil'
+    -
+      value: sewing-support
+      label: 'Sewing support'
+    -
+      value: decor
+      label: Decor
+    -
+      value: bookbinding-book-body
+      label: 'Bookbinding - Book body'
+    -
+      value: bookbinding-guard
+      label: 'Bookbinding - Guards'
+    -
+      value: closures
+      label: Closures
+    -
+      value: fitting-brooches
+      label: 'Fitting - Brooches'
+    -
+      value: fitting-labels-brands
+      label: 'Fitting - Labels and Brands'
+    -
+      value: folders
+      label: Folders
+    -
+      value: tranchefil
+      label: Tranchefil
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

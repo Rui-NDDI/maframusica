@@ -1,0 +1,27 @@
+uuid: 7cf7c072-fe20-4e2a-811f-a84d5a774012
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_headdress
+field_name: field_headdress
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: running
+      label: Running
+    -
+      value: braid
+      label: Braid
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

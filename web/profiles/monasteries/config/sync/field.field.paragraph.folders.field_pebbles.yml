@@ -1,0 +1,29 @@
+uuid: 832618d3-b207-4d8b-b1ea-d891c5e02b56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pebbles
+    - paragraphs.paragraphs_type.folders
+    - taxonomy.vocabulary.pebbles
+id: paragraph.folders.field_pebbles
+field_name: field_pebbles
+entity_type: paragraph
+bundle: folders
+label: Pebbles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pebbles: pebbles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

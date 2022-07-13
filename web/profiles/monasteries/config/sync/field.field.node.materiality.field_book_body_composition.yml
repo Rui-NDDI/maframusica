@@ -1,0 +1,29 @@
+uuid: a177bb39-9999-4ec4-9b95-b0f6c0a68bf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_body_composition
+    - node.type.materiality
+    - taxonomy.vocabulary.book_body_composition
+id: node.materiality.field_book_body_composition
+field_name: field_book_body_composition
+entity_type: node
+bundle: materiality
+label: 'Book body composition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book_body_composition: book_body_composition
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

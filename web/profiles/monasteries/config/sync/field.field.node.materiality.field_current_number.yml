@@ -1,0 +1,23 @@
+uuid: fbc2098d-ddd6-422f-9b12-c80db7b66866
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_current_number
+    - node.type.materiality
+id: node.materiality.field_current_number
+field_name: field_current_number
+entity_type: node
+bundle: materiality
+label: 'Current number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

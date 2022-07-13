@@ -1,0 +1,10 @@
+uuid: f412ba8d-2fbc-498b-a593-c1227dfee421
+langcode: en
+status: true
+dependencies: {  }
+id: closure
+label: Closure
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

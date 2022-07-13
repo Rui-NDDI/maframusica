@@ -1,0 +1,20 @@
+uuid: 67e5e636-59ea-4d2a-86ff-74ba46dbcc43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_local_seam_attach_gutter
+field_name: field_local_seam_attach_gutter
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: e50368f4-2234-4656-8c62-7c3fd07783dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_arrang_seam_support_gutter
+    - paragraphs.paragraphs_type.folders
+  module:
+    - options
+id: paragraph.folders.field_arrang_seam_support_gutter
+field_name: field_arrang_seam_support_gutter
+entity_type: paragraph
+bundle: folders
+label: 'Arrangement seam support gutters (back cover)'
+description: 'If the variation is less than 5mm, gutters are visually aligned.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

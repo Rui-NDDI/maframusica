@@ -1,0 +1,108 @@
+uuid: 78cc3c2a-2c4a-4c40-af5b-1a5c4a0d2920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.binding_guards_plans.field_color
+    - field.field.paragraph.binding_guards_plans.field_description
+    - field.field.paragraph.binding_guards_plans.field_elements_plan_type
+    - field.field.paragraph.binding_guards_plans.field_guards_registration
+    - field.field.paragraph.binding_guards_plans.field_guards_typology
+    - field.field.paragraph.binding_guards_plans.field_has_counterguards
+    - field.field.paragraph.binding_guards_plans.field_has_steering_guards
+    - field.field.paragraph.binding_guards_plans.field_materiality_support
+    - field.field.paragraph.binding_guards_plans.field_nature
+    - paragraphs.paragraphs_type.binding_guards_plans
+  module:
+    - text
+id: paragraph.binding_guards_plans.default
+targetEntityType: paragraph
+bundle: binding_guards_plans
+mode: default
+content:
+  field_color:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_elements_plan_type:
+    type: options_select
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_guards_registration:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_guards_typology:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_has_counterguards:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_has_steering_guards:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_materiality_support:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nature:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

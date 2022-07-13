@@ -1,0 +1,14 @@
+uuid: 71755e66-b94d-486f-ab6f-cac893088982
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.articulation_system
+id: taxonomy_term.articulation_system.default
+targetEntityType: taxonomy_term
+bundle: articulation_system
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

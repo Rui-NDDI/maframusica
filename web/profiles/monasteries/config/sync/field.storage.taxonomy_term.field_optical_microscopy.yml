@@ -1,0 +1,20 @@
+uuid: 217ab504-ce29-4c51-a5ed-2d5f3c45cdf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_optical_microscopy
+field_name: field_optical_microscopy
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

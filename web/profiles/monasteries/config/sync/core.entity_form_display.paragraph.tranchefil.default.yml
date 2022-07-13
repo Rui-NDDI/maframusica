@@ -1,0 +1,182 @@
+uuid: 7c107728-5015-4240-bd8b-2a078165b7f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tranchefil.field_articulation_book_body
+    - field.field.paragraph.tranchefil.field_attach_sewing_hold_folder
+    - field.field.paragraph.tranchefil.field_color_thread_component
+    - field.field.paragraph.tranchefil.field_color_tongue_reinfocement
+    - field.field.paragraph.tranchefil.field_color_tranchefil_support
+    - field.field.paragraph.tranchefil.field_folder_articulation
+    - field.field.paragraph.tranchefil.field_headdress
+    - field.field.paragraph.tranchefil.field_material_tongue_reinforce
+    - field.field.paragraph.tranchefil.field_material_tranchefil_sup
+    - field.field.paragraph.tranchefil.field_material_tranchefil_thread
+    - field.field.paragraph.tranchefil.field_nature_tongue_reinforce
+    - field.field.paragraph.tranchefil.field_nature_tranchefil_support
+    - field.field.paragraph.tranchefil.field_nature_tranchefil_thread
+    - field.field.paragraph.tranchefil.field_tanning_tongue_reinforce
+    - field.field.paragraph.tranchefil.field_tanning_tranchefil_support
+    - field.field.paragraph.tranchefil.field_tranchefil_type
+    - paragraphs.paragraphs_type.tranchefil
+id: paragraph.tranchefil.default
+targetEntityType: paragraph
+bundle: tranchefil
+mode: default
+content:
+  field_articulation_book_body:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_attach_sewing_hold_folder:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_color_thread_component:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_color_tongue_reinfocement:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_color_tranchefil_support:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_folder_articulation:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_headdress:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_material_tongue_reinforce:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_material_tranchefil_sup:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_material_tranchefil_thread:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nature_tongue_reinforce:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nature_tranchefil_support:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nature_tranchefil_thread:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tanning_tongue_reinforce:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tanning_tranchefil_support:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tranchefil_type:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

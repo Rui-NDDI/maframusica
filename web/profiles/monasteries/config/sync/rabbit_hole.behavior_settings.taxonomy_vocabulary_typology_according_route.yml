@@ -1,0 +1,14 @@
+uuid: b1b92e77-25b8-495e-b1d5-a6dd11aa04ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.typology_according_route
+id: taxonomy_vocabulary_typology_according_route
+entity_type_id: taxonomy_vocabulary
+entity_id: typology_according_route
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

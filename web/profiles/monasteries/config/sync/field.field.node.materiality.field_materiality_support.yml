@@ -1,0 +1,29 @@
+uuid: d4aca429-af73-4b68-85f7-783924c2be01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_materiality_support
+    - node.type.materiality
+    - taxonomy.vocabulary.materiality_support
+id: node.materiality.field_materiality_support
+field_name: field_materiality_support
+entity_type: node
+bundle: materiality
+label: 'Materiality support'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      materiality_support: materiality_support
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

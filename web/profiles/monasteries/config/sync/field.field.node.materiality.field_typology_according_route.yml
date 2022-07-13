@@ -1,0 +1,29 @@
+uuid: 0974f0b1-09df-405d-b529-4bc9b9770706
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typology_according_route
+    - node.type.materiality
+    - taxonomy.vocabulary.typology_according_route
+id: node.materiality.field_typology_according_route
+field_name: field_typology_according_route
+entity_type: node
+bundle: materiality
+label: 'Typology (according route)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      typology_according_route: typology_according_route
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

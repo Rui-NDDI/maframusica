@@ -1,0 +1,29 @@
+uuid: b5452c46-9019-486f-a89a-42a3caccd072
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category_book_body
+    - node.type.materiality
+    - taxonomy.vocabulary.materiality_book_body
+id: node.materiality.field_category_book_body
+field_name: field_category_book_body
+entity_type: node
+bundle: materiality
+label: 'Category (book body)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      materiality_book_body: materiality_book_body
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

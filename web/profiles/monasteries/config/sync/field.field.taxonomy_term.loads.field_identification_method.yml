@@ -1,0 +1,21 @@
+uuid: 18e2213a-567a-4a9a-887d-afa88be0e953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_identification_method
+    - taxonomy.vocabulary.loads
+id: taxonomy_term.loads.field_identification_method
+field_name: field_identification_method
+entity_type: taxonomy_term
+bundle: loads
+label: 'Identification method'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

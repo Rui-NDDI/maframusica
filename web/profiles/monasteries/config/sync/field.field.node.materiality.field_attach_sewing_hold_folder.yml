@@ -1,0 +1,29 @@
+uuid: 0618a444-c0b4-4ca5-9fd2-aeb996645ff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach_sewing_hold_folder
+    - node.type.materiality
+    - taxonomy.vocabulary.attach_sewing_support_folder
+id: node.materiality.field_attach_sewing_hold_folder
+field_name: field_attach_sewing_hold_folder
+entity_type: node
+bundle: materiality
+label: 'Attaching the sewing support to the folder'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      attach_sewing_support_folder: attach_sewing_support_folder
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

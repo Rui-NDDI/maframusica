@@ -1,0 +1,21 @@
+uuid: b362d449-c5f1-429c-a319-88c4dfabcdf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_holes_shape
+    - paragraphs.paragraphs_type.folders
+  module:
+    - options
+id: paragraph.folders.field_holes_shape
+field_name: field_holes_shape
+entity_type: paragraph
+bundle: folders
+label: 'Holes shape'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

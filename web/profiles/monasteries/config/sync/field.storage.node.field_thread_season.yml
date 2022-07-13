@@ -1,0 +1,20 @@
+uuid: 203bd8f2-ae5e-4896-bbcf-62746bf01d57
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_thread_season
+field_name: field_thread_season
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

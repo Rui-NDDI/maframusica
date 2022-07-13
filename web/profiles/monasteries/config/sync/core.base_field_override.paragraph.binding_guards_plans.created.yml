@@ -1,0 +1,18 @@
+uuid: 3f50afaa-9446-47d8-97e4-ba143c4643e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.binding_guards_plans
+id: paragraph.binding_guards_plans.created
+field_name: created
+entity_type: paragraph
+bundle: binding_guards_plans
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

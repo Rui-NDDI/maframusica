@@ -7,41 +7,14 @@ dependencies:
     - field.field.taxonomy_term.parties.field_party_dates
     - field.field.taxonomy_term.parties.field_party_observations
     - taxonomy.vocabulary.parties
-  module:
-    - options
-    - text
 id: taxonomy_term.parties.default
 targetEntityType: taxonomy_term
 bundle: parties
 mode: default
-content:
-  description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_ci_party_code:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_party_dates:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_party_observations:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
+content: {  }
 hidden:
+  description: true
+  field_ci_party_code: true
+  field_party_dates: true
+  field_party_observations: true
   langcode: true

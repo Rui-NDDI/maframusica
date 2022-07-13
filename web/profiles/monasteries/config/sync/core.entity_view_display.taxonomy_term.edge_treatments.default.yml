@@ -1,0 +1,14 @@
+uuid: 7a50f261-74b2-44bc-a674-41dee32f2286
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.edge_treatments
+id: taxonomy_term.edge_treatments.default
+targetEntityType: taxonomy_term
+bundle: edge_treatments
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

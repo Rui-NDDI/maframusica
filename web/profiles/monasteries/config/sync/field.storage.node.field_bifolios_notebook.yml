@@ -1,0 +1,20 @@
+uuid: 2ad520c5-e726-481d-a00f-7f2778f7d3c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_bifolios_notebook
+field_name: field_bifolios_notebook
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 8e7b5533-530b-48a4-b5a6-416b77ba8235
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_typology_according_books
+field_name: field_typology_according_books
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
