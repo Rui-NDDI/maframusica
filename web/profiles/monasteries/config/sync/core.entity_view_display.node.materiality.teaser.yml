@@ -1,6 +1,6 @@
 uuid: baafaa68-e5b8-47df-95d8-6ac24dda4626
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.materiality.field_bifolios_notebook
     - field.field.node.materiality.field_binders
     - field.field.node.materiality.field_book_body_composition
+    - field.field.node.materiality.field_book_dimensions_total
     - field.field.node.materiality.field_bookbinding_elements
     - field.field.node.materiality.field_brooches
     - field.field.node.materiality.field_category_book_body
@@ -57,8 +58,8 @@ dependencies:
     - field.field.node.materiality.field_references
     - field.field.node.materiality.field_regularity
     - field.field.node.materiality.field_reinforcements
-    - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_sewing_order
+    - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_standard_dimension_folio
     - field.field.node.materiality.field_tabs
     - field.field.node.materiality.field_tanning
@@ -96,6 +97,7 @@ hidden:
   field_bifolios_notebook: true
   field_binders: true
   field_book_body_composition: true
+  field_book_dimensions_total: true
   field_bookbinding_elements: true
   field_brooches: true
   field_category_book_body: true

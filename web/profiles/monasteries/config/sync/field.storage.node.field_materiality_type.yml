@@ -36,8 +36,8 @@ settings:
       value: bookbinding-guard
       label: 'Bookbinding - Guards'
     -
-      value: lockets
-      label: Lockets
+      value: closures
+      label: Closures
     -
       value: fitting-brooches
       label: 'Fitting - Brooches'

@@ -1,11 +1,15 @@
 <?php
 
+/**
+ * @file
+ */
+
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\sb_core\Utility\MaterialityTypesHelper;
 
 /**
  * @file
- * Sb_core.module
+ * Sb_core.module.
  */
 
 /**
@@ -19,75 +23,9 @@ function sb_core_form_node_form_alter(&$form, FormStateInterface $form_state) {
   $type_field = MaterialityTypesHelper::MATERIALITY_TYPES_FIELD;
 
   /** @var \Drupal\sb_core\Utility\MaterialityTypesHelper $materiality_types_helper */
-  $materiality_types_helper = \Drupal::service('sb_base.observations_musical_types_helper');
+  $materiality_types_helper = \Drupal::service('sb_core.materiality_types_helper');
 
-  if ($node->hasField($type_field) && !$node->get($type_field)->isEmpty()) {
-    $materiality_types_helper->buildsStatesElement('field_articulation_cover', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_articulation_system', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_associated_finial_point', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_associated_sewing_holder', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_associated_tranchefil', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_attach_sewing_hold_folder', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_avg_dist_head_foot_sewing', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_avg_dist_sewing_stations', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_bifolios_notebook', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_binders', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_referenced_book', ['cover', 'sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_bookbinding_elements', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_book_body_composition', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_brooches', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_category_book_body', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_closures', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_collation', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_color', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_color_finial_thread', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_color_skin_finial', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_cover_decoration', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_current_number', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_decoration_type', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_decorative_finial', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_dimensions_book_body', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_dyestuff', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_finial', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_folders', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_folio_dimensions', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_format', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_image', ['cover', 'sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_inside_cover', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_label_brand_typology', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_loads', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_location', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_local_seam_attach_gutter', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_material', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_materiality_support', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_materiality_type', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_nature', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_holes_number', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_number_reinforcements', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_observations', ['cover', 'sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_original_number', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_others_not_associated', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_overturned_cover_posterior', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_overturned_cover_previous', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_path_around_sewing_holder', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_pigment', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_references', ['cover', 'sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_regularity', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_reinforcements', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_sewing_holders', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_sewing_order', ['sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_standard_dimension_folio', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_tabs', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_tanning', ['cover', 'sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_thread_size_thicknes', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_thread_season', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_typology_cover', ['cover'], $form);
-    $materiality_types_helper->buildsStatesElement('field_torsion', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_number_folios', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_tranchefils', [], $form);
-    $materiality_types_helper->buildsStatesElement('field_typology_according_route', ['sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_typology_according_loop', ['sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_typology_according_books', ['sewing'], $form);
-    $materiality_types_helper->buildsStatesElement('field_which_side', ['cover'], $form);
+  if ($node->hasField($type_field)) {
+    $materiality_types_helper->applyMaterialityStates($form);
   }
 }
