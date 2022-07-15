@@ -1,0 +1,4 @@
+label: 'Túnel de entrada da extremidade do furo vazio'
+settings:
+  on_label: Sobre
+  off_label: Desligado

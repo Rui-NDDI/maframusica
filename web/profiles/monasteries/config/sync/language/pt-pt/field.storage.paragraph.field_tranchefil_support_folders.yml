@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: 'Borda da lombada em ângulo (45º)'
+    -
+      label: 'Borda perpendicular da coluna'

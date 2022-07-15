@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: 'Alinhado visualmente'
+    -
+      label: 'Não alinhado visualmente'

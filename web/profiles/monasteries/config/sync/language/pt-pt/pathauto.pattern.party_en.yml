@@ -1,0 +1,4 @@
+label: 'Parte PT'
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Linguagem

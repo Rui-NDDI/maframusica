@@ -1,0 +1,4 @@
+label: 'Tem contra-guardas?'
+settings:
+  on_label: Sobre
+  off_label: Desligado

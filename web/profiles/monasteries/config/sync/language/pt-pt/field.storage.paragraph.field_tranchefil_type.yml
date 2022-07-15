@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: 'Igual aos dois planos'
+    -
+      label: Cabeça
+    -
+      label: Pé

@@ -1,0 +1,18 @@
+settings:
+  allowed_values:
+    -
+      label: 1201-1250
+    -
+      label: 1251-1300
+    -
+      label: 1301-1350
+    -
+      label: 1351-1400
+    -
+      label: 1401-1450
+    -
+      label: 1451-1500
+    -
+      label: 1501-1550
+    -
+      label: 1551-1600

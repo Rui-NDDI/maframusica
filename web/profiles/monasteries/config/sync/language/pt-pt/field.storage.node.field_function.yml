@@ -1,0 +1,42 @@
+settings:
+  allowed_values:
+    -
+      label: Abade
+    -
+      label: Abadessa
+    -
+      label: Autor
+    -
+      label: Compositor
+    -
+      label: Copista
+    -
+      label: editor
+    -
+      label: Encadernador
+    -
+      label: Escritor
+    -
+      label: Frade
+    -
+      label: Freire
+    -
+      label: Iluminador
+    -
+      label: Impressora
+    -
+      label: Monge
+    -
+      label: Padre
+    -
+      label: Anterior
+    -
+      label: Prioresa
+    -
+      label: Proprietário
+    -
+      label: Notário
+    -
+      label: Testemunha
+    -
+      label: Tradutor

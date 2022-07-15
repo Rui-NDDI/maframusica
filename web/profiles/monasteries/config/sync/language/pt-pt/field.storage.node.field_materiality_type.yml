@@ -1,0 +1,28 @@
+settings:
+  allowed_values:
+    -
+      label: Cobrir
+    -
+      label: 'De costura'
+    -
+      label: 'Linha de costura'
+    -
+      label: 'Buracos de costura e tranchefil'
+    -
+      label: 'Suporte de costura'
+    -
+      label: Decoração
+    -
+      label: 'Encadernação - Corpo do livro'
+    -
+      label: 'Encadernação - Guardas'
+    -
+      label: Fechamentos
+    -
+      label: 'Montagem - Broches'
+    -
+      label: 'Montagem - Etiquetas e Marcas'
+    -
+      label: Pastas
+    -
+      label: Tranchefil

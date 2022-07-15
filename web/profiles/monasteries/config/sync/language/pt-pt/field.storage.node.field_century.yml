@@ -1,0 +1,20 @@
+settings:
+  allowed_values:
+    -
+      label: XI
+    -
+      label: XII
+    -
+      label: XIII
+    -
+      label: XIV
+    -
+      label: XV
+    -
+      label: XVI
+    -
+      label: XVII
+    -
+      label: XVIII
+    -
+      label: XIX

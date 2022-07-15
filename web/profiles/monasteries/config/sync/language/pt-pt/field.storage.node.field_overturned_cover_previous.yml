@@ -1,0 +1,22 @@
+settings:
+  allowed_values:
+    -
+      label: UMA
+    -
+      label: B
+    -
+      label: C
+    -
+      label: D
+    -
+      label: E
+    -
+      label: F
+    -
+      label: G
+    -
+      label: H
+    -
+      label: EU
+    -
+      label: J

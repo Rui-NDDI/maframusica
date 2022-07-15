@@ -1,0 +1,10 @@
+settings:
+  allowed_values:
+    -
+      label: Fundo
+    -
+      label: 'É igual a'
+    -
+      label: Múltiplo
+    -
+      label: 'Mais alto'

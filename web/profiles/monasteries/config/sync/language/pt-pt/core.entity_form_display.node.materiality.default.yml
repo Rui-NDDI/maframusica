@@ -1,0 +1,31 @@
+third_party_settings:
+  field_group:
+    group_tabs:
+      label: Abas
+    group_page_information:
+      label: 'Informações da página'
+    group_page_content:
+      label: 'Conteúdo da página'
+    group_basic_settings:
+      label: 'Configurações básicas'
+content:
+  field_bookbinding_elements:
+    settings:
+      title: Parágrafo
+      title_plural: Parágrafos
+  field_brooches:
+    settings:
+      title: Parágrafo
+      title_plural: Parágrafos
+  field_closures:
+    settings:
+      title: Parágrafo
+      title_plural: Parágrafos
+  field_folders:
+    settings:
+      title: Parágrafo
+      title_plural: Parágrafos
+  field_tranchefils:
+    settings:
+      title: Parágrafo
+      title_plural: Parágrafos

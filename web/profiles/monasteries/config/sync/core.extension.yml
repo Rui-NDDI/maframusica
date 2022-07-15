@@ -11,6 +11,7 @@ module:
   config_filter: 0
   config_readonly: 0
   config_split: 0
+  config_translation: 0
   config_update: 0
   contextual: 0
   ctools: 0

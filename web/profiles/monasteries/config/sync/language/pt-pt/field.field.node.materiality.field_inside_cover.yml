@@ -1,0 +1,4 @@
+label: 'Capa interna'
+settings:
+  on_label: Sobre
+  off_label: Desligado

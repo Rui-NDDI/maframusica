@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: 'Calha de entrada'
+    -
+      label: 'Túnel Circular'
+    -
+      label: 'Túnel Retangular'

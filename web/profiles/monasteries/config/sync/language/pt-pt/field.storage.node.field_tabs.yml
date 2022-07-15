@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: 'Todos os lados'
+    -
+      label: 'Pelo menos um lado (cabeça/pé/calha)'
+    -
+      label: Traços
