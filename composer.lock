@@ -114,16 +114,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.231.4",
+            "version": "3.231.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2dc6f917e3ce656e4fb5b9b591d7d84cd0d1f665"
+                "reference": "54c5fe6667c73010d954ce4c4d657d093f0bdcbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2dc6f917e3ce656e4fb5b9b591d7d84cd0d1f665",
-                "reference": "2dc6f917e3ce656e4fb5b9b591d7d84cd0d1f665",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54c5fe6667c73010d954ce4c4d657d093f0bdcbf",
+                "reference": "54c5fe6667c73010d954ce4c4d657d093f0bdcbf",
                 "shasum": ""
             },
             "require": {
@@ -200,9 +200,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.6"
             },
-            "time": "2022-07-12T18:46:48+00:00"
+            "time": "2022-07-14T18:20:54+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -3159,7 +3159,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.20",
-                    "datestamp": "1657649277",
+                    "datestamp": "1657810826",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5485,16 +5485,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.1.21",
+            "version": "1.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "8acaa1e4a15b266cfbd404c6fcb4e1be398f05f8"
+                "reference": "64ff8525e4cd12869ab0b2c3c96d6a79d49d4f74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/8acaa1e4a15b266cfbd404c6fcb4e1be398f05f8",
-                "reference": "8acaa1e4a15b266cfbd404c6fcb4e1be398f05f8",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/64ff8525e4cd12869ab0b2c3c96d6a79d49d4f74",
+                "reference": "64ff8525e4cd12869ab0b2c3c96d6a79d49d4f74",
                 "shasum": ""
             },
             "require": {
@@ -5569,7 +5569,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.21"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.24"
             },
             "funding": [
                 {
@@ -5585,7 +5585,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-07T19:39:04+00:00"
+            "time": "2022-07-14T20:54:21+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
