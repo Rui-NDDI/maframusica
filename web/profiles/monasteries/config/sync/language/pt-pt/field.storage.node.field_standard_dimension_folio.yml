@@ -1,10 +1,6 @@
 settings:
   allowed_values:
-    -
-      label: '1'
-    -
-      label: '2'
-    -
-      label: '3'
-    -
-      label: '4'
+    - {  }
+    - {  }
+    - {  }
+    - {  }

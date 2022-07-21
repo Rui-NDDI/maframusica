@@ -24,5 +24,4 @@ settings:
       label: 'Montagem - Etiquetas e Marcas'
     -
       label: Pastas
-    -
-      label: Tranchefil
+    - {  }
