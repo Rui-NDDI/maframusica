@@ -60,6 +60,7 @@ dependencies:
     - field.field.node.materiality.field_sewing_order
     - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_standard_dimension_folio
+    - field.field.node.materiality.field_symmetry_holes_head_foot
     - field.field.node.materiality.field_tabs
     - field.field.node.materiality.field_tanning
     - field.field.node.materiality.field_thread_season
@@ -78,7 +79,17 @@ id: node.materiality.default
 targetEntityType: node
 bundle: materiality
 mode: default
-content: {  }
+content:
+  field_symmetry_holes_head_foot:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_articulation_cover: true
   field_articulation_system: true

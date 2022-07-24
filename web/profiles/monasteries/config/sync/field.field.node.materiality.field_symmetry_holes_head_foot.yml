@@ -1,0 +1,23 @@
+uuid: 28d2350e-30e1-41b3-b80d-dd4630ad9311
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symmetry_holes_head_foot
+    - node.type.materiality
+id: node.materiality.field_symmetry_holes_head_foot
+field_name: field_symmetry_holes_head_foot
+entity_type: node
+bundle: materiality
+label: 'Symmetry of holes between head and foot'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
