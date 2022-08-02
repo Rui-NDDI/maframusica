@@ -1,0 +1,8 @@
+uuid: 3f064909-9915-4315-ae32-5173adaa647a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tranchephil typology'
+vid: tranchephil_typology
+description: ''
+weight: 0

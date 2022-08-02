@@ -67,6 +67,7 @@ dependencies:
     - field.field.node.materiality.field_thread_size_thicknes
     - field.field.node.materiality.field_torsion
     - field.field.node.materiality.field_tranchefils
+    - field.field.node.materiality.field_tranchephil_typology
     - field.field.node.materiality.field_typology_according_books
     - field.field.node.materiality.field_typology_according_loop
     - field.field.node.materiality.field_typology_according_route
@@ -89,6 +90,14 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_tranchephil_typology:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_articulation_cover: true

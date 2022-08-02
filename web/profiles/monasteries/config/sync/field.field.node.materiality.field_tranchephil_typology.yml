@@ -1,0 +1,29 @@
+uuid: d765ce84-923e-43b0-997c-98d69ec3e9bc
+langcode: pt-pt
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tranchephil_typology
+    - node.type.materiality
+    - taxonomy.vocabulary.tranchephil_typology
+id: node.materiality.field_tranchephil_typology
+field_name: field_tranchephil_typology
+entity_type: node
+bundle: materiality
+label: 'Tipologia de Tranchefila'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tranchephil_typology: tranchephil_typology
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

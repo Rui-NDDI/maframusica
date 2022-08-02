@@ -1,13 +1,13 @@
 settings:
   allowed_values:
     -
-      label: Cobrir
+      label: Cobertura
     -
-      label: 'De costura'
+      label: Costura
     -
-      label: 'Linha de costura'
+      label: 'Fio de costura'
     -
-      label: 'Buracos de costura e tranchefil'
+      label: 'Orifícios de costura e tranchefila'
     -
       label: 'Suporte de costura'
     -
@@ -17,11 +17,12 @@ settings:
     -
       label: 'Encadernação - Guardas'
     -
-      label: Fechamentos
+      label: Fechos
     -
-      label: 'Montagem - Broches'
+      label: 'Guarnição - Brochos'
     -
-      label: 'Montagem - Etiquetas e Marcas'
+      label: 'Guarnição - Etiquetas e outras marcas'
     -
       label: Pastas
-    - {  }
+    -
+      label: Tranchefila
