@@ -61,6 +61,7 @@ dependencies:
     - field.field.node.materiality.field_sewing_order
     - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_standard_dimension_folio
+    - field.field.node.materiality.field_symmetry_holes_head_foot
     - field.field.node.materiality.field_tabs
     - field.field.node.materiality.field_tanning
     - field.field.node.materiality.field_thread_season
@@ -143,6 +144,7 @@ hidden:
   field_sewing_order: true
   field_sewing_supports: true
   field_standard_dimension_folio: true
+  field_symmetry_holes_head_foot: true
   field_tabs: true
   field_tanning: true
   field_thread_season: true

@@ -60,6 +60,7 @@ dependencies:
     - field.field.node.materiality.field_sewing_order
     - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_standard_dimension_folio
+    - field.field.node.materiality.field_symmetry_holes_head_foot
     - field.field.node.materiality.field_tabs
     - field.field.node.materiality.field_tanning
     - field.field.node.materiality.field_thread_season
@@ -669,6 +670,13 @@ content:
     weight: 62
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_symmetry_holes_head_foot:
+    type: boolean_checkbox
+    weight: 79
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_tabs:
     type: options_select

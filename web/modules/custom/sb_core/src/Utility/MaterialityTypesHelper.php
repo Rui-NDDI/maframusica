@@ -20,7 +20,7 @@ class MaterialityTypesHelper {
    * @param array $form
    *   An associative array containing the structure of the element.
    */
-  public function applyMaterialityStates(&$form): void {
+  public function applyMaterialityStates(array &$form): void {
     $this->buildsStatesElement('field_articulation_cover', [
       'fitting-labels-brands',
     ], $form);
@@ -195,6 +195,9 @@ class MaterialityTypesHelper {
     ], $form);
     $this->buildsStatesElement('field_standard_dimension_folio', [
       'bookbinding-book-body',
+    ], $form);
+    $this->buildsStatesElement('field_symmetry_holes_head_foot', [
+      'sewing-holes-tranchefil',
     ], $form);
     $this->buildsStatesElement('field_tabs', [
       'cover',

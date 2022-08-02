@@ -10,7 +10,7 @@ id: node.materiality.field_sewing_supports
 field_name: field_sewing_supports
 entity_type: node
 bundle: materiality
-label: 'Sewing supports'
+label: 'Typology sewing supports'
 description: ''
 required: false
 translatable: false
