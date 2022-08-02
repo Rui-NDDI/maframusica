@@ -1,4 +1,2 @@
-label: 'Possui protetores de direção?'
-settings:
-  on_label: Sobre
-  off_label: Desligado
+label: 'Presença de Guardas Volante'
+settings: {  }

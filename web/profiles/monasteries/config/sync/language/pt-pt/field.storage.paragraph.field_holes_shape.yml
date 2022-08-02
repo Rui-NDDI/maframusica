@@ -1,6 +1,5 @@
 settings:
   allowed_values:
-    -
-      label: Circular
+    - {  }
     -
       label: Retangular
