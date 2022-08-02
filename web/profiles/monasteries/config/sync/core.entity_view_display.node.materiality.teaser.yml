@@ -68,6 +68,7 @@ dependencies:
     - field.field.node.materiality.field_thread_size_thicknes
     - field.field.node.materiality.field_torsion
     - field.field.node.materiality.field_tranchefils
+    - field.field.node.materiality.field_tranchephil_typology
     - field.field.node.materiality.field_typology_according_books
     - field.field.node.materiality.field_typology_according_loop
     - field.field.node.materiality.field_typology_according_route
@@ -151,6 +152,7 @@ hidden:
   field_thread_size_thicknes: true
   field_torsion: true
   field_tranchefils: true
+  field_tranchephil_typology: true
   field_typology_according_books: true
   field_typology_according_loop: true
   field_typology_according_route: true

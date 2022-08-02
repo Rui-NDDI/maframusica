@@ -235,6 +235,9 @@ class MaterialityTypesHelper {
     $this->buildsStatesElement('field_which_side', [
       'cover',
     ], $form);
+    $this->buildsStatesElement('field_tranchephil_typology', [
+      'tranchefil',
+    ], $form);
   }
 
   /**

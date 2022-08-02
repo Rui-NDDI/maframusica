@@ -67,6 +67,7 @@ dependencies:
     - field.field.node.materiality.field_thread_size_thicknes
     - field.field.node.materiality.field_torsion
     - field.field.node.materiality.field_tranchefils
+    - field.field.node.materiality.field_tranchephil_typology
     - field.field.node.materiality.field_typology_according_books
     - field.field.node.materiality.field_typology_according_loop
     - field.field.node.materiality.field_typology_according_route
@@ -86,7 +87,7 @@ third_party_settings:
       children:
         - group_page_information
         - group_page_content
-      label: Tabs
+      label: Abas
       region: content
       parent_name: ''
       weight: 0
@@ -100,7 +101,7 @@ third_party_settings:
     group_page_information:
       children:
         - group_basic_settings
-      label: 'Page information'
+      label: 'Informações da página'
       region: content
       parent_name: group_tabs
       weight: 20
@@ -114,7 +115,7 @@ third_party_settings:
         required_fields: true
     group_page_content:
       children: {  }
-      label: 'Page content'
+      label: 'Conteúdo da página'
       region: content
       parent_name: group_tabs
       weight: 21
@@ -131,7 +132,7 @@ third_party_settings:
         - langcode
         - title
         - field_materiality_type
-      label: 'Basic settings'
+      label: 'Configurações básicas'
       region: content
       parent_name: group_page_information
       weight: 20
@@ -259,8 +260,8 @@ content:
     weight: 66
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Parágrafo
+      title_plural: Parágrafos
       edit_mode: open
       closed_mode: summary
       autocollapse: none
@@ -277,8 +278,8 @@ content:
     weight: 72
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Parágrafo
+      title_plural: Parágrafos
       edit_mode: open
       closed_mode: summary
       autocollapse: none
@@ -305,8 +306,8 @@ content:
     weight: 68
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Parágrafo
+      title_plural: Parágrafos
       edit_mode: open
       closed_mode: summary
       autocollapse: none
@@ -422,8 +423,8 @@ content:
     weight: 75
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Parágrafo
+      title_plural: Parágrafos
       edit_mode: open
       closed_mode: summary
       autocollapse: none
@@ -721,8 +722,8 @@ content:
     weight: 76
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Parágrafo
+      title_plural: Parágrafos
       edit_mode: open
       closed_mode: summary
       autocollapse: none
@@ -733,6 +734,16 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_tranchephil_typology:
+    type: entity_reference_autocomplete
+    weight: 80
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_typology_according_books:
     type: entity_reference_autocomplete_tags
