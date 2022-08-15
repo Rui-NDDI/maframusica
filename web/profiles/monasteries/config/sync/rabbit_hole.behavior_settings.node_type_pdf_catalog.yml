@@ -7,7 +7,7 @@ dependencies:
 id: node_type_pdf_catalog
 entity_type_id: node_type
 entity_id: pdf_catalog
-action: display_page
+action: page_not_found
 allow_override: 0
 redirect: ''
 redirect_code: 301

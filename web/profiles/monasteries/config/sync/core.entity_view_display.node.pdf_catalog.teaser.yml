@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.pdf_catalog.body
+    - field.field.node.pdf_catalog.field_monastery
     - field.field.node.pdf_catalog.field_pdf
     - node.type.pdf_catalog
   module:
@@ -29,5 +30,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_monastery: true
   field_pdf: true
   langcode: true
