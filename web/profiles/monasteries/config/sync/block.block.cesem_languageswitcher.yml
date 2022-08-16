@@ -1,0 +1,20 @@
+uuid: 0a942b2e-3750-4bb9-b8b7-336b162b3365
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - cesem
+id: cesem_languageswitcher
+theme: cesem
+region: header
+weight: -5
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

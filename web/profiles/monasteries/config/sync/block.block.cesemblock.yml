@@ -1,0 +1,20 @@
+uuid: 1b9c6b25-f74d-452e-8aed-0c53647270d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - sb_core
+  theme:
+    - cesem
+id: cesemblock
+theme: cesem
+region: footer
+weight: 0
+provider: null
+plugin: cesem_block
+settings:
+  id: cesem_block
+  label: 'Cesem block'
+  label_display: '0'
+  provider: sb_core
+visibility: {  }

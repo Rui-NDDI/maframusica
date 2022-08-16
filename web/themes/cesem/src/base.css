@@ -1,0 +1,121 @@
+::selection {
+    background: var(--c-9);
+    color: var(--c-0);
+}
+
+::marker {
+    color: var(--c-9);
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--c-9);
+    border-radius: 6px;
+}
+
+[hidden] {
+    visibility: hidden;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+html {
+    font-family: system-ui;
+    font-size: 100%;
+    block-size: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeSpeed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-9) transparent;
+}
+
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: 'Inter var';
+        font-weight: 100 900;
+        /* font-style: normal; */
+        font-style: oblique 0deg 10deg;
+        font-display: swap;
+        src: url("../fonts/Inter.woff2") format("woff2");
+    }
+    html { font-family: 'Inter var', system-ui; }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    max-height: 100%;
+    pointer-events: none;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    min-block-size: 100%;
+    padding-block: 5vw;
+    background-color: var(--c-0);
+    color: var(--c-9);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+a {
+    color: var(--c-brand);
+    text-decoration: none;
+    &:hover {
+        color: var(--c-9);
+    }
+    &:focus-visible {
+        outline-width: 2px;
+        outline-style: solid;
+        outline-color: var(--c-brand);
+        outline-offset: 1px;
+    }
+}
+
+i, cite, em, var, address, dfn {
+    /* font-style: italic; */
+    font-variation-settings: "slnt" -10
+}
+
+.visually-hidden, .hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
+
+.toggla[aria-expanded=false] + * {
+    display: none
+}
+.toggla[aria-expanded=true] + * {
+    display: block
+}

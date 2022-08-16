@@ -8,8 +8,6 @@ grumphp:
     composer: ~
     composer_normalize: ~
     jsonlint: ~
-    phpcpd:
-      directory: ['./src']
     phpcs:
       standard: Drupal
       ignore_patterns:
@@ -26,7 +24,6 @@ grumphp:
         - test
         - profile
         - theme
-        - css
         - info
         - txt
         - md

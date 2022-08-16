@@ -6,22 +6,22 @@ dependencies:
     - language
     - taxonomy
 id: party_pt
-label: 'Party PT'
+label: Festa
 type: 'canonical_entities:taxonomy_term'
 pattern: 'festa/[term:name]'
 selection_criteria:
-  ea0d1421-4d2a-488c-812c-39ccacf4ef3f:
+  3c0abd56-78a2-4420-a333-db50da85afd3:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: ea0d1421-4d2a-488c-812c-39ccacf4ef3f
+    uuid: 3c0abd56-78a2-4420-a333-db50da85afd3
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       parties: parties
-  db4a0337-b133-4354-a99a-44e5ef5f787e:
+  aed43f44-5aaa-425e-932b-8f3fbee44481:
     id: language
     negate: false
-    uuid: db4a0337-b133-4354-a99a-44e5ef5f787e
+    uuid: aed43f44-5aaa-425e-932b-8f3fbee44481
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:

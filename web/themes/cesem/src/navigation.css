@@ -1,0 +1,128 @@
+[role="banner"] {
+    display: flex;
+    flex-wrap: wrap;
+    @media (width >= 1280px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2vmin
+    }
+    & > form {
+        width: 100%;
+        max-width: 100%;
+        @media (width >= 1280px) {
+            max-width: var(--s7);
+            margin-inline: auto;
+        }
+    }
+    & > form .form-actions {
+        display: none;
+    }
+}
+
+
+.branding-block {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    color: var(--c-9);
+
+    & > * {
+        flex-shrink: 0;
+    }
+
+    & > img {
+        width: 8rem;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 100%;
+        @media (width >= 1280px) {
+            width: var(--s7);
+            height: 90px;
+        }
+    }
+
+    @media (width >= 1280px) {
+        flex-direction: column;
+        gap: 1vw;
+    }
+}
+
+.nav-btn {
+    margin-left: auto;
+    @media (width >= 1280px) {
+        display: none;
+        &[aria-expanded="false"] + * {
+            display: block;
+        }
+    }
+}
+
+.menu {
+    flex-basis: 100%;
+    @media (width >= 1280px) {
+        order: 999;
+        max-width: var(--s7);
+        margin-left: var(--s3);
+    }
+}
+
+.menu ul > li a {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: var(--s3);
+    color: var(--c-9);
+
+    @media (width >= 1280px) {
+        font-size: var(--h6);
+        padding: var(--s1) var(--s3);
+    }
+
+    &:hover, &:focus, &.is-active {
+        color: var(--c-brand);
+    }
+}
+
+.menu ul ul {
+    & > li a {
+        display: block;
+        font-weight: 400;
+        text-transform: none;
+        text-decoration: none;
+        padding: var(--s2) var(--s3);
+        color: var(--c-9);
+    }
+    &:hover, &:focus {
+        color: var(--c-brand);
+    }
+}
+
+.menu ul ul > li {
+    margin-left: var(--s3);
+}
+
+.menu ul > li > a.toggla {
+    position: relative;
+}
+
+.menu ul > li > a.toggla::after {
+    position: absolute;
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: initial;
+    left: 0;
+    transform: rotate(135deg) translate(0, -50%);
+    transform-origin: top;
+    top: 50%;
+    /* transition: all 0.3s ease-out; */
+}
+
+.menu ul > li > a.toggla[aria-expanded=true]::after {
+    transform: rotate(225deg);
+}

@@ -1,0 +1,28 @@
+name: Mosteiros
+type: theme
+description: 'Transistor ‐ Customized Tachyons CSS for Squarebit design system prototypes'
+package: Other
+core_version_requirement: ^8 || ^9 || ^10
+base theme: classy
+
+libraries:
+  - cesem/styling
+libraries-override:
+  classy/base: false
+  classy/messages: false
+  system/base: false
+  core/normalize: false
+
+stylesheets-remove:
+  - '@stable/css/views/views.module.css'
+  - '@better_exposed_filters/css/better_exposed_filters.css'
+
+regions:
+  messages: 'Messages'
+  header: 'Header'
+  highlighted: 'Highlighted'
+  content: 'Main content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'

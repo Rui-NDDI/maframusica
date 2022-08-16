@@ -1,0 +1,38 @@
+{
+  "name": "mockup-kit",
+  "version": "1.0.0",
+  "description": "Develop stuff using PostCSS",
+  "author": "Paulo Nunes <syndicatefx@gmail.com>",
+  "license": "MIT",
+  "postcss": {
+    "plugins": {
+      "postcss-easy-import": {},
+      "postcss-preset-env": {
+        "stage": "0",
+        "browsers": "defaults",
+        "features": {
+          "custom-properties": false
+        }
+      },
+      "postcss-clean": {
+        "keepSpecialComments": "1"
+      }
+    }
+  },
+  "scripts": {
+    "css": "postcss src/styles.css -o css/styles.min.css",
+    "watch": "onchange 'src/**/*.css' -- npm-run-all css",
+    "build": "npm-run-all css",
+    "prestart": "npm-run-all css",
+    "start": "npm-run-all --parallel watch"
+  },
+  "devDependencies": {
+    "npm-run-all": "latest",
+    "onchange": "latest",
+    "postcss": "latest",
+    "postcss-clean": "latest",
+    "postcss-cli": "latest",
+    "postcss-easy-import": "latest",
+    "postcss-preset-env": "latest"
+  }
+}

@@ -1,0 +1,33 @@
+uuid: 5949921d-6f2f-421e-8794-e07b06cb3741
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: entity
+label: Entity
+type: 'canonical_entities:node'
+pattern: 'entity/[node:title]'
+selection_criteria:
+  4f8b814d-a37e-41cb-8ab3-68eb5edcae10:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4f8b814d-a37e-41cb-8ab3-68eb5edcae10
+    context_mapping:
+      node: node
+    bundles:
+      people: people
+  57427338-862f-4d5c-8df7-c97179c34d07:
+    id: language
+    negate: false
+    uuid: 57427338-862f-4d5c-8df7-c97179c34d07
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
