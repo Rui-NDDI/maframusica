@@ -11,11 +11,12 @@ header {
     & .branding-block {
         font-size: var(--fs4);
         font-weight: 600;
-        align-items: center;
+        align-items: var(--title, center);
         color: var(--text);
 
         @media (--full-width) {
             --x-cluster-gap: .5rem;
+            --title: start;
             flex-direction: column;
         }
 
@@ -29,9 +30,27 @@ header {
 
 
     & .lang-switch {
+        --x-cluster-gap: 0;
+        max-width: max-content;
         margin-inline-start: auto;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+
         @media (--full-width) {
             margin-inline-start: 0;
+        }
+
+        & a {
+            display: block;
+            font-weight: 600;
+            padding: .5rem;
+
+            &.is-active {
+                background-color: var(--text);
+                color: var(--bg);
+            }
         }
     }
 }

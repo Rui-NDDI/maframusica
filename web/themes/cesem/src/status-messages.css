@@ -1,0 +1,48 @@
+
+.notify {
+    position: fixed;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    display: grid;
+    place-content: center;
+    padding-inline: 1rem;
+    z-index: 4;
+    background-color: hsl( 0 0% 100% / 80%);
+
+    & > * {
+        position: relative;
+        max-width: max-content;
+        padding: 1rem;
+        margin-inline: auto;
+        background-color: var(--bg);
+        border: 1px solid var(--order);
+        color: var(--tc);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+
+        & > *:not(a) {
+            color: currentColor;
+        }
+
+        & > button {
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            border-radius: 100%;
+        }
+
+        &.error {
+            --tc: hsl(3 90% 65%);
+        }
+        &.warning {
+            --tc: hsl(23 51% 49%);
+        }
+        &.success, &.info {
+            --tc: hsl(165, 56%, 38%);
+        }
+    }
+}

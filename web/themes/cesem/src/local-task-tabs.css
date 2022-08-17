@@ -1,0 +1,15 @@
+.tabs.primary {
+    margin-inline: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem 1rem;
+    max-inline-size: max-content;
+    margin-bottom: 3rem;
+}
+.tabs.primary a {
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}

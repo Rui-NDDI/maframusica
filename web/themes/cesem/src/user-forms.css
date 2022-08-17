@@ -1,0 +1,20 @@
+:is(.user-login-form, .user-register-form, .user-pass) {
+    max-inline-size: 30rem;
+
+    & > * + * {
+        margin-block-start: 1em;
+    }
+
+    & > :last-child {
+        display: inline-block;
+        margin-block-start: 2rem;
+    }
+}
+
+.user-register-form > div > * + * {
+    margin-block-start: 1em;
+}
+
+.description {
+    font-size: var(--fs-small);
+}

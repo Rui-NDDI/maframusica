@@ -36,10 +36,10 @@
     {%- if heading.level -%}
       <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
     {%- else -%}
-      <h2{{ heading.attributes }}>{{ heading.text }}</h2>
+      <span{{ heading.attributes }}>{{ heading.text }}</span>
     {%- endif -%}
   {%- endif -%}
-  <ul role="list" class="lang-switch">
+  <ul role="list" class="x-cluster lang-switch">
     {%- for item in links -%}
       <li{{ item.attributes }}>
         {%- if item.link -%}

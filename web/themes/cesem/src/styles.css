@@ -10,4 +10,6 @@
 @import "./tables.css";
 @import "./pagination.css";
 @import "./footer.css";
-@import "./system-default.css";
+@import "./local-task-tabs.css";
+@import "./user-forms.css";
+@import "./status-messages.css";
