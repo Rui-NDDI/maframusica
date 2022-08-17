@@ -15,7 +15,7 @@
         padding: 1rem;
         color: var(--text);
         &:hover {
-            background-color: var(--bg-muted)
+            background-color: var(--bg-muted);
             color: var(--text);
         }
     }
