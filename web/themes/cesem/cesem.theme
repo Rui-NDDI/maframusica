@@ -41,15 +41,7 @@ function cesem_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   // Adding custom validation for the welcome page type field.
   $options_link = [
     'attributes' => [
-      'class' => [
-        'link',
-        'dib',
-        'fw7',
-        'mv3',
-        'c-brand',
-        'hover-animate',
-        'hover-c-5',
-      ],
+      'class' => [],
     ],
   ];
   if ($form_id == 'user_pass') {

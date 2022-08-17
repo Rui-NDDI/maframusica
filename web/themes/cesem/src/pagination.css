@@ -1,0 +1,36 @@
+.pager ul {
+    --x-cluster-gap: 0;
+    max-inline-size: max-content;
+    margin-inline: auto;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+
+    & > li a {
+        display: block;
+        padding: 1rem;
+        color: var(--text);
+        &:hover {
+            color: var(--brand);
+        }
+    }
+
+    & > li.is-active a {
+        font-weight: 700;
+        background-color: var(--text);
+        color: var(--bg);
+    }
+}
+.pager__items li:first-child a {
+    border-radius: var(--radius) 0 0 var(--radius);
+    &:hover {
+        background-color: var(--brand);
+        color: var(--bg);
+    }
+}
+.pager__items li:last-child a {
+    border-radius: 0 var(--radius) var(--radius) 0;
+    &:hover {
+        background-color: var(--brand);
+        color: var(--bg);
+    }
+}

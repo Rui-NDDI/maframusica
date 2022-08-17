@@ -1,21 +1,24 @@
 {
-  "name": "mockup-kit",
+  "name": "css-starter-kit",
   "version": "1.0.0",
-  "description": "Develop stuff using PostCSS",
+  "description": "Building base using PostCSS",
   "author": "Paulo Nunes <syndicatefx@gmail.com>",
   "license": "MIT",
   "postcss": {
     "plugins": {
-      "postcss-easy-import": {},
+      "postcss-import": {},
       "postcss-preset-env": {
-        "stage": "0",
+        "stage": false,
         "browsers": "defaults",
+        "autoprefixer": false,
         "features": {
-          "custom-properties": false
+          "custom-media-queries": true,
+          "nesting-rules": true,
+          "media-query-ranges": true
         }
       },
-      "postcss-clean": {
-        "keepSpecialComments": "1"
+      "cssnano": {
+        "preset": "default"
       }
     }
   },
@@ -29,10 +32,10 @@
   "devDependencies": {
     "npm-run-all": "latest",
     "onchange": "latest",
-    "postcss": "latest",
-    "postcss-clean": "latest",
-    "postcss-cli": "latest",
-    "postcss-easy-import": "latest",
-    "postcss-preset-env": "latest"
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "7.x"
   }
 }

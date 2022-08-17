@@ -33,20 +33,20 @@
  * @ingroup themeable
  */
 #}
-{% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<button class="button button--simple nav-btn toggla" aria-expanded="false">
+<button class="nav-btn toggla" aria-expanded="false">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true" aria-focusable="false">
     <path class="burger-icon" d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" />
-    <path class="close-icon dn" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" /></svg>
     <span class="visually-hidden">Menu</span>
 </button>
+
+{% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav role="navigation" aria-labelledby="{{ heading_id }}" class="menu">
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
   {% endif %}
   {{ title_prefix }}
-  <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
+  <span{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</span>
   {{ title_suffix }}
 
   {# Menu. #}

@@ -25,7 +25,6 @@
 #}
 {%
   set classes = [
-    'filters',
     'js-form-item',
     'form-item',
     'js-form-wrapper',
@@ -36,7 +35,7 @@
   <legend{{ legend.attributes.addClass('fieldset-legend toggla') }} aria-expanded="false">
     {{ legend.title }}
   </legend>
-  <div class="fieldset-wrapper mb3">
+  <div class="fieldset-wrapper">
     {% if errors %}
       <div>
         {{ errors }}

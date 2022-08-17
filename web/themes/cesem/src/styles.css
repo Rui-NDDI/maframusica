@@ -1,8 +1,13 @@
-@import "./theme.css";
-@import "./base.css";
-@import "./inputs.css";
-@import "./toggles.css";
-@import "./buttons.css";
-@import "./utility.css";
-@import "./custom.css";
-@import "./navigation.css";
+@import "./core/props.css";
+@import "./core/base.css";
+@import "./core/forms.css";
+@import "./core/utils.css";
+
+@import "./docs-layout.css";
+@import "./header.css";
+@import "./main-navigation.css";
+@import "./editor.css";
+@import "./tables.css";
+@import "./pagination.css";
+@import "./footer.css";
+@import "./system-default.css";

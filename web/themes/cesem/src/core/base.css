@@ -1,0 +1,85 @@
+::selection {
+    background: var(--text);
+    color: var(--bg);
+}
+
+*:not(input, button, textarea, select):focus-visible {
+	outline: none;
+	color: var(--bg);
+	background-color: var(--brand);
+}
+[disabled] {
+	opacity: .5;
+	cursor: not-allowed;
+}
+html {
+    font-family: var(--ff-sans);
+	font-size: 100%;
+	block-size: 100%;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	text-rendering: optimizeSpeed;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html:focus-within {
+		scroll-behavior: smooth;
+	}
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+svg {
+    max-block-size: 100%;
+    pointer-events: none;
+}
+
+img {
+	display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+body {
+	block-size: 100%;
+	font-size: 1rem;
+	font-weight: 430;
+    line-height: var(--lh-copy);
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+a {
+	text-decoration: none;
+	color: var(--brand);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	overflow-wrap: break-word;
+}
+
+:where(p, ul ,ol, dl) {
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+:where(ul, ol)[role="list"] {
+	list-style: none;
+}
+
+:where(ul, ol):not([role="list"]) {
+	margin-inline-start: 1rem;
+	list-style-position: inside;
+}
+
+i, cite, em, var, address, dfn {
+	font-variation-settings: "slnt" -4;
+}

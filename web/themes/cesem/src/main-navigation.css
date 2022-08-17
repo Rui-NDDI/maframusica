@@ -1,0 +1,77 @@
+.nav-btn {
+    border: none;
+    box-shadow: none;
+    margin-left: auto;
+    @media (--full-width) {
+        display: none;
+        &[aria-expanded="false"] + * {
+            display: block;
+        }
+    }
+}
+
+.menu {
+    flex-basis: 100%;
+    @media (--full-width) {
+        flex-basis: unset;
+    }
+}
+
+.menu ul > li a {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-block: .25rem;
+    color: var(--text);
+
+    @media (--full-width) {
+        font-size: var(--fs-small);
+    }
+
+    &:hover, &:focus, &.is-active {
+        color: var(--brand);
+        background-color: transparent;
+    }
+}
+
+.menu ul ul {
+    & > li a {
+        display: block;
+        font-weight: 400;
+        text-transform: none;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        color: var(--text);
+    }
+    &:hover, &:focus {
+        color: var(--brand);
+        background-color: transparent;
+    }
+}
+
+.menu ul ul > li {
+    margin-inline-start: 1rem;
+}
+
+.menu ul > li > a.toggla {
+    position: relative;
+}
+
+.menu ul > li > a.toggla::after {
+    position: absolute;
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: initial;
+    left: 0;
+    transform: rotate(135deg) translate(0, -50%);
+    transform-origin: top;
+    top: 50%;
+}
+
+.menu ul > li > a.toggla[aria-expanded=true]::after {
+    transform: rotate(225deg);
+}

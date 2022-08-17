@@ -21,7 +21,7 @@ class CesemBlock extends BlockBase {
    */
   public function build(): array {
     return [
-      '#markup' => '<p class="f7 lh-copy tc gray-500">' . $this->t('© @year CESEM – Centro de Estudos de Sociologia e Estética Musical', ['@year' => date("Y")]) . '</p>',
+      '#markup' => '<p>' . $this->t('© @year CESEM – Centro de Estudos de Sociologia e Estética Musical', ['@year' => date("Y")]) . '</p>',
     ];
   }
 

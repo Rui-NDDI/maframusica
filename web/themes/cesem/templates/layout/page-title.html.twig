@@ -17,14 +17,12 @@
 {{ title_prefix }}
 {% if title %}
   {% if is_front %}
-    <h1 class="f-headline fw3 lh-title mb3">{{ title }}</h1>
-  {% elseif type == 'works' %}
-    <h1 class="f5 lh-title fw4 mb3">{{ title }}</h1>
+    <h1 class="fs1 fw3 lh-title">{{ title }}</h1>
   {% else %}
-    <h1 class="f1 lh-title mb3">{{ title }}</h1>
+    <h1 class="fs2 lh-title">{{ title }}</h1>
   {% endif %}
 {% endif %}
 {% if is_front and is_front_slogan %}
-  <p class="f-subheadline lh-title mb5 mw7">{{ is_front_slogan }}</p>
+  <p class="fs5 lh-title m">{{ is_front_slogan }}</p>
 {% endif %}
 {{ title_suffix }}

@@ -1,0 +1,22 @@
+@custom-media --full-width (width >= 1080px);
+
+.docs-layout {
+    block-size: 100%;
+	margin-inline: auto;
+	max-inline-size: 90rem; 
+    
+    @media (--full-width) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    & :is(header, main, footer) {
+        padding: clamp(2.5vmin, 5vmin, 5vmin) clamp(5vmin, 5vmin, 15vmin);
+    }
+
+    & footer {
+        @media (--full-width) {
+            grid-column: 1/-1;
+        }
+    }
+}
