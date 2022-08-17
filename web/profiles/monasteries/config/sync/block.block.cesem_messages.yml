@@ -10,8 +10,8 @@ _core:
   default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
 id: cesem_messages
 theme: cesem
-region: messages
-weight: -3
+region: content
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

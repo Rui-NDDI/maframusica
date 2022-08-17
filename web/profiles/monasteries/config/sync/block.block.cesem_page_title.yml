@@ -9,7 +9,7 @@ _core:
 id: cesem_page_title
 theme: cesem
 region: content
-weight: -50
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
