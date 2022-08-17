@@ -1,3 +1,7 @@
+.pager {
+    margin-block-start: 2rem;
+}
+
 .pager ul {
     --x-cluster-gap: 0;
     max-inline-size: max-content;
@@ -11,7 +15,8 @@
         padding: 1rem;
         color: var(--text);
         &:hover {
-            color: var(--brand);
+            background-color: var(--bg-muted)
+            color: var(--text);
         }
     }
 
@@ -24,14 +29,14 @@
 .pager__items li:first-child a {
     border-radius: var(--radius) 0 0 var(--radius);
     &:hover {
-        background-color: var(--brand);
-        color: var(--bg);
+        background-color: var(--bg-muted);
+        color: var(--text);
     }
 }
 .pager__items li:last-child a {
     border-radius: 0 var(--radius) var(--radius) 0;
     &:hover {
-        background-color: var(--brand);
-        color: var(--bg);
+        background-color: var(--bg-muted);
+        color: var(--text);
     }
 }
