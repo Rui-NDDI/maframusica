@@ -26,7 +26,7 @@ th {
 
 th, td {
 	text-align: left;
-	padding-block: .5rem;
+	padding-block: .75rem;
 	padding-inline: .5rem;
 	vertical-align: top;
 }
@@ -58,6 +58,6 @@ table:not(.table-list) {
     background-attachment: local, local, scroll, scroll;
 
     & td {
-        min-inline-size: var(--cell-width, 8rem);
+        min-inline-size: var(--cell-width, 12rem);
     }
 }
