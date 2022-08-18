@@ -9,22 +9,24 @@ header {
     }
 
     & .branding-block {
-        font-size: var(--fs4);
-        font-weight: 600;
         align-items: var(--title, center);
         color: var(--text);
-
+        
         @media (--full-width) {
             --x-cluster-gap: .5rem;
             --title: start;
             flex-direction: column;
         }
+        
+        & span {
+            font-size: clamp(0.58rem, 0.298rem + 1.41vw, 1.25rem);
+            font-weight: 600;
+            line-height: var(--lh-solid);
+            max-inline-size: 15ch;
+        }
 
         & img {
-            max-inline-size: 3rem;
-            @media (--full-width) {
-                max-inline-size: clamp(3rem, -0.852rem + 19.26vw, 16rem);
-            }
+            max-inline-size: clamp(3rem, -8.471rem + 30.59vw, 16rem);
         }
     }
 

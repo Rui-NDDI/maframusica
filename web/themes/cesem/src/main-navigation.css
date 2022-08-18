@@ -1,6 +1,6 @@
 .nav-btn {
-    border: none;
-    box-shadow: none;
+    padding-inline: .25rem;
+    
     @media (--full-width) {
         display: none;
         &[aria-expanded="false"] + * {
@@ -11,22 +11,23 @@
 
 .menu {
     flex-basis: 100%;
+    padding-block: 1rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
     @media (--full-width) {
         flex-basis: unset;
+        padding-block: 0;
+        border: none;
     }
 }
 
 .menu ul > li a {
     display: block;
     font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
-    padding-block: .25rem;
+    padding: .5rem 1rem;
     color: var(--text);
-
-    @media (--full-width) {
-        font-size: var(--fs-small);
-    }
 
     &:hover, &:focus, &.is-active {
         color: var(--brand);
@@ -37,8 +38,8 @@
 .menu ul ul {
     & > li a {
         display: block;
+        font-size: var(--fs-small);
         font-weight: 400;
-        text-transform: none;
         text-decoration: none;
         padding: .5rem 1rem;
         color: var(--text);
@@ -55,6 +56,7 @@
 
 .menu ul > li > a.toggla {
     position: relative;
+    font-weight: 700;
 }
 
 .menu ul > li > a.toggla::after {
