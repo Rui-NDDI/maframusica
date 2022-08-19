@@ -109,6 +109,10 @@ select {
 	background-size: 12px 12px;
 	background-position: right 1rem top calc(50% + 4px);
 	background-repeat: no-repeat;
+
+	&[multiple] {
+		background-image: none;
+	}
 }
 
 button, button[type], input[type="button"], input[type="submit"], input[type="reset"],
