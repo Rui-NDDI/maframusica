@@ -29,6 +29,10 @@
     }
 }
 
+article > .field > * + * {
+    margin-block-start: 1em;
+}
+
 .view-entities {
     display: flex;
     flex-wrap: wrap;
