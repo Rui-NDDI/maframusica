@@ -20,10 +20,10 @@
   <div>
 {% endif %}
   {% if title %}
-    <h2 class="f4 fw5 lh-title mb3">{{ title }}</h2>
+    <h2>{{ title }}</h2>
   {% endif %}
 
-  <{{ list.type }}{{ attributes.addClass('list') }}>
+  <{{ list.type }}{{ attributes }}>
 
     {% for row in rows %}
       <li{{ row.attributes }}>

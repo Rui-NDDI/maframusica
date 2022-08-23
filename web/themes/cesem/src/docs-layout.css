@@ -28,3 +28,11 @@
         }
     }
 }
+
+.view-entities {
+
+    & .view-filters {}
+    & .attachment-before {}
+    & .view-content {}
+    & .pager {}
+}
