@@ -48,7 +48,14 @@ td span {
 }
 
 table:not(.table-list) {
-    min-inline-size: 100%;
+
+    & td {
+        min-inline-size: var(--cell-width, 12rem);
+    }
+}
+
+.table-wrapper {
+    inline-size: 100%;
     display: block;
     overflow-x: auto;
     background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, hsl(var(--h) var(--s) .28% / 15%), hsl(0 0% 100% / 0%)), linear-gradient(to left, hsl(var(--h) var(--s) .28% / 15%), hsl(0 0% 100% / 0%));
@@ -56,8 +63,4 @@ table:not(.table-list) {
     background-repeat: no-repeat;
     background-size: 40px 100%, 40px 100%, 20px 100%, 20px 100%;
     background-attachment: local, local, scroll, scroll;
-
-    & td {
-        min-inline-size: var(--cell-width, 12rem);
-    }
 }

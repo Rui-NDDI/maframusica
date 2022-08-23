@@ -490,8 +490,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_function'
-  attachment_1:
-    id: attachment_1
+  glossary:
+    id: glossary
     display_title: Attachment
     display_plugin: attachment
     position: 2
@@ -580,7 +580,7 @@ display:
         type: normal
         title: Entities
         description: ''
-        weight: 0
+        weight: -50
         expanded: false
         menu_name: main
         parent: ''
