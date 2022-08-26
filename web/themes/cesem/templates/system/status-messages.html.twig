@@ -27,7 +27,7 @@
   {% for type, messages in message_list %}
 
     {% if type == 'error' %}
-      <div aria-label="{{ status_headings[type] }}" class="error" role="alert"{{ attributes|without('role') }}>
+      <div aria-label="{{ status_headings[type] }}" class="x-stack error" role="alert"{{ attributes|without('role') }}>
         {% if status_headings[type] %}
           <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
         {% endif %}
@@ -37,13 +37,13 @@
           {% endfor %}
         </ul>
         <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" aria-focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          {{ 'Close'|t }}
         </button>
       </div>
     {% endif %}
 
     {% if type == 'warning' %}
-      <div aria-label="{{ status_headings[type] }}" class="warning" role="alert"{{ attributes|without('role') }}>
+      <div aria-label="{{ status_headings[type] }}" class="x-stack warning" role="alert"{{ attributes|without('role') }}>
         {% if status_headings[type] %}
           <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
         {% endif %}
@@ -53,13 +53,13 @@
           {% endfor %}
         </ul>
         <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" aria-focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          {{ 'Close'|t }}
         </button>
       </div>
     {% endif %}
 
     {% if type == 'status' %}
-      <div aria-label="{{ status_headings[type] }}" class="success" role="alert"{{ attributes|without('role') }}>
+      <div aria-label="{{ status_headings[type] }}" class="x-stack success" role="alert"{{ attributes|without('role') }}>
         {% if status_headings[type] %}
           <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
         {% endif %}
@@ -69,13 +69,13 @@
           {% endfor %}
         </ul>
         <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" aria-focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          {{ 'Close'|t }}
         </button>
       </div>
     {% endif %}
 
     {% if type == 'info' %}
-      <div aria-label="{{ status_headings[type] }}" class="info" role="alert"{{ attributes|without('role') }}>
+      <div aria-label="{{ status_headings[type] }}" class="x-stack info" role="alert"{{ attributes|without('role') }}>
         {% if status_headings[type] %}
           <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
         {% endif %}
@@ -85,7 +85,8 @@
           {% endfor %}
         </ul>
         <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" aria-focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          {{ 'Close'|t }}
+        </button>
         </button>
       </div>
     {% endif %}

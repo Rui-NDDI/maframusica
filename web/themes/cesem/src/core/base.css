@@ -1,12 +1,11 @@
 ::selection {
-    background: var(--text);
-    color: var(--bg);
+	background: var(--select-text);
 }
 
 *:not(input, button, textarea, select):focus-visible {
 	outline: none;
 	color: var(--bg);
-	background-color: var(--brand);
+	background-color: var(--highlight);
 }
 [disabled] {
 	opacity: .5;
@@ -59,7 +58,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--brand);
+	color: var(--highlight);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {

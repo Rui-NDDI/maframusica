@@ -3,26 +3,23 @@ footer {
     color: var(--text-muted);
 }
 .cesem-partners {
-    --x-cluster-gap: 1rem;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    --x-flex-wrap: nowrap;
+    --x-flex-justify: center;
+    --x-flex-gap: 1rem;
 }
 footer p {
     font-size: var(--fs-small);
     text-align: center;
 }
 sb-credit {
-    --x-cluster-gap: 1ch;
+    --x-flex-justify: center;
+    --x-flex-gap: 1ch;
     font-size: var(--fs-small);
-    align-items: center;
-    justify-content: center;
     margin-inline: auto;
 
     & a {
-        --x-cluster-gap: .25rem;
+        --x-flex-gap: .25rem;
         font-weight: 700;
-        align-items: center;
         color: var(--text);
     }
     & .squarebit {

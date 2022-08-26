@@ -30,7 +30,7 @@
     color: var(--text);
 
     &:hover, &:focus, &.is-active {
-        color: var(--brand);
+        color: var(--highlight);
         background-color: transparent;
     }
 }
@@ -45,7 +45,7 @@
         color: var(--text);
     }
     &:hover, &:focus {
-        color: var(--brand);
+        color: var(--highlight);
         background-color: transparent;
     }
 }

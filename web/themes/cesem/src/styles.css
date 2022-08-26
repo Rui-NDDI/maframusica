@@ -1,13 +1,13 @@
 @import "./core/props.css";
 @import "./core/base.css";
 @import "./core/forms.css";
+@import "./core/tables.css";
 @import "./core/utils.css";
 
-@import "./docs-layout.css";
+@import "./page-layout.css";
 @import "./header.css";
 @import "./main-navigation.css";
 @import "./editor.css";
-@import "./tables.css";
 @import "./pagination.css";
 @import "./footer.css";
 @import "./local-task-tabs.css";

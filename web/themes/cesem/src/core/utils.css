@@ -74,16 +74,18 @@
 	grid-template-columns: repeat(auto-fit, minmax(min(var(--x-grid-min, 20rem), 100%), var(--x-grid-max, max-content)));
 }
 
-.x-cluster {
+.x-flex {
     display: flex;
-    flex-wrap: var(--x-cluster-wrap, wrap);
-    gap: var(--x-cluster-gap, 1rem);
+    flex-wrap: var(--x-flex-wrap, wrap);
+    align-items: var(--x-flex-align, center);
+    justify-content: var(--x-flex-justify, start);
+    gap: var(--x-flex-gap, 1rem);
 }
 
 .x-stack > * + * {
     margin-block-start: var(--x-stack-margin, 1em);
 }
 
-.x-grid > *, .x-cluster > * {
+.x-grid > *, .x-flex > * {
     margin-block-start: 0;
 }

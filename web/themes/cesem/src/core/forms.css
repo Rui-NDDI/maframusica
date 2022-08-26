@@ -1,7 +1,6 @@
-/*---presets---*/
 :where(input, button, select, textarea):focus:not(input[type="range"]) {
 	outline: 3px solid transparent;
-	box-shadow: 0 0 0 4px var(--focus-ring);
+	box-shadow: 0 0 0 2px var(--highlight);
 }
 
 input, button, textarea, select,
@@ -11,14 +10,24 @@ input[type="file"]::file-selector-button {
 	font-size: inherit;
 	color: inherit;
 	letter-spacing: inherit;
+	padding-inline: .75rem;
+	padding-block: .5rem;
+	border-radius: .25rem;
+	border: 1px solid var(--border);
 }
 
-label:not(.x-cluster) {
+input, select,
+textarea {
+	width: 100%;
+	background-color: var(--bg-muted);
+}
+
+label:not(.x-flex) {
 	display: block;
 }
 
-label.x-cluster {
-	--x-cluster-gap: .5rem;
+label.x-flex {
+	--x-flex-gap: .5rem;
 }
 
 textarea {
@@ -36,6 +45,17 @@ input[type="file"]::file-selector-button {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 	cursor: pointer;
+	font-weight: 500;
+	width: max-content;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: .5rem;
+	padding-inline: 1rem;
+	padding-block: .25rem;
+	background-color: var(--bg);
+	box-shadow: var(--shadow);
 }
 
 input[type="range"] {
@@ -67,31 +87,12 @@ input[type="range"] {
 	block-size: 0;
 }
 
-/*---theme---*/
-
 fieldset {
     display: grid;
     gap: 1rem;
 	padding: 1rem;
 	border: 1px solid var(--border);
 	border-radius: .25rem;
-}
-
-input, button, textarea, select,
-input[type="file"]::-webkit-file-upload-button,
-input[type="file"]::file-selector-button {
-	padding-inline: .75rem;
-	padding-block: .5rem;
-	border-radius: .25rem;
-	border: 1px solid var(--border);
-}
-
-input, select,
-textarea {
-	width: 100%;
-	background-color: var(--input-bg);
-	border: 1px solid var(--border);
-	/* box-shadow: var(--shadow-inset); */
 }
 
 select {
@@ -112,25 +113,6 @@ select {
 
 	&[multiple] {
 		background-image: none;
-	}
-}
-
-button, button[type], input[type="button"], input[type="submit"], input[type="reset"],
-input[type="file"]::-webkit-file-upload-button,
-input[type="file"]::file-selector-button {
-	width: max-content;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	gap: .5rem;
-	padding-inline: 1rem;
-	padding-block: .25rem;
-	background-color: var(--bg);
-	box-shadow: var(--shadow);
-
-	& svg {
-		flex-shrink: 0;
 	}
 }
 
@@ -188,10 +170,10 @@ input[type="range"]::-webkit-slider-thumb {
 	cursor: ew-resize;
 	width: 2rem;
 	height: 1rem;
-	background: var(--input-bg);
+	background: var(--bg);
 	border: 1px solid var(--border);
 	border-radius: .25rem;
-	box-shadow: var(--range-focus, var(--shadow));
+	box-shadow: var(--focus-ring, var(--shadow));
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -201,19 +183,17 @@ input[type="range"]::-moz-range-thumb {
 	background: var(--bg);
 	border: 1px solid var(--border);
 	border-radius: .25rem;
-	box-shadow: var(--range-focus, var(--shadow));
+	box-shadow: var(--focus-ring, var(--shadow));
 }
 
 input[type="range"]:hover, 
 input[type="range"]:focus-visible {
-	--range-focus: 0 0 0 4px var(--focus-ring);
+	--focus-ring: 0 0 0 2px var(--highlight);
 }
 
 input.toggle {
+	--x-flex-gap: 0;
 	inline-size: 3rem;
-	display: flex;
-	align-items: center;
-	justify-content: start;
 	padding: 0;
 	border-radius: 1rem;
 	transition: 120ms background-color ease-in-out;
@@ -225,15 +205,18 @@ input.toggle::before {
 	clip-path: revert;
 	inline-size: 1rem;
 	block-size: 1rem;
-	background-color: var(--input-bg);
+	background-color: var(--bg);
 	box-shadow: var(--shadow);
 	border: 1px solid var(--border);
 	border-radius: .5rem;
-	transform: translateX(.25rem);
+	transform: translateX(-.75rem);
 	transition: 120ms transform ease-in-out;
+}
+
+input.toggle:checked {
+	background-color: currentColor;
 }
 	
 input.toggle:checked::before {
-	transform: translateX(1.65rem);
-    background-color: currentColor;
+	transform: translateX(.75rem);
 }

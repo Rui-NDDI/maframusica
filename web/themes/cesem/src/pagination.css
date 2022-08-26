@@ -3,7 +3,7 @@
 }
 
 .pager ul {
-    --x-cluster-gap: 0;
+    --x-flex-gap: 0;
     max-inline-size: max-content;
     margin-inline: auto;
 	border: 1px solid var(--border);

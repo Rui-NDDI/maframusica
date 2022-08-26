@@ -1,11 +1,10 @@
 header {
-    --x-cluster-gap: .25rem;
-    align-items: center;
+    --x-flex-gap: .25rem;
 
     @media (--full-width) {
-        --x-cluster-gap: 2rem;
+        --x-flex-align: start;
+        --x-flex-gap: 2rem;
         flex-direction: column;
-        align-items: start;
     }
 
     & .branding-block {
@@ -13,7 +12,7 @@ header {
         color: var(--text);
         
         @media (--full-width) {
-            --x-cluster-gap: .5rem;
+            --x-flex-gap: .5rem;
             --title: start;
             flex-direction: column;
         }
@@ -26,13 +25,16 @@ header {
         }
 
         & img {
-            max-inline-size: clamp(3rem, -8.471rem + 30.59vw, 16rem);
+            max-inline-size: 3rem;
+            @media (--full-width) {
+                max-inline-size: 16rem;
+            }
         }
     }
 
 
     & .lang-switch {
-        --x-cluster-gap: 0;
+        --x-flex-gap: 0;
         max-width: max-content;
         margin-inline-start: auto;
         border: 1px solid var(--border);

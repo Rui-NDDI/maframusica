@@ -1,6 +1,6 @@
 @custom-media --full-width (width >= 1080px);
 
-.docs-layout {
+.page-layout {
     block-size: 100%;
 	margin-inline: auto;
 	max-inline-size: 90rem; 
