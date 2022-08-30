@@ -1,4 +1,7 @@
 {
   "patches": {
+    "drupal/default_content": {
+      "Add `drush dcer --bundles` option to limit export @see https://www.drupal.org/project/default_content/issues/3001618": "https://www.drupal.org/files/issues/2020-08-13/3001618-10.patch"
+    }
   }
 }
