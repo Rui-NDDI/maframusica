@@ -6,22 +6,22 @@ dependencies:
     - language
     - taxonomy
 id: monastery_en
-label: 'Monastery EN'
+label: Monastery
 type: 'canonical_entities:taxonomy_term'
 pattern: 'monastery/[term:name]'
 selection_criteria:
-  da63712a-2a01-4364-bcb5-d648b092de48:
+  207ef496-16ee-4c70-9575-1cb889c281a4:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: da63712a-2a01-4364-bcb5-d648b092de48
+    uuid: 207ef496-16ee-4c70-9575-1cb889c281a4
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       monastery: monastery
-  733c7045-24df-4ec2-a636-2121e3ea0f2d:
+  9449680e-3815-40f7-bfc5-f78d52313f0d:
     id: language
     negate: false
-    uuid: 733c7045-24df-4ec2-a636-2121e3ea0f2d
+    uuid: 9449680e-3815-40f7-bfc5-f78d52313f0d
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:

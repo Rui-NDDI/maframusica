@@ -6,22 +6,22 @@ dependencies:
     - language
     - taxonomy
 id: monastery_pt
-label: 'Monastery PT'
+label: Mosteiro
 type: 'canonical_entities:taxonomy_term'
 pattern: 'mosteiro/[term:name]'
 selection_criteria:
-  9e3ade45-4942-45fa-894c-5ea7ba460533:
+  e9cfeb3a-523d-4078-b44a-29ce4507e91b:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 9e3ade45-4942-45fa-894c-5ea7ba460533
+    uuid: e9cfeb3a-523d-4078-b44a-29ce4507e91b
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       monastery: monastery
-  c5fdc8ea-b682-4099-84f8-2dd284949236:
+  53ef2608-b8c1-4a85-b9f4-70e0f1e9dc00:
     id: language
     negate: false
-    uuid: c5fdc8ea-b682-4099-84f8-2dd284949236
+    uuid: 53ef2608-b8c1-4a85-b9f4-70e0f1e9dc00
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:

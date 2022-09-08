@@ -6,22 +6,22 @@ dependencies:
     - language
     - taxonomy
 id: party_en
-label: 'Party EN'
+label: Party
 type: 'canonical_entities:taxonomy_term'
 pattern: 'party/[term:name]'
 selection_criteria:
-  e115ace4-51ab-4f6b-8d20-bd4e3e2f043b:
+  1fe85715-1625-4127-85c8-8ad3086b658f:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: e115ace4-51ab-4f6b-8d20-bd4e3e2f043b
+    uuid: 1fe85715-1625-4127-85c8-8ad3086b658f
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       parties: parties
-  81088c7e-5891-403a-9238-873561f66dff:
+  b3071b35-a596-4411-a205-85d918a1e46d:
     id: language
     negate: false
-    uuid: 81088c7e-5891-403a-9238-873561f66dff
+    uuid: b3071b35-a596-4411-a205-85d918a1e46d
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:

@@ -1,0 +1,97 @@
+{#
+/**
+ * @file
+ * Theme override for status messages.
+ *
+ * Displays status, error, and warning messages, grouped by type.
+ *
+ * An invisible heading identifies the messages for assistive technology.
+ * Sighted users see a colored box. See http://www.w3.org/TR/WCAG-TECHS/H69.html
+ * for info.
+ *
+ * Add an ARIA label to the contentinfo area so that assistive technology
+ * user agents will better describe this landmark.
+ *
+ * Available variables:
+ * - message_list: List of messages to be displayed, grouped by type.
+ * - status_headings: List of all status types.
+ * - display: (optional) May have a value of 'status' or 'error' when only
+ *   displaying messages of that specific type.
+ * - attributes: HTML attributes for the element, including:
+ *   - class: HTML classes.
+ */
+#}
+{% block messages %}
+
+<div class="notify">
+  {% for type, messages in message_list %}
+
+    {% if type == 'error' %}
+      <div aria-label="{{ status_headings[type] }}" class="x-stack error" role="alert"{{ attributes|without('role') }}>
+        {% if status_headings[type] %}
+          <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+        {% endif %}
+        <ul role="list">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
+          {{ 'Close'|t }}
+        </button>
+      </div>
+    {% endif %}
+
+    {% if type == 'warning' %}
+      <div aria-label="{{ status_headings[type] }}" class="x-stack warning" role="alert"{{ attributes|without('role') }}>
+        {% if status_headings[type] %}
+          <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+        {% endif %}
+        <ul role="list">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
+          {{ 'Close'|t }}
+        </button>
+      </div>
+    {% endif %}
+
+    {% if type == 'status' %}
+      <div aria-label="{{ status_headings[type] }}" class="x-stack success" role="alert"{{ attributes|without('role') }}>
+        {% if status_headings[type] %}
+          <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+        {% endif %}
+        <ul role="list">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
+          {{ 'Close'|t }}
+        </button>
+      </div>
+    {% endif %}
+
+    {% if type == 'info' %}
+      <div aria-label="{{ status_headings[type] }}" class="x-stack info" role="alert"{{ attributes|without('role') }}>
+        {% if status_headings[type] %}
+          <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+        {% endif %}
+        <ul role="list">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        <button onclick="this.parentNode.parentNode.style.display='none';" class="exclude-leave" data-dismiss="alert" aria-label="Close">
+          {{ 'Close'|t }}
+        </button>
+        </button>
+      </div>
+    {% endif %}
+
+  {% endfor %}
+</div>
+
+{% endblock messages %}

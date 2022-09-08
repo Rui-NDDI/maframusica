@@ -1,0 +1,78 @@
+.nav-btn {
+    padding-inline: .25rem;
+    
+    @media (--full-width) {
+        display: none;
+        &[aria-expanded="false"] + * {
+            display: block;
+        }
+    }
+}
+
+.menu {
+    flex-basis: 100%;
+    padding-block: 1rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    @media (--full-width) {
+        flex-basis: unset;
+        padding-block: 0;
+        border: none;
+    }
+}
+
+.menu ul > li a {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: var(--text);
+
+    &:hover, &:focus, &.is-active {
+        color: var(--highlight);
+        background-color: transparent;
+    }
+}
+
+.menu ul ul {
+    & > li a {
+        display: block;
+        font-size: var(--fs-small);
+        font-weight: 400;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        color: var(--text);
+    }
+    &:hover, &:focus {
+        color: var(--highlight);
+        background-color: transparent;
+    }
+}
+
+.menu ul ul > li {
+    margin-inline-start: 1rem;
+}
+
+.menu ul > li > a.toggla {
+    position: relative;
+    font-weight: 700;
+}
+
+.menu ul > li > a.toggla::after {
+    position: absolute;
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    border-color: initial;
+    left: 0;
+    transform: rotate(135deg) translate(0, -50%);
+    transform-origin: top;
+    top: 50%;
+}
+
+.menu ul > li > a.toggla[aria-expanded=true]::after {
+    transform: rotate(225deg);
+}

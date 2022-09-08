@@ -1,0 +1,22 @@
+uuid: d44fe49e-bc56-4538-a728-4675f146c766
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cesem
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: cesem_local_tasks
+theme: cesem
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -2,22 +2,31 @@
 
 /**
  * @file
+ * Sb_core.module.
  */
+
+declare(strict_types = 1);
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\sb_core\Utility\MaterialityTypesHelper;
 
 /**
- * @file
- * Sb_core.module.
+ * Implements hook_theme().
  */
+function sb_core_theme(): array {
+  return [
+    'cesem_partner' => [
+      'render element' => 'children',
+    ],
+  ];
+}
 
 /**
  * Implements hook_form_alter().
  *
  * - Adds state dependencies between materiality fields.
  */
-function sb_core_form_node_form_alter(&$form, FormStateInterface $form_state) {
+function sb_core_form_node_form_alter(&$form, FormStateInterface $form_state): void {
   /** @var \Drupal\node\NodeInterface $node */
   $node = $form_state->getFormObject()->getEntity();
   $type_field = MaterialityTypesHelper::MATERIALITY_TYPES_FIELD;

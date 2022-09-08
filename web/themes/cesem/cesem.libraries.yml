@@ -1,0 +1,13 @@
+styling:
+  version: 1.0
+  css:
+    layout:
+      css/styles.min.css: { minified: true }
+  js:
+    js/scripts.js: { }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/matchmedia
+    - core/jquery.once

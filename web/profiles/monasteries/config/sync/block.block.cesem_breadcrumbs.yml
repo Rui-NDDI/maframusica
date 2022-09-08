@@ -1,0 +1,22 @@
+uuid: 6f4872eb-4a7d-44b9-8f8c-aa59697b10b3
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cesem
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: cesem_breadcrumbs
+theme: cesem
+region: highlighted
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

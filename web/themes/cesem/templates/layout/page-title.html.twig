@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation for page titles.
+ *
+ * Available variables:
+ * - title_attributes: HTML attributes for the page title element.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ title_prefix }}
+{% if title %}
+  {% if is_front %}
+    <h1 class="fs1 fw3 lh-title">{{ title }}</h1>
+  {% else %}
+    <h1 class="fs2 lh-title">{{ title }}</h1>
+  {% endif %}
+{% endif %}
+{% if is_front and is_front_slogan %}
+  <p class="fs5 lh-title m">{{ is_front_slogan }}</p>
+{% endif %}
+{{ title_suffix }}

@@ -7,16 +7,14 @@ display:
       fields:
         title:
           label: Título
-          separator: ', '
         field_pdf:
-          label: PDF
-          separator: ', '
+          alter:
+            text: '<a href="{{ field_pdf }}" target="_blank">Ver ficheiro PDF</a>'
       exposed_form:
         options:
           submit_button: Aplicar
           reset_button_label: Redefinir
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
           sort_desc_label: Descrição
   page_1:
     display_title: Página

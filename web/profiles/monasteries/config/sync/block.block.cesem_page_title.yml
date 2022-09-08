@@ -1,0 +1,20 @@
+uuid: da5d231f-40ed-4980-a2f2-5bcecb1c3807
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cesem
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: cesem_page_title
+theme: cesem
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

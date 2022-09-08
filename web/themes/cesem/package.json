@@ -1,0 +1,41 @@
+{
+  "name": "css-starter-kit",
+  "version": "1.0.0",
+  "description": "Building base using PostCSS",
+  "author": "Paulo Nunes <syndicatefx@gmail.com>",
+  "license": "MIT",
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-preset-env": {
+        "stage": false,
+        "browsers": "defaults",
+        "autoprefixer": false,
+        "features": {
+          "custom-media-queries": true,
+          "nesting-rules": true,
+          "media-query-ranges": true
+        }
+      },
+      "cssnano": {
+        "preset": "default"
+      }
+    }
+  },
+  "scripts": {
+    "css": "postcss src/styles.css -o css/styles.min.css",
+    "watch": "onchange 'src/**/*.css' -- npm-run-all css",
+    "build": "npm-run-all css",
+    "prestart": "npm-run-all css",
+    "start": "npm-run-all --parallel watch"
+  },
+  "devDependencies": {
+    "npm-run-all": "latest",
+    "onchange": "latest",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "7.x"
+  }
+}

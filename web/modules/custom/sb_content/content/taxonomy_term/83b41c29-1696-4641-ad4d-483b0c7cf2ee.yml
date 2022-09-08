@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 83b41c29-1696-4641-ad4d-483b0c7cf2ee
+  bundle: decoration_type
+  default_langcode: pt-pt
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Historiada
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: pt-pt
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1662673784

@@ -1,0 +1,49 @@
+.notify {
+    position: fixed;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    padding-inline: 1rem;
+    z-index: 4;
+
+    & > * {
+        font-size: var(--fs-small);
+        font-weight: 500;
+        position: relative;
+        max-width: 24rem;
+        padding: 1rem;
+        margin-inline-start: auto;
+        background-color: var(--bg);
+        border: 1px solid var(--border);
+        border-top: 4px solid var(--bc);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        transform: translateX(120%);
+        animation: pop-msg .6s cubic-bezier(.77,0,.18,1) forwards;
+
+        & > *:not(a) {
+            color: currentColor;
+        }
+
+        & > button {
+            display: block;
+           margin-inline-start: auto;
+        }
+
+        &.error {
+            --bc: var(--red);
+        }
+        &.warning {
+            --bc: var(--orange);
+        }
+        &.success, &.info {
+            --bc: var(--blue);
+        }
+    }
+}
+
+@keyframes pop-msg {
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,22 @@
+uuid: 33818df4-d94a-4d2e-935e-05e0314b4314
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cesem
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: cesem_messages
+theme: cesem
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
