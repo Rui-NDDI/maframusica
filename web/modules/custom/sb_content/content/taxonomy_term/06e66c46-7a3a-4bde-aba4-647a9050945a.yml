@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 06e66c46-7a3a-4bde-aba4-647a9050945a
+  bundle: materiality_book_body
+  default_langcode: pt-pt
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Iluminuras
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: pt-pt
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1662672569

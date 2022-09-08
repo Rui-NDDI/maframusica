@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 8a988e88-a460-4224-a077-afcb0b853bb2
+  bundle: document_type
+  default_langcode: pt-pt
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Carta de arras/dote'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: pt-pt
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1662673460
