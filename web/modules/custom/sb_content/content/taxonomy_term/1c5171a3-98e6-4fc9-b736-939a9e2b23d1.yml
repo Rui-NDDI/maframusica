@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 1c5171a3-98e6-4fc9-b736-939a9e2b23d1
+  bundle: pigment
+  default_langcode: pt-pt
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Mínio
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: pt-pt
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1662671914
+  field_chemical_form_compose:
+    -
+      value: Pb3O4

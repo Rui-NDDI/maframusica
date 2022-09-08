@@ -13,3 +13,14 @@
  */
 
 declare(strict_types = 1);
+
+/**
+ * Import taxonomies.
+ */
+function sb_core_deploy_108000(): void {
+  /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
+  $module_installer = \Drupal::service('module_installer');
+  // Import new content.
+  $module_installer->install(['sb_content']);
+  $module_installer->uninstall(['sb_content']);
+}

@@ -63,17 +63,3 @@ function cesem_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     ];
   }
 }
-
-/**
- * Use language code for the language switcher
- *
- * @param $variables
- */
-function cesem_preprocess_links__language_block(&$variables) {
-
-  foreach ($variables['links'] as $i => $link) {
-    // @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage
-    $linkLanguage = $link['link']['#options']['language'];
-    $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
-  }
-}
