@@ -1,6 +1,10 @@
+/*--------------------------
+	Basic defaults
+---------------------------*/
+
 :where(input, button, select, textarea):focus:not(input[type="range"]) {
 	outline: 3px solid transparent;
-	box-shadow: 0 0 0 2px var(--highlight);
+	box-shadow: 0 0 0 2px currentColor;
 }
 
 input, button, textarea, select,
@@ -11,81 +15,35 @@ input[type="file"]::file-selector-button {
 	color: inherit;
 	letter-spacing: inherit;
 	padding-inline: .75rem;
-	padding-block: .5rem;
-	border-radius: .25rem;
+	padding-block: .75rem;
+	border-radius:  var(--radius);
 	border: 1px solid var(--border);
 }
 
 input, select,
 textarea {
-	width: 100%;
+	inline-size: 100%;
 	background-color: var(--bg-muted);
-}
-
-label:not(.x-flex) {
-	display: block;
-}
-
-label.x-flex {
-	--x-flex-gap: .5rem;
+	box-shadow: var(--shadow-inset);
 }
 
 textarea {
 	resize: vertical;
 }
 
-select {
-	appearance: none;
-}
-
-button, button[type], input[type="button"], input[type="submit"], input[type="reset"],
-input[type="file"]::-webkit-file-upload-button,
-input[type="file"]::file-selector-button {
-	user-select: none;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	cursor: pointer;
-	font-weight: 500;
-	width: max-content;
-	display: inline-flex;
-	justify-content: center;
+label {
+	display: flex;
 	align-items: center;
-	text-align: center;
 	gap: .5rem;
-	padding-inline: 1rem;
-	padding-block: .25rem;
-	background-color: var(--bg);
-	box-shadow: var(--shadow);
 }
 
-input[type="range"] {
-	-webkit-appearance: none;
-	appearance: none;
-	outline: none;
+label + input[type="range"] {
+	margin-block-start: 1rem;
 }
-input[type="range"]::-webkit-slider-runnable-track {
-	-webkit-appearance: none;
-	appearance: none;
-}
-input[type="range"]::-moz-range-track {
-	-webkit-appearance: none;
-	appearance: none;
-}
-input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-}
-input[type="range"]::-moz-range-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-}
-input[type="range"] {
-	display: block;
-	padding: 0;
-	background: 0 0;
-	outline: none;
-	block-size: 0;
-}
+
+/*--------------------------
+	Fieldset
+---------------------------*/
 
 fieldset {
     display: grid;
@@ -95,7 +53,12 @@ fieldset {
 	border-radius: .25rem;
 }
 
+/*--------------------------
+	Select
+---------------------------*/
+
 select {
+	appearance: none;
 	padding-inline-end: 2rem;
 	background-color: var(--bg);
 	box-shadow: var(--shadow);
@@ -112,8 +75,34 @@ select {
 	background-repeat: no-repeat;
 
 	&[multiple] {
+		background-color: var(--bg-muted);
 		background-image: none;
+		box-shadow: var(--shadow-inset);
 	}
+}
+
+/*--------------------------
+	Buttons
+---------------------------*/
+
+button, button[type], input[type="button"], input[type="submit"], input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+input[type="file"]::file-selector-button {
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	cursor: pointer;
+	font-weight: 500;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: .5rem;
+	inline-size: max-content;
+	padding-inline: 1rem;
+	padding-block: .5rem;
+	background-color: var(--bg);
+	box-shadow: var(--shadow);
 }
 
 input[type="file"]::-webkit-file-upload-button,
@@ -122,6 +111,10 @@ input[type="file"]::file-selector-button {
 	margin-inline-start: -.25rem;
 	padding-block: .125rem;
 }
+
+/*--------------------------
+	Checkbox + Radio
+---------------------------*/
 
 input:is([type="checkbox"],[type="radio"]) {
 	-webkit-appearance: none;
@@ -144,10 +137,10 @@ input:is([type="checkbox"],[type="radio"]):checked::before {
 }
 
 input[type="checkbox"]::before {
-	inline-size: 1rem;
-	block-size: 1rem;
+	inline-size: 1.25rem;
+	block-size: 1.25rem;
 	transform-origin: center center;
-	clip-path: polygon(0 10%, 10% 0, 50% 40%, 90% 0, 100% 10%, 60% 50%, 100% 90%, 90% 100%, 50% 60%, 10% 100%, 0 90%, 40% 50%);
+	clip-path:polygon(16% 45%,0 64%,44% 100%,100% 22%,80% 8%,39% 65%);
 	background-color: currentColor;
 }
 
@@ -164,59 +157,4 @@ input[type="radio"]::before {
 	block-size: .5rem;
 	box-shadow: inset 1em 1em currentColor;
 	border-radius: 50%;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-	cursor: ew-resize;
-	width: 2rem;
-	height: 1rem;
-	background: var(--bg);
-	border: 1px solid var(--border);
-	border-radius: .25rem;
-	box-shadow: var(--focus-ring, var(--shadow));
-}
-
-input[type="range"]::-moz-range-thumb {
-	cursor: ew-resize;
-	inline-size: 2rem;
-	block-size: 1rem;
-	background: var(--bg);
-	border: 1px solid var(--border);
-	border-radius: .25rem;
-	box-shadow: var(--focus-ring, var(--shadow));
-}
-
-input[type="range"]:hover, 
-input[type="range"]:focus-visible {
-	--focus-ring: 0 0 0 2px var(--highlight);
-}
-
-input.toggle {
-	--x-flex-gap: 0;
-	inline-size: 3rem;
-	padding: 0;
-	border-radius: 1rem;
-	transition: 120ms background-color ease-in-out;
-}
-
-input.toggle::before {
-	content: "";
-	display: block;
-	clip-path: revert;
-	inline-size: 1rem;
-	block-size: 1rem;
-	background-color: var(--bg);
-	box-shadow: var(--shadow);
-	border: 1px solid var(--border);
-	border-radius: .5rem;
-	transform: translateX(-.75rem);
-	transition: 120ms transform ease-in-out;
-}
-
-input.toggle:checked {
-	background-color: currentColor;
-}
-	
-input.toggle:checked::before {
-	transform: translateX(.75rem);
 }

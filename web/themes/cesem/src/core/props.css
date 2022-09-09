@@ -34,6 +34,8 @@
 	--shadow: 
     0 8px 48px hsl(var(--h) 20% 96%), 
     0 4px 8px hsl(var(--h) 20% .28% / 6%);
+	--shadow-inset: 
+	inset 0 0 6px -2px hsl(var(--h) var(--s) 84%);
 
 	/* font defaults */
 	--ff-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
