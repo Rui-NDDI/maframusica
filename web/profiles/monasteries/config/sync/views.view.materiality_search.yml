@@ -438,7 +438,7 @@ display:
           exposed: true
           expose:
             operator_id: field_bifolios_notebook_target_id_op
-            label: 'Bifolios per notebook (predominant)'
+            label: 'Bifolios per notebook'
             description: ''
             use_operator: false
             operator: field_bifolios_notebook_target_id_op
@@ -1764,7 +1764,7 @@ display:
           exposed: true
           expose:
             operator_id: field_decoration_target_id_op
-            label: 'Decoration (field_decoration)'
+            label: Decoration
             description: ''
             use_operator: false
             operator: field_decoration_target_id_op

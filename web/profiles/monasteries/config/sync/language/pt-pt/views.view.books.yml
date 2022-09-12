@@ -1,0 +1,44 @@
+label: Livros
+display:
+  default:
+    display_options:
+      title: Livros
+      fields:
+        title:
+          label: Titulo
+        field_images:
+          label: Imagens
+        field_book_date:
+          label: Data
+        field_type:
+          label: Tipo
+        field_subcategory:
+          label: Sub-categoria
+        field_archive:
+          label: Arquivo
+      filters:
+        field_monastery_target_id:
+          expose:
+            label: Mosteiro
+        field_century_value:
+          expose:
+            label: Século
+        field_type_target_id:
+          expose:
+            label: Tipo
+        field_font_type_target_id:
+          expose:
+            label: 'Tipo de fonte'
+        field_music_notation_target_id:
+          expose:
+            label: 'Tipo de notação musical'
+        field_writing_type_target_id:
+          expose:
+            label: 'Tipo de escrita'
+        keys:
+          expose:
+            label: Pesquisar
+  page:
+    display_options:
+      menu:
+        title: Livros

@@ -1,0 +1,35 @@
+label: Documentos
+display:
+  default:
+    display_options:
+      title: Documentos
+      fields:
+        title:
+          label: Titulo
+        field_date:
+          label: Data
+        field_document_type:
+          label: 'Tipo de documento'
+        field_validation:
+          label: Validação
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Resetar
+      filters:
+        field_date_intervals_value:
+          expose:
+            label: Data
+        field_document_type_target_id:
+          expose:
+            label: 'Tipo de documento'
+        field_validation_target_id:
+          expose:
+            label: Validação
+        keys:
+          expose:
+            label: Pesquisa
+  page_1:
+    display_options:
+      menu:
+        title: Documentos

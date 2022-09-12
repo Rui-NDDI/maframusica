@@ -498,7 +498,7 @@ display:
           exposed: true
           expose:
             operator_id: field_validation_target_id_op
-            label: 'Validation (field_validation)'
+            label: Validation
             description: ''
             use_operator: false
             operator: field_validation_target_id_op

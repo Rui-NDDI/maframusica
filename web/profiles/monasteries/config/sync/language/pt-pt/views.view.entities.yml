@@ -19,3 +19,12 @@ display:
         field_function_value:
           expose:
             label: Função
+      fields:
+        title:
+          label: Nome
+        field_function:
+          label: Função
+  page:
+    display_options:
+      menu:
+        title: Entidades
