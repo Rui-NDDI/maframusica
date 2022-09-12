@@ -1,0 +1,13 @@
+label: Festas
+display:
+  default:
+    display_options:
+      title: Festas
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+  page:
+    display_options:
+      menu:
+        title: Festas
