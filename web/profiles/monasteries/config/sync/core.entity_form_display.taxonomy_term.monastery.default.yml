@@ -3,12 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.monastery.field_description
     - taxonomy.vocabulary.monastery
+  module:
+    - text
 id: taxonomy_term.monastery.default
 targetEntityType: taxonomy_term
 bundle: monastery
 mode: default
 content:
+  field_description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 1
