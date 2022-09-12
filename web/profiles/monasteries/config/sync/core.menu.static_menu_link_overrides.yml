@@ -8,44 +8,44 @@ definitions:
     expanded: false
     enabled: true
   sb_core__bookbinding:
+    menu_name: main
+    parent: sb_core.materiality
     weight: -49
-    menu_name: main
-    parent: sb_core.materiality
-    enabled: true
     expanded: false
+    enabled: true
   sb_core__fitting:
-    weight: -48
     menu_name: main
     parent: sb_core.materiality
+    weight: -48
     expanded: false
     enabled: true
   sb_core__sewing:
-    weight: -47
     menu_name: main
     parent: sb_core.bookbinding
-    enabled: true
+    weight: -47
     expanded: false
+    enabled: true
   sb_core__monastery:
-    enabled: false
     menu_name: main
     parent: ''
-    expanded: false
     weight: -49
+    expanded: false
+    enabled: false
   sb_core__monastery_alcobaca:
-    parent: 'menu_link_content:d2dd9140-657c-4259-a50a-b4dad634f407'
+    weight: -47
     menu_name: main
-    weight: -50
+    parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
+    enabled: false
     expanded: false
-    enabled: true
-  sb_core__monastery_arouca:
-    parent: 'menu_link_content:d2dd9140-657c-4259-a50a-b4dad634f407'
-    menu_name: main
-    weight: -49
-    expanded: false
-    enabled: true
   sb_core__monastery_lorvao:
-    parent: 'menu_link_content:d2dd9140-657c-4259-a50a-b4dad634f407'
+    weight: -45
     menu_name: main
-    weight: -48
+    parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
     expanded: false
-    enabled: true
+    enabled: false
+  sb_core__monastery_arouca:
+    weight: -46
+    menu_name: main
+    parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
+    expanded: false
+    enabled: false
