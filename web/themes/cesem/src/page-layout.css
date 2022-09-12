@@ -29,31 +29,6 @@
     }
 }
 
-article > .field > * + * {
+article > .field > * + *, .taxonomy-term > .content > * + * {
     margin-block-start: 1em;
-}
-
-.view-entities {
-    display: flex;
-    flex-wrap: wrap;
-    --modifier: calc(44rem - 100%);
-    gap: 2rem;
-
-    & .view-filters, & .view-content {
-        flex-grow: 1;
-        flex-basis: calc(var(--modifier) * 999);
-    }
-
-    & .attachment-before, & .view-content {
-        order: -1;
-    }
-
-    & .attachment-before, & .pager {
-        flex-grow: 1;
-        flex-basis: 100%;
-    }
-
-    & .view-content {
-        inline-size: 100%;
-    }
 }

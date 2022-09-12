@@ -1,0 +1,30 @@
+.cesem-view-data {
+    display: flex;
+    flex-wrap: wrap;
+    --modifier: calc(44rem - 100%);
+    gap: 2rem;
+
+    & .view-filters, & .view-content {
+        flex-grow: 1;
+        flex-basis: calc(var(--modifier) * 999);
+    }
+
+    & .attachment-before, & .view-content {
+        order: -1;
+    }
+
+    & .attachment-before, & .pager {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+    & .view-content {
+        inline-size: 100%;
+        flex-grow: 2;
+    }
+
+    & .view-filters label {
+        font-size: var(--fs-small);
+        font-weight: 600;
+    }
+}
