@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: sz_FoMz5aClG4jFy4UDlkenXQtgTUXohEDjWVBuHaro
 id: entities
-label: Entities
+label: Entidades
 module: node
 description: 'All content, by letter.'
 tag: default
@@ -26,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Entities
+      title: Entidades
       fields:
         title:
           id: title
@@ -38,7 +38,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Name
+          label: Nome
           exclude: false
           alter:
             alter_text: false
@@ -101,7 +101,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Function
+          label: Função
           exclude: false
           alter:
             alter_text: false
@@ -179,10 +179,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -210,7 +210,7 @@ display:
           exception:
             value: all
             title_enable: true
-            title: All
+            title: Todos
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -349,7 +349,7 @@ display:
           exposed: true
           expose:
             operator_id: field_entity_type_value_op
-            label: 'Entity type'
+            label: 'Tipo de entidade'
             description: ''
             use_operator: false
             operator: field_entity_type_value_op
@@ -393,7 +393,7 @@ display:
           exposed: true
           expose:
             operator_id: field_function_value_op
-            label: Function
+            label: Função
             description: ''
             use_operator: false
             operator: field_function_value_op
@@ -578,9 +578,9 @@ display:
       path: entities
       menu:
         type: normal
-        title: Entities
+        title: Entidades
         description: ''
-        weight: -49
+        weight: -48
         expanded: false
         menu_name: main
         parent: ''

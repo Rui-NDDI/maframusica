@@ -18,7 +18,7 @@ dependencies:
     - taxonomy
     - user
 id: documents
-label: Documents
+label: Documentos
 module: views
 description: ''
 tag: ''
@@ -31,7 +31,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Documents
+      title: Documentos
       fields:
         title:
           id: title
@@ -43,7 +43,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: Titulo
           exclude: false
           alter:
             alter_text: false
@@ -88,7 +88,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Date
+          label: Data
           exclude: false
           alter:
             alter_text: false
@@ -152,7 +152,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Document type'
+          label: 'Tipo de documento'
           exclude: false
           alter:
             alter_text: false
@@ -215,7 +215,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Validation
+          label: Validação
           exclude: false
           alter:
             alter_text: false
@@ -291,9 +291,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Resetar
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -405,7 +405,7 @@ display:
           exposed: true
           expose:
             operator_id: field_date_intervals_value_op
-            label: Date
+            label: Data
             description: ''
             use_operator: false
             operator: field_date_intervals_value_op
@@ -449,7 +449,7 @@ display:
           exposed: true
           expose:
             operator_id: field_document_type_target_id_op
-            label: 'Document type'
+            label: 'Tipo de documento'
             description: ''
             use_operator: false
             operator: field_document_type_target_id_op
@@ -498,7 +498,7 @@ display:
           exposed: true
           expose:
             operator_id: field_validation_target_id_op
-            label: Validation
+            label: Validação
             description: ''
             use_operator: false
             operator: field_validation_target_id_op
@@ -547,7 +547,7 @@ display:
           exposed: true
           expose:
             operator_id: keys_op
-            label: Search
+            label: Pesquisa
             description: ''
             use_operator: false
             operator: keys_op
@@ -615,7 +615,8 @@ display:
       path: documents
       menu:
         type: normal
-        title: Documents
+        title: Documentos
+        weight: -44
         menu_name: main
         parent: ''
     cache_metadata:

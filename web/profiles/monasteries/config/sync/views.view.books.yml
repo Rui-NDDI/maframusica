@@ -24,7 +24,7 @@ dependencies:
     - taxonomy
     - user
 id: books
-label: Books
+label: Livros
 module: views
 description: ''
 tag: ''
@@ -37,7 +37,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Books
+      title: Livros
       fields:
         title:
           id: title
@@ -49,7 +49,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: Titulo
           exclude: false
           alter:
             alter_text: false
@@ -94,7 +94,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Images
+          label: Imagens
           exclude: false
           alter:
             alter_text: false
@@ -160,7 +160,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Date
+          label: Data
           exclude: false
           alter:
             alter_text: false
@@ -223,7 +223,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Type
+          label: Tipo
           exclude: false
           alter:
             alter_text: false
@@ -286,7 +286,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Subcategory
+          label: Sub-categoria
           exclude: false
           alter:
             alter_text: false
@@ -349,7 +349,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Archive
+          label: Arquivo
           exclude: false
           alter:
             alter_text: false
@@ -498,7 +498,7 @@ display:
           exposed: true
           expose:
             operator_id: field_monastery_target_id_op
-            label: 'Monastery (field_monastery)'
+            label: Mosteiro
             description: ''
             use_operator: false
             operator: field_monastery_target_id_op
@@ -547,7 +547,7 @@ display:
           exposed: true
           expose:
             operator_id: field_century_value_op
-            label: 'Century (field_century)'
+            label: Século
             description: ''
             use_operator: false
             operator: field_century_value_op
@@ -591,7 +591,7 @@ display:
           exposed: true
           expose:
             operator_id: field_type_target_id_op
-            label: Type
+            label: Tipo
             description: ''
             use_operator: false
             operator: field_type_target_id_op
@@ -640,7 +640,7 @@ display:
           exposed: true
           expose:
             operator_id: field_font_type_target_id_op
-            label: 'Font type'
+            label: 'Tipo de fonte'
             description: ''
             use_operator: false
             operator: field_font_type_target_id_op
@@ -689,7 +689,7 @@ display:
           exposed: true
           expose:
             operator_id: field_music_notation_target_id_op
-            label: 'Music notation'
+            label: 'Tipo de notação musical'
             description: ''
             use_operator: false
             operator: field_music_notation_target_id_op
@@ -738,7 +738,7 @@ display:
           exposed: true
           expose:
             operator_id: field_writing_type_target_id_op
-            label: 'Writing type'
+            label: 'Tipo de escrita'
             description: ''
             use_operator: false
             operator: field_writing_type_target_id_op
@@ -787,7 +787,7 @@ display:
           exposed: true
           expose:
             operator_id: keys_op
-            label: Search
+            label: Pesquisar
             description: ''
             use_operator: false
             operator: keys_op
@@ -908,8 +908,8 @@ display:
       path: books
       menu:
         type: normal
-        title: Books
-        weight: -48
+        title: Livros
+        weight: -47
         menu_name: main
         parent: ''
     cache_metadata:

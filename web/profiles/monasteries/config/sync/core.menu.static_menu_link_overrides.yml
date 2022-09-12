@@ -25,3 +25,27 @@ definitions:
     parent: sb_core.bookbinding
     enabled: true
     expanded: false
+  sb_core__monastery:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: -49
+  sb_core__monastery_alcobaca:
+    parent: 'menu_link_content:d2dd9140-657c-4259-a50a-b4dad634f407'
+    menu_name: main
+    weight: -50
+    expanded: false
+    enabled: true
+  sb_core__monastery_arouca:
+    parent: 'menu_link_content:d2dd9140-657c-4259-a50a-b4dad634f407'
+    menu_name: main
+    weight: -49
+    expanded: false
+    enabled: true
+  sb_core__monastery_lorvao:
+    parent: 'menu_link_content:d2dd9140-657c-4259-a50a-b4dad634f407'
+    menu_name: main
+    weight: -48
+    expanded: false
+    enabled: true

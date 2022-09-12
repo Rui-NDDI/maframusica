@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 id: pdf_catalog
-label: 'PDF Catalog'
+label: 'Catálogo PDF'
 module: views
 description: ''
 tag: ''
@@ -20,11 +20,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Predefinição
     display_plugin: default
     position: 0
     display_options:
-      title: 'PDF Catalog'
+      title: 'Catálogo PDF'
       fields:
         title:
           id: title
@@ -36,7 +36,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: Título
           exclude: false
           alter:
             alter_text: false
@@ -103,7 +103,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="{{ field_pdf }}" target="_blank">View PDF file</a>'
+            text: '<a href="{{ field_pdf }}" target="_blank">Ver ficheiro PDF</a>'
             make_link: false
             path: ''
             absolute: false
@@ -177,13 +177,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Redefinir
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_desc_label: Descrição
       access:
         type: perm
         options:
@@ -305,7 +305,7 @@ display:
         - 'config:field.storage.node.field_pdf'
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:
@@ -317,8 +317,8 @@ display:
       path: pdf-catalog
       menu:
         type: normal
-        title: 'PDF Catalog'
-        weight: -47
+        title: 'Catálogo PDF'
+        weight: -46
         menu_name: main
         parent: ''
     cache_metadata:
