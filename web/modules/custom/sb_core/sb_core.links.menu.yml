@@ -1,0 +1,52 @@
+sb_core.base:
+  route_name: sb_core.base
+  parent: system.admin_config
+  title: SquareBit
+  weight: -99
+
+sb_core.monastery:
+  url: route:<nolink>
+  title: 'Monastery'
+  weight: -50
+  menu_name: main
+
+sb_core.monastery_alcobaca:
+  url: internal:/taxonomy/term/1
+  title: 'Monastery of Alcobaça'
+  parent: sb_core.monastery
+  weight: -50
+  menu_name: main
+
+sb_core.monastery_arouca:
+  url: internal:/taxonomy/term/2
+  title: 'Monastery of Arouca'
+  parent: sb_core.monastery
+  weight: -49
+  menu_name: main
+
+sb_core.monastery_lorvao:
+  url: internal:/taxonomy/term/3
+  title: 'Monastery of Lorvão'
+  parent: sb_core.monastery
+  weight: -48
+  menu_name: main
+
+sb_core.materiality:
+  url: route:<nolink>
+  title: 'Materiality'
+  weight: -45
+  menu_name: main
+
+sb_core.bookbinding:
+  url: route:<nolink>
+  title: 'Bookbinding'
+  parent: sb_core.materiality
+  weight: -50
+  menu_name: main
+
+sb_core.fitting:
+  url: route:<nolink>
+  title: 'Fitting'
+  parent: sb_core.materiality
+  weight: -20
+  menu_name: main

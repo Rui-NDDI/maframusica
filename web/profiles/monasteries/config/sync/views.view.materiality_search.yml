@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.materiality
+    - system.menu.main
     - taxonomy.vocabulary.articulation_cover
     - taxonomy.vocabulary.articulation_system
     - taxonomy.vocabulary.attach_sewing_support_folder
@@ -737,6 +738,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/bookbinding-book-body/search
+      menu:
+        type: normal
+        title: Body
+        description: ''
+        weight: -50
+        expanded: false
+        menu_name: main
+        parent: sb_core.bookbinding
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -1392,6 +1402,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/bookbinding-guards/search
+      menu:
+        type: normal
+        title: Guards
+        description: ''
+        weight: -49
+        expanded: false
+        menu_name: main
+        parent: sb_core.bookbinding
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -2198,6 +2217,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/closures/search
+      menu:
+        type: normal
+        title: Closures
+        description: ''
+        weight: -44
+        expanded: false
+        menu_name: main
+        parent: sb_core.bookbinding
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -3162,6 +3190,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/cover/search
+      menu:
+        type: normal
+        title: Cover
+        description: ''
+        weight: -45
+        expanded: false
+        menu_name: main
+        parent: sb_core.bookbinding
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -3776,6 +3813,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/decor/search
+      menu:
+        type: normal
+        title: Decoration
+        description: ''
+        weight: -50
+        expanded: false
+        menu_name: main
+        parent: sb_core.materiality
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -4445,6 +4491,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/fitting-brooches/search
+      menu:
+        type: normal
+        title: Brooches
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: sb_core.fitting
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -4912,6 +4967,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/fitting-labels-brands/search
+      menu:
+        type: normal
+        title: 'Labels and Brands'
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: sb_core.fitting
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -5850,6 +5914,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/folders/search
+      menu:
+        type: normal
+        title: Folders
+        description: ''
+        weight: -46
+        expanded: false
+        menu_name: main
+        parent: sb_core.bookbinding
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -6361,6 +6434,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/sewing/search
+      menu:
+        type: normal
+        title: Sewing
+        description: ''
+        weight: -48
+        expanded: false
+        menu_name: main
+        parent: sb_core.bookbinding
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -6762,6 +6844,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/sewing-holes-tranchefil/search
+      menu:
+        type: normal
+        title: 'Holes and transchefil'
+        description: ''
+        weight: -48
+        expanded: false
+        menu_name: main
+        parent: 'views_view:views.materiality_search.sewing'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -7376,6 +7467,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/sewing-support/search
+      menu:
+        type: normal
+        title: Support
+        description: ''
+        weight: -49
+        expanded: false
+        menu_name: main
+        parent: 'views_view:views.materiality_search.sewing'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -7926,6 +8026,15 @@ display:
           metatags: {  }
           tokenize: false
       path: materiality/sewing-thread/search
+      menu:
+        type: normal
+        title: Thread
+        description: ''
+        weight: -50
+        expanded: false
+        menu_name: main
+        parent: 'views_view:views.materiality_search.sewing'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

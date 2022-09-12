@@ -1,19 +1,17 @@
-uuid: 1e7d497e-5f1e-47c1-a589-13df256536bc
+uuid: 3ce58467-cca0-4b45-b20d-1e386f9ba72a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_function
-    - node.type.people
+    - node.type.parties
     - system.menu.main
   module:
     - node
-    - options
     - user
 _core:
   default_config_hash: sz_FoMz5aClG4jFy4UDlkenXQtgTUXohEDjWVBuHaro
-id: entities
-label: Entities
+id: parties
+label: Parties
 module: node
 description: 'All content, by letter.'
 tag: default
@@ -26,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Entities
+      title: Parties
       fields:
         title:
           id: title
@@ -38,7 +36,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Name
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -83,68 +81,6 @@ display:
           type: string
           settings:
             link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_function:
-          id: field_function
-          table: node__field_function
-          field: field_function
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Function
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -305,7 +241,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            people: people
+            parties: parties
           group: 1
           exposed: false
           expose:
@@ -335,94 +271,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_entity_type_value:
-          id: field_entity_type_value
-          table: node__field_entity_type
-          field: field_entity_type_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: list_field
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_entity_type_value_op
-            label: 'Entity type'
-            description: ''
-            use_operator: false
-            operator: field_entity_type_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: entity_type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              content_contributor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-        field_function_value:
-          id: field_function_value
-          table: node__field_function
-          field: field_function_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: list_field
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_function_value_op
-            label: Function
-            description: ''
-            use_operator: false
-            operator: field_function_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: function
-            required: false
-            remember: false
-            multiple: true
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              content_contributor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
       style:
         type: table
         options:
@@ -488,8 +336,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_function'
+      tags: {  }
   glossary:
     id: glossary
     display_title: Attachment
@@ -560,8 +407,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_function'
+      tags: {  }
   page:
     id: page
     display_title: Page
@@ -575,15 +421,15 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: entities
+      path: parties
       menu:
         type: normal
-        title: Entities
+        title: Parties
         description: ''
         weight: -49
         expanded: false
         menu_name: main
-        parent: ''
+        parent: 'views_view:views.books.page'
         context: '0'
     cache_metadata:
       max-age: -1
@@ -594,5 +440,4 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_function'
+      tags: {  }

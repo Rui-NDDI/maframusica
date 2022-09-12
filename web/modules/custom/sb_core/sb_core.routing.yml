@@ -1,0 +1,7 @@
+sb_core.base:
+  path: '/admin/config/sbit'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'SquareBit'
+  requirements:
+    _permission: 'access administration pages'

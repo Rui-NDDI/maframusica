@@ -318,7 +318,7 @@ display:
       menu:
         type: normal
         title: 'PDF Catalog'
-        weight: -49
+        weight: -47
         menu_name: main
         parent: ''
     cache_metadata:
