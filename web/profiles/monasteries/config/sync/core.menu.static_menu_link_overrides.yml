@@ -7,3 +7,21 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  sb_core__bookbinding:
+    weight: -49
+    menu_name: main
+    parent: sb_core.materiality
+    enabled: true
+    expanded: false
+  sb_core__fitting:
+    weight: -48
+    menu_name: main
+    parent: sb_core.materiality
+    expanded: false
+    enabled: true
+  sb_core__sewing:
+    weight: -47
+    menu_name: main
+    parent: sb_core.bookbinding
+    enabled: true
+    expanded: false
