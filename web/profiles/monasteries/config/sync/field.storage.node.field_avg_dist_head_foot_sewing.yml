@@ -13,7 +13,7 @@ settings:
   allowed_values:
     -
       value: less_70
-      label: '<70%'
+      label: '&lt;70%'
     -
       value: 70.1-80
       label: '70,1%-80%'
@@ -22,7 +22,7 @@ settings:
       label: '80,1%-100%'
     -
       value: more_110.1
-      label: '>110,1%'
+      label: '&gt;110,1%'
   allowed_values_function: ''
 module: options
 locked: false
