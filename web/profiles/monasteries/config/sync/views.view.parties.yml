@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: sz_FoMz5aClG4jFy4UDlkenXQtgTUXohEDjWVBuHaro
 id: parties
-label: Parties
+label: Feasts
 module: node
 description: 'All content, by letter.'
 tag: default
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Parties
+      title: Feasts
       fields:
         title:
           id: title
@@ -421,10 +421,10 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: parties
+      path: feasts
       menu:
         type: normal
-        title: Parties
+        title: Feasts
         description: ''
         weight: -49
         expanded: false
