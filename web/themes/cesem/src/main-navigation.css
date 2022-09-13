@@ -45,22 +45,26 @@
         padding: .5rem 1rem;
         color: var(--text);
     }
-    &:hover, &:focus {
-        color: var(--highlight);
-        background-color: transparent;
-    }
 }
 
 .menu ul ul > li {
     margin-inline-start: 1rem;
 }
 
-.menu ul > li > a.toggla {
+.menu ul > li > .toggla {
     position: relative;
     font-weight: 700;
+    padding: .5rem 1rem;
+    border: none;
+    box-shadow: none;
+
+    &:hover, &:focus, &.is-active {
+        color: var(--highlight);
+        background-color: transparent;
+    }
 }
 
-.menu ul > li > a.toggla::after {
+.menu ul > li > .toggla::after {
     position: absolute;
     content: "";
     width: 0.5em;
@@ -74,6 +78,24 @@
     top: 50%;
 }
 
-.menu ul > li > a.toggla[aria-expanded=true]::after {
+.menu ul > li > .toggla[aria-expanded=true]::after {
     transform: rotate(225deg);
+}
+
+/* if menu item has dropdown && is a link too */
+.menu ul > li.x-flex {
+    --x-flex-gap: 0;
+    --x-flex-align: center;
+
+    & > .toggla.plus {
+        block-size: 2rem;
+
+        &::after {
+            left: calc(100% - 1.5rem);
+        }
+    }
+
+    & > ul {
+        flex-basis: 100%;
+    }
 }

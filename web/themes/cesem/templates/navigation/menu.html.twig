@@ -44,10 +44,16 @@
         ]
       %}
       {% if item.below %}
-        <li>
-          <a href="#" class="toggla" aria-expanded="false">
-            {{ item.title }}
-          </a>
+        {% if item.url|render is empty %}
+          <li>
+            <button class="toggla" aria-expanded="false">
+              {{ item.title }}
+            </button>
+        {% else %}
+          <li class="x-flex">
+            {{ link(item.title, item.url) }}
+            <button class="toggla plus" aria-expanded="false"><span class="sr-only">Expand {{ item.title }}</span></button>
+        {% endif %}
       {% else %}
         <li{{ item.attributes.addClass(classes) }}>
           {% if menu_level == 0 %}

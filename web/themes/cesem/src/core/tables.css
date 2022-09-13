@@ -11,6 +11,7 @@ td {
     border-color: inherit;
     -webkit-border-horizontal-spacing: 0;
     -webkit-border-vertical-spacing: 0;
+    font-size: var(--fs-small);
 }
 
 tr {
@@ -18,7 +19,6 @@ tr {
 }
 
 th {
-	font-size: var(--fs-small);
 	background-color: var(--bg-muted);
 }
 
