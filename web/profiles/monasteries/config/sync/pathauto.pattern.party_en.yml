@@ -6,22 +6,22 @@ dependencies:
     - language
     - taxonomy
 id: party_en
-label: Party
+label: Feast
 type: 'canonical_entities:taxonomy_term'
-pattern: 'party/[term:name]'
+pattern: 'feast/[term:name]'
 selection_criteria:
-  1fe85715-1625-4127-85c8-8ad3086b658f:
+  d2fd8f5a-4f36-48a0-8e17-72a80689c7c4:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 1fe85715-1625-4127-85c8-8ad3086b658f
+    uuid: d2fd8f5a-4f36-48a0-8e17-72a80689c7c4
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       parties: parties
-  b3071b35-a596-4411-a205-85d918a1e46d:
+  b420c2ba-487d-4894-b551-65df609fb684:
     id: language
     negate: false
-    uuid: b3071b35-a596-4411-a205-85d918a1e46d
+    uuid: b420c2ba-487d-4894-b551-65df609fb684
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:
