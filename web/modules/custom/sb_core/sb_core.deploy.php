@@ -1266,3 +1266,459 @@ function sb_core_deploy_108003(): void {
     ])->save();
   }
 }
+
+/**
+ * Update subcategory book taxonomies.
+ */
+function sb_core_deploy_108004(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'book_subcategory']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Antifonário de Verão', 'Summer antiphoner'],
+    ['Antifonário santoral', 'Sanctoral antiphoner'],
+    ['Antifonário temporal', 'Temporal antiphoner'],
+    ['Breviário de Inverno', 'Winter breviary'],
+    ['Breviário de Verão', 'Summer breviary'],
+    ['Breviário notado', 'Noted breviary'],
+    ['Gradual santoral', 'Sanctoral gradual'],
+    ['Gradual temporal', 'Temporal gradual'],
+    ['Livro de coro', 'Choirbook'],
+    ['Livro de partes', 'Partbook'],
+    ['Missal de Verão', 'Summer missal'],
+    ['Missal plenário', 'Plenary missal'],
+    ['Saltério ferial', 'Ferial psalter']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'book_subcategory',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update music taxonomies.
+ */
+function sb_core_deploy_108005(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'music']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['-n/a', '-n/a'],
+    ['Monodia', 'Monophony'],
+    ['Polifonia', 'Polyphony']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'music',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update completeness taxonomies.
+ */
+function sb_core_deploy_108006(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'completeness']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Completo ou quase completo', 'Complete or nearly complete'],
+    ['Fragmento', 'Fragment']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'completeness',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update cursus taxonomies.
+ */
+function sb_core_deploy_108007(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'cursus']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Monástico', 'Monastic'],
+    ['Secular', 'Secular'],
+    ['desconhecido', 'unknown']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'cursus',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update locations taxonomies.
+ */
+function sb_core_deploy_108008(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'locations']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Alcobaça, Mosteiro de Santa Maria?', 'Alcobaça, Mosteiro de Santa Maria?'],
+    ['Arouca, Mosteiro de Santa Maria', 'Arouca, Mosteiro de Santa Maria'],
+    ['Braga, Catedral', 'Braga, Catedral'],
+    ['Braga?', 'Braga?'],
+    ['Coimbra', 'Coimbra'],
+    ['Coimbra, Catedral', 'Coimbra, Catedral'],
+    ['Coimbra, Mosteiro de Santa Cruz', 'Coimbra, Mosteiro de Santa Cruz'],
+    ['Coimbra, Mosteiro de São Marcos', 'Coimbra, Mosteiro de São Marcos'],
+    ['Coimbra, Mosteiro de São Marcos?', 'Coimbra, Mosteiro de São Marcos?'],
+    ['Coimbra?', 'Coimbra?'],
+    ['Desconhecida (Ordem de Cristo)', 'Desconhecida, (Ordem de Cristo)'],
+    ['Évora', 'Évora'],
+    ['Évora, Catedral', 'Évora, Catedral'],
+    ['Guimarães, Colegiada de Nossa Senhora da Oliveira', 'Guimarães, Colegiada de Nossa Senhora da Oliveira'],
+    ['Guimarães, Mosteiro de Santa Marinha da Costa', 'Guimarães, Mosteiro de Santa Marinha da Costa'],
+    ['Lamego?', 'Lamego?'],
+    ['Lisboa, Colecção Manuel Ivo Cruz', 'Lisboa, Colecção Manuel Ivo Cruz'],
+    ['Lorvão, Mosteiro de Santa Maria', 'Lorvão, Mosteiro de Santa Maria'],
+    ['Paris (F)', 'Paris (F)']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'locations',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update tradition taxonomies.
+ */
+function sb_core_deploy_108009(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'tradition']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Aquitana / Hispânica?', 'Aquitaine / Hispanic?'],
+    ['Aquitana (tradição)', 'Aquitanian (tradition)'],
+    ['Aquitana? (tradição)', 'Aquitanian? (tradition)'],
+    ['Braga (uso)', 'Braga (use)'],
+    ['Braga / Toledo (tradição)', 'Braga / Toledo (tradition)'],
+    ['Braga / Toledo? (tradição)', 'Braga / Toledo? (tradition)'],
+    ['Braga? (uso)', 'Braga? (use)'],
+    ['Carmelita (tradição)', 'Carmelite (tradition)'],
+    ['Carmelita? (tradição)', 'Carmelite? (tradition)'],
+    ['Cartuxa (tradição)', 'Carthusian (tradition)'],
+    ['Cartuxa? (tradição)', 'Carthusian? (tradition)'],
+    ['Cisterciense (tradição)', 'Cistercian (tradition)'],
+    ['Cisterciense? (tradição)', 'Cistercian? (tradition)'],
+    ['Cluniacense (tradição)', 'Cluny (tradition)'],
+    ['Cluniacense? (tradição)', 'Cluny? (tradition)'],
+    ['Coimbra (uso)', 'Coimbra (use)'],
+    ['Coimbra? (uso)', 'Coimbra? (use)'],
+    ['Dominicana (tradição)', 'Dominican (tradition)'],
+    ['Dominicana? (tradição)', 'Dominican? (tradition)'],
+    ['Évora (uso)', 'Évora (use)'],
+    ['Évora? (uso)', 'Évora? (use)'],
+    ['Franciscana (tradição)', 'Franciscan (tradition)'],
+    ['Franciscana? (tradição)', 'Franciscan? (tradition)'],
+    ['Jerónima (tradição)', 'Hieronymite (tradition)'],
+    ['Jerónima? (tradição)', 'Hieronymite? (tradition)'],
+    ['Lisboa (uso)', 'Lisboa (use)'],
+    ['Lisboa? (uso)', 'Lisboa? (use)'],
+    ['Hispânica antiga (tradição)', 'Old Hispanic (tradition)'],
+    ['Hispânica antiga? (tradição)', 'Old Hispanic? (tradition)'],
+    ['Romana (tradição)', 'Roman (tradition)'],
+    ['Romana? (tradição)', 'Roman? (tradition)'],
+    ['Sens (uso)', 'Sens (use)'],
+    ['Sens? (uso)', 'Sens? (use)'],
+    ['Sevilhana (uso)', 'Sevillan (use)'],
+    ['Sevilhana? (uso)', 'Sevillan? (use)'],
+    ['Sevilhana / Romana (pós-Tridentina) (uso)', 'Sevillian / Roman (post-Tridentine) (use)'],
+    ['Silves (uso)', 'Silves (use)'],
+    ['Silves? (uso)', 'Silves? (use)']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'tradition',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update writing_type taxonomies.
+ */
+function sb_core_deploy_108010(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'writing_type']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Carolina com características visigóticas', 'Transitional (Caroline with Visigothic features)'],
+    ['Gótica inicial', 'Early gothic'],
+    ['Gótica', 'Gothic'],
+    ['Gótica tardia', 'Late Gothic'],
+    ['Humanística', 'Humanistic'],
+    ['Moderna', 'Modern'],
+    ['outra', 'other'],
+    ['Romana redonda', 'Roman round'],
+    ['Semi-romana', 'Semi-Roman'],
+    ['Visigótica', 'Visigothic'],
+    ['Visigótica tardia', 'Transitional (Late Visigothic)']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'writing_type',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update font_type taxonomies.
+ */
+function sb_core_deploy_108011(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'font_type']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Manuscrito', 'Manuscript'],
+    ['Impresso', 'Print'],
+    ['Manuscrito estampilhado', 'Stencilled manuscript']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'font_type',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update music_notation taxonomies.
+ */
+function sb_core_deploy_108012(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'music_notation']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Aquitana','Aquitanian'],
+    ['Aquitana (variedade portuguesa)','Aquitanian (Portuguese variety)'],
+    ['Hufnagelschrift','Hufnagelschrift'],
+    ['Mensural (negra)','Mensural (black)'],
+    ['Mensural (branca)','Mensural (white)'],
+    ['Moderna','Modern'],
+    ['Notação de cantochão moderna branca','Modern chant notation (white)'],
+    ['Notação de cantochão moderna negra','Modern chant notation (black)'],
+    ['Hispânica antiga','Old Hispanic'],
+    ['outra','other'],
+    ['Semimensural','Semi-mensural'],
+    ['Quadrada','Square'],
+    ['Tablatura','Tablature']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'music_notation',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update text_language taxonomies.
+ */
+function sb_core_deploy_108013(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'text_language']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Alemão','German'],
+    ['Catalão','Catalan'],
+    ['Castelhano','Castilian'],
+    ['Francês','French'],
+    ['Grego','Greek'],
+    ['Hebraico','Hebrew'],
+    ['Neerlandês','Dutch'],
+    ['Húngaro','Hungarian'],
+    ['Inglês','English'],
+    ['Italiano','Italian'],
+    ['Latim','Latin'],
+    ['Português','Portuguese'],
+    ['outra','other']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'text_language',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update document_validation taxonomies.
+ */
+function sb_core_deploy_108014(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'document_validation']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Assinaturas','Chirograph'],
+    ['Cartas partidas por abc','Dry seal'],
+    ['Selo de chapa','Lead pendant seal'],
+    ['Selo pendente em cera','Notary\'s mark'],
+    ['Selo pendente em chumbo','Signatures'],
+    ['Sinal de tabelião','Sinal rodado'],
+    ['Sinal rodado','Wax pendant seal'],
+    ['outras','others']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'document_validation',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
