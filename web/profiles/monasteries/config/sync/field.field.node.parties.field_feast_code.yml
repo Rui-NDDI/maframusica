@@ -1,0 +1,19 @@
+uuid: e86b508f-23aa-4b17-a4b5-fa7ff7927968
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feast_code
+    - node.type.parties
+id: node.parties.field_feast_code
+field_name: field_feast_code
+entity_type: node
+bundle: parties
+label: 'Feast code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

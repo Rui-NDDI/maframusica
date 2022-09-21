@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.parties.body
+    - field.field.node.parties.field_day
+    - field.field.node.parties.field_feast_code
+    - field.field.node.parties.field_feast_date
+    - field.field.node.parties.field_month
+    - field.field.node.parties.field_notes
     - node.type.parties
   module:
     - text
@@ -28,4 +33,9 @@ content:
     weight: 100
     region: content
 hidden:
+  field_day: true
+  field_feast_code: true
+  field_feast_date: true
+  field_month: true
+  field_notes: true
   langcode: true

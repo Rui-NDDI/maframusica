@@ -1,13 +1,13 @@
-uuid: b47c0db3-e1a0-4aa8-8a8e-6e3590f9c303
+uuid: ccf3bcbc-7364-497c-bbc2-d99bfde0df40
 langcode: en
 status: true
 dependencies:
   module:
-    - taxonomy
+    - node
     - text
-id: taxonomy_term.field_party_observations
-field_name: field_party_observations
-entity_type: taxonomy_term
+id: node.field_notes
+field_name: field_notes
+entity_type: node
 type: text_long
 settings: {  }
 module: text

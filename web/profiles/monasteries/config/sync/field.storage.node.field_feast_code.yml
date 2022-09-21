@@ -1,15 +1,17 @@
-uuid: b53f58f3-593c-4a7a-a867-64c567fb8f19
+uuid: 80592415-4d91-435e-b7e7-1b6fda463dfa
 langcode: en
 status: true
 dependencies:
   module:
-    - taxonomy
-id: taxonomy_term.field_party_dates
-field_name: field_party_dates
-entity_type: taxonomy_term
-type: string_long
+    - node
+id: node.field_feast_code
+field_name: field_feast_code
+entity_type: node
+type: string
 settings:
+  max_length: 100
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1
