@@ -1199,3 +1199,70 @@ function sb_core_deploy_108002(): void {
     $node->save();
   }
 }
+
+/**
+ * Update book type taxonomies.
+ */
+function sb_core_deploy_108003(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'book_type']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['-indeterminado-', '-indeterminado-'],
+    ['-n/a-', '-n/a-'],
+    ['Antifonário', 'Antiphoner'],
+    ['Bíblia', 'Bible'],
+    ['Breviário', 'Breviary'],
+    ['Capituleiro', 'Capitulary'],
+    ['Cerimonial', 'Cerimonial'],
+    ['Colectário', 'Collectar'],
+    ['Compósito', 'Composite'],
+    ['Costumeiro', 'Customary'],
+    ['Devocionário', 'Devocionary'],
+    ['Diurnal', 'Diurnal'],
+    ['Evangeliário', 'Evangeliary'],
+    ['Gradual', 'Gradual'],
+    ['Hinário', 'Hymnal'],
+    ['Kirial', 'Kyrial'],
+    ['Leccionário', 'Lectionary'],
+    ['Livro de coro polifónico', 'Polyphonic book'],
+    ['Livro de Horas', 'Book of Hours'],
+    ['Livro didáctico', 'Didactic book'],
+    ['Manual', 'Manual'],
+    ['Martirológio', 'Martyrology'],
+    ['Matutinário', 'Matutinal'],
+    ['Miscelânea', 'Miscellany'],
+    ['Missal', 'Missal'],
+    ['Necrológio/Obituário', 'Necrology/Obituary'],
+    ['Passionário', 'Passionary'],
+    ['Pontifical', 'Pontifical'],
+    ['Processionário', 'Processional'],
+    ['Prosário', 'Proser/Sequentiary'],
+    ['Obras de teologia e/ou espiritualidade', 'Books on theology and Christian spirituality'],
+    ['Responsorial', 'Responsorial'],
+    ['Ritual', 'Ritual'],
+    ['Sacramentário', 'Sacramentary'],
+    ['Saltério', 'Psalter'],
+    ['Tonário', 'Tonary'],
+    ['Tropário', 'Troper']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'book_type',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
