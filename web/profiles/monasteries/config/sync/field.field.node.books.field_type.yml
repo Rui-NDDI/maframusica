@@ -10,7 +10,7 @@ id: node.books.field_type
 field_name: field_type
 entity_type: node
 bundle: books
-label: Type
+label: 'Book type'
 description: ''
 required: false
 translatable: false

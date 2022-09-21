@@ -9,7 +9,7 @@ id: node.people.field_revised_by
 field_name: field_revised_by
 entity_type: node
 bundle: people
-label: 'Revised by'
+label: 'Reviewed by'
 description: ''
 required: false
 translatable: false

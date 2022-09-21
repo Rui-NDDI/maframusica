@@ -10,7 +10,7 @@ id: node.books.field_parties
 field_name: field_parties
 entity_type: node
 bundle: books
-label: Parties
+label: 'Contents (feasts)'
 description: ''
 required: false
 translatable: false

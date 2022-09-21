@@ -2,7 +2,7 @@ uuid: 86186593-144e-4115-8081-71e37ef33e15
 langcode: en
 status: true
 dependencies: {  }
-name: 'Book subcategory'
+name: 'Subcategory of book'
 vid: book_subcategory
 description: ''
 weight: 0

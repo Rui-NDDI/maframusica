@@ -1,16 +1,16 @@
-uuid: 5887ecd6-01f2-4f7e-89df-b69b24e81e6e
+uuid: f68c823d-8e16-4aff-aa2f-e673392da21e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_source
+    - field.storage.node.field_origin
     - node.type.books
     - taxonomy.vocabulary.locations
-id: node.books.field_source
-field_name: field_source
+id: node.books.field_origin
+field_name: field_origin
 entity_type: node
 bundle: books
-label: Source
+label: Origin
 description: ''
 required: false
 translatable: false

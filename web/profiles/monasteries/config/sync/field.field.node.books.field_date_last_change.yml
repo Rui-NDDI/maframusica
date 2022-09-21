@@ -11,7 +11,7 @@ id: node.books.field_date_last_change
 field_name: field_date_last_change
 entity_type: node
 bundle: books
-label: 'Date of last change'
+label: 'Last revision'
 description: ''
 required: false
 translatable: true

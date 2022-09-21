@@ -10,7 +10,7 @@ id: node.books.field_music_notation
 field_name: field_music_notation
 entity_type: node
 bundle: books
-label: 'Music notation'
+label: 'Type of notation'
 description: ''
 required: false
 translatable: false

@@ -9,7 +9,7 @@ id: node.books.field_authorship
 field_name: field_authorship
 entity_type: node
 bundle: books
-label: Authorship
+label: 'Description author/s'
 description: ''
 required: false
 translatable: false

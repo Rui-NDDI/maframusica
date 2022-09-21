@@ -10,7 +10,7 @@ id: node.books.field_font_type
 field_name: field_font_type
 entity_type: node
 bundle: books
-label: 'Font type'
+label: 'Document type'
 description: ''
 required: false
 translatable: false
@@ -25,5 +25,5 @@ settings:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: document_type
 field_type: entity_reference

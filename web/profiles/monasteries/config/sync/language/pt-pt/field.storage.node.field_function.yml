@@ -11,7 +11,7 @@ settings:
     -
       label: Copista
     -
-      label: editor
+      label: Editor
     -
       label: Encadernador
     -
@@ -19,23 +19,22 @@ settings:
     -
       label: Frade
     -
-      label: Freire
+      label: Freira
     -
       label: Iluminador
     -
-      label: Impressora
+      label: Impressor
     -
       label: Monge
     -
       label: Padre
-    -
-      label: Anterior
+    - {  }
     -
       label: Prioresa
     -
       label: Proprietário
     -
-      label: Notário
+      label: Tabelião
     -
       label: Testemunha
     -

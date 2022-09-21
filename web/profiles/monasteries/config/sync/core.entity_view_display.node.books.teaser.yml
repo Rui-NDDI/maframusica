@@ -22,13 +22,13 @@ dependencies:
     - field.field.node.books.field_music
     - field.field.node.books.field_music_notation
     - field.field.node.books.field_observations
+    - field.field.node.books.field_origin
     - field.field.node.books.field_parties
     - field.field.node.books.field_provenance
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
     - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
-    - field.field.node.books.field_source
     - field.field.node.books.field_subcategory
     - field.field.node.books.field_text_language
     - field.field.node.books.field_tradition
@@ -75,13 +75,13 @@ hidden:
   field_music: true
   field_music_notation: true
   field_observations: true
+  field_origin: true
   field_parties: true
   field_provenance: true
   field_publication_info: true
   field_references: true
   field_relative_record: true
   field_revised_by: true
-  field_source: true
   field_subcategory: true
   field_text_language: true
   field_tradition: true

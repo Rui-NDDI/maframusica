@@ -9,7 +9,7 @@ id: node.people.field_other_name_designations
 field_name: field_other_name_designations
 entity_type: node
 bundle: people
-label: 'Other name designations'
+label: 'Other form of name'
 description: ''
 required: false
 translatable: false

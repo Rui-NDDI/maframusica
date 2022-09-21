@@ -10,7 +10,7 @@ id: node.books.field_subcategory
 field_name: field_subcategory
 entity_type: node
 bundle: books
-label: Subcategory
+label: 'Subcategory of book'
 description: ''
 required: false
 translatable: false

@@ -26,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Entidades
+      title: Entities
       fields:
         title:
           id: title
@@ -179,10 +179,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: true
-          reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Order by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -349,7 +349,7 @@ display:
           exposed: true
           expose:
             operator_id: field_entity_type_value_op
-            label: 'Tipo de entidade'
+            label: 'Entity type'
             description: ''
             use_operator: false
             operator: field_entity_type_value_op
@@ -393,7 +393,7 @@ display:
           exposed: true
           expose:
             operator_id: field_function_value_op
-            label: Função
+            label: Function
             description: ''
             use_operator: false
             operator: field_function_value_op
@@ -578,9 +578,9 @@ display:
       path: entities
       menu:
         type: normal
-        title: Entidades
+        title: Entities
         description: ''
-        weight: -48
+        weight: -49
         expanded: false
         menu_name: main
         parent: ''

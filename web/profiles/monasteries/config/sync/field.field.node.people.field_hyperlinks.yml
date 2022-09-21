@@ -11,7 +11,7 @@ id: node.people.field_hyperlinks
 field_name: field_hyperlinks
 entity_type: node
 bundle: people
-label: Hyperlinks
+label: 'External references'
 description: ''
 required: false
 translatable: false

@@ -21,13 +21,13 @@ dependencies:
     - field.field.node.books.field_music
     - field.field.node.books.field_music_notation
     - field.field.node.books.field_observations
+    - field.field.node.books.field_origin
     - field.field.node.books.field_parties
     - field.field.node.books.field_provenance
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
     - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
-    - field.field.node.books.field_source
     - field.field.node.books.field_subcategory
     - field.field.node.books.field_text_language
     - field.field.node.books.field_tradition
@@ -217,6 +217,16 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_origin:
+    type: entity_reference_autocomplete
+    weight: 152
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_parties:
     type: entity_reference_autocomplete
     weight: 129
@@ -266,16 +276,6 @@ content:
   field_revised_by:
     type: entity_reference_autocomplete
     weight: 143
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_source:
-    type: entity_reference_autocomplete
-    weight: 137
     region: content
     settings:
       match_operator: CONTAINS

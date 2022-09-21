@@ -49,3 +49,9 @@ definitions:
     parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
     expanded: false
     enabled: false
+  sb_core__materiality:
+    weight: -46
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
