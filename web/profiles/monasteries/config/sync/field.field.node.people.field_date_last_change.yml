@@ -11,9 +11,9 @@ id: node.people.field_date_last_change
 field_name: field_date_last_change
 entity_type: node
 bundle: people
-label: 'Date of last change'
+label: 'Date of the last update'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

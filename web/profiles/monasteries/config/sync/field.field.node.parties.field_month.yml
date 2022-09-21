@@ -1,0 +1,23 @@
+uuid: 8a7f43bd-b244-4b01-89dd-0c72612ec1bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_month
+    - node.type.parties
+id: node.parties.field_month
+field_name: field_month
+entity_type: node
+bundle: parties
+label: Month
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

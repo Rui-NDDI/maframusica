@@ -10,7 +10,7 @@ id: node.books.field_relative_record
 field_name: field_relative_record
 entity_type: node
 bundle: books
-label: 'Relative record'
+label: 'Parent record'
 description: ''
 required: false
 translatable: false

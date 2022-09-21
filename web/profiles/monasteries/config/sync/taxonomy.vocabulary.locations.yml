@@ -2,7 +2,7 @@ uuid: 768f4606-70f8-4c77-ade1-5bdb94ba42bf
 langcode: en
 status: true
 dependencies: {  }
-name: Locations
+name: Places
 vid: locations
 description: ''
 weight: 0

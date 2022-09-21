@@ -37,7 +37,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Livros
+      title: Books
       fields:
         title:
           id: title
@@ -498,7 +498,7 @@ display:
           exposed: true
           expose:
             operator_id: field_monastery_target_id_op
-            label: Mosteiro
+            label: Monastery
             description: ''
             use_operator: false
             operator: field_monastery_target_id_op
@@ -547,7 +547,7 @@ display:
           exposed: true
           expose:
             operator_id: field_century_value_op
-            label: Século
+            label: Century
             description: ''
             use_operator: false
             operator: field_century_value_op
@@ -591,7 +591,7 @@ display:
           exposed: true
           expose:
             operator_id: field_type_target_id_op
-            label: Tipo
+            label: Type
             description: ''
             use_operator: false
             operator: field_type_target_id_op
@@ -640,7 +640,7 @@ display:
           exposed: true
           expose:
             operator_id: field_font_type_target_id_op
-            label: 'Tipo de fonte'
+            label: 'Document type'
             description: ''
             use_operator: false
             operator: field_font_type_target_id_op
@@ -689,7 +689,7 @@ display:
           exposed: true
           expose:
             operator_id: field_music_notation_target_id_op
-            label: 'Tipo de notação musical'
+            label: 'Type of notation'
             description: ''
             use_operator: false
             operator: field_music_notation_target_id_op
@@ -738,7 +738,7 @@ display:
           exposed: true
           expose:
             operator_id: field_writing_type_target_id_op
-            label: 'Tipo de escrita'
+            label: 'Type of script'
             description: ''
             use_operator: false
             operator: field_writing_type_target_id_op
@@ -787,7 +787,7 @@ display:
           exposed: true
           expose:
             operator_id: keys_op
-            label: Pesquisar
+            label: Search
             description: ''
             use_operator: false
             operator: keys_op
@@ -908,10 +908,13 @@ display:
       path: books
       menu:
         type: normal
-        title: Livros
-        weight: -47
+        title: Books
+        description: ''
+        weight: -48
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

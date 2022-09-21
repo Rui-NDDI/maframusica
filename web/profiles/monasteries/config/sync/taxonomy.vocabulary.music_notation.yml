@@ -2,7 +2,7 @@ uuid: c9170372-9669-421a-aea2-6d8e4ca716d0
 langcode: en
 status: true
 dependencies: {  }
-name: 'Music notation'
+name: 'Type of music notation'
 vid: music_notation
 description: ''
 weight: 0

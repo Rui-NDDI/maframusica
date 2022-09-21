@@ -32,20 +32,26 @@ definitions:
     expanded: false
     enabled: false
   sb_core__monastery_alcobaca:
+    menu_name: main
+    parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
     weight: -47
-    menu_name: main
-    parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
-    enabled: false
     expanded: false
+    enabled: false
   sb_core__monastery_lorvao:
-    weight: -45
     menu_name: main
     parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
+    weight: -45
     expanded: false
     enabled: false
   sb_core__monastery_arouca:
-    weight: -46
     menu_name: main
     parent: 'menu_link_content:6282a87d-8ba6-4568-ac02-a9d2b96c62cc'
+    weight: -46
     expanded: false
     enabled: false
+  sb_core__materiality:
+    menu_name: main
+    parent: ''
+    weight: -46
+    expanded: false
+    enabled: true

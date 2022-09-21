@@ -31,7 +31,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Documentos
+      title: Documents
       fields:
         title:
           id: title
@@ -291,9 +291,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: true
-          reset_button_label: Resetar
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -405,7 +405,7 @@ display:
           exposed: true
           expose:
             operator_id: field_date_intervals_value_op
-            label: Data
+            label: 'Date intervals'
             description: ''
             use_operator: false
             operator: field_date_intervals_value_op
@@ -449,7 +449,7 @@ display:
           exposed: true
           expose:
             operator_id: field_document_type_target_id_op
-            label: 'Tipo de documento'
+            label: 'Document type'
             description: ''
             use_operator: false
             operator: field_document_type_target_id_op
@@ -498,7 +498,7 @@ display:
           exposed: true
           expose:
             operator_id: field_validation_target_id_op
-            label: Validação
+            label: Validation
             description: ''
             use_operator: false
             operator: field_validation_target_id_op
@@ -547,7 +547,7 @@ display:
           exposed: true
           expose:
             operator_id: keys_op
-            label: Pesquisa
+            label: Search
             description: ''
             use_operator: false
             operator: keys_op
@@ -611,14 +611,20 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: documents
       menu:
         type: normal
-        title: Documentos
-        weight: -44
+        title: Documents
+        description: ''
+        weight: -47
+        expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

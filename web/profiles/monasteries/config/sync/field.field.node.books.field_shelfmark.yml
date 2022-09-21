@@ -1,0 +1,19 @@
+uuid: 082c754d-44a9-431a-93d3-2fef3e2c64d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shelfmark
+    - node.type.books
+id: node.books.field_shelfmark
+field_name: field_shelfmark
+entity_type: node
+bundle: books
+label: Shelfmark
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

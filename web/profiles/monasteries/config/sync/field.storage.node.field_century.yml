@@ -13,31 +13,31 @@ settings:
   allowed_values:
     -
       value: XI
-      label: XI
+      label: '11th century'
     -
       value: XII
-      label: XII
+      label: '12th century'
     -
       value: XIII
-      label: XIII
+      label: '13th century'
     -
       value: XIV
-      label: XIV
+      label: '14th century'
     -
       value: XV
-      label: XV
+      label: '15th century'
     -
       value: XVI
-      label: XVI
+      label: '16th century'
     -
       value: XVII
-      label: XVII
+      label: '17th century'
     -
       value: XVIII
-      label: XVIII
+      label: '18th century'
     -
       value: XIX
-      label: XIX
+      label: '19th century'
   allowed_values_function: ''
 module: options
 locked: false

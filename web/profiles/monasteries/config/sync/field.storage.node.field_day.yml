@@ -1,0 +1,20 @@
+uuid: c84ebcf8-83a3-45f3-a250-77d88ce5a744
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_day
+field_name: field_day
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

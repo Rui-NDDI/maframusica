@@ -1,15 +1,16 @@
-uuid: b53f58f3-593c-4a7a-a867-64c567fb8f19
+uuid: 8b198321-b709-46d7-9523-ea1d344f4dd9
 langcode: en
 status: true
 dependencies:
   module:
+    - node
     - taxonomy
-id: taxonomy_term.field_party_dates
-field_name: field_party_dates
-entity_type: taxonomy_term
-type: string_long
+id: node.field_origin
+field_name: field_origin
+entity_type: node
+type: entity_reference
 settings:
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

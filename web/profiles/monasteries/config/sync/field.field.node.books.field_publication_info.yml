@@ -11,7 +11,7 @@ id: node.books.field_publication_info
 field_name: field_publication_info
 entity_type: node
 bundle: books
-label: 'Publication info'
+label: 'Publishing and Printing Information'
 description: ''
 required: false
 translatable: false

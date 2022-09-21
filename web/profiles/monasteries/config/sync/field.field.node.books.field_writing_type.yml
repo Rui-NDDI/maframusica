@@ -10,7 +10,7 @@ id: node.books.field_writing_type
 field_name: field_writing_type
 entity_type: node
 bundle: books
-label: 'Writing type'
+label: 'Type of script'
 description: ''
 required: false
 translatable: false

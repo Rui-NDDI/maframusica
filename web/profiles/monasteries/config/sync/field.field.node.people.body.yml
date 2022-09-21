@@ -11,7 +11,7 @@ id: node.people.body
 field_name: body
 entity_type: node
 bundle: people
-label: Observations
+label: Remarks
 description: ''
 required: false
 translatable: true

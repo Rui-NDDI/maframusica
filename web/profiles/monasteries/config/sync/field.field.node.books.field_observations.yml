@@ -11,7 +11,7 @@ id: node.books.field_observations
 field_name: field_observations
 entity_type: node
 bundle: books
-label: Observations
+label: Remarks
 description: ''
 required: false
 translatable: true

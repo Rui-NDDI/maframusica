@@ -1,14 +1,14 @@
-uuid: b07971ef-e087-453f-8d62-b23a7355b4e1
+uuid: 9ebcf330-9f4f-40db-974a-a464e5b27f3e
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.parties
-id: taxonomy_vocabulary_parties
+    - taxonomy.vocabulary.city
+id: taxonomy_vocabulary_city
 entity_type_id: taxonomy_vocabulary
-entity_id: parties
+entity_id: city
 action: page_not_found
-allow_override: 0
+allow_override: 1
 redirect: ''
 redirect_code: 301
 redirect_fallback_action: access_denied

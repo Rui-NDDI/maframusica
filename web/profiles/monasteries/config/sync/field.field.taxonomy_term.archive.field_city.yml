@@ -1,16 +1,16 @@
-uuid: 5887ecd6-01f2-4f7e-89df-b69b24e81e6e
+uuid: b0c14e93-8dd3-49a4-92ca-f68b4f0e06d6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_source
-    - node.type.books
-    - taxonomy.vocabulary.locations
-id: node.books.field_source
-field_name: field_source
-entity_type: node
-bundle: books
-label: Source
+    - field.storage.taxonomy_term.field_city
+    - taxonomy.vocabulary.archive
+    - taxonomy.vocabulary.city
+id: taxonomy_term.archive.field_city
+field_name: field_city
+entity_type: taxonomy_term
+bundle: archive
+label: City
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      locations: locations
+      city: city
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference

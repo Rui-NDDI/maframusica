@@ -27,11 +27,11 @@ settings:
       value: copyist
       label: Copyist
     -
-      value: editor
-      label: Editor
+      value: editor-publisher
+      label: Editor/Publisher
     -
-      value: bookbinder
-      label: Bookbinder
+      value: binder
+      label: Binder
     -
       value: writer
       label: Writer
@@ -39,8 +39,8 @@ settings:
       value: friar
       label: Friar
     -
-      value: freire
-      label: Freire
+      value: nun
+      label: Nun
     -
       value: illuminator
       label: Illuminator
@@ -54,8 +54,8 @@ settings:
       value: priest
       label: Priest
     -
-      value: previous
-      label: Previous
+      value: prior
+      label: Prior
     -
       value: prioress
       label: Prioress

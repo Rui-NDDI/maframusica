@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.parties.body
+    - field.field.node.parties.field_day
+    - field.field.node.parties.field_feast_code
+    - field.field.node.parties.field_feast_date
+    - field.field.node.parties.field_month
+    - field.field.node.parties.field_notes
     - node.type.parties
   module:
     - text
@@ -15,10 +20,51 @@ mode: default
 content:
   body:
     type: text_default
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_day:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_feast_code:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_feast_date:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_month:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }
