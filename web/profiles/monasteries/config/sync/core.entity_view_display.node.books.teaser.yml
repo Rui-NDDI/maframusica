@@ -29,6 +29,8 @@ dependencies:
     - field.field.node.books.field_references
     - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
+    - field.field.node.books.field_shelfmark
+    - field.field.node.books.field_siglum
     - field.field.node.books.field_subcategory
     - field.field.node.books.field_text_language
     - field.field.node.books.field_tradition
@@ -82,6 +84,8 @@ hidden:
   field_references: true
   field_relative_record: true
   field_revised_by: true
+  field_shelfmark: true
+  field_siglum: true
   field_subcategory: true
   field_text_language: true
   field_tradition: true

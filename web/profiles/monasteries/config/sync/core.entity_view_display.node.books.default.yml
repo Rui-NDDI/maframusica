@@ -28,6 +28,8 @@ dependencies:
     - field.field.node.books.field_references
     - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
+    - field.field.node.books.field_shelfmark
+    - field.field.node.books.field_siglum
     - field.field.node.books.field_subcategory
     - field.field.node.books.field_text_language
     - field.field.node.books.field_tradition
@@ -249,6 +251,22 @@ content:
       link: true
     third_party_settings: {  }
     weight: 123
+    region: content
+  field_shelfmark:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 133
+    region: content
+  field_siglum:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 134
     region: content
   field_subcategory:
     type: entity_reference_label

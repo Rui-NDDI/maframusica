@@ -1,18 +1,18 @@
-uuid: 2af3079f-2d40-41fd-b17b-d023d131c304
+uuid: 082c754d-44a9-431a-93d3-2fef3e2c64d4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_book_date
+    - field.storage.node.field_shelfmark
     - node.type.books
-id: node.books.field_book_date
-field_name: field_book_date
+id: node.books.field_shelfmark
+field_name: field_shelfmark
 entity_type: node
 bundle: books
-label: Date
+label: Shelfmark
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

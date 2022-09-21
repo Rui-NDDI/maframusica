@@ -1,17 +1,17 @@
-uuid: 2af3079f-2d40-41fd-b17b-d023d131c304
+uuid: 68ce2fce-28f9-4b06-a039-c8fb96017c5e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_book_date
+    - field.storage.node.field_siglum
     - node.type.books
-id: node.books.field_book_date
-field_name: field_book_date
+id: node.books.field_siglum
+field_name: field_siglum
 entity_type: node
 bundle: books
-label: Date
+label: Siglum
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
