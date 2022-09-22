@@ -9,7 +9,7 @@ id: node.document.field_other_referred_people
 field_name: field_other_referred_people
 entity_type: node
 bundle: document
-label: 'Other referred people'
+label: 'Other persons mentioned'
 description: ''
 required: false
 translatable: false

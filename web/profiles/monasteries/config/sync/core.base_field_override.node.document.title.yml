@@ -1,18 +1,17 @@
-uuid: d2a1dc96-02c2-4cb8-aa0a-b372f4923f3e
+uuid: 259d9e81-aba5-49f3-ba13-213815346d4a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_date
     - node.type.document
-id: node.document.field_date
-field_name: field_date
+id: node.document.title
+field_name: title
 entity_type: node
 bundle: document
-label: Date
+label: 'Reference number'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

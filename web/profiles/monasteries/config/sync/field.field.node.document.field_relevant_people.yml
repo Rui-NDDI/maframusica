@@ -10,7 +10,7 @@ id: node.document.field_relevant_people
 field_name: field_relevant_people
 entity_type: node
 bundle: document
-label: 'Relevant people'
+label: 'Relevant persons'
 description: ''
 required: false
 translatable: false
