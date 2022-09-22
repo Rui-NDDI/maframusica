@@ -1698,19 +1698,79 @@ function sb_core_deploy_108014(): void {
 
   // Create new ones.
   $types = [
-    ['Assinaturas','Chirograph'],
-    ['Cartas partidas por abc','Dry seal'],
-    ['Selo de chapa','Lead pendant seal'],
-    ['Selo pendente em cera','Notary\'s mark'],
-    ['Selo pendente em chumbo','Signatures'],
-    ['Sinal de tabelião','Sinal rodado'],
-    ['Sinal rodado','Wax pendant seal'],
-    ['outras','others']
+    ['Assinaturas','Signatures'],
+    ['Cartas partidas por abc','Chirograph'],
+    ['Selo de chapa','Dry seal'],
+    ['Selo pendente em cera','Wax pendant seal'],
+    ['Selo pendente em chumbo','Lead pendant seal'],
+    ['Sinal de tabelião','Notary\'s mark'],
+    ['Sinal rodado','Sinal rodado'],
+    ['Outras','Others']
   ];
 
   foreach ($types as $type) {
     $term = Term::create([
       'vid' => 'document_validation',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
+
+/**
+ * Update document_type taxonomies.
+ */
+function sb_core_deploy_108015(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'document_type']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Carta régia','Royal charter'],
+    ['Doação','Donation'],
+    ['Testamento','Will'],
+    ['Carta de partilhas','Partition deed'],
+    ['Tomada de posse/entrega','Possession letter'],
+    ['Compra e venda','Sale deed'],
+    ['Contrato enfitêutico','Lease deed'],
+    ['Préstamo ','Préstamo '],
+    ['Escambo','Exchange deed'],
+    ['Composição amigável/avença','Composition deed'],
+    ['Sentença','Judgement'],
+    ['Procuração','Power of attorney'],
+    ['Apresentação de um clérigo','Clerk appointment'],
+    ['Confirmação da apresentação de um clérigo','Clerk appointment confirmation'],
+    ['Pacto','Agreement deed'],
+    ['Carta de quitação','Quittance deed'],
+    ['Atestação notarial/traslado em pública forma','Exemplification'],
+    ['Traditio','Traditio'],
+    ['Carta de fundação','Foundation deed'],
+    ['Carta de couto','Carta de couto'],
+    ['Carta de arras/dote','Dowry deed'],
+    ['Carta de alforria','Manumission letter'],
+    ['Carta de agnição','Carta de agnição'],
+    ['Bula','Bull'],
+    ['Visitação','Visitation'],
+    ['Inquirição','Inquisitio'],
+    ['Libelo','Libel '],
+    ['Renúncia','Renunciation need'],
+    ['Tombo','Tombo'],
+    ['Outra','Other']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'document_type',
       'name' => $type[1],
       'langcode' => 'en',
     ]);

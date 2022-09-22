@@ -9,7 +9,7 @@ id: node.document.field_old_account
 field_name: field_old_account
 entity_type: node
 bundle: document
-label: 'Old account'
+label: 'Old reference number'
 description: ''
 required: false
 translatable: false

@@ -9,7 +9,7 @@ id: node.document.field_summarized
 field_name: field_summarized
 entity_type: node
 bundle: document
-label: Summarized
+label: Abridged
 description: ''
 required: false
 translatable: false

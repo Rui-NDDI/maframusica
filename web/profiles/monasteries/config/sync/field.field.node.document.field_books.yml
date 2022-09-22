@@ -10,7 +10,7 @@ id: node.document.field_books
 field_name: field_books
 entity_type: node
 bundle: document
-label: Books
+label: 'Books mentioned'
 description: ''
 required: false
 translatable: false

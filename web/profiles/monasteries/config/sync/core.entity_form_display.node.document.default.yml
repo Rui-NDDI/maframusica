@@ -22,7 +22,6 @@ dependencies:
     - field.field.node.document.field_witnesses
     - node.type.document
   module:
-    - datetime
     - link
     - path
     - text
@@ -48,10 +47,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_date:
-    type: datetime_default
+    type: string_textfield
     weight: 138
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_date_intervals:
     type: options_select

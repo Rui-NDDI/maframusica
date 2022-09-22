@@ -6,8 +6,6 @@ display:
       fields:
         title:
           label: Titulo
-        field_date:
-          label: Data
         field_document_type:
           label: 'Tipo de documento'
         field_validation:

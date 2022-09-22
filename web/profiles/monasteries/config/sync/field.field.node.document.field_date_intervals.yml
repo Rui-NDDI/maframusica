@@ -11,9 +11,9 @@ id: node.document.field_date_intervals
 field_name: field_date_intervals
 entity_type: node
 bundle: document
-label: 'Date intervals'
+label: Date
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
