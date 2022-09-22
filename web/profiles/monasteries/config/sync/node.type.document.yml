@@ -3,11 +3,17 @@ langcode: en
 status: true
 dependencies:
   module:
+    - autotitle
     - menu_ui
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+  autotitle:
+    enabled: false
+    field: field_date
+    fallback_title: 'Untitled [document]'
+    headings: {  }
 name: Document
 type: document
 description: 'Use this content type for creating document pages.'
