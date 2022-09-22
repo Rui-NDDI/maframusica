@@ -151,7 +151,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_liturgical_occasion:
-    type: options_buttons
+    type: options_select
     weight: 26
     region: content
     settings: {  }
