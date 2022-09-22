@@ -1,18 +1,16 @@
-uuid: 5c7be8df-fac5-4e9d-bb63-d3ed4b0c3ab0
+uuid: 7bcd26dc-1316-4866-87e5-688872315ed6
 langcode: en
 status: true
 dependencies:
   module:
+    - field_token_value
     - node
 id: node.field_siglum
 field_name: field_siglum
 entity_type: node
-type: string
-settings:
-  max_length: 100
-  case_sensitive: false
-  is_ascii: false
-module: core
+type: field_token_value
+settings: {  }
+module: field_token_value
 locked: false
 cardinality: 1
 translatable: true

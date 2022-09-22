@@ -1,19 +1,25 @@
-uuid: 68ce2fce-28f9-4b06-a039-c8fb96017c5e
+uuid: ccb3748e-5405-4398-a1ff-185b19f02484
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_siglum
     - node.type.books
+  module:
+    - field_token_value
 id: node.books.field_siglum
 field_name: field_siglum
 entity_type: node
 bundle: books
 label: Siglum
 description: ''
-required: false
-translatable: false
-default_value: {  }
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  field_value: '[node:field_archive:entity:field_rism] [node:field_shelfmark:value]'
+  remove_empty: 1
+field_type: field_token_value

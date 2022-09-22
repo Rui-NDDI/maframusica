@@ -1,3 +1,5 @@
 label: '403 acesso negado'
 tags:
   robots: 'sem índice'
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

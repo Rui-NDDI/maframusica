@@ -7,6 +7,7 @@
 
 declare(strict_types = 1);
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\sb_core\Utility\MaterialityTypesHelper;
 
@@ -29,12 +30,14 @@ function sb_core_theme(): array {
 function sb_core_form_node_form_alter(&$form, FormStateInterface $form_state): void {
   /** @var \Drupal\node\NodeInterface $node */
   $node = $form_state->getFormObject()->getEntity();
-  $type_field = MaterialityTypesHelper::MATERIALITY_TYPES_FIELD;
+  if ($node->bundle() === 'materiality') {
+    $type_field = MaterialityTypesHelper::MATERIALITY_TYPES_FIELD;
 
-  /** @var \Drupal\sb_core\Utility\MaterialityTypesHelper $materiality_types_helper */
-  $materiality_types_helper = \Drupal::service('sb_core.materiality_types_helper');
+    /** @var \Drupal\sb_core\Utility\MaterialityTypesHelper $materiality_types_helper */
+    $materiality_types_helper = \Drupal::service('sb_core.materiality_types_helper');
 
-  if ($node->hasField($type_field)) {
-    $materiality_types_helper->applyMaterialityStates($form);
+    if ($node->hasField($type_field)) {
+      $materiality_types_helper->applyMaterialityStates($form);
+    }
   }
 }
