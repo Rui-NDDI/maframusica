@@ -1,6 +1,6 @@
 uuid: 909c9587-6579-4a3f-9b96-89e38f268052
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - field.storage.node.field_document_type
@@ -339,7 +339,7 @@ display:
           exposed: true
           expose:
             operator_id: field_date_intervals_value_op
-            label: 'Date intervals'
+            label: Date
             description: ''
             use_operator: false
             operator: field_date_intervals_value_op
