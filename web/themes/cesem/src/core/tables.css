@@ -64,3 +64,8 @@ table:not(.table-list) {
     background-size: 40px 100%, 40px 100%, 20px 100%, 20px 100%;
     background-attachment: local, local, scroll, scroll;
 }
+
+.table-wrapper::-webkit-scrollbar {
+	height: 10px
+}
+

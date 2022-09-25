@@ -11,7 +11,7 @@
     }
 
     & :is(header, main, footer) {
-        padding-inline: clamp(5vmin, 5vmin, 15vmin);
+        padding-inline: clamp(1rem, 0.545rem + 2.27vw, 2rem);
     }
 
     & header {
@@ -20,6 +20,10 @@
 
     & main, & footer {
         padding-block: 10vmin;
+    }
+
+    & main {
+        min-inline-size: 0;
     }
 
     & footer {
