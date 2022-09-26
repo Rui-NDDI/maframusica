@@ -9,7 +9,7 @@ dependencies:
 id: cesempartnerblock
 theme: cesem
 region: footer
-weight: 0
+weight: -6
 provider: null
 plugin: partner_block
 settings:

@@ -19,6 +19,9 @@ function sb_core_theme(): array {
     'cesem_partner' => [
       'render element' => 'children',
     ],
+    'cesem_project' => [
+      'render element' => 'children',
+    ],
   ];
 }
 

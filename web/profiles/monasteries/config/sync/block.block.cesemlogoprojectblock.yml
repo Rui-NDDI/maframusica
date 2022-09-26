@@ -1,4 +1,4 @@
-uuid: 1b9c6b25-f74d-452e-8aed-0c53647270d2
+uuid: a8404774-8fc5-4a6b-b31f-743c85e6ef78
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - sb_core
   theme:
     - cesem
-id: cesemblock
+id: cesemlogoprojectblock
 theme: cesem
 region: footer
-weight: -5
+weight: -7
 provider: null
-plugin: cesem_block
+plugin: project_block
 settings:
-  id: cesem_block
-  label: 'Cesem block'
+  id: project_block
+  label: 'Cesem logo project block'
   label_display: '0'
   provider: sb_core
 visibility: {  }
