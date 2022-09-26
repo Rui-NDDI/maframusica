@@ -2628,3 +2628,66 @@ function sb_core_deploy_108016(): void {
     $node->save();
   }
 }
+
+/**
+ * Update document_type taxonomies.
+ */
+function sb_core_deploy_108017(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'document_type']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Carta régia', 'Royal charter'],
+    ['Doação', 'Gift'],
+    ['Testamento', 'Testament'],
+    ['Carta de partilhas', 'Partition deed'],
+    ['Tomada de posse/entrega', 'Possession letter'],
+    ['Compra e venda', 'Sale'],
+    ['Contrato enfitêutico', 'Emphiteusis'],
+    ['Préstamo ', 'Grant'],
+    ['Escambo', 'Exchange'],
+    ['Composição amigável/avença', 'Composition'],
+    ['Sentença', 'Judgement'],
+    ['Procuração', 'Power of attorney'],
+    ['Apresentação de um clérigo', 'Clerk appointment'],
+    ['Confirmação da apresentação de um clérigo', 'Clerk appointment confirmation'],
+    ['Pacto', 'Agreement'],
+    ['Carta de quitação', 'Quittance'],
+    ['Atestação notarial/traslado em pública forma', 'Exemplification'],
+    ['Traditio', 'Traditio'],
+    ['Carta de foro', 'Donatio ad populandum'],
+    ['Reconhecimento', 'Recognition'],
+    ['Carta de arras/dote', 'Dowry'],
+    ['Carta de alforria', 'Manumission letter'],
+    ['Mutuum, commodatum', 'Loan'],
+    ['Bula', 'Bull'],
+    ['Visitação', 'Visitation'],
+    ['Inquirição', 'Inquisitio'],
+    ['Libelo', 'Libel '],
+    ['Renúncia', 'Renunciation'],
+    ['Tombo', 'Tombo'],
+    ['Codicilo', 'Codicil'],
+    ['Carta de fundação ou dotação', 'Endourment'],
+    ['Penhora, hipoteca', 'Gage'],
+    ['Outra', 'Other']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'document_type',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
