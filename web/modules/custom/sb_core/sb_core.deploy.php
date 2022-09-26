@@ -2691,3 +2691,41 @@ function sb_core_deploy_108017(): void {
     ])->save();
   }
 }
+
+/**
+ * Update document_validation taxonomies.
+ */
+function sb_core_deploy_108018(): void {
+  // Delete existing types.
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage("taxonomy_term");
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'document_validation']);
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  // Create new ones.
+  $types = [
+    ['Assinaturas', 'Signatures'],
+    ['Cartas partidas por abc', 'Chirograph'],
+    ['Selo de chapa', 'Papered seal'],
+    ['Selo pendente em cera', 'Wax pendent seal'],
+    ['Selo pendente em chumbo', 'Lead pendent seal'],
+    ['Sinal de tabelião', 'Notarial mark (or sign)'],
+    ['Sinal rodado', 'Rota'],
+    ['Outras', 'Others']
+  ];
+
+  foreach ($types as $type) {
+    $term = Term::create([
+      'vid' => 'document_validation',
+      'name' => $type[1],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $type[0],
+    ])->save();
+  }
+}
