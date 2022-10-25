@@ -1,31 +1,21 @@
-.cesem-view-data {
-    display: flex;
-    flex-wrap: wrap;
-    --modifier: calc(44rem - 100%);
-    gap: 2rem;
+.view-filters {
+    margin-block-end: 2rem;
+  & .toggla {
+    &[aria-expanded="true"] + form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-block-start: 2rem;
 
-    & .view-filters, & .view-content {
-        flex-grow: 1;
-        flex-basis: calc(var(--modifier) * 999);
+        & > *:not(.form-actions) {
+            flex: 1 0 16rem;
+        }
     }
-
-    & .attachment-before, & .view-content {
-        order: -1;
-    }
-
-    & .attachment-before, & .pager {
-        flex-grow: 1;
-        flex-basis: 100%;
-    }
-
-    & .view-content {
-        inline-size: 100%;
-        flex-grow: 2;
-        min-inline-size: 0;
-    }
-
-    & .view-filters label {
-        font-size: var(--fs-small);
-        font-weight: 600;
-    }
+  }
+  & > form > * + * {
+    margin-block-start: 0;
+  }
+  & > form > .form-actions {
+    flex-basis: 100%;
+  }
 }

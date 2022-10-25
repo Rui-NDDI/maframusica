@@ -95,7 +95,6 @@ a {
 
 :where(ul, ol):not([role="list"]) {
 	margin-inline-start: 1rem;
-	list-style-position: inside;
 }
 
 i, cite, em, var, address, dfn {

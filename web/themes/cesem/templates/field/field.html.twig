@@ -39,6 +39,7 @@
 #}
 {%
   set classes = [
+    'x-flex',
     'field',
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
@@ -69,20 +70,22 @@
   {% endif %}
 
 {% else %}
-  <div{{ attributes.addClass(classes) }}>
-    <h2{{ title_attributes.addClass(title_classes) }}>{{ label }}</h2>
+  <dl{{ attributes.addClass(classes) }}>
+    <dt{{ title_attributes.addClass(title_classes) }}>{{ label }}</dt>
   {% if multiple %}
+  <dd>
     <ul{{ attributes.addClass(classes, 'field__items', 'list') }}>
       {% for item in items %}
         <li{{ item.attributes.addClass('field__item') }}>{{ item.content }}</li>
       {% endfor %}
     </ul>
+  </dd>
   {% else %}
 
     {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
+      <dd{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</dd>
     {% endfor %}
   {% endif %}
-  </div>
+  </dl>
 
 {% endif %}

@@ -33,6 +33,10 @@
     }
 }
 
-article > .field > * + *, .taxonomy-term > .content > * + * {
-    margin-block-start: 1em;
+dl.x-flex {
+    --x-flex-align: start;
+
+    & dt {
+        font-weight: 700;
+    }
 }
