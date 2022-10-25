@@ -48,7 +48,7 @@ td span {
 }
 
 table:not(.table-list) {
-
+    width: 100%;
     & td {
         min-inline-size: var(--cell-width, 8rem);
     }
