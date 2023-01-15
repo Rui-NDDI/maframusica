@@ -2,7 +2,7 @@ name: Mosteiros
 type: theme
 description: 'Transistor ‐ Customized Tachyons CSS for Squarebit design system prototypes'
 package: Other
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: '>=9.4'
 base theme: classy
 
 libraries:
