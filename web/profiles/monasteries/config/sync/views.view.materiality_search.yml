@@ -357,7 +357,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            bookbinding-book-body: bookbinding-book-body
           group: 1
           exposed: false
           expose:
@@ -878,7 +878,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            bookbinding-guard: bookbinding-guard
           group: 1
           exposed: false
           expose:
@@ -1543,7 +1543,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            closures: closures
           group: 1
           exposed: false
           expose:
@@ -3333,7 +3333,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            decor: decor
           group: 1
           exposed: false
           expose:
@@ -3957,7 +3957,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            fitting-brooches: fitting-brooches
           group: 1
           exposed: false
           expose:
@@ -4636,7 +4636,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            fitting-labels-brands: fitting-labels-brands
           group: 1
           exposed: false
           expose:
@@ -5113,7 +5113,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            folders: folders
           group: 1
           exposed: false
           expose:
@@ -6061,7 +6061,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            sewing: sewing
           group: 1
           exposed: false
           expose:
@@ -6582,7 +6582,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            sewing-holes-tranchefil: sewing-holes-tranchefil
           group: 1
           exposed: false
           expose:
@@ -6993,7 +6993,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            sewing-support: sewing-support
           group: 1
           exposed: false
           expose:
@@ -7617,7 +7617,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            sewing-thread: sewing-thread
           group: 1
           exposed: false
           expose:
@@ -8177,7 +8177,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            cover: cover
+            tranchefil: tranchefil
           group: 1
           exposed: false
           expose:
