@@ -432,8 +432,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -953,8 +953,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -1618,8 +1618,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -2520,8 +2520,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -3408,8 +3408,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -4032,8 +4032,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -4711,8 +4711,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -5188,8 +5188,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -6136,8 +6136,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -6657,8 +6657,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -7068,8 +7068,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -7692,8 +7692,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
@@ -8252,8 +8252,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          handler: 'default:node'
           widget: select
+          handler: 'default:node'
           handler_settings:
             target_bundles:
               books: books
