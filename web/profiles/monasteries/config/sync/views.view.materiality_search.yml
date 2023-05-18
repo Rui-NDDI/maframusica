@@ -2241,7 +2241,7 @@ display:
         type: normal
         title: Closures
         description: ''
-        weight: -44
+        weight: -45
         expanded: false
         menu_name: main
         parent: sb_core.bookbinding
@@ -3215,7 +3215,7 @@ display:
         type: normal
         title: Cover
         description: ''
-        weight: -45
+        weight: -46
         expanded: false
         menu_name: main
         parent: sb_core.bookbinding
@@ -5943,7 +5943,7 @@ display:
         type: normal
         title: Folders
         description: ''
-        weight: -46
+        weight: -47
         expanded: false
         menu_name: main
         parent: sb_core.bookbinding
