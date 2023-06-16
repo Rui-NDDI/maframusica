@@ -1,0 +1,29 @@
+uuid: dd5b2367-51db-457a-9c8c-88b55cf465aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shape_holes
+    - node.type.materiality
+    - taxonomy.vocabulary.shape_holes
+id: node.materiality.field_shape_holes
+field_name: field_shape_holes
+entity_type: node
+bundle: materiality
+label: 'Shape of the holes'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/shape_holes/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shape_holes: shape_holes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

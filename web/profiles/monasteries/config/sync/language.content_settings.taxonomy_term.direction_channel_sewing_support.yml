@@ -1,0 +1,16 @@
+uuid: 1bec33be-5f91-49ba-a3a2-57ffe82232cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.direction_channel_sewing_support
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.direction_channel_sewing_support
+target_entity_type_id: taxonomy_term
+target_bundle: direction_channel_sewing_support
+default_langcode: site_default
+language_alterable: true

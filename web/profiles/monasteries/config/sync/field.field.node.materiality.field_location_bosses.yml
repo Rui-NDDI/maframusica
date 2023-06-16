@@ -1,0 +1,29 @@
+uuid: b283c574-d4c3-48db-a8b7-d21b15d8f105
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_bosses
+    - node.type.materiality
+    - taxonomy.vocabulary.location_bosses
+id: node.materiality.field_location_bosses
+field_name: field_location_bosses
+entity_type: node
+bundle: materiality
+label: 'Location of the bosses'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/location_bosses/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location_bosses: location_bosses
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

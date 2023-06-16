@@ -1,0 +1,29 @@
+uuid: 696bacc8-42d9-47ca-8ef1-35f95fae0b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shape_fastenings
+    - node.type.materiality
+    - taxonomy.vocabulary.shape_fastenings
+id: node.materiality.field_shape_fastenings
+field_name: field_shape_fastenings
+entity_type: node
+bundle: materiality
+label: 'Shape of the fastenings'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/shape_fastenings/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shape_fastenings: shape_fastenings
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

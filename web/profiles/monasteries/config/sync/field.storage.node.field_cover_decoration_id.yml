@@ -1,0 +1,20 @@
+uuid: dd9d14d1-ebba-43b6-a19a-0c5995daaf62
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_cover_decoration_id
+field_name: field_cover_decoration_id
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

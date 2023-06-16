@@ -1,0 +1,16 @@
+uuid: eab519bd-c713-4f0d-a4ac-b6b499eb488e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.boards_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.boards_id
+target_entity_type_id: taxonomy_term
+target_bundle: boards_id
+default_langcode: site_default
+language_alterable: true

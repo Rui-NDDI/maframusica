@@ -1,47 +1,19 @@
-uuid: d934dfae-c7bf-4482-91a8-a351903f3084
+uuid: da83af69-0a07-42f3-ba55-60c1b84a5b57
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_century
 field_name: field_century
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: XI
-      label: '11th century'
-    -
-      value: XII
-      label: '12th century'
-    -
-      value: XIII
-      label: '13th century'
-    -
-      value: XIV
-      label: '14th century'
-    -
-      value: XV
-      label: '15th century'
-    -
-      value: XVI
-      label: '16th century'
-    -
-      value: XVII
-      label: '17th century'
-    -
-      value: XVIII
-      label: '18th century'
-    -
-      value: XIX
-      label: '19th century'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
-cardinality: 2
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

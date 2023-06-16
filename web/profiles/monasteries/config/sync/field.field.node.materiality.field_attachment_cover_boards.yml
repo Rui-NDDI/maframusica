@@ -1,0 +1,29 @@
+uuid: 76a46b12-a57a-446a-8a4d-8aff51c93271
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment_cover_boards
+    - node.type.materiality
+    - taxonomy.vocabulary.attachment_cover_boards
+id: node.materiality.field_attachment_cover_boards
+field_name: field_attachment_cover_boards
+entity_type: node
+bundle: materiality
+label: 'Attachment of the cover to the boards'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/attachment_cover_boards/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      attachment_cover_boards: attachment_cover_boards
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

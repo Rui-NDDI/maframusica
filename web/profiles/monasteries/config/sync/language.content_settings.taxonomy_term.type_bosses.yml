@@ -1,0 +1,16 @@
+uuid: 4125cbf2-0605-4d2d-84ab-63ede5d86ef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_bosses
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.type_bosses
+target_entity_type_id: taxonomy_term
+target_bundle: type_bosses
+default_langcode: site_default
+language_alterable: true

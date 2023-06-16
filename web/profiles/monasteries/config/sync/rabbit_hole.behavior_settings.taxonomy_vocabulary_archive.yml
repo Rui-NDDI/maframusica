@@ -7,7 +7,7 @@ dependencies:
 id: taxonomy_vocabulary_archive
 entity_type_id: taxonomy_vocabulary
 entity_id: archive
-action: display_page
+action: page_not_found
 allow_override: 0
 redirect: ''
 redirect_code: 301

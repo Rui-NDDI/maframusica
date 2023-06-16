@@ -1,0 +1,16 @@
+uuid: fb7f325b-cd8f-490e-bfc6-dacf5d3c489d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_sequence_marks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.type_sequence_marks
+target_entity_type_id: taxonomy_term
+target_bundle: type_sequence_marks
+default_langcode: site_default
+language_alterable: true

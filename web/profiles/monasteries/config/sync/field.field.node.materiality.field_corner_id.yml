@@ -1,0 +1,29 @@
+uuid: 3d1ebca6-1f54-4741-8bfc-4b957e5b0d05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corner_id
+    - node.type.materiality
+    - taxonomy.vocabulary.corner_id
+id: node.materiality.field_corner_id
+field_name: field_corner_id
+entity_type: node
+bundle: materiality
+label: 'Corner(s) ID'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/corner_id/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      corner_id: corner_id
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

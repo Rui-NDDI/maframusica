@@ -1,0 +1,14 @@
+uuid: 47b62272-308c-492c-840f-6be8236c0b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_corner
+id: taxonomy_vocabulary_decoration_corner
+entity_type_id: taxonomy_vocabulary
+entity_id: decoration_corner
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

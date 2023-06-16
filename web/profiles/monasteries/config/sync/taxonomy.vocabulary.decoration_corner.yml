@@ -1,0 +1,8 @@
+uuid: 7d416296-cb26-4fa0-8ef4-13ed7a3f37eb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Decoration of the corner(s)'
+vid: decoration_corner
+description: 'Contains a list of decoration corner types within the site.'
+weight: 0

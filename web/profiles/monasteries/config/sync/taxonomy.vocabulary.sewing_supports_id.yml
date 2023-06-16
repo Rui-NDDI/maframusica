@@ -1,0 +1,8 @@
+uuid: d22c6a7f-5f53-4caa-b41b-79903323f02b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sewing supports ID'
+vid: sewing_supports_id
+description: 'Contains a list of sewing supports id types within the site.'
+weight: 0

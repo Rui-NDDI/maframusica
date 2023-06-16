@@ -1,0 +1,20 @@
+uuid: adcb0133-b996-4650-a2c0-f5fa6dd372ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_colour_sewing_thread
+field_name: field_colour_sewing_thread
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 5003c308-041d-4a80-95f4-b38e200aa060
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_board_attachment_securing
+field_name: field_board_attachment_securing
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

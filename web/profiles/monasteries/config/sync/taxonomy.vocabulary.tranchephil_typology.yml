@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Tranchephil typology'
 vid: tranchephil_typology
-description: ''
+description: 'Contains a list of tranchephil typology types within the site.'
 weight: 0

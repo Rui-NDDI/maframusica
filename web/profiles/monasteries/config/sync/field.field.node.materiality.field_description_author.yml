@@ -1,0 +1,19 @@
+uuid: 058ebe0a-254a-416b-a7bc-dd7e95b00994
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_author
+    - node.type.materiality
+id: node.materiality.field_description_author
+field_name: field_description_author
+entity_type: node
+bundle: materiality
+label: 'Description author/s*'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

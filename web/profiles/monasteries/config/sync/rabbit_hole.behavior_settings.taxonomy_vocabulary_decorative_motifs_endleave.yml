@@ -1,0 +1,14 @@
+uuid: ee8b736a-62bc-4ddf-937a-eadd8c5566b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decorative_motifs_endleave
+id: taxonomy_vocabulary_decorative_motifs_endleave
+entity_type_id: taxonomy_vocabulary
+entity_id: decorative_motifs_endleave
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

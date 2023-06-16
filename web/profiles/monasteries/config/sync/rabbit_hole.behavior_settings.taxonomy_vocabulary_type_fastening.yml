@@ -1,0 +1,14 @@
+uuid: 4fc772d6-d5cc-42e2-9f26-ac9ff08a360e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_fastening
+id: taxonomy_vocabulary_type_fastening
+entity_type_id: taxonomy_vocabulary
+entity_id: type_fastening
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

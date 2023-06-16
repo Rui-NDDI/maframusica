@@ -9,7 +9,7 @@ id: node.materiality.field_number_folios
 field_name: field_number_folios
 entity_type: node
 bundle: materiality
-label: 'Total number of folios'
+label: 'Number of folia'
 description: ''
 required: false
 translatable: false

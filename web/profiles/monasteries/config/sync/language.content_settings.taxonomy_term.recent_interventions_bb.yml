@@ -1,0 +1,16 @@
+uuid: dd1a41e4-ab24-4b85-acef-6cfb01a58f2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recent_interventions_bb
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.recent_interventions_bb
+target_entity_type_id: taxonomy_term
+target_bundle: recent_interventions_bb
+default_langcode: site_default
+language_alterable: true

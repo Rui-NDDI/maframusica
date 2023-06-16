@@ -1,0 +1,14 @@
+uuid: ad70efe1-6152-4852-94e6-deffc7a7f678
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.past_interventions_bb
+id: taxonomy_vocabulary_past_interventions_bb
+entity_type_id: taxonomy_vocabulary
+entity_id: past_interventions_bb
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,8 @@
+uuid: aa99c4fb-b109-48df-8cc7-1ffbded670ca
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of fastening(s)'
+vid: type_fastening
+description: 'Contains a list of fastening types within the site.'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: cdb861f4-cbb0-431d-89e3-df2981096e35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_watermarks_endleave
+    - node.type.materiality
+    - taxonomy.vocabulary.watermarks_endleaves
+id: node.materiality.field_watermarks_endleave
+field_name: field_watermarks_endleave
+entity_type: node
+bundle: materiality
+label: 'Watermarks on the endleaves'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/watermarks_endleaves/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      watermarks_endleaves: watermarks_endleaves
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

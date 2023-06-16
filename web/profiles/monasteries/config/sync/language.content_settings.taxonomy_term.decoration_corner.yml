@@ -1,0 +1,16 @@
+uuid: ad4fdcbb-bdbd-457a-9ecb-1383af16fdc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_corner
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.decoration_corner
+target_entity_type_id: taxonomy_term
+target_bundle: decoration_corner
+default_langcode: site_default
+language_alterable: true

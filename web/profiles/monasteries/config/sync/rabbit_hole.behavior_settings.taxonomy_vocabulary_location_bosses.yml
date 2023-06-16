@@ -1,0 +1,14 @@
+uuid: 591b8465-60f8-426e-ba75-6bb89abf4543
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location_bosses
+id: taxonomy_vocabulary_location_bosses
+entity_type_id: taxonomy_vocabulary
+entity_id: location_bosses
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

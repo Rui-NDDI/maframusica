@@ -1,0 +1,8 @@
+uuid: d59748cd-edaa-4e9f-a47f-68cfb2c968e4
+langcode: en
+status: true
+dependencies: {  }
+name: Linings
+vid: linings
+description: 'Contains a list of linings types within the site.'
+weight: 0

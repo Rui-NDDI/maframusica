@@ -1,0 +1,14 @@
+uuid: 21691a29-a693-4015-9d8c-7ee31634b026
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.squares
+id: taxonomy_vocabulary_squares
+entity_type_id: taxonomy_vocabulary
+entity_id: squares
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

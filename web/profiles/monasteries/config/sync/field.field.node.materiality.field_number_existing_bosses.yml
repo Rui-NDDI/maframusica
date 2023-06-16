@@ -1,0 +1,23 @@
+uuid: d522584a-ebe6-4580-9293-cdc42588ad32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_existing_bosses
+    - node.type.materiality
+id: node.materiality.field_number_existing_bosses
+field_name: field_number_existing_bosses
+entity_type: node
+bundle: materiality
+label: 'Number of existing bosses'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

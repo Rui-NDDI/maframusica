@@ -1,0 +1,16 @@
+uuid: a635eb2f-27a9-4c32-92ef-f5467093436c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.linings
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.linings
+target_entity_type_id: taxonomy_term
+target_bundle: linings
+default_langcode: site_default
+language_alterable: true

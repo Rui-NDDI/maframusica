@@ -1,0 +1,8 @@
+uuid: bc56897c-b124-4ce8-9e5a-7b2d1a52b0cd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Corner(s) ID'
+vid: corner_id
+description: 'Contains a list of corner id types within the site.'
+weight: 0

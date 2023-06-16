@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Tradition/Use
 vid: tradition
-description: ''
+description: 'Contains a list of tradition types within the site.'
 weight: 0

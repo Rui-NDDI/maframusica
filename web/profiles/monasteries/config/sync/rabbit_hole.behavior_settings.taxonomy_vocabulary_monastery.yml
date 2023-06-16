@@ -7,7 +7,7 @@ dependencies:
 id: taxonomy_vocabulary_monastery
 entity_type_id: taxonomy_vocabulary
 entity_id: monastery
-action: display_page
+action: page_not_found
 allow_override: 0
 redirect: ''
 redirect_code: 301

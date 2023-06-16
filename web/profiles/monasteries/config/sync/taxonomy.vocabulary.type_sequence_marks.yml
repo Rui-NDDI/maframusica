@@ -1,0 +1,8 @@
+uuid: c8e9e9d6-ef90-4c21-a84b-edc0b799b589
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of sequence marks'
+vid: type_sequence_marks
+description: 'Contains a list of sequence marks types within the site.'
+weight: 0

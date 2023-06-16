@@ -1,0 +1,14 @@
+uuid: 918e7d5a-ee28-4ef8-9942-cfd8df997a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.shape_bosses
+id: taxonomy_vocabulary_shape_bosses
+entity_type_id: taxonomy_vocabulary
+entity_id: shape_bosses
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

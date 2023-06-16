@@ -1,0 +1,29 @@
+uuid: 9bcd9a31-5c4b-4176-bbf8-1090c8228f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decoration_corner
+    - node.type.materiality
+    - taxonomy.vocabulary.decoration_corner
+id: node.materiality.field_decoration_corner
+field_name: field_decoration_corner
+entity_type: node
+bundle: materiality
+label: 'Decoration of the corner(s)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/decoration_corner/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      decoration_corner: decoration_corner
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

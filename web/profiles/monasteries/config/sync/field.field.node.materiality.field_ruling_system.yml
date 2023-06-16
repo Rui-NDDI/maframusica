@@ -1,0 +1,29 @@
+uuid: e9798a1f-6fb8-499a-93d7-214fbc1ade9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ruling_system
+    - node.type.materiality
+    - taxonomy.vocabulary.ruling_system
+id: node.materiality.field_ruling_system
+field_name: field_ruling_system
+entity_type: node
+bundle: materiality
+label: 'Ruling system'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/ruling_system/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ruling_system: ruling_system
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

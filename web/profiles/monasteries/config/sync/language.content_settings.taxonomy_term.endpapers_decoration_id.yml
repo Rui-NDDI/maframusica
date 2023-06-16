@@ -1,0 +1,16 @@
+uuid: ad7d43b8-c3c0-4e94-83b2-ba5d6743f1cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.endpapers_decoration_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.endpapers_decoration_id
+target_entity_type_id: taxonomy_term
+target_bundle: endpapers_decoration_id
+default_langcode: site_default
+language_alterable: true

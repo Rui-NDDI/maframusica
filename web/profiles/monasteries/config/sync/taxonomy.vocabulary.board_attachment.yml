@@ -1,0 +1,8 @@
+uuid: e4424ab1-13b0-485a-ac90-693593a680dd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Board attachment'
+vid: board_attachment
+description: 'Contains a list of board attachment types within the site.'
+weight: 0

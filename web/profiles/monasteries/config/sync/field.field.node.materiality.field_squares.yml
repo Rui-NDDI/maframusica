@@ -1,0 +1,29 @@
+uuid: 34bedf27-6c15-4596-84ab-b6481801a90b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_squares
+    - node.type.materiality
+    - taxonomy.vocabulary.squares
+id: node.materiality.field_squares
+field_name: field_squares
+entity_type: node
+bundle: materiality
+label: Squares
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/squares/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      squares: squares
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

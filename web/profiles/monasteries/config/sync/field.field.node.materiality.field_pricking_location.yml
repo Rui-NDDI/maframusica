@@ -1,0 +1,29 @@
+uuid: 88bf0c01-23e1-431d-a0a4-7715c0328fc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pricking_location
+    - node.type.materiality
+    - taxonomy.vocabulary.pricking_location
+id: node.materiality.field_pricking_location
+field_name: field_pricking_location
+entity_type: node
+bundle: materiality
+label: 'Pricking location'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/pricking_location/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pricking_location: pricking_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

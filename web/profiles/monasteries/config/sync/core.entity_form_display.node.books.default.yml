@@ -29,10 +29,10 @@ dependencies:
     - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
     - field.field.node.books.field_shelfmark
-    - field.field.node.books.field_siglum
     - field.field.node.books.field_subcategory
     - field.field.node.books.field_text_language
     - field.field.node.books.field_tradition
+    - field.field.node.books.field_txt_siglum
     - field.field.node.books.field_type
     - field.field.node.books.field_use
     - field.field.node.books.field_writing_type
@@ -40,7 +40,6 @@ dependencies:
     - node.type.books
   module:
     - datetime
-    - field_token_value
     - image
     - link
     - path
@@ -95,10 +94,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_century:
-    type: options_select
-    weight: 34
+    type: entity_reference_autocomplete
+    weight: 44
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_completeness:
     type: options_buttons
@@ -278,12 +281,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_siglum:
-    type: field_token_value_default
-    weight: 42
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_subcategory:
     type: entity_reference_autocomplete
     weight: 33
@@ -311,6 +308,14 @@ content:
     settings:
       match_operator: CONTAINS
       match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_txt_siglum:
+    type: string_textfield
+    weight: 43
+    region: content
+    settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }

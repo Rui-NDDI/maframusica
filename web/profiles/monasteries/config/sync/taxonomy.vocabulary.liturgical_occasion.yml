@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Liturgical occasion'
 vid: liturgical_occasion
-description: ''
+description: 'Contains a list of liturgical occasion types within the site.'
 weight: 0

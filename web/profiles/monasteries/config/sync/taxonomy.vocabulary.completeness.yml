@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Completeness
 vid: completeness
-description: ''
+description: 'Contains a list of completeness types to be used on books.'
 weight: 0

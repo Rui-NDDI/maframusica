@@ -1,0 +1,16 @@
+uuid: 1f41a4bf-d498-4d3d-84f3-ddf0de08f102
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.minor_decoration_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.minor_decoration_id
+target_entity_type_id: taxonomy_term
+target_bundle: minor_decoration_id
+default_langcode: site_default
+language_alterable: true

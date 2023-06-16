@@ -1,0 +1,8 @@
+uuid: 294545a9-9590-463f-8ed3-ffecf5a685cd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Decoration technique of the endleaves'
+vid: decoration_technique_end
+description: 'Contains a list of decoration technique types within the site.'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 8333fb51-9544-42bb-89b2-78efa543d2a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decoration_bosses
+    - node.type.materiality
+    - taxonomy.vocabulary.decoration_bosses
+id: node.materiality.field_decoration_bosses
+field_name: field_decoration_bosses
+entity_type: node
+bundle: materiality
+label: 'Decoration of the bosses'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/decoration_bosses/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      decoration_bosses: decoration_bosses
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

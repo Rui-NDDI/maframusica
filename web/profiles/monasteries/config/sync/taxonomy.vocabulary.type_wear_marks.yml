@@ -1,0 +1,8 @@
+uuid: 88b1081f-9623-44b9-9b2a-c096452030ef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of wear marks'
+vid: type_wear_marks
+description: 'Contains a list of wear marks types within the site.'
+weight: 0

@@ -1,0 +1,16 @@
+uuid: 928c1955-e1f5-4d0f-8d4b-90c18bfbe615
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wear_marks_endleaves
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.wear_marks_endleaves
+target_entity_type_id: taxonomy_term
+target_bundle: wear_marks_endleaves
+default_langcode: site_default
+language_alterable: true

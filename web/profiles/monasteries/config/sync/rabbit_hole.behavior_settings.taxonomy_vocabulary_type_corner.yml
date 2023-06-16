@@ -1,0 +1,14 @@
+uuid: bba23231-1973-4e10-b3bf-2f3d718cf3ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_corner
+id: taxonomy_vocabulary_type_corner
+entity_type_id: taxonomy_vocabulary
+entity_id: type_corner
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

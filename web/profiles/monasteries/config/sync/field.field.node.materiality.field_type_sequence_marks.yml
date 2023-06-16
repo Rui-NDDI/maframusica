@@ -1,0 +1,29 @@
+uuid: a8d40d6b-1324-4412-9956-b9a0fb8e6939
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_sequence_marks
+    - node.type.materiality
+    - taxonomy.vocabulary.type_sequence_marks
+id: node.materiality.field_type_sequence_marks
+field_name: field_type_sequence_marks
+entity_type: node
+bundle: materiality
+label: 'Type of sequence marks'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/type_sequence_marks/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_sequence_marks: type_sequence_marks
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

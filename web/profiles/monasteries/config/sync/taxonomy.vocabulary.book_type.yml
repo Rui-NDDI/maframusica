@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Book type'
 vid: book_type
-description: ''
+description: 'Contains a list of book types to be used on books.'
 weight: 0

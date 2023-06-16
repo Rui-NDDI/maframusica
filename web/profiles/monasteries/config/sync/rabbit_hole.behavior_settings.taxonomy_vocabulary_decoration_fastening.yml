@@ -1,0 +1,14 @@
+uuid: 20318a51-72db-4073-b458-6feb20a913bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_fastening
+id: taxonomy_vocabulary_decoration_fastening
+entity_type_id: taxonomy_vocabulary
+entity_id: decoration_fastening
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

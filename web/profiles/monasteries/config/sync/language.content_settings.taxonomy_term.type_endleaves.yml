@@ -1,0 +1,16 @@
+uuid: 76f50e95-e9c2-4429-b2a2-68a2a47a47fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_endleaves
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.type_endleaves
+target_entity_type_id: taxonomy_term
+target_bundle: type_endleaves
+default_langcode: site_default
+language_alterable: true

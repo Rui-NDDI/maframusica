@@ -1,13 +1,9 @@
 third_party_settings:
   field_group:
     group_tabs:
-      label: Abas
-    group_page_information:
-      label: 'Informações da página'
-    group_page_content:
-      label: 'Conteúdo da página'
+      label: Tabs
     group_basic_settings:
-      label: 'Configurações básicas'
+      label: 'Basic settings'
 content:
   field_bookbinding_elements:
     settings:

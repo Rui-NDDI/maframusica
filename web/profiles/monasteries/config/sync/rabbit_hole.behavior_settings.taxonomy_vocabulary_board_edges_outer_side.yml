@@ -1,0 +1,14 @@
+uuid: 1efebb61-be9e-492a-baaa-54a62cf3521b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.board_edges_outer_side
+id: taxonomy_vocabulary_board_edges_outer_side
+entity_type_id: taxonomy_vocabulary
+entity_id: board_edges_outer_side
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

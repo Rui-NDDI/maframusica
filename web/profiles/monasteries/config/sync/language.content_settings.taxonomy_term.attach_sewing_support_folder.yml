@@ -14,5 +14,5 @@ third_party_settings:
 id: taxonomy_term.attach_sewing_support_folder
 target_entity_type_id: taxonomy_term
 target_bundle: attach_sewing_support_folder
-default_langcode: current_interface
+default_langcode: site_default
 language_alterable: true

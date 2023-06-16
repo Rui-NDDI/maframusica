@@ -1,0 +1,8 @@
+uuid: c4cde55a-2efe-40f2-b62f-2022d10888dc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Recent interventions (Bookblock)'
+vid: recent_interventions
+description: 'Contains a list of recent intervention types within the site.'
+weight: 0

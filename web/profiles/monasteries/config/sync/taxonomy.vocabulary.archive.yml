@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Archive
 vid: archive
-description: ''
+description: 'Contains the archive types to be used on the books.'
 weight: 0

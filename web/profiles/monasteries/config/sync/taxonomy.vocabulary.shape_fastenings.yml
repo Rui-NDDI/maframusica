@@ -1,0 +1,8 @@
+uuid: f3e416d1-1d30-431f-9fc2-a3fb5c145e80
+langcode: en
+status: true
+dependencies: {  }
+name: 'Shape of the fastenings'
+vid: shape_fastenings
+description: 'Contains a list of shape types within the site.'
+weight: 0

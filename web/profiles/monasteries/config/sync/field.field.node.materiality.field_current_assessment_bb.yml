@@ -1,0 +1,29 @@
+uuid: 31e9aea5-2ea6-4c7e-808b-381c1c828e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_current_assessment_bb
+    - node.type.materiality
+    - taxonomy.vocabulary.current_assessment_bb
+id: node.materiality.field_current_assessment_bb
+field_name: field_current_assessment_bb
+entity_type: node
+bundle: materiality
+label: 'Current assessment (Bookbinding)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/current_assessment_bb/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      current_assessment_bb: current_assessment_bb
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

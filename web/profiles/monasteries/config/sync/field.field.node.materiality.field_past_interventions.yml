@@ -1,0 +1,29 @@
+uuid: 94ef032e-f55b-48cf-88c8-7381d2536f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_past_interventions
+    - node.type.materiality
+    - taxonomy.vocabulary.past_interventions
+id: node.materiality.field_past_interventions
+field_name: field_past_interventions
+entity_type: node
+bundle: materiality
+label: 'Past interventions (Bookblock)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/past_interventions/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      past_interventions: past_interventions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

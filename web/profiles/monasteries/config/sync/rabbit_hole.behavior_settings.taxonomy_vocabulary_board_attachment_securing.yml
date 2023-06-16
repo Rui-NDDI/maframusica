@@ -1,0 +1,14 @@
+uuid: d07f999c-71f2-48f2-8827-4e7a302b8db5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.board_attachment_securing
+id: taxonomy_vocabulary_board_attachment_securing
+entity_type_id: taxonomy_vocabulary
+entity_id: board_attachment_securing
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

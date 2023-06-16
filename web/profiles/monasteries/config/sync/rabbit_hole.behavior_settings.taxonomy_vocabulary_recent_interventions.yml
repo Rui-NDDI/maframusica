@@ -1,0 +1,14 @@
+uuid: d9eafb22-3dd0-48dc-bcc1-2630234cbccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recent_interventions
+id: taxonomy_vocabulary_recent_interventions
+entity_type_id: taxonomy_vocabulary
+entity_id: recent_interventions
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

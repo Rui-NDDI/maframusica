@@ -1,0 +1,14 @@
+uuid: 78d6f9eb-3e92-445a-9f88-563506cdfe1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.linings
+id: taxonomy_vocabulary_linings
+entity_type_id: taxonomy_vocabulary
+entity_id: linings
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

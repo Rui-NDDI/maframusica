@@ -1,0 +1,23 @@
+uuid: b7746057-1674-49fd-ac2f-ea57d3d277ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_sewing_stations
+    - node.type.materiality
+id: node.materiality.field_number_sewing_stations
+field_name: field_number_sewing_stations
+entity_type: node
+bundle: materiality
+label: 'Number of sewing stations (total)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -2,7 +2,7 @@ uuid: f5a075ca-9510-471f-8166-7fb36b7a8255
 langcode: en
 status: true
 dependencies: {  }
-name: 'Decoration type'
+name: 'Type of major decoration'
 vid: decoration_type
 description: 'Contains all the decoration types to be used on the materiality.'
 weight: 0

@@ -1,0 +1,8 @@
+uuid: 12d710a3-e6a1-42cb-b725-987ff6d9dd2e
+langcode: en
+status: true
+dependencies: {  }
+name: Squares
+vid: squares
+description: 'Contains a list of squares types within the site.'
+weight: 0

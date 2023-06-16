@@ -1,0 +1,16 @@
+uuid: 520ad030-f9dc-41f3-a5f4-ac9a997c282f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recent_interventions
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.recent_interventions
+target_entity_type_id: taxonomy_term
+target_bundle: recent_interventions
+default_langcode: site_default
+language_alterable: true

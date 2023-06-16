@@ -14,9 +14,9 @@ definitions:
     expanded: false
     enabled: true
   sb_core__fitting:
-    weight: -44
-    parent: sb_core.bookbinding
     menu_name: main
+    parent: sb_core.bookbinding
+    weight: -44
     expanded: false
     enabled: true
   sb_core__sewing:

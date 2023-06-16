@@ -1,0 +1,16 @@
+uuid: a8759a03-2bf4-40f4-a636-e61125230f99
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.corner_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.corner_id
+target_entity_type_id: taxonomy_term
+target_bundle: corner_id
+default_langcode: site_default
+language_alterable: true
