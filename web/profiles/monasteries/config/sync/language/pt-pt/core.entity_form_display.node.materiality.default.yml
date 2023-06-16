@@ -2,26 +2,3 @@ third_party_settings:
   field_group:
     group_tabs:
       label: Tabs
-    group_basic_settings:
-      label: 'Basic settings'
-content:
-  field_bookbinding_elements:
-    settings:
-      title: Parágrafo
-      title_plural: Parágrafos
-  field_brooches:
-    settings:
-      title: Parágrafo
-      title_plural: Parágrafos
-  field_closures:
-    settings:
-      title: Parágrafo
-      title_plural: Parágrafos
-  field_folders:
-    settings:
-      title: Parágrafo
-      title_plural: Parágrafos
-  field_tranchefils:
-    settings:
-      title: Parágrafo
-      title_plural: Parágrafos

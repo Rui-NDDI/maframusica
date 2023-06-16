@@ -4,12 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.materiality.field_articulation_cover
-    - field.field.node.materiality.field_articulation_system
-    - field.field.node.materiality.field_associated_finial_point
-    - field.field.node.materiality.field_associated_sewing_support
-    - field.field.node.materiality.field_associated_tranchefil
-    - field.field.node.materiality.field_attach_sewing_hold_folder
     - field.field.node.materiality.field_attachment_cover_boards
     - field.field.node.materiality.field_average_size_boards
     - field.field.node.materiality.field_average_size_bosses
@@ -17,27 +11,13 @@ dependencies:
     - field.field.node.materiality.field_average_size_endleaves
     - field.field.node.materiality.field_average_size_fastenings
     - field.field.node.materiality.field_average_size_sewing
-    - field.field.node.materiality.field_avg_dist_head_foot_sewing
-    - field.field.node.materiality.field_avg_dist_sewing_stations
-    - field.field.node.materiality.field_bifolios_notebook
-    - field.field.node.materiality.field_binders
     - field.field.node.materiality.field_board_attachment
     - field.field.node.materiality.field_board_attachment_securing
     - field.field.node.materiality.field_board_edges_inner_side
     - field.field.node.materiality.field_board_edges_outer_side
     - field.field.node.materiality.field_boards_id
-    - field.field.node.materiality.field_book_body_composition
-    - field.field.node.materiality.field_book_dimensions_total
-    - field.field.node.materiality.field_bookbinding_elements
     - field.field.node.materiality.field_bosses_id
-    - field.field.node.materiality.field_brooches
-    - field.field.node.materiality.field_category_book_body
     - field.field.node.materiality.field_change_over
-    - field.field.node.materiality.field_closures
-    - field.field.node.materiality.field_collation
-    - field.field.node.materiality.field_color
-    - field.field.node.materiality.field_color_finial_thread
-    - field.field.node.materiality.field_color_skin_finial
     - field.field.node.materiality.field_colour_bosses
     - field.field.node.materiality.field_colour_corner
     - field.field.node.materiality.field_colour_cover
@@ -51,13 +31,11 @@ dependencies:
     - field.field.node.materiality.field_colours_minor_decoration
     - field.field.node.materiality.field_conservation_condition
     - field.field.node.materiality.field_corner_id
-    - field.field.node.materiality.field_cover_decoration
     - field.field.node.materiality.field_cover_decoration_id
     - field.field.node.materiality.field_cover_id
     - field.field.node.materiality.field_cover_mitres
     - field.field.node.materiality.field_current_assessment
     - field.field.node.materiality.field_current_assessment_bb
-    - field.field.node.materiality.field_current_number
     - field.field.node.materiality.field_decor_technique_endleaves
     - field.field.node.materiality.field_decoration_bosses
     - field.field.node.materiality.field_decoration_corner
@@ -65,7 +43,6 @@ dependencies:
     - field.field.node.materiality.field_decoration_pattern_cover
     - field.field.node.materiality.field_decoration_technique_cover
     - field.field.node.materiality.field_decoration_type
-    - field.field.node.materiality.field_decorative_finial
     - field.field.node.materiality.field_decorative_motifs_endleave
     - field.field.node.materiality.field_description_author
     - field.field.node.materiality.field_description_other_cover
@@ -73,11 +50,9 @@ dependencies:
     - field.field.node.materiality.field_description_sequence_marks
     - field.field.node.materiality.field_description_wear_marks
     - field.field.node.materiality.field_dimension_endleaves
-    - field.field.node.materiality.field_dimensions_book_body
     - field.field.node.materiality.field_direction_channels_endband
     - field.field.node.materiality.field_direction_channels_support
     - field.field.node.materiality.field_direction_fastening
-    - field.field.node.materiality.field_dyestuff
     - field.field.node.materiality.field_edge_treatment
     - field.field.node.materiality.field_empty_stations
     - field.field.node.materiality.field_endleaves_id
@@ -86,32 +61,18 @@ dependencies:
     - field.field.node.materiality.field_entry_carvings_sewing_sup
     - field.field.node.materiality.field_fastening_id
     - field.field.node.materiality.field_features_furniture
-    - field.field.node.materiality.field_finial
-    - field.field.node.materiality.field_folders
-    - field.field.node.materiality.field_folio_dimensions
-    - field.field.node.materiality.field_format
     - field.field.node.materiality.field_grain_direction
     - field.field.node.materiality.field_gregory_rule
-    - field.field.node.materiality.field_holes_number
     - field.field.node.materiality.field_image
-    - field.field.node.materiality.field_inside_cover
-    - field.field.node.materiality.field_label_brand_typology
     - field.field.node.materiality.field_linings
-    - field.field.node.materiality.field_loads
-    - field.field.node.materiality.field_local_seam_attach_gutter
-    - field.field.node.materiality.field_location
     - field.field.node.materiality.field_location_bosses
     - field.field.node.materiality.field_location_corner
     - field.field.node.materiality.field_location_fastening
     - field.field.node.materiality.field_main_number_sewing_station
     - field.field.node.materiality.field_main_twist_sewing_thread
     - field.field.node.materiality.field_major_decoration_id
-    - field.field.node.materiality.field_material
-    - field.field.node.materiality.field_materiality_support
-    - field.field.node.materiality.field_materiality_type
     - field.field.node.materiality.field_measured_folio
     - field.field.node.materiality.field_minor_decoration_id
-    - field.field.node.materiality.field_nature
     - field.field.node.materiality.field_numbeer_existing_corners
     - field.field.node.materiality.field_number_columns
     - field.field.node.materiality.field_number_endband_stations
@@ -120,18 +81,11 @@ dependencies:
     - field.field.node.materiality.field_number_folios
     - field.field.node.materiality.field_number_gatherings
     - field.field.node.materiality.field_number_lines
-    - field.field.node.materiality.field_number_reinforcements
     - field.field.node.materiality.field_number_sewing_stations
     - field.field.node.materiality.field_observations
-    - field.field.node.materiality.field_original_number
-    - field.field.node.materiality.field_others_not_associated
-    - field.field.node.materiality.field_overturned_cover_posterior
-    - field.field.node.materiality.field_overturned_cover_previous
     - field.field.node.materiality.field_paper_marks
     - field.field.node.materiality.field_past_interventions
     - field.field.node.materiality.field_past_interventions_bb
-    - field.field.node.materiality.field_path_around_sewing_support
-    - field.field.node.materiality.field_pigment
     - field.field.node.materiality.field_pos_channels_sewing_sup
     - field.field.node.materiality.field_pricking_location
     - field.field.node.materiality.field_pricking_process
@@ -140,17 +94,12 @@ dependencies:
     - field.field.node.materiality.field_proportion
     - field.field.node.materiality.field_recent_interventions
     - field.field.node.materiality.field_recent_interventions_bb
-    - field.field.node.materiality.field_referenced_book
     - field.field.node.materiality.field_references
-    - field.field.node.materiality.field_regularity
-    - field.field.node.materiality.field_reinforcements
     - field.field.node.materiality.field_ruling_process
     - field.field.node.materiality.field_ruling_system
     - field.field.node.materiality.field_sewing_description
     - field.field.node.materiality.field_sewing_holes
-    - field.field.node.materiality.field_sewing_order
     - field.field.node.materiality.field_sewing_sections
-    - field.field.node.materiality.field_sewing_supports
     - field.field.node.materiality.field_sewing_supports_id
     - field.field.node.materiality.field_sewing_thread_id
     - field.field.node.materiality.field_shape_bosses
@@ -158,17 +107,8 @@ dependencies:
     - field.field.node.materiality.field_shape_holes
     - field.field.node.materiality.field_size_folia
     - field.field.node.materiality.field_squares
-    - field.field.node.materiality.field_standard_dimension_folio
     - field.field.node.materiality.field_support_id
-    - field.field.node.materiality.field_symmetry_holes_head_foot
-    - field.field.node.materiality.field_tabs
-    - field.field.node.materiality.field_tanning
     - field.field.node.materiality.field_thread_diameter_mm
-    - field.field.node.materiality.field_thread_season
-    - field.field.node.materiality.field_thread_size_thicknes
-    - field.field.node.materiality.field_torsion
-    - field.field.node.materiality.field_tranchefils
-    - field.field.node.materiality.field_tranchephil_typology
     - field.field.node.materiality.field_type_bosses
     - field.field.node.materiality.field_type_corner
     - field.field.node.materiality.field_type_cover
@@ -179,13 +119,9 @@ dependencies:
     - field.field.node.materiality.field_type_sequence_marks
     - field.field.node.materiality.field_type_wear_marks
     - field.field.node.materiality.field_typology_according_books
-    - field.field.node.materiality.field_typology_according_loop
-    - field.field.node.materiality.field_typology_according_route
-    - field.field.node.materiality.field_typology_cover
     - field.field.node.materiality.field_watermarks_endleave
     - field.field.node.materiality.field_wear_marks_cover
     - field.field.node.materiality.field_wear_marks_endleave
-    - field.field.node.materiality.field_which_side
     - field.field.node.materiality.field_writing_ink_id
     - node.type.materiality
   module:
@@ -196,12 +132,6 @@ bundle: materiality
 mode: teaser
 content: {  }
 hidden:
-  field_articulation_cover: true
-  field_articulation_system: true
-  field_associated_finial_point: true
-  field_associated_sewing_support: true
-  field_associated_tranchefil: true
-  field_attach_sewing_hold_folder: true
   field_attachment_cover_boards: true
   field_average_size_boards: true
   field_average_size_bosses: true
@@ -209,27 +139,13 @@ hidden:
   field_average_size_endleaves: true
   field_average_size_fastenings: true
   field_average_size_sewing: true
-  field_avg_dist_head_foot_sewing: true
-  field_avg_dist_sewing_stations: true
-  field_bifolios_notebook: true
-  field_binders: true
   field_board_attachment: true
   field_board_attachment_securing: true
   field_board_edges_inner_side: true
   field_board_edges_outer_side: true
   field_boards_id: true
-  field_book_body_composition: true
-  field_book_dimensions_total: true
-  field_bookbinding_elements: true
   field_bosses_id: true
-  field_brooches: true
-  field_category_book_body: true
   field_change_over: true
-  field_closures: true
-  field_collation: true
-  field_color: true
-  field_color_finial_thread: true
-  field_color_skin_finial: true
   field_colour_bosses: true
   field_colour_corner: true
   field_colour_cover: true
@@ -243,13 +159,11 @@ hidden:
   field_colours_minor_decoration: true
   field_conservation_condition: true
   field_corner_id: true
-  field_cover_decoration: true
   field_cover_decoration_id: true
   field_cover_id: true
   field_cover_mitres: true
   field_current_assessment: true
   field_current_assessment_bb: true
-  field_current_number: true
   field_decor_technique_endleaves: true
   field_decoration_bosses: true
   field_decoration_corner: true
@@ -257,7 +171,6 @@ hidden:
   field_decoration_pattern_cover: true
   field_decoration_technique_cover: true
   field_decoration_type: true
-  field_decorative_finial: true
   field_decorative_motifs_endleave: true
   field_description_author: true
   field_description_other_cover: true
@@ -265,11 +178,9 @@ hidden:
   field_description_sequence_marks: true
   field_description_wear_marks: true
   field_dimension_endleaves: true
-  field_dimensions_book_body: true
   field_direction_channels_endband: true
   field_direction_channels_support: true
   field_direction_fastening: true
-  field_dyestuff: true
   field_edge_treatment: true
   field_empty_stations: true
   field_endleaves_id: true
@@ -278,32 +189,18 @@ hidden:
   field_entry_carvings_sewing_sup: true
   field_fastening_id: true
   field_features_furniture: true
-  field_finial: true
-  field_folders: true
-  field_folio_dimensions: true
-  field_format: true
   field_grain_direction: true
   field_gregory_rule: true
-  field_holes_number: true
   field_image: true
-  field_inside_cover: true
-  field_label_brand_typology: true
   field_linings: true
-  field_loads: true
-  field_local_seam_attach_gutter: true
-  field_location: true
   field_location_bosses: true
   field_location_corner: true
   field_location_fastening: true
   field_main_number_sewing_station: true
   field_main_twist_sewing_thread: true
   field_major_decoration_id: true
-  field_material: true
-  field_materiality_support: true
-  field_materiality_type: true
   field_measured_folio: true
   field_minor_decoration_id: true
-  field_nature: true
   field_numbeer_existing_corners: true
   field_number_columns: true
   field_number_endband_stations: true
@@ -312,18 +209,11 @@ hidden:
   field_number_folios: true
   field_number_gatherings: true
   field_number_lines: true
-  field_number_reinforcements: true
   field_number_sewing_stations: true
   field_observations: true
-  field_original_number: true
-  field_others_not_associated: true
-  field_overturned_cover_posterior: true
-  field_overturned_cover_previous: true
   field_paper_marks: true
   field_past_interventions: true
   field_past_interventions_bb: true
-  field_path_around_sewing_support: true
-  field_pigment: true
   field_pos_channels_sewing_sup: true
   field_pricking_location: true
   field_pricking_process: true
@@ -332,17 +222,12 @@ hidden:
   field_proportion: true
   field_recent_interventions: true
   field_recent_interventions_bb: true
-  field_referenced_book: true
   field_references: true
-  field_regularity: true
-  field_reinforcements: true
   field_ruling_process: true
   field_ruling_system: true
   field_sewing_description: true
   field_sewing_holes: true
-  field_sewing_order: true
   field_sewing_sections: true
-  field_sewing_supports: true
   field_sewing_supports_id: true
   field_sewing_thread_id: true
   field_shape_bosses: true
@@ -350,17 +235,8 @@ hidden:
   field_shape_holes: true
   field_size_folia: true
   field_squares: true
-  field_standard_dimension_folio: true
   field_support_id: true
-  field_symmetry_holes_head_foot: true
-  field_tabs: true
-  field_tanning: true
   field_thread_diameter_mm: true
-  field_thread_season: true
-  field_thread_size_thicknes: true
-  field_torsion: true
-  field_tranchefils: true
-  field_tranchephil_typology: true
   field_type_bosses: true
   field_type_corner: true
   field_type_cover: true
@@ -371,13 +247,9 @@ hidden:
   field_type_sequence_marks: true
   field_type_wear_marks: true
   field_typology_according_books: true
-  field_typology_according_loop: true
-  field_typology_according_route: true
-  field_typology_cover: true
   field_watermarks_endleave: true
   field_wear_marks_cover: true
   field_wear_marks_endleave: true
-  field_which_side: true
   field_writing_ink_id: true
   langcode: true
   links: true
