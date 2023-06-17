@@ -2899,7 +2899,7 @@ function sb_core_deploy_108019(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Bínio', 'Binion'],
     ['Trínio', 'Trinion'],
     ['Quaterno', 'Quaternion'],
@@ -2908,7 +2908,7 @@ function sb_core_deploy_108019(): void {
     ['Sete ou mais', 'Seven or more'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'typology_according_number_books',
       'name' => $terms_arr[1],
@@ -2934,7 +2934,7 @@ function sb_core_deploy_108020(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Seguida de forma regular', 'Regularly followed'],
     ['Seguida de forma irregular', 'Irregularly followed'],
     ['Inicia com pêlo', 'Starts with hair side'],
@@ -2942,7 +2942,7 @@ function sb_core_deploy_108020(): void {
     ['Não seguida', 'Not followed'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'gregory_rules',
       'name' => $terms_arr[1],
@@ -2968,7 +2968,7 @@ function sb_core_deploy_108021(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Pontusais em todos os fólios', 'Chain lines in every folia'],
     ['Vergaturas em todos os fólios', 'Wire lines in every folia'],
     ['Marcas de água em todos os fólios', 'Watermarks in every folia'],
@@ -2979,7 +2979,7 @@ function sb_core_deploy_108021(): void {
     ['Sem marcas', 'No marks'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'paper_marks',
       'name' => $terms_arr[1],
@@ -3005,7 +3005,7 @@ function sb_core_deploy_108022(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Vertical', 'Vertical'],
     ['Horizontal', 'Horizontal'],
     ['Sem grão', 'No grain'],
@@ -3016,7 +3016,7 @@ function sb_core_deploy_108022(): void {
     ['Not applicable', 'Not applicable'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'grain_direction',
       'name' => $terms_arr[1],
@@ -3042,7 +3042,7 @@ function sb_core_deploy_108023(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Corte regular na cabeça', 'Regular cut (head)'],
     ['Corte irregular na cabeça', 'Irregular cut (head)'],
     ['Corte derivado da produção na cabeça', 'Deckle edge (head)'],
@@ -3058,7 +3058,7 @@ function sb_core_deploy_108023(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'edge_treatments',
       'name' => $terms_arr[1],
@@ -3084,7 +3084,7 @@ function sb_core_deploy_108024(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Intrínseca ao material', 'Intrinsic to the material'],
     ['Azul', 'Blue'],
     ['Roxa', 'Purple'],
@@ -3102,7 +3102,7 @@ function sb_core_deploy_108024(): void {
     ['Sem guardas', 'No endleaves'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'color',
       'name' => $terms_arr[1],
@@ -3128,7 +3128,7 @@ function sb_core_deploy_108025(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Fólio', 'Folio'],
     ['Quarto', 'Quarto'],
     ['Octavo', 'Octavo'],
@@ -3136,7 +3136,7 @@ function sb_core_deploy_108025(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'standard_size_folia',
       'name' => $terms_arr[1],
@@ -3162,7 +3162,7 @@ function sb_core_deploy_108026(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Papel manual', 'Handmade paper'],
     ['Papel mecânico', 'Machine-made paper'],
     ['Pergaminho', 'Parchment'],
@@ -3184,7 +3184,7 @@ function sb_core_deploy_108026(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'support_id',
       'name' => $terms_arr[1],
@@ -3210,7 +3210,7 @@ function sb_core_deploy_108027(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Quadrado (1,211-1,260)', 'Square (1,211-1,260)'],
     ['Rectângulo de Pitágoras (1,307-1,359)', 'Rectangle of Pythagoras (1,307-1,359)'],
     ['Rectângulo de Pitágoras justaposto pelo lado maior a um rectângulo do número de ouro (1,341-1,395)', 'Rectangle of Pythagoras coinciding by the larger side with the golden ration rectangle (1,341-1,395)'],
@@ -3224,7 +3224,7 @@ function sb_core_deploy_108027(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'proportion',
       'name' => $terms_arr[1],
@@ -3250,7 +3250,7 @@ function sb_core_deploy_108028(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Cabeça junto à espinha', 'Head near spine'],
     ['Cabeça centro', 'Head centre'],
     ['Cabeça junto à goteira', 'Head near fore-edge'],
@@ -3268,7 +3268,7 @@ function sb_core_deploy_108028(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'pricking_location',
       'name' => $terms_arr[1],
@@ -3294,7 +3294,7 @@ function sb_core_deploy_108029(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['>>|>>', '>>|>>'],
     ['<<|<<', '<<|<<'],
     ['<>|<>', '<>|<>'],
@@ -3307,7 +3307,7 @@ function sb_core_deploy_108029(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'pricking_system',
       'name' => $terms_arr[1],
@@ -3333,13 +3333,13 @@ function sb_core_deploy_108030(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Compasso', 'Compass'],
     ['Sovela', 'Awl'],
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'pricking_process',
       'name' => $terms_arr[1],
@@ -3365,14 +3365,14 @@ function sb_core_deploy_108031(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Ponta seca', 'Dry point'],
     ['Plumbagina', 'Lead'],
     ['Tinta', 'Ink'],
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'ruling_process',
       'name' => $terms_arr[1],
@@ -3398,14 +3398,14 @@ function sb_core_deploy_108032(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Verso para recto', 'Verso to recto'],
     ['Recto para verso', 'Recto to verso'],
     ['Carne para pêlo', 'Hairside to fleshside'],
     ['Pêlo para carne', 'Fleshside to hairside'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'ruling_system',
       'name' => $terms_arr[1],
@@ -3431,13 +3431,13 @@ function sb_core_deploy_108033(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Carbono', 'Carbon'],
     ['Ferrogálica', 'Iron gall'],
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'writing_ink_id',
       'name' => $terms_arr[1],
@@ -3463,7 +3463,7 @@ function sb_core_deploy_108034(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Iluminura de página inteira', 'Fully painted page'],
     ['Cercaduras ou tarjas', 'Borders'],
     ['Iniciais historiadas (antropomórficas)', 'Historiated initial (anthropomorfic)'],
@@ -3483,7 +3483,7 @@ function sb_core_deploy_108034(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_type',
       'name' => $terms_arr[1],
@@ -3509,7 +3509,7 @@ function sb_core_deploy_108035(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Azurite [2CuCO₃ · Cu(OH)₂]', 'Azurite [2CuCO₃ · Cu(OH)₂]'],
     ['Índigo', 'Indigo'],
     ['Ultramarino natural [Na₆₋₁₀Al₆Si₆O₂₄S₂₋₄]', 'Natural ultramarine [Na₆₋₁₀Al₆Si₆O₂₄S₂₋₄]'],
@@ -3536,7 +3536,7 @@ function sb_core_deploy_108035(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'major_decoration_id',
       'name' => $terms_arr[1],
@@ -3562,7 +3562,7 @@ function sb_core_deploy_108036(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Títulos dos capítulos', 'Chapter title'],
     ['Remates dos títulos dos capítulos', 'Chapter title decoration'],
     ['Caldeirões', 'Para-sign'],
@@ -3574,7 +3574,7 @@ function sb_core_deploy_108036(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_minor_decoration',
       'name' => $terms_arr[1],
@@ -3600,7 +3600,7 @@ function sb_core_deploy_108037(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Azurite [2CuCO₃ · Cu(OH)₂]', 'Azurite [2CuCO₃ · Cu(OH)₂]'],
     ['Índigo', 'Indigo'],
     ['Ultramarino natural [Na₆₋₁₀Al₆Si₆O₂₄S₂₋₄]', 'Natural ultramarine [Na₆₋₁₀Al₆Si₆O₂₄S₂₋₄]'],
@@ -3627,7 +3627,7 @@ function sb_core_deploy_108037(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'minor_decoration_id',
       'name' => $terms_arr[1],
@@ -3653,7 +3653,7 @@ function sb_core_deploy_108038(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Paginação', 'Pagination'],
     ['Foliotação', 'Foliation'],
     ['Assinaturas', 'Signatures'],
@@ -3661,7 +3661,7 @@ function sb_core_deploy_108038(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_sequence_marks',
       'name' => $terms_arr[1],
@@ -3687,14 +3687,14 @@ function sb_core_deploy_108039(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Emendas', 'Correction'],
     ['Notas', 'Glosses'],
     ['Sinalefas', 'Side-note (hand and others)'],
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_wear_marks',
       'name' => $terms_arr[1],
@@ -3720,14 +3720,14 @@ function sb_core_deploy_108040(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Uma estação vazia', 'One empty station'],
     ['Mais do que uma estação vazia', 'More than one empty station'],
     ['Todas as estações vazias observadas têm correspondência com as estações atuais', 'All observed empty stations match current stations'],
     ['Sem estações vazias', 'No empty stations'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'empty_stations',
       'name' => $terms_arr[1],
@@ -3753,7 +3753,7 @@ function sb_core_deploy_108041(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Integral com tranchefila', 'All-along with endbands'],
     ['Integral sem tranchefila', 'All-along without endbands'],
     ['Alternada (cadernos um a um)', 'Skip-station'],
@@ -3778,7 +3778,7 @@ function sb_core_deploy_108041(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'sewing_description',
       'name' => $terms_arr[1],
@@ -3804,7 +3804,7 @@ function sb_core_deploy_108042(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Um a um', 'One-on'],
     ['Dois a dois', 'Two-on'],
     ['Três a três', 'Three-on'],
@@ -3813,7 +3813,7 @@ function sb_core_deploy_108042(): void {
     ['Mais do que 5', 'More than 5'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'sewing_sections',
       'name' => $terms_arr[1],
@@ -3839,14 +3839,14 @@ function sb_core_deploy_108043(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Circular', 'Round'],
     ['Fendas verticais', 'Vertical slits'],
     ['Fendas horizontais', 'Horizontal slits'],
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'sewing_holes',
       'name' => $terms_arr[1],
@@ -3872,13 +3872,13 @@ function sb_core_deploy_108044(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['S', 'S'],
     ['Sem torção', 'No twist'],
     ['Z', 'Z'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'main_twist_sewing_thread',
       'name' => $terms_arr[1],
@@ -3904,7 +3904,7 @@ function sb_core_deploy_108045(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Algodão', 'Cotton'],
     ['Linho', 'Flax'],
     ['Cânhamo', 'Hemp'],
@@ -3914,7 +3914,7 @@ function sb_core_deploy_108045(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'sewing_thread_id',
       'name' => $terms_arr[1],
@@ -3940,7 +3940,7 @@ function sb_core_deploy_108046(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Corda', 'Cord'],
     ['Algodão', 'Cotton'],
     ['Linho', 'Flax'],
@@ -3960,7 +3960,7 @@ function sb_core_deploy_108046(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'sewing_supports_id',
       'name' => $terms_arr[1],
@@ -3986,7 +3986,7 @@ function sb_core_deploy_108047(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Empaste (laço de volta inteira)', 'Lacing (round)'],
     ['Empaste (laço com nó)', 'Lacing (knot)'],
     ['Empaste (sigmático)', 'Lacing (long)'],
@@ -4000,7 +4000,7 @@ function sb_core_deploy_108047(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'board_attachment',
       'name' => $terms_arr[1],
@@ -4026,7 +4026,7 @@ function sb_core_deploy_108048(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Autofixação', 'Self-securing'],
     ['Cunha', 'Wedge'],
     ['Cavilha', 'Wooden peg'],
@@ -4034,7 +4034,7 @@ function sb_core_deploy_108048(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'board_attachment_securing',
       'name' => $terms_arr[1],
@@ -4060,7 +4060,7 @@ function sb_core_deploy_108049(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Cosida', 'Sewn'],
     ['Colada', 'Stuck-on'],
     ['Com alma simples (tira)', 'With simple cores (strap)'],
@@ -4082,7 +4082,7 @@ function sb_core_deploy_108049(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_of_endbands',
       'name' => $terms_arr[1],
@@ -4108,13 +4108,13 @@ function sb_core_deploy_108050(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem seixas', 'No squares'],
     ['Inferiores a 1 cm', 'Less than 10 mm'],
     ['Superiores a 1 cm', 'Equal or above 10 mm'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'squares',
       'name' => $terms_arr[1],
@@ -4140,7 +4140,7 @@ function sb_core_deploy_108051(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Esquadria', 'Square'],
     ['Boleado', 'Cushion'],
     ['Biselado', 'Bevel'],
@@ -4148,7 +4148,7 @@ function sb_core_deploy_108051(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'board_edges_outer_side',
       'name' => $terms_arr[1],
@@ -4174,7 +4174,7 @@ function sb_core_deploy_108052(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Esquadria', 'Square'],
     ['Boleado', 'Cushion'],
     ['Biselado', 'Bevel'],
@@ -4182,7 +4182,7 @@ function sb_core_deploy_108052(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'board_edges_inner_side',
       'name' => $terms_arr[1],
@@ -4208,7 +4208,7 @@ function sb_core_deploy_108053(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Circulares', 'Circular'],
     ['Rectangulares', 'Rectangle'],
     ['Na espessura da pasta', 'At the board thickness'],
@@ -4218,7 +4218,7 @@ function sb_core_deploy_108053(): void {
     ['Não aplicável', 'Not applicable'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'entry_carvings_sewing_support',
       'name' => $terms_arr[1],
@@ -4244,7 +4244,7 @@ function sb_core_deploy_108054(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Circulares', 'Circular'],
     ['Rectangulares', 'Rectangle'],
     ['Na espessura da pasta', 'At the board thickness'],
@@ -4254,7 +4254,7 @@ function sb_core_deploy_108054(): void {
     ['Não aplicável', 'Not applicable'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'entry_carvings_endband_cores',
       'name' => $terms_arr[1],
@@ -4280,14 +4280,14 @@ function sb_core_deploy_108055(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Horizontal', 'Horizontal'],
     ['Em ângulo', 'Angled'],
     ['Outro', 'Other'],
     ['Sem calha', 'No channels'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'direction_channel_sewing_support',
       'name' => $terms_arr[1],
@@ -4313,14 +4313,14 @@ function sb_core_deploy_108056(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Horizontal', 'Horizontal'],
     ['Em ângulo', 'Angled'],
     ['Outro', 'Other'],
     ['Sem calhas', 'No channels'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'direction_channels_endband_cores',
       'name' => $terms_arr[1],
@@ -4346,13 +4346,13 @@ function sb_core_deploy_108057(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Alinhadas', 'Aligned'],
     ['Desalinhadas por menos de 1 cm', 'Unaligned by less than 10 mm'],
     ['Desalinhadas por mais de 1 cm', 'Unaligned by more than 10 mm'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'pos_channels_sewing_supports',
       'name' => $terms_arr[1],
@@ -4378,13 +4378,13 @@ function sb_core_deploy_108058(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Circulares', 'Circular'],
     ['Rectangulares', 'Rectangular'],
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'shape_holes',
       'name' => $terms_arr[1],
@@ -4410,7 +4410,7 @@ function sb_core_deploy_108059(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Madeira', 'Wood'],
     ['Carvalho', 'Oak'],
     ['Choupo', 'Poplar'],
@@ -4442,7 +4442,7 @@ function sb_core_deploy_108059(): void {
     ['Sem pastas', 'No boards'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'boards_id',
       'name' => $terms_arr[1],
@@ -4468,7 +4468,7 @@ function sb_core_deploy_108060(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Inteira', 'Full'],
     ['Meia', 'Half'],
     ['A três quartos', 'Three-quarters'],
@@ -4480,7 +4480,7 @@ function sb_core_deploy_108060(): void {
     ['Sem cobertura', 'No cover'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_cover',
       'name' => $terms_arr[1],
@@ -4506,7 +4506,7 @@ function sb_core_deploy_108061(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Cosidos', 'Sewn'],
     ['Abertos', 'Open'],
     ['Tangentes', 'Butt'],
@@ -4517,7 +4517,7 @@ function sb_core_deploy_108061(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'cover_mitres',
       'name' => $terms_arr[1],
@@ -4543,7 +4543,7 @@ function sb_core_deploy_108062(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Por encaixe', 'Fitting'],
     ['Colada', 'Adhesion'],
     ['Pregada', 'Nailed'],
@@ -4552,7 +4552,7 @@ function sb_core_deploy_108062(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'attachment_cover_boards',
       'name' => $terms_arr[1],
@@ -4578,7 +4578,7 @@ function sb_core_deploy_108063(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem decoração', 'Without decoration'],
     ['Colorida', 'Brush-coloured'],
     ['Tingida', 'Dyed'],
@@ -4606,7 +4606,7 @@ function sb_core_deploy_108063(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_technique_cover',
       'name' => $terms_arr[1],
@@ -4632,7 +4632,7 @@ function sb_core_deploy_108064(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem decoração', 'No decoration'],
     ['Marmoreado', 'Marbled'],
     ['Manchado', 'Stained'],
@@ -4654,7 +4654,7 @@ function sb_core_deploy_108064(): void {
     ['Outro motivo', 'Other motive'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_pattern_cover',
       'name' => $terms_arr[1],
@@ -4680,14 +4680,14 @@ function sb_core_deploy_108065(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem marcas de uso da cobertura', 'No cover wear marks'],
     ['Inscrições', 'Inscriptions'],
     ['Carimbos', 'Stamps'],
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'wear_marks_cover',
       'name' => $terms_arr[1],
@@ -4713,7 +4713,7 @@ function sb_core_deploy_108066(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Tecido/Tela', 'Fabric'],
     ['Seda', 'Silk'],
     ['Papel manual', 'Handmade paper'],
@@ -4751,7 +4751,7 @@ function sb_core_deploy_108066(): void {
     ['Sem cobertura', 'No cover'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'cover_id',
       'name' => $terms_arr[1],
@@ -4777,7 +4777,7 @@ function sb_core_deploy_108067(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Corantes', 'Dyes'],
     ['Pigmentos', 'Pigments'],
     ['Ligantes', 'Binders'],
@@ -4790,7 +4790,7 @@ function sb_core_deploy_108067(): void {
     ['Outro', 'Others'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'cover_decoration_id',
       'name' => $terms_arr[1],
@@ -4816,7 +4816,7 @@ function sb_core_deploy_108068(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Inteira', 'Full'],
     ['Meia', 'Half'],
     ['A três quartos', 'Three-quarter'],
@@ -4828,7 +4828,7 @@ function sb_core_deploy_108068(): void {
     ['Sem cobertura interna', 'No primary cover'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'primary_cover',
       'name' => $terms_arr[1],
@@ -4854,7 +4854,7 @@ function sb_core_deploy_108069(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Inteiro na lombada (sem recortes)', 'Full-height (continuous)'],
     ['Inteiro na lombada (com recortes para suportes)', 'One-piece slotted spine linings'],
     ['Individuais (entre todos os suportes)', 'Panel spine linings along the entire spine'],
@@ -4867,7 +4867,7 @@ function sb_core_deploy_108069(): void {
     ['Sem reforços', 'No linings'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'linings',
       'name' => $terms_arr[1],
@@ -4893,7 +4893,7 @@ function sb_core_deploy_108070(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Guardas simples', 'Fold endleaves'],
     ['Guardas duplas', 'Two unit endleaves'],
     ['Guardas cosidas', 'Sewn endleaves'],
@@ -4906,7 +4906,7 @@ function sb_core_deploy_108070(): void {
     ['Sem guardas', 'No endleaves'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_endleaves',
       'name' => $terms_arr[1],
@@ -4932,7 +4932,7 @@ function sb_core_deploy_108071(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Pontusais em todos os fólios', 'Chain lines in every folio'],
     ['Vergaturas em todos os fólios', 'Wire lines in every folio'],
     ['Marcas figurativas em todos os fólios', 'Other marks in every folio'],
@@ -4942,7 +4942,7 @@ function sb_core_deploy_108071(): void {
     ['Sem marcas de água', 'No watermarks'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'watermarks_endleaves',
       'name' => $terms_arr[1],
@@ -4968,7 +4968,7 @@ function sb_core_deploy_108072(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem decoração', 'Without decoration'],
     ['Colorida', 'Brush-coloured'],
     ['Tingida', 'Dyed'],
@@ -4982,7 +4982,7 @@ function sb_core_deploy_108072(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_technique_end',
       'name' => $terms_arr[1],
@@ -5008,14 +5008,14 @@ function sb_core_deploy_108073(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem marcas de uso nas guardas', 'No wear marks on the endleaves'],
     ['Inscrições', 'Inscriptions'],
     ['Carimbos', 'Stamps'],
     ['Outra', 'Others'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'wear_marks_endleaves',
       'name' => $terms_arr[1],
@@ -5041,14 +5041,14 @@ function sb_core_deploy_108074(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Igual ao corpo do livro', 'Same as the bookblock'],
     ['Maiores que o corpo do livro', 'Bigger than the bookblock'],
     ['Menores que o corpo do livro', 'Smaller than the bookblock'],
     ['Sem guardas', 'No endleaves'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'dimension_endleaves',
       'name' => $terms_arr[1],
@@ -5074,7 +5074,7 @@ function sb_core_deploy_108075(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Papel manual', 'Handmade paper'],
     ['Papel mecânico', 'Machine-made paper'],
     ['Polpa de trapo', 'Rag pulp'],
@@ -5096,7 +5096,7 @@ function sb_core_deploy_108075(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'endleaves_id',
       'name' => $terms_arr[1],
@@ -5122,7 +5122,7 @@ function sb_core_deploy_108076(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Corantes', 'Dyes'],
     ['Pigmentos', 'Pigments'],
     ['Ligantes', 'Binders'],
@@ -5132,7 +5132,7 @@ function sb_core_deploy_108076(): void {
     ['Outro', 'Others'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'cover_decoration_id',
       'name' => $terms_arr[1],
@@ -5158,7 +5158,7 @@ function sb_core_deploy_108077(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['De colchete (placa de orifício e espigão)', 'With clasp (open pin clasp)'],
     ['De colchete (outros)', 'With clasp (other)'],
     ['Com ataca(s)', 'With strap(s)'],
@@ -5169,7 +5169,7 @@ function sb_core_deploy_108077(): void {
     ['Sem fecho(s)', 'No fastening(s)'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_fastening',
       'name' => $terms_arr[1],
@@ -5195,7 +5195,7 @@ function sb_core_deploy_108078(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Cabeça junto à espinha', 'Head near spine'],
     ['Cabeça ao centro', 'Head centre'],
     ['Cabeça junto à goteira', 'Head near fore-edge'],
@@ -5207,7 +5207,7 @@ function sb_core_deploy_108078(): void {
     ['Goteira junto ao pé', 'Fore-edge near tail'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'location_fastening',
       'name' => $terms_arr[1],
@@ -5233,7 +5233,7 @@ function sb_core_deploy_108079(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Quadrangular', 'Quadrangular'],
     ['Rectangular', 'Rectangular'],
     ['Circular', 'Circular'],
@@ -5241,7 +5241,7 @@ function sb_core_deploy_108079(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'shape_fastenings',
       'name' => $terms_arr[1],
@@ -5267,7 +5267,7 @@ function sb_core_deploy_108080(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem decoração', 'Without decoration'],
     ['Elaborada', 'Elaborate'],
     ['Simples', 'Simple'],
@@ -5282,7 +5282,7 @@ function sb_core_deploy_108080(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_fastening',
       'name' => $terms_arr[1],
@@ -5308,7 +5308,7 @@ function sb_core_deploy_108081(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Metal', 'Metal'],
     ['Cobre (Cu)', 'Copper (Cu)'],
     ['Ferro (Fe)', 'Iron (Fe)'],
@@ -5335,7 +5335,7 @@ function sb_core_deploy_108081(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'fastening_id',
       'name' => $terms_arr[1],
@@ -5361,7 +5361,7 @@ function sb_core_deploy_108082(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Individuais', 'Separate'],
     ['Integrados', 'Integral'],
     ['Tacha(s)', 'Boss(es)'],
@@ -5369,7 +5369,7 @@ function sb_core_deploy_108082(): void {
     ['Sem brochos', 'No bosses'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_bosses',
       'name' => $terms_arr[1],
@@ -5395,7 +5395,7 @@ function sb_core_deploy_108083(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Cantos plano anterior', 'Corners right side'],
     ['Cantos plano posterior', 'Corners left side'],
     ['Centro plano anterior', 'Centre right side'],
@@ -5403,7 +5403,7 @@ function sb_core_deploy_108083(): void {
     ['Outra', 'Others'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'location_bosses',
       'name' => $terms_arr[1],
@@ -5429,7 +5429,7 @@ function sb_core_deploy_108084(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem decoração', 'Without decoration'],
     ['Elaborada', 'Elaborate'],
     ['Simples', 'Simple'],
@@ -5442,7 +5442,7 @@ function sb_core_deploy_108084(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_bosses',
       'name' => $terms_arr[1],
@@ -5468,7 +5468,7 @@ function sb_core_deploy_108085(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Metal', 'Metal'],
     ['Cobre (Cu)', 'Copper (Cu)'],
     ['Ferro (Fe)', 'Iron (Fe)'],
@@ -5481,7 +5481,7 @@ function sb_core_deploy_108085(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'bosses_id',
       'name' => $terms_arr[1],
@@ -5507,7 +5507,7 @@ function sb_core_deploy_108086(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Individuais', 'Individual'],
     ['Integrados', 'Integral'],
     ['Combinados', 'Combined'],
@@ -5515,7 +5515,7 @@ function sb_core_deploy_108086(): void {
     ['Sem cantos', 'No corners'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'type_corner',
       'name' => $terms_arr[1],
@@ -5541,7 +5541,7 @@ function sb_core_deploy_108087(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Canto cabeça/goteira (plano anterior)', 'Corner head/fore-edge (right side)'],
     ['Canto cabeça/espinha (plano anterior)', 'Corner head/spine (right side)'],
     ['Canto pé/goteira (plano anterior)', 'Corner tail/fore-edge (right side)'],
@@ -5553,7 +5553,7 @@ function sb_core_deploy_108087(): void {
     ['Outra', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'location_corner',
       'name' => $terms_arr[1],
@@ -5579,7 +5579,7 @@ function sb_core_deploy_108088(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sem decoração', 'Without decoration'],
     ['Elaborada', 'Elaborate'],
     ['Simples', 'Simple'],
@@ -5592,7 +5592,7 @@ function sb_core_deploy_108088(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'decoration_corner',
       'name' => $terms_arr[1],
@@ -5618,7 +5618,7 @@ function sb_core_deploy_108089(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Metal', 'Metal'],
     ['Cobre (Cu)', 'Copper (Cu)'],
     ['Ferro (Fe)', 'Iron (Fe)'],
@@ -5649,7 +5649,7 @@ function sb_core_deploy_108089(): void {
     ['Outro', 'Other'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'corner_id',
       'name' => $terms_arr[1],
@@ -5675,7 +5675,7 @@ function sb_core_deploy_108090(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Correntes', 'Chains'],
     ['Moldura de título', 'Title frames'],
     ['Etiquetas', 'Tags'],
@@ -5683,7 +5683,7 @@ function sb_core_deploy_108090(): void {
     ['Outro', 'Others'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'features_furniture',
       'name' => $terms_arr[1],
@@ -5709,13 +5709,13 @@ function sb_core_deploy_108091(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Bom', 'Good'],
     ['Razoável', 'Reasonable'],
     ['Mau', 'Bad'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'conservation_condition',
       'name' => $terms_arr[1],
@@ -5741,7 +5741,7 @@ function sb_core_deploy_108092(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Costura/bordado nos danos', 'Sewing/embroidery over damage'],
     ['Remendos c/ costura', 'Stitched patches'],
     ['Remendos colados', 'Glued patches'],
@@ -5756,7 +5756,7 @@ function sb_core_deploy_108092(): void {
     ['Sem intervenções', 'No interventions'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'past_interventions',
       'name' => $terms_arr[1],
@@ -5782,7 +5782,7 @@ function sb_core_deploy_108093(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Higienização', 'Cleaning'],
     ['Limpeza a seco', 'Dry cleaning'],
     ['Limpeza aquosa', 'Aqueous cleaning'],
@@ -5799,7 +5799,7 @@ function sb_core_deploy_108093(): void {
     ['Sem intervenções', 'No interventions'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'recent_interventions',
       'name' => $terms_arr[1],
@@ -5825,7 +5825,7 @@ function sb_core_deploy_108094(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sujidade', 'Dirt'],
     ['Manchas variadas', 'Miscellaneous Stains'],
     ['Foxing', 'Foxing'],
@@ -5852,7 +5852,7 @@ function sb_core_deploy_108094(): void {
     ['Sem danos', 'No damage'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'current_assessment',
       'name' => $terms_arr[1],
@@ -5878,7 +5878,7 @@ function sb_core_deploy_108095(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Encadernação posterior (até ao séc. XIII)', 'Until 13th century rebinding'],
     ['Encadernação posterior (sécs. XIV-XVI)', '14th-16th century rebindings'],
     ['Encadernação posterior (sécs. XVII-XVIII)', '17th-18th Centuries rebinding'],
@@ -5899,7 +5899,7 @@ function sb_core_deploy_108095(): void {
     ['Sem intervenções', 'No interventions'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'past_interventions_bb',
       'name' => $terms_arr[1],
@@ -5925,7 +5925,7 @@ function sb_core_deploy_108096(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Encadernação nova de preservação', 'New Preservation Binding'],
     ['Encadernação nova fac-símile', 'New facsimile bookbinding'],
     ['Substituição de elementos da costura', 'Replacement of stitching elements'],
@@ -5943,7 +5943,7 @@ function sb_core_deploy_108096(): void {
     ['Sem intervenções', 'No interventions'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'recent_interventions_bb',
       'name' => $terms_arr[1],
@@ -5969,7 +5969,7 @@ function sb_core_deploy_108097(): void {
     $term->delete();
   }
 
-  $terms_arr = [
+  $list_terms = [
     ['Sujidade', 'Dirt'],
     ['Manchas várias', 'Various stains'],
     ['Danos por microorganismos', 'Damage by microorganisms'],
@@ -5999,7 +5999,7 @@ function sb_core_deploy_108097(): void {
     ['Sem danos', 'No damage'],
   ];
 
-  foreach ($terms_arr as $term) {
+  foreach ($list_terms as $terms_arr) {
     $term = $taxonomy_storage->create([
       'vid' => 'current_assessment_bb',
       'name' => $terms_arr[1],

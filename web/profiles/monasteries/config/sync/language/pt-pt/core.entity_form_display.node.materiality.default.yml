@@ -1,4 +1,46 @@
 third_party_settings:
   field_group:
     group_tabs:
-      label: Tabs
+      label: Guias
+    group_bookblock:
+      label: Livro Bloco
+    group_bookbinding:
+      label: Encadernação
+    group_conservation:
+      label: Conservação
+    group_support:
+      label: Suporte
+    group_layout:
+      label: Layout
+    group_pricking:
+      label: Picotamento
+    group_ruling:
+      label: Regramento
+    group_writing:
+      label: Escrita
+    group_decoration:
+      label: Decoração
+    group_sequence_marks:
+      label: 'Marcas de uso'
+    group_wear_marks:
+      label: 'Marcas de Desgaste'
+    group_sewing_sup_board_attach:
+      label: 'Costura, suportes, sistema de articulação e tranchefilas'
+    group_boards:
+      label: Pastas
+    group_cover_elements:
+      label: 'Elementos de cobertura'
+    group_endleaves:
+      label: Guardas
+    group_furniture_fastenings:
+      label: 'Guarnição (fechos, brochos, cantos e outros)'
+    group_bookblock_conservation:
+      label: Corpo do livro
+    group_bookbinding_conservation:
+      label: Encadernação
+    group_gallery:
+      label: Galeria
+    group_extra:
+      label: Extra
+    group_page_settings:
+      label: 'Configurações de Página'
