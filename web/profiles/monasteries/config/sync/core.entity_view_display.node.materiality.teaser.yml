@@ -59,6 +59,7 @@ dependencies:
     - field.field.node.materiality.field_endpapers_decoration_id
     - field.field.node.materiality.field_entry_carvings_endband
     - field.field.node.materiality.field_entry_carvings_sewing_sup
+    - field.field.node.materiality.field_external_references
     - field.field.node.materiality.field_fastening_id
     - field.field.node.materiality.field_features_furniture
     - field.field.node.materiality.field_grain_direction
@@ -187,6 +188,7 @@ hidden:
   field_endpapers_decoration_id: true
   field_entry_carvings_endband: true
   field_entry_carvings_sewing_sup: true
+  field_external_references: true
   field_fastening_id: true
   field_features_furniture: true
   field_grain_direction: true

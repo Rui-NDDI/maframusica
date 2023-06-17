@@ -58,6 +58,7 @@ dependencies:
     - field.field.node.materiality.field_endpapers_decoration_id
     - field.field.node.materiality.field_entry_carvings_endband
     - field.field.node.materiality.field_entry_carvings_sewing_sup
+    - field.field.node.materiality.field_external_references
     - field.field.node.materiality.field_fastening_id
     - field.field.node.materiality.field_features_furniture
     - field.field.node.materiality.field_grain_direction
@@ -124,6 +125,7 @@ dependencies:
     - field.field.node.materiality.field_writing_ink_id
     - node.type.materiality
   module:
+    - link
     - user
 id: node.materiality.default
 targetEntityType: node
@@ -559,6 +561,18 @@ content:
       link: true
     third_party_settings: {  }
     weight: 50
+    region: content
+  field_external_references:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 114
     region: content
   field_fastening_id:
     type: entity_reference_label
