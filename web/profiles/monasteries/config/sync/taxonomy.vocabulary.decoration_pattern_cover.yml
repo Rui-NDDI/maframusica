@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Decoration pattern/motif(s) of the cover'
 vid: decoration_pattern_cover
-description: ''
+description: 'Contains a list of decoration pattern types within the site.'
 weight: 0

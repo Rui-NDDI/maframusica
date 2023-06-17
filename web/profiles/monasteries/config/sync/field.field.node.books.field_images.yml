@@ -11,7 +11,7 @@ id: node.books.field_images
 field_name: field_images
 entity_type: node
 bundle: books
-label: Images
+label: Gallery
 description: ''
 required: false
 translatable: false

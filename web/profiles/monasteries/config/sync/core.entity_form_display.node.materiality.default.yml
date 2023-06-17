@@ -128,6 +128,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - multiselect
     - path
     - text
 third_party_settings:
@@ -551,8 +552,8 @@ third_party_settings:
     group_extra:
       children:
         - field_references
-        - field_description_author
         - field_external_references
+        - field_description_author
       label: Extra
       region: content
       parent_name: group_tabs
@@ -594,14 +595,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_attachment_cover_boards:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_average_size_boards:
     type: string_textfield
@@ -649,334 +646,202 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_board_attachment:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 14
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_board_attachment_securing:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 16
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_board_edges_inner_side:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_board_edges_outer_side:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_boards_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 10
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_bosses_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 16
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_change_over:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_bosses:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 14
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_corner:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 21
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_cover:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_endleaves:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_fastening:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_folia:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 8
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_sewing_supports:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 11
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_sewing_thread:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 8
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colour_writing_ink:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colours_decoration:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_colours_minor_decoration:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_conservation_condition:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_corner_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 23
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_cover_decoration_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 8
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_cover_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 7
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_cover_mitres:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_current_assessment:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_current_assessment_bb:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decor_technique_endleaves:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decoration_bosses:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 13
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decoration_corner:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 20
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decoration_fastenin:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decoration_pattern_cover:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decoration_technique_cover:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decoration_type:
-    type: entity_reference_autocomplete_tags
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decorative_motifs_endleave:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_description_author:
     type: string_textarea
@@ -1019,104 +884,64 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_dimension_endleaves:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_direction_channels_endband:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_direction_channels_support:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_direction_fastening:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_edge_treatment:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 7
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_empty_stations:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_endleaves_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 8
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_endpapers_decoration_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 9
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_entry_carvings_endband:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_entry_carvings_sewing_sup:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_external_references:
     type: link_default
@@ -1127,44 +952,28 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
   field_fastening_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 8
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_features_furniture:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 24
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_grain_direction:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_gregory_rule:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_image:
     type: media_library_widget
@@ -1174,44 +983,28 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_linings:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 10
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_location_bosses:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 11
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_location_corner:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 19
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_location_fastening:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_main_number_sewing_station:
     type: number
@@ -1221,24 +1014,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_main_twist_sewing_thread:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 7
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_major_decoration_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_measured_folio:
     type: string_textfield
@@ -1249,14 +1034,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_minor_decoration_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_numbeer_existing_corners:
     type: number
@@ -1330,114 +1111,70 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_paper_marks:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_past_interventions:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_past_interventions_bb:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_pos_channels_sewing_sup:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 7
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_pricking_location:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_pricking_process:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_pricking_system:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_primary_cover:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 9
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_proportion:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_recent_interventions:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_recent_interventions_bb:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_references:
     type: text_textarea
@@ -1448,134 +1185,82 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_ruling_process:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_ruling_system:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_sewing_description:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_sewing_holes:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 6
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_sewing_sections:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_sewing_supports_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 13
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_sewing_thread_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 10
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_shape_bosses:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_shape_fastenings:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_shape_holes:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 8
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_size_folia:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 9
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_squares:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_support_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 11
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_thread_diameter_mm:
     type: number
@@ -1585,144 +1270,88 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_type_bosses:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 10
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_corner:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 18
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_cover:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_endbands:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 17
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_endleaves:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_fastening:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_minor_decoration:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_sequence_marks:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_type_wear_marks:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_typology_according_books:
-    type: entity_reference_autocomplete_tags
+    type: multiselect
     weight: 3
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_watermarks_endleave:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_wear_marks_cover:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_wear_marks_endleave:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_writing_ink_id:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -1772,13 +1401,9 @@ content:
     settings: {  }
     third_party_settings: {  }
   uid:
-    type: entity_reference_autocomplete
+    type: multiselect
     weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }
