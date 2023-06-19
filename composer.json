@@ -9,40 +9,43 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html"
     },
     "require": {
-        "composer/installers": "^1.9",
-        "cweagans/composer-patches": "^1.7",
-        "drupal/advagg": "^4.1",
-        "drupal/autotitle": "^1.2",
-        "drupal/coder": "^8.3",
+        "composer/installers": "^2.2",
+        "cweagans/composer-patches": "^1.7.3",
+        "drupal/advagg": "^6.0@alpha",
+        "drupal/autotitle": "^1.2@dev",
+        "drupal/classy": "^1.0",
+        "drupal/coder": "^8.3.18",
         "drupal/config_readonly": "^1.0@beta",
-        "drupal/config_split": "^1.7",
-        "drupal/config_update": "^1.7",
-        "drupal/core-composer-scaffold": "^9.3",
-        "drupal/core-project-message": "^9.3",
-        "drupal/core-recommended": "^9.3",
-        "drupal/ctools": "^3.11",
+        "drupal/config_split": "^1.9",
+        "drupal/config_update": "^2.0@dev",
+        "drupal/core-composer-scaffold": "^10.0.9",
+        "drupal/core-project-message": "^10.0.9",
+        "drupal/core-recommended": "^10.0.9",
+        "drupal/ctools": "^3.14",
         "drupal/default_content": "^2.0@alpha",
-        "drupal/devel": "^4.1",
-        "drupal/field_group": "^3.2",
-        "drupal/field_token_value": "^3.0",
-        "drupal/metatag": "^1.19",
-        "drupal/paragraphs": "^1.13",
-        "drupal/pathauto": "^1.9",
+        "drupal/field_group": "^3.4",
+        "drupal/field_token_value": "^3.0.1",
+        "drupal/metatag": "^1.23",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
         "drupal/rabbit_hole": "^1.0@beta",
-        "drupal/s3fs": "^3.0@beta",
+        "drupal/rdf": "^2.1",
+        "drupal/s3fs": "^3.2@beta",
+        "drupal/seven": "^1.0",
         "drupal/sitemap": "^2.0@beta",
-        "drupal/twig_field_value": "2.0.x-dev@dev",
-        "drupal/upgrade_status": "^3.14",
-        "drush/drush": "^11.0",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "saidatom/dcq": "^0.0.1",
-        "vlucas/phpdotenv": "^5.4"
+        "drupal/twig_field_value": "^2.0.2@dev",
+        "drupal/upgrade_status": "^4.0@alpha",
+        "drush/drush": "^11.5.1",
+        "oomphinc/composer-installers-extender": "^2.0.1",
+        "vlucas/phpdotenv": "^5.5"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "^2.24",
-        "palantirnet/drupal-rector": "^0.12.1",
-        "slevomat/coding-standard": "^7.0",
-        "squizlabs/php_codesniffer": "^3.6"
+        "drupal/devel": "^5.1.1",
+        "ergebnis/composer-normalize": "^2.31",
+        "palantirnet/drupal-rector": "^0.12.4",
+        "saidatom/dcq": "^0.0.1",
+        "slevomat/coding-standard": "^7.2.1",
+        "squizlabs/php_codesniffer": "^3.7.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -138,6 +141,9 @@
             "npm-asset",
             "bower-asset"
         ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
         "patches-file": "composer.patches.json"
     },
     "scripts": {

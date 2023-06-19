@@ -6,8 +6,6 @@ styling:
   js:
     js/scripts.js: { }
   dependencies:
-    - core/jquery
     - core/drupal
-    - core/drupalSettings
-    - core/matchmedia
-    - core/jquery.once
+    - core/jquery
+    - core/once

@@ -50,7 +50,6 @@ module:
   path: 0
   path_alias: 0
   rabbit_hole: 0
-  rdf: 0
   rh_node: 0
   rh_taxonomy: 0
   rh_user: 0
@@ -73,8 +72,8 @@ module:
   paragraphs: 11
   monasteries: 1000
 theme:
-  seven: 0
   stable: 0
   classy: 0
   cesem: 0
+  claro: 0
 profile: monasteries

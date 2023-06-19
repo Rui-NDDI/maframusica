@@ -1,6 +1,6 @@
 uuid: baafaa68-e5b8-47df-95d8-6ac24dda4626
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -81,12 +81,7 @@ id: node.materiality.teaser
 targetEntityType: node
 bundle: materiality
 mode: teaser
-content:
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+content: {  }
 hidden:
   field_articulation_cover: true
   field_articulation_system: true
@@ -159,3 +154,4 @@ hidden:
   field_typology_cover: true
   field_which_side: true
   langcode: true
+  links: true
