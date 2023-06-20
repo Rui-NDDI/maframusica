@@ -1,4 +1,4 @@
-(function ($, Drupal) {
+(function (Drupal, once) {
 
   'use strict';
 
@@ -19,4 +19,4 @@
         });
     }
   };
-})(jQuery, Drupal);
+})(Drupal, once);
