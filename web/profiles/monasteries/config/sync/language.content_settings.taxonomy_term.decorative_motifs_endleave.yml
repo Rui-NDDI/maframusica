@@ -1,0 +1,16 @@
+uuid: 792c17d6-a978-4172-a15d-f67fa22f4f62
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decorative_motifs_endleave
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.decorative_motifs_endleave
+target_entity_type_id: taxonomy_term
+target_bundle: decorative_motifs_endleave
+default_langcode: site_default
+language_alterable: true

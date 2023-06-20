@@ -1,0 +1,20 @@
+uuid: d500c0d5-b0a1-490e-9a21-e309788abf45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_number_sewing_stations
+field_name: field_number_sewing_stations
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 9be711cd-be25-40b9-8961-556cfdd97e84
+langcode: en
+status: true
+dependencies: {  }
+name: 'Other features within the furniture'
+vid: features_furniture
+description: 'Contains a list of features types within the site.'
+weight: 0

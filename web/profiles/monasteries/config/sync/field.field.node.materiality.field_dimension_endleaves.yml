@@ -1,0 +1,29 @@
+uuid: 1d1597e2-c09c-4e23-8b6a-09c319ac88ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dimension_endleaves
+    - node.type.materiality
+    - taxonomy.vocabulary.dimension_endleaves
+id: node.materiality.field_dimension_endleaves
+field_name: field_dimension_endleaves
+entity_type: node
+bundle: materiality
+label: 'Dimension of the endleaves'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/dimension_endleaves/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dimension_endleaves: dimension_endleaves
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

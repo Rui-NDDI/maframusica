@@ -1,0 +1,29 @@
+uuid: 0432bfc3-9383-4349-aa3e-39e1ab39856a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_corner
+    - node.type.materiality
+    - taxonomy.vocabulary.location_corner
+id: node.materiality.field_location_corner
+field_name: field_location_corner
+entity_type: node
+bundle: materiality
+label: 'Location of the corner(s)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/location_corner/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location_corner: location_corner
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

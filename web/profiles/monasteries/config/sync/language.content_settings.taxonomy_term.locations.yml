@@ -14,5 +14,5 @@ third_party_settings:
 id: taxonomy_term.locations
 target_entity_type_id: taxonomy_term
 target_bundle: locations
-default_langcode: current_interface
+default_langcode: site_default
 language_alterable: true

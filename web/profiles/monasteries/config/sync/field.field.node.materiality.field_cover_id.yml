@@ -1,0 +1,29 @@
+uuid: bcd7a217-9674-417c-a062-785e8a59b1a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover_id
+    - node.type.materiality
+    - taxonomy.vocabulary.cover_id
+id: node.materiality.field_cover_id
+field_name: field_cover_id
+entity_type: node
+bundle: materiality
+label: 'Cover ID'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/cover_id/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cover_id: cover_id
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

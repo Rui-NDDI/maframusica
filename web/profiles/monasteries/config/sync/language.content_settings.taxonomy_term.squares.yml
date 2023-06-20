@@ -1,0 +1,16 @@
+uuid: c9237dd9-4872-42a1-8a8d-8b443ca9be47
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.squares
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.squares
+target_entity_type_id: taxonomy_term
+target_bundle: squares
+default_langcode: site_default
+language_alterable: true

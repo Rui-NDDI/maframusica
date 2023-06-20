@@ -1,0 +1,8 @@
+uuid: 76ababef-1c11-44bd-96ca-4f153a7f0f3d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sewing thread ID'
+vid: sewing_thread_id
+description: 'Contains a list of sewing thread id types within the site.'
+weight: 0

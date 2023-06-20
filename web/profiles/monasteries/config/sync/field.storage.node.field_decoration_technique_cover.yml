@@ -1,0 +1,20 @@
+uuid: 18bb131f-555d-40ec-b384-643c725a9f09
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_decoration_technique_cover
+field_name: field_decoration_technique_cover
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

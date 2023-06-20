@@ -1,0 +1,8 @@
+uuid: 357c1e61-cf44-43e5-b776-217f8d8fe898
+langcode: en
+status: true
+dependencies: {  }
+name: 'Dimension of the endleaves'
+vid: dimension_endleaves
+description: 'Contains a list of dimension types within the site.'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 8c24a7e3-cafa-4cb2-b5ed-5606551f74ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colour_corner
+    - node.type.materiality
+    - taxonomy.vocabulary.color
+id: node.materiality.field_colour_corner
+field_name: field_colour_corner
+entity_type: node
+bundle: materiality
+label: 'Colour of the corner(s)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/color/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      color: color
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

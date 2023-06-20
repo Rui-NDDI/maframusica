@@ -1,0 +1,14 @@
+uuid: 8a72b7e1-5859-4890-b0c1-b984c180b73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.primary_cover
+id: taxonomy_vocabulary_primary_cover
+entity_type_id: taxonomy_vocabulary
+entity_id: primary_cover
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

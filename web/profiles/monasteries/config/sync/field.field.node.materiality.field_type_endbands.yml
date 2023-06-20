@@ -1,0 +1,29 @@
+uuid: 325ee3a4-9eb3-4fe4-b591-00a96d3dfe8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_endbands
+    - node.type.materiality
+    - taxonomy.vocabulary.type_of_endbands
+id: node.materiality.field_type_endbands
+field_name: field_type_endbands
+entity_type: node
+bundle: materiality
+label: 'Type of endbands'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/type_of_endbands/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_of_endbands: type_of_endbands
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

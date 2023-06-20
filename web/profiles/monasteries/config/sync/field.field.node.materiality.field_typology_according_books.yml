@@ -10,8 +10,8 @@ id: node.materiality.field_typology_according_books
 field_name: field_typology_according_books
 entity_type: node
 bundle: materiality
-label: 'Typology according to the number of notebooks'
-description: ''
+label: 'Type of gatherings'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/typology_according_number_books/overview">terms overview page</a> to see the full list or create new items.'
 required: false
 translatable: false
 default_value: {  }

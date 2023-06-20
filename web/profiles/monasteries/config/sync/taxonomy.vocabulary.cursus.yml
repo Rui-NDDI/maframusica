@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Cursus
 vid: cursus
-description: ''
+description: 'Contains a list of cursus types within the site.'
 weight: 0

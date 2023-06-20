@@ -1,0 +1,8 @@
+uuid: a4391bb7-5602-43d2-8118-d0569714ecab
+langcode: en
+status: true
+dependencies: {  }
+name: 'Empty stations'
+vid: empty_stations
+description: 'Contains a list of empty stations types within the site.'
+weight: 0

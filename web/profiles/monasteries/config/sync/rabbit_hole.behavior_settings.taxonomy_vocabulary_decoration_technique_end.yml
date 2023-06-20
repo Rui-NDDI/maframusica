@@ -1,0 +1,14 @@
+uuid: edd64cf9-5cf4-4955-b675-c2feda02406a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_technique_end
+id: taxonomy_vocabulary_decoration_technique_end
+entity_type_id: taxonomy_vocabulary
+entity_id: decoration_technique_end
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

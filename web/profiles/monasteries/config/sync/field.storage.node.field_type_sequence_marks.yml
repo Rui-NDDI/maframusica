@@ -1,0 +1,20 @@
+uuid: 8933c27f-868d-4b8f-8666-70e9fe4656a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_type_sequence_marks
+field_name: field_type_sequence_marks
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

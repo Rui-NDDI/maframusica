@@ -14,5 +14,5 @@ third_party_settings:
 id: taxonomy_term.leading_orientation
 target_entity_type_id: taxonomy_term
 target_bundle: leading_orientation
-default_langcode: current_interface
+default_langcode: site_default
 language_alterable: true

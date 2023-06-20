@@ -1,0 +1,8 @@
+uuid: 41899a3e-1cbb-47cf-a4cc-3d9eaa97cc8a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Standard size of the folia'
+vid: standard_size_folia
+description: 'Contains a list of folia sizes within the site.'
+weight: 0

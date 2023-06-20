@@ -1,0 +1,29 @@
+uuid: ef72cf0f-e601-49d7-9694-ffff6a47a7eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decoration_pattern_cover
+    - node.type.materiality
+    - taxonomy.vocabulary.decoration_pattern_cover
+id: node.materiality.field_decoration_pattern_cover
+field_name: field_decoration_pattern_cover
+entity_type: node
+bundle: materiality
+label: 'Decoration pattern/motif(s) of the cover'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/decoration_pattern_cover/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      decoration_pattern_cover: decoration_pattern_cover
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

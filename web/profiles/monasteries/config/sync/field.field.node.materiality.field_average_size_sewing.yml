@@ -1,0 +1,19 @@
+uuid: d917aaac-2271-4a42-9996-ceb30edb24ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_average_size_sewing
+    - node.type.materiality
+id: node.materiality.field_average_size_sewing
+field_name: field_average_size_sewing
+entity_type: node
+bundle: materiality
+label: 'Average size of the sewing supports (mm)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: d8a02e8c-8e33-4957-b1db-1e8c49d9d0aa
+langcode: en
+status: true
+dependencies: {  }
+name: 'Major decoration ID'
+vid: major_decoration_id
+description: 'Contains a list of major decoration id types within the site.'
+weight: 0

@@ -1,0 +1,16 @@
+uuid: 8b4a168b-180c-4f3a-ba20-e7a4a6d0a1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.board_attachment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.board_attachment
+target_entity_type_id: taxonomy_term
+target_bundle: board_attachment
+default_langcode: site_default
+language_alterable: true

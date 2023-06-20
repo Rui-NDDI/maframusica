@@ -1,0 +1,8 @@
+uuid: 2c49593f-e581-4e75-b406-72dcc56a2a02
+langcode: en
+status: true
+dependencies: {  }
+name: 'Shape of the holes'
+vid: shape_holes
+description: 'Contains a list of shapes types within the site.'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 3bea8768-0286-427d-86f6-9b109fd3c07b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of cover'
+vid: type_cover
+description: 'Contains a list of cover types within the site.'
+weight: 0

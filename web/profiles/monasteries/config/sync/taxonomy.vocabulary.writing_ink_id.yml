@@ -1,0 +1,8 @@
+uuid: 55c434e9-99db-4465-97b1-3f47170fd3c5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Writing ink ID'
+vid: writing_ink_id
+description: 'Contains a list of writing ink types within the site.'
+weight: 0

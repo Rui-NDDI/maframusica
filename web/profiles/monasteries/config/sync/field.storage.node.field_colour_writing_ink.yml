@@ -1,0 +1,20 @@
+uuid: a812b65d-d070-48d7-8acf-1b9533223e8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_colour_writing_ink
+field_name: field_colour_writing_ink
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

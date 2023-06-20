@@ -1,0 +1,19 @@
+uuid: c8f17c0c-26d0-4944-9d2d-f5a4d9d62dca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_description_wear_marks
+field_name: field_description_wear_marks
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

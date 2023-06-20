@@ -1,0 +1,14 @@
+uuid: 348650c3-ba98-48f7-bb68-dba62e4c513f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.grain_direction
+id: taxonomy_vocabulary_grain_direction
+entity_type_id: taxonomy_vocabulary
+entity_id: grain_direction
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

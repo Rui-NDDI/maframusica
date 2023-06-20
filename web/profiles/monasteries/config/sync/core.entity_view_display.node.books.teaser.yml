@@ -30,10 +30,10 @@ dependencies:
     - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
     - field.field.node.books.field_shelfmark
-    - field.field.node.books.field_siglum
     - field.field.node.books.field_subcategory
     - field.field.node.books.field_text_language
     - field.field.node.books.field_tradition
+    - field.field.node.books.field_txt_siglum
     - field.field.node.books.field_type
     - field.field.node.books.field_use
     - field.field.node.books.field_writing_type
@@ -85,10 +85,10 @@ hidden:
   field_relative_record: true
   field_revised_by: true
   field_shelfmark: true
-  field_siglum: true
   field_subcategory: true
   field_text_language: true
   field_tradition: true
+  field_txt_siglum: true
   field_type: true
   field_use: true
   field_writing_type: true

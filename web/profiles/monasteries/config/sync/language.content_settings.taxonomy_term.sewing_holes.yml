@@ -1,0 +1,16 @@
+uuid: ad776b52-54e7-45ca-a918-c4dfd5b44a59
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sewing_holes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.sewing_holes
+target_entity_type_id: taxonomy_term
+target_bundle: sewing_holes
+default_langcode: site_default
+language_alterable: true

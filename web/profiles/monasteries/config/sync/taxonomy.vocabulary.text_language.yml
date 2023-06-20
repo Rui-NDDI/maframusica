@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Text language'
 vid: text_language
-description: ''
+description: 'Contains a list of text languages within the site.'
 weight: 0

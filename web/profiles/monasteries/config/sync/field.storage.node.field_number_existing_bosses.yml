@@ -1,0 +1,20 @@
+uuid: 93feae73-ca70-46dd-8dbb-6c22cb89be4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_number_existing_bosses
+field_name: field_number_existing_bosses
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

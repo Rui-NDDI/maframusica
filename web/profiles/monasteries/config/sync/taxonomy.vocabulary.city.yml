@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: City
 vid: city
-description: ''
+description: 'Contains a list of cities within the site.'
 weight: 0

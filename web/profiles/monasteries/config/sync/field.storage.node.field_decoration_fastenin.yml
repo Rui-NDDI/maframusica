@@ -1,0 +1,20 @@
+uuid: 2e458458-d8cb-4ac3-97c7-fa63ef9c1926
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_decoration_fastenin
+field_name: field_decoration_fastenin
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

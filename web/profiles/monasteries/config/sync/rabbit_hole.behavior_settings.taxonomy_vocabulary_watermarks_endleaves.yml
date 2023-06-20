@@ -1,0 +1,14 @@
+uuid: 5dfa5814-8eb6-4f5d-876d-8fc93479763e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.watermarks_endleaves
+id: taxonomy_vocabulary_watermarks_endleaves
+entity_type_id: taxonomy_vocabulary
+entity_id: watermarks_endleaves
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

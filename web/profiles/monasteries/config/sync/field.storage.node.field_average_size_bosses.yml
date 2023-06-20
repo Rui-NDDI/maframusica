@@ -1,0 +1,20 @@
+uuid: 81b91d5b-988f-47f4-8354-42b48047057e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_average_size_bosses
+field_name: field_average_size_bosses
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

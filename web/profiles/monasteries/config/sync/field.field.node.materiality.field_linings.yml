@@ -1,0 +1,29 @@
+uuid: ac910d11-d7a7-4f7a-9d24-029d84418242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linings
+    - node.type.materiality
+    - taxonomy.vocabulary.linings
+id: node.materiality.field_linings
+field_name: field_linings
+entity_type: node
+bundle: materiality
+label: Linings
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/linings/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      linings: linings
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

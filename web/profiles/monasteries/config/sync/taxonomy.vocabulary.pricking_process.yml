@@ -1,0 +1,8 @@
+uuid: c4df60d6-3453-4cc7-96ef-5cad1141ee34
+langcode: en
+status: true
+dependencies: {  }
+name: 'Pricking process'
+vid: pricking_process
+description: 'Contains a list of pricking process types within the site.'
+weight: 0

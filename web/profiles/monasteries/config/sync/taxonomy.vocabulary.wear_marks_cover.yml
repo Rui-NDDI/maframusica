@@ -1,0 +1,8 @@
+uuid: e1e42649-d999-411d-b09d-dd97a8957202
+langcode: en
+status: true
+dependencies: {  }
+name: 'Wear marks of the cover'
+vid: wear_marks_cover
+description: 'Contains a list of wear mark types within the site.'
+weight: 0

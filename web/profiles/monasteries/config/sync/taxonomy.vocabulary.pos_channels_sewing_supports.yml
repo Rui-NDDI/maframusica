@@ -1,0 +1,8 @@
+uuid: 48ac2679-7499-4f90-89f4-5585634f4fc3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Positioning of channels for sewing supports'
+vid: pos_channels_sewing_supports
+description: 'Contains a list of positioning channel types within the site.'
+weight: 0

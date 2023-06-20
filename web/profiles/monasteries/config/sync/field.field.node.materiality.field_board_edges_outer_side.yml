@@ -1,0 +1,29 @@
+uuid: 06aba27e-e0ac-4897-b15b-77f05618aa82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_board_edges_outer_side
+    - node.type.materiality
+    - taxonomy.vocabulary.board_edges_outer_side
+id: node.materiality.field_board_edges_outer_side
+field_name: field_board_edges_outer_side
+entity_type: node
+bundle: materiality
+label: 'Board edges (outer side)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/board_edges_outer_side/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      board_edges_outer_side: board_edges_outer_side
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

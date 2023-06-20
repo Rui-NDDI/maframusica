@@ -1,0 +1,14 @@
+uuid: 2166379e-7d15-4a35-a23b-37d18c8d85e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.writing_ink_id
+id: taxonomy_vocabulary_writing_ink_id
+entity_type_id: taxonomy_vocabulary
+entity_id: writing_ink_id
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

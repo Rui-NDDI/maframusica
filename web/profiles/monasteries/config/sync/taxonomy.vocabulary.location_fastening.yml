@@ -1,0 +1,8 @@
+uuid: 90f35caa-8610-4957-93bc-5117618eb056
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location of the fastening(s)'
+vid: location_fastening
+description: 'Contains a list of location types within the site.'
+weight: 0

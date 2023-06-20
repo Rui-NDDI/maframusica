@@ -10,8 +10,8 @@ id: node.materiality.field_decoration_type
 field_name: field_decoration_type
 entity_type: node
 bundle: materiality
-label: 'Decoration type'
-description: ''
+label: 'Type of major decoration'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/decoration_type/overview">terms overview page</a> to see the full list or create new items.'
 required: false
 translatable: false
 default_value: {  }

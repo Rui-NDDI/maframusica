@@ -1,0 +1,8 @@
+uuid: ccfaad6e-eadb-4c6d-80d9-9e58aed41c52
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sewing description'
+vid: sewing_description
+description: 'Contains a list of sewing description types within the site.'
+weight: 0

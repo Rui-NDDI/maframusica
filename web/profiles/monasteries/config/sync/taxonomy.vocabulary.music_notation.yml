@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Type of music notation'
 vid: music_notation
-description: ''
+description: 'Contains a list of type of musics within the site.'
 weight: 0

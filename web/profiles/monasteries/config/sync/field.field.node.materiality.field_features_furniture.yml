@@ -1,0 +1,29 @@
+uuid: 474840d9-6f76-4cfc-9f67-90bbf39cea39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_features_furniture
+    - node.type.materiality
+    - taxonomy.vocabulary.features_furniture
+id: node.materiality.field_features_furniture
+field_name: field_features_furniture
+entity_type: node
+bundle: materiality
+label: 'Other features within the furniture'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/features_furniture/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      features_furniture: features_furniture
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

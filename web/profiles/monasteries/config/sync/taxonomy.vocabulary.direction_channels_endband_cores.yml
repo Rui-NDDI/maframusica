@@ -1,0 +1,8 @@
+uuid: bdd30391-4caa-4e5c-b7d9-24a7841e30eb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Direction of channels for endband cores'
+vid: direction_channels_endband_cores
+description: 'Contains a list of direction of channel types within the site.'
+weight: 0

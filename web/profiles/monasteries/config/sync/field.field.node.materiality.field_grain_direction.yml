@@ -1,0 +1,29 @@
+uuid: 233df8b6-55d6-415d-b880-3bcbf60efbb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grain_direction
+    - node.type.materiality
+    - taxonomy.vocabulary.grain_direction
+id: node.materiality.field_grain_direction
+field_name: field_grain_direction
+entity_type: node
+bundle: materiality
+label: 'Grain direction'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/grain_direction/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grain_direction: grain_direction
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

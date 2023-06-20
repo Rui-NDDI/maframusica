@@ -1,0 +1,23 @@
+uuid: 55d66ce2-cd42-4d80-8160-58a5122113ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_endband_stations
+    - node.type.materiality
+id: node.materiality.field_number_endband_stations
+field_name: field_number_endband_stations
+entity_type: node
+bundle: materiality
+label: 'Number of endband stations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

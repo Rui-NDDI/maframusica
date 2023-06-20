@@ -1,0 +1,8 @@
+uuid: 41f6ad86-494a-40f0-b4b0-bf2a469c3d69
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location of the corner(s)'
+vid: location_corner
+description: 'Contains a list of location corner types within the site.'
+weight: 0

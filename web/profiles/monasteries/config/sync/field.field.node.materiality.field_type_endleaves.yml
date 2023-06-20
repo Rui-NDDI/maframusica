@@ -1,0 +1,29 @@
+uuid: ae65200a-735e-45a4-9866-df92ba0cd31a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_endleaves
+    - node.type.materiality
+    - taxonomy.vocabulary.type_endleaves
+id: node.materiality.field_type_endleaves
+field_name: field_type_endleaves
+entity_type: node
+bundle: materiality
+label: 'Type of endleaves'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/type_endleaves/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_endleaves: type_endleaves
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

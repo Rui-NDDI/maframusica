@@ -1,0 +1,20 @@
+uuid: 8a0c0e61-101d-42fa-a2b6-fda682973e45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_corner_id
+field_name: field_corner_id
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

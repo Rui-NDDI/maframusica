@@ -1,0 +1,8 @@
+uuid: 7712e600-81a7-497d-880d-b0ffa8c8dd3a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ruling process'
+vid: ruling_process
+description: 'Contains a list of ruling process types within the site.'
+weight: 0

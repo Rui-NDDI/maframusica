@@ -1,0 +1,8 @@
+uuid: e4def23c-3380-4ed0-bd32-2ed77c4998a3
+langcode: en
+status: true
+dependencies: {  }
+name: "Gregory's rules"
+vid: gregory_rules
+description: "Contains a list of gregory's rules within the site."
+weight: 0

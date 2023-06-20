@@ -1,0 +1,16 @@
+uuid: d4a004f0-2b93-49f1-84b9-1d4d968e15ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proportion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.proportion
+target_entity_type_id: taxonomy_term
+target_bundle: proportion
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,8 @@
+uuid: 20c9ad2b-189d-4cc9-a3dd-4e3bab705952
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of bosses'
+vid: type_bosses
+description: 'Contains a list of bosses types within the site.'
+weight: 0

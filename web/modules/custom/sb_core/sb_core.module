@@ -7,10 +7,6 @@
 
 declare(strict_types = 1);
 
-use Drupal\Core\Entity\EntityInterface;
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\sb_core\Utility\MaterialityTypesHelper;
-
 /**
  * Implements hook_theme().
  */
@@ -23,24 +19,4 @@ function sb_core_theme(): array {
       'render element' => 'children',
     ],
   ];
-}
-
-/**
- * Implements hook_form_alter().
- *
- * - Adds state dependencies between materiality fields.
- */
-function sb_core_form_node_form_alter(&$form, FormStateInterface $form_state): void {
-  /** @var \Drupal\node\NodeInterface $node */
-  $node = $form_state->getFormObject()->getEntity();
-  if ($node->bundle() === 'materiality') {
-    $type_field = MaterialityTypesHelper::MATERIALITY_TYPES_FIELD;
-
-    /** @var \Drupal\sb_core\Utility\MaterialityTypesHelper $materiality_types_helper */
-    $materiality_types_helper = \Drupal::service('sb_core.materiality_types_helper');
-
-    if ($node->hasField($type_field)) {
-      $materiality_types_helper->applyMaterialityStates($form);
-    }
-  }
 }

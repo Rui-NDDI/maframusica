@@ -1,0 +1,29 @@
+uuid: f97bd9ac-e804-4829-989f-62ce3876472a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recent_interventions
+    - node.type.materiality
+    - taxonomy.vocabulary.recent_interventions
+id: node.materiality.field_recent_interventions
+field_name: field_recent_interventions
+entity_type: node
+bundle: materiality
+label: 'Recent interventions (Bookblock)'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/recent_interventions/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      recent_interventions: recent_interventions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

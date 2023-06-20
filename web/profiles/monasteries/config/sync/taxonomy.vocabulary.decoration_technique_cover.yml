@@ -1,0 +1,8 @@
+uuid: cac9fcba-40e5-475a-8b47-0b726925b64e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Decoration technique of the cover'
+vid: decoration_technique_cover
+description: 'Contains a list of decoration technique types within the site.'
+weight: 0

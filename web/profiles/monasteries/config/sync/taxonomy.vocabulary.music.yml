@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Music
 vid: music
-description: ''
+description: 'Contains a list of music types within the site.'
 weight: 0

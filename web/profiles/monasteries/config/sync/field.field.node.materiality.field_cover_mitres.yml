@@ -1,0 +1,29 @@
+uuid: 3235e329-24a2-4c02-92d0-1a26c919dfa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover_mitres
+    - node.type.materiality
+    - taxonomy.vocabulary.cover_mitres
+id: node.materiality.field_cover_mitres
+field_name: field_cover_mitres
+entity_type: node
+bundle: materiality
+label: 'Cover mitres'
+description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/cover_mitres/overview">terms overview page</a> to see the full list or create new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cover_mitres: cover_mitres
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

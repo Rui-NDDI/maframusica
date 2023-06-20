@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Type of script'
 vid: writing_type
-description: ''
+description: 'Contains a list of type of scripts within the site.'
 weight: 0

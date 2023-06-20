@@ -1,0 +1,8 @@
+uuid: 246807a8-170e-4ee3-a490-de5703bccd45
+langcode: en
+status: true
+dependencies: {  }
+name: 'Board attachment securing'
+vid: board_attachment_securing
+description: 'Contains a list of board attachment securing types within the site.'
+weight: 0

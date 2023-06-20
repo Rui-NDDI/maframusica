@@ -1,0 +1,19 @@
+uuid: 87374cc9-c8ca-4b1a-af88-ee80b50dc5da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_description_sequence_marks
+field_name: field_description_sequence_marks
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

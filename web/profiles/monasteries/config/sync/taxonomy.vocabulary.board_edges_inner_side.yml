@@ -1,0 +1,8 @@
+uuid: 7717cef9-c718-48b0-ac29-993a8cbed642
+langcode: en
+status: true
+dependencies: {  }
+name: 'Board edges (inner side)'
+vid: board_edges_inner_side
+description: 'Contains a list of board edges types within the site.'
+weight: 0

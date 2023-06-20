@@ -1,0 +1,23 @@
+uuid: 6f1f4abd-f788-41e8-b18b-79ac20b7cf43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_columns
+    - node.type.materiality
+id: node.materiality.field_number_columns
+field_name: field_number_columns
+entity_type: node
+bundle: materiality
+label: 'Number of columns'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

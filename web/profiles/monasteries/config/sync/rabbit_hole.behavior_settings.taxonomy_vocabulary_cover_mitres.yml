@@ -1,0 +1,14 @@
+uuid: 8b69c5f6-01dd-4860-8a83-670063a6b6b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cover_mitres
+id: taxonomy_vocabulary_cover_mitres
+entity_type_id: taxonomy_vocabulary
+entity_id: cover_mitres
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

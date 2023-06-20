@@ -1,0 +1,16 @@
+uuid: 896a0448-cd76-457f-a119-edaacd7439ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_technique_end
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.decoration_technique_end
+target_entity_type_id: taxonomy_term
+target_bundle: decoration_technique_end
+default_langcode: site_default
+language_alterable: true

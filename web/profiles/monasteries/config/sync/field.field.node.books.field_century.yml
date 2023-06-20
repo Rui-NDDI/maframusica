@@ -1,12 +1,11 @@
-uuid: 49962b33-6d6b-4e09-aeaf-69705eb25f0e
+uuid: f45e30db-455f-4d1b-a54d-cd033206ed9c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_century
     - node.type.books
-  module:
-    - options
+    - taxonomy.vocabulary.century
 id: node.books.field_century
 field_name: field_century
 entity_type: node
@@ -17,5 +16,14 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      century: century
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

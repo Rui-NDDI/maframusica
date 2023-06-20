@@ -1,0 +1,16 @@
+uuid: 94c34bf8-7a19-48e4-a298-dd194e80d826
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.empty_stations
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.empty_stations
+target_entity_type_id: taxonomy_term
+target_bundle: empty_stations
+default_langcode: site_default
+language_alterable: true

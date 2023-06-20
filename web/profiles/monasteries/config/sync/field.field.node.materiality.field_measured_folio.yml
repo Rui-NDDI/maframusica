@@ -1,0 +1,19 @@
+uuid: c37b7f0d-603a-4444-8ec9-af19949044a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_measured_folio
+    - node.type.materiality
+id: node.materiality.field_measured_folio
+field_name: field_measured_folio
+entity_type: node
+bundle: materiality
+label: 'Measured folio (mm)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
