@@ -1,5 +1,5 @@
 styling:
-  version: 1.0
+  version: 1.1
   css:
     layout:
       css/styles.min.css: { minified: true }
