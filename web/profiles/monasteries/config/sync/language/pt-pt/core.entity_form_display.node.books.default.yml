@@ -7,4 +7,4 @@ third_party_settings:
     group_page_content:
       label: 'Conteúdo de Página'
     group_gallery:
-      label: 'Galeria'
+      label: Galeria

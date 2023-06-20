@@ -1,10 +1,7 @@
-label: 'Biblioteca de blocos personalizados'
-description: 'Encontrar e gerir blocos personalizados.'
 display:
   default:
     display_title: Predefinido
     display_options:
-      title: 'Biblioteca de blocos personalizados'
       fields:
         info:
           label: 'Descrição do bloco'
@@ -32,9 +29,6 @@ display:
           exposed_sorts_label: 'Ordenar por'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      empty:
-        area_text_custom:
-          content: 'Não existem blocos personalizados disponíveis.'
       filters:
         info:
           expose:
@@ -46,4 +40,4 @@ display:
     display_title: Página
     display_options:
       menu:
-        title: 'Biblioteca de blocos personalizados'
+        title: Blocos

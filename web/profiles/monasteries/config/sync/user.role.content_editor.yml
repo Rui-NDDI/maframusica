@@ -26,6 +26,7 @@ permissions:
   - 'administer url aliases'
   - 'create page content'
   - 'create url aliases'
+  - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own page content'

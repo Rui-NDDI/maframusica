@@ -3,7 +3,7 @@ third_party_settings:
     group_tabs:
       label: Guias
     group_bookblock:
-      label: Livro Bloco
+      label: 'Livro Bloco'
     group_bookbinding:
       label: Encadernação
     group_conservation:
@@ -35,7 +35,7 @@ third_party_settings:
     group_furniture_fastenings:
       label: 'Guarnição (fechos, brochos, cantos e outros)'
     group_bookblock_conservation:
-      label: Corpo do livro
+      label: 'Corpo do livro'
     group_bookbinding_conservation:
       label: Encadernação
     group_gallery:
