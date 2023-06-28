@@ -2,11 +2,15 @@ uuid: 8887dded-21a8-46ea-bc9f-ceba62d06a16
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - file
+    - filter
 id: content_contributor
-label: Contributor
+label: Contribuinte
 weight: -6
 is_admin: null
 permissions:
   - 'delete own files'
+  - 'use text format full_html'

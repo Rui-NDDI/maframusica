@@ -3,10 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.full_html
+    - media.type.image
+    - node.type.books
+    - node.type.document
+    - node.type.materiality
     - node.type.page
+    - node.type.parties
+    - node.type.people
+    - taxonomy.vocabulary.location_seam_attach_gutter
   module:
+    - content_translation
     - contextual
     - file
+    - filter
+    - media
     - node
     - path
     - system
@@ -14,7 +25,7 @@ dependencies:
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
-label: Editor
+label: editor
 weight: -7
 is_admin: false
 permissions:
@@ -24,13 +35,47 @@ permissions:
   - 'access files overview'
   - 'access toolbar'
   - 'administer url aliases'
-  - 'create page content'
+  - 'create books content'
+  - 'create content translations'
+  - 'create document content'
+  - 'create image media'
+  - 'create materiality content'
+  - 'create media'
+  - 'create people content'
   - 'create url aliases'
+  - 'delete any image media'
+  - 'delete media'
+  - 'delete own books content'
+  - 'delete own document content'
   - 'delete own files'
+  - 'delete own image media'
+  - 'delete own materiality content'
   - 'delete own page content'
+  - 'delete own parties content'
+  - 'delete own people content'
   - 'delete page revisions'
+  - 'edit any books content'
+  - 'edit any document content'
+  - 'edit any image media'
+  - 'edit any materiality content'
+  - 'edit any people content'
+  - 'edit own books content'
+  - 'edit own document content'
+  - 'edit own image media'
+  - 'edit own materiality content'
   - 'edit own page content'
+  - 'edit own people content'
   - 'revert all revisions'
+  - 'translate books node'
+  - 'translate document node'
+  - 'translate location_seam_attach_gutter taxonomy_term'
+  - 'translate materiality node'
+  - 'translate people node'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format full_html'
+  - 'view all media revisions'
   - 'view all revisions'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view the administration theme'

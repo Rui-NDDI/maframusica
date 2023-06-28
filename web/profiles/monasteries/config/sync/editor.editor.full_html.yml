@@ -11,8 +11,11 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - undo
+      - redo
       - bold
       - italic
+      - underline
       - strikethrough
       - superscript
       - subscript

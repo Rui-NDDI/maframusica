@@ -10,7 +10,7 @@ id: node.materiality.field_grain_direction
 field_name: field_grain_direction
 entity_type: node
 bundle: materiality
-label: 'Grain direction'
+label: 'Fibre direction'
 description: 'Navigate to the <a target="_blank" href="/admin/structure/taxonomy/manage/grain_direction/overview">terms overview page</a> to see the full list or create new items.'
 required: false
 translatable: false

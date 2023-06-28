@@ -11,7 +11,7 @@ id: node.document.field_date_intervals
 field_name: field_date_intervals
 entity_type: node
 bundle: document
-label: Date
+label: Date_filter
 description: ''
 required: true
 translatable: false

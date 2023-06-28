@@ -126,6 +126,7 @@ dependencies:
     - node.type.materiality
   module:
     - link
+    - text
     - user
 id: node.materiality.default
 targetEntityType: node
@@ -138,7 +139,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 60
+    weight: 62
     region: content
   field_average_size_boards:
     type: string
@@ -146,7 +147,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 56
+    weight: 58
     region: content
   field_average_size_bosses:
     type: number_integer
@@ -155,7 +156,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 94
+    weight: 97
     region: content
   field_average_size_corner:
     type: number_integer
@@ -164,7 +165,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 101
+    weight: 104
     region: content
   field_average_size_endleaves:
     type: number_integer
@@ -173,7 +174,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 77
+    weight: 79
     region: content
   field_average_size_fastenings:
     type: string
@@ -181,7 +182,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 87
+    weight: 89
     region: content
   field_average_size_sewing:
     type: string
@@ -189,7 +190,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 41
+    weight: 43
     region: content
   field_board_attachment:
     type: entity_reference_label
@@ -197,7 +198,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 43
+    weight: 45
     region: content
   field_board_attachment_securing:
     type: entity_reference_label
@@ -205,7 +206,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 45
+    weight: 47
     region: content
   field_board_edges_inner_side:
     type: entity_reference_label
@@ -213,7 +214,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 49
+    weight: 51
     region: content
   field_board_edges_outer_side:
     type: entity_reference_label
@@ -221,7 +222,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 48
+    weight: 50
     region: content
   field_boards_id:
     type: entity_reference_label
@@ -229,7 +230,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 57
+    weight: 59
     region: content
   field_bosses_id:
     type: entity_reference_label
@@ -237,7 +238,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 95
+    weight: 98
     region: content
   field_change_over:
     type: entity_reference_label
@@ -245,7 +246,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 34
+    weight: 36
     region: content
   field_colour_bosses:
     type: entity_reference_label
@@ -253,7 +254,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 93
+    weight: 96
     region: content
   field_colour_corner:
     type: entity_reference_label
@@ -261,7 +262,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 100
+    weight: 103
     region: content
   field_colour_cover:
     type: entity_reference_label
@@ -269,7 +270,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 64
+    weight: 66
     region: content
   field_colour_endleaves:
     type: entity_reference_label
@@ -277,7 +278,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 75
+    weight: 77
     region: content
   field_colour_fastening:
     type: entity_reference_label
@@ -285,7 +286,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 86
+    weight: 88
     region: content
   field_colour_folia:
     type: entity_reference_label
@@ -293,7 +294,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_colour_sewing_supports:
     type: entity_reference_label
@@ -301,7 +302,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 40
+    weight: 42
     region: content
   field_colour_sewing_thread:
     type: entity_reference_label
@@ -309,7 +310,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 37
+    weight: 39
     region: content
   field_colour_writing_ink:
     type: entity_reference_label
@@ -317,7 +318,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   field_colours_decoration:
     type: entity_reference_label
@@ -325,7 +326,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 20
+    weight: 22
     region: content
   field_colours_minor_decoration:
     type: entity_reference_label
@@ -333,7 +334,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 23
+    weight: 25
     region: content
   field_conservation_condition:
     type: entity_reference_label
@@ -341,7 +342,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 105
+    weight: 108
     region: content
   field_corner_id:
     type: entity_reference_label
@@ -349,7 +350,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 102
+    weight: 105
     region: content
   field_cover_decoration_id:
     type: entity_reference_label
@@ -357,7 +358,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 66
+    weight: 68
     region: content
   field_cover_id:
     type: entity_reference_label
@@ -365,7 +366,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 65
+    weight: 67
     region: content
   field_cover_mitres:
     type: entity_reference_label
@@ -373,7 +374,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 59
+    weight: 61
     region: content
   field_current_assessment:
     type: entity_reference_label
@@ -381,7 +382,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 109
+    weight: 111
     region: content
   field_current_assessment_bb:
     type: entity_reference_label
@@ -389,7 +390,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 112
+    weight: 114
     region: content
   field_decor_technique_endleaves:
     type: entity_reference_label
@@ -397,7 +398,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 72
+    weight: 74
     region: content
   field_decoration_bosses:
     type: entity_reference_label
@@ -405,7 +406,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 92
+    weight: 95
     region: content
   field_decoration_corner:
     type: entity_reference_label
@@ -413,7 +414,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 99
+    weight: 102
     region: content
   field_decoration_fastenin:
     type: entity_reference_label
@@ -421,7 +422,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 85
+    weight: 87
     region: content
   field_decoration_pattern_cover:
     type: entity_reference_label
@@ -429,7 +430,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 62
+    weight: 64
     region: content
   field_decoration_technique_cover:
     type: entity_reference_label
@@ -437,7 +438,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 61
+    weight: 63
+    region: content
+  field_decoration_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 21
     region: content
   field_decorative_motifs_endleave:
     type: entity_reference_label
@@ -445,42 +454,42 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 73
+    weight: 75
     region: content
   field_description_author:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 108
+    weight: 118
     region: content
   field_description_other_cover:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 69
+    weight: 71
     region: content
   field_description_other_features:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 107
     region: content
   field_description_sequence_marks:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 28
     region: content
   field_description_wear_marks:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 28
+    weight: 30
     region: content
   field_dimension_endleaves:
     type: entity_reference_label
@@ -488,7 +497,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 76
+    weight: 78
     region: content
   field_direction_channels_endband:
     type: entity_reference_label
@@ -496,7 +505,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 53
+    weight: 55
     region: content
   field_direction_channels_support:
     type: entity_reference_label
@@ -504,7 +513,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 52
+    weight: 54
     region: content
   field_direction_fastening:
     type: entity_reference_label
@@ -512,7 +521,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 83
+    weight: 85
     region: content
   field_edge_treatment:
     type: entity_reference_label
@@ -520,7 +529,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_empty_stations:
     type: entity_reference_label
@@ -528,7 +537,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 31
+    weight: 33
     region: content
   field_endleaves_id:
     type: entity_reference_label
@@ -536,7 +545,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 78
+    weight: 80
     region: content
   field_endpapers_decoration_id:
     type: entity_reference_label
@@ -544,7 +553,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 79
+    weight: 81
     region: content
   field_entry_carvings_endband:
     type: entity_reference_label
@@ -552,7 +561,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 51
+    weight: 53
     region: content
   field_entry_carvings_sewing_sup:
     type: entity_reference_label
@@ -560,7 +569,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 50
+    weight: 52
     region: content
   field_external_references:
     type: link
@@ -572,7 +581,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 114
+    weight: 116
     region: content
   field_fastening_id:
     type: entity_reference_label
@@ -580,7 +589,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 88
+    weight: 90
     region: content
   field_features_furniture:
     type: entity_reference_label
@@ -588,7 +597,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 106
     region: content
   field_grain_direction:
     type: entity_reference_label
@@ -596,7 +605,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_gregory_rule:
     type: entity_reference_label
@@ -604,7 +613,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 119
     region: content
   field_linings:
     type: entity_reference_label
@@ -612,7 +629,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 68
+    weight: 70
     region: content
   field_location_bosses:
     type: entity_reference_label
@@ -620,7 +637,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 113
+    weight: 93
     region: content
   field_location_corner:
     type: entity_reference_label
@@ -628,7 +645,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 98
+    weight: 101
     region: content
   field_location_fastening:
     type: entity_reference_label
@@ -636,7 +653,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 82
+    weight: 84
     region: content
   field_main_number_sewing_station:
     type: number_integer
@@ -645,7 +662,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 30
+    weight: 32
     region: content
   field_main_twist_sewing_thread:
     type: entity_reference_label
@@ -653,7 +670,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 36
+    weight: 38
     region: content
   field_major_decoration_id:
     type: entity_reference_label
@@ -661,7 +678,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 21
+    weight: 23
     region: content
   field_measured_folio:
     type: string
@@ -669,7 +686,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_minor_decoration_id:
     type: entity_reference_label
@@ -677,7 +694,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 24
+    weight: 26
     region: content
   field_numbeer_existing_corners:
     type: number_integer
@@ -686,7 +703,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 96
+    weight: 99
     region: content
   field_number_columns:
     type: number_integer
@@ -695,7 +712,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_number_endband_stations:
     type: number_integer
@@ -704,7 +721,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 44
+    weight: 46
     region: content
   field_number_existing_bosses:
     type: number_integer
@@ -713,7 +730,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 89
+    weight: 91
     region: content
   field_number_fastening:
     type: number_integer
@@ -722,7 +739,16 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 80
+    weight: 82
+    region: content
+  field_number_folios:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_number_gatherings:
     type: number_integer
@@ -740,7 +766,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_number_sewing_stations:
     type: number_integer
@@ -749,7 +775,14 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 29
+    weight: 31
+    region: content
+  field_observations:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
     region: content
   field_paper_marks:
     type: entity_reference_label
@@ -757,7 +790,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_past_interventions:
     type: entity_reference_label
@@ -765,7 +798,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 106
+    weight: 109
     region: content
   field_past_interventions_bb:
     type: entity_reference_label
@@ -773,7 +806,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 110
+    weight: 112
     region: content
   field_pos_channels_sewing_sup:
     type: entity_reference_label
@@ -781,7 +814,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 54
+    weight: 56
     region: content
   field_pricking_location:
     type: entity_reference_label
@@ -789,7 +822,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_pricking_process:
     type: entity_reference_label
@@ -797,7 +830,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_pricking_system:
     type: entity_reference_label
@@ -805,7 +838,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_primary_cover:
     type: entity_reference_label
@@ -813,7 +846,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 67
+    weight: 69
     region: content
   field_proportion:
     type: entity_reference_label
@@ -821,7 +854,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_recent_interventions:
     type: entity_reference_label
@@ -829,7 +862,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 107
+    weight: 110
     region: content
   field_recent_interventions_bb:
     type: entity_reference_label
@@ -837,7 +870,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 111
+    weight: 113
+    region: content
+  field_references:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 115
     region: content
   field_ruling_process:
     type: entity_reference_label
@@ -845,7 +885,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_ruling_system:
     type: entity_reference_label
@@ -853,7 +893,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_sewing_description:
     type: entity_reference_label
@@ -861,7 +901,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 32
+    weight: 34
     region: content
   field_sewing_holes:
     type: entity_reference_label
@@ -869,7 +909,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 35
+    weight: 37
     region: content
   field_sewing_sections:
     type: entity_reference_label
@@ -877,7 +917,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 33
+    weight: 35
     region: content
   field_sewing_supports_id:
     type: entity_reference_label
@@ -885,7 +925,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 42
+    weight: 44
     region: content
   field_sewing_thread_id:
     type: entity_reference_label
@@ -893,7 +933,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 39
+    weight: 41
     region: content
   field_shape_bosses:
     type: entity_reference_label
@@ -901,7 +941,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 91
+    weight: 94
     region: content
   field_shape_fastenings:
     type: entity_reference_label
@@ -909,7 +949,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 84
+    weight: 86
     region: content
   field_shape_holes:
     type: entity_reference_label
@@ -917,7 +957,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 55
+    weight: 57
     region: content
   field_size_folia:
     type: entity_reference_label
@@ -925,7 +965,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_squares:
     type: entity_reference_label
@@ -933,7 +973,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 47
+    weight: 49
     region: content
   field_support_id:
     type: entity_reference_label
@@ -941,7 +981,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_thread_diameter_mm:
     type: number_integer
@@ -950,7 +990,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 38
+    weight: 40
     region: content
   field_type_bosses:
     type: entity_reference_label
@@ -958,7 +998,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 90
+    weight: 92
     region: content
   field_type_corner:
     type: entity_reference_label
@@ -966,7 +1006,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 97
+    weight: 100
     region: content
   field_type_cover:
     type: entity_reference_label
@@ -974,7 +1014,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 58
+    weight: 60
     region: content
   field_type_endbands:
     type: entity_reference_label
@@ -982,7 +1022,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 46
+    weight: 48
     region: content
   field_type_endleaves:
     type: entity_reference_label
@@ -990,7 +1030,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 70
+    weight: 72
     region: content
   field_type_fastening:
     type: entity_reference_label
@@ -998,7 +1038,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 81
+    weight: 83
     region: content
   field_type_minor_decoration:
     type: entity_reference_label
@@ -1006,7 +1046,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 22
+    weight: 24
     region: content
   field_type_sequence_marks:
     type: entity_reference_label
@@ -1014,7 +1054,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 25
+    weight: 27
     region: content
   field_type_wear_marks:
     type: entity_reference_label
@@ -1022,7 +1062,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 27
+    weight: 29
+    region: content
+  field_typology_according_books:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_watermarks_endleave:
     type: entity_reference_label
@@ -1030,7 +1078,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 71
+    weight: 73
     region: content
   field_wear_marks_cover:
     type: entity_reference_label
@@ -1038,7 +1086,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 63
+    weight: 65
     region: content
   field_wear_marks_endleave:
     type: entity_reference_label
@@ -1046,7 +1094,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 74
+    weight: 76
     region: content
   field_writing_ink_id:
     type: entity_reference_label
@@ -1054,14 +1102,8 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
 hidden:
-  field_decoration_type: true
-  field_image: true
-  field_number_folios: true
-  field_observations: true
-  field_references: true
-  field_typology_according_books: true
   langcode: true
   links: true

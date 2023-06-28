@@ -54,7 +54,7 @@ third_party_settings:
         - group_page_content
         - group_gallery
         - group_extra
-      label: Tabs
+      label: Guias
       region: content
       parent_name: ''
       weight: 0
@@ -72,7 +72,7 @@ third_party_settings:
         - field_shelfmark
         - field_date_last_change
         - field_revised_by
-      label: 'Page settings'
+      label: 'Configurações de Página'
       region: content
       parent_name: group_tabs
       weight: 0
@@ -128,7 +128,7 @@ third_party_settings:
         - field_monastery
         - field_book_date
         - body
-      label: 'Page content'
+      label: 'Conteúdo de Página'
       region: content
       parent_name: group_tabs
       weight: 1
@@ -143,7 +143,7 @@ third_party_settings:
     group_gallery:
       children:
         - field_images
-      label: Gallery
+      label: Galeria
       region: content
       parent_name: group_tabs
       weight: 2
@@ -293,10 +293,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_parties:
-    type: multiselect
+    type: entity_reference_autocomplete
     weight: 18
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_provenance:
     type: multiselect
