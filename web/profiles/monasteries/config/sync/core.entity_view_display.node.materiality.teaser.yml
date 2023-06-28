@@ -85,6 +85,7 @@ dependencies:
     - field.field.node.materiality.field_number_sewing_stations
     - field.field.node.materiality.field_observations
     - field.field.node.materiality.field_paper_marks
+    - field.field.node.materiality.field_parent_record
     - field.field.node.materiality.field_past_interventions
     - field.field.node.materiality.field_past_interventions_bb
     - field.field.node.materiality.field_pos_channels_sewing_sup
@@ -214,6 +215,7 @@ hidden:
   field_number_sewing_stations: true
   field_observations: true
   field_paper_marks: true
+  field_parent_record: true
   field_past_interventions: true
   field_past_interventions_bb: true
   field_pos_channels_sewing_sup: true

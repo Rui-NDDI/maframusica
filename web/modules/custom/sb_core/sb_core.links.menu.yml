@@ -3,23 +3,3 @@ sb_core.base:
   parent: system.admin_config
   title: SquareBit
   weight: -99
-
-sb_core.materiality:
-  url: route:<nolink>
-  title: 'Materiality'
-  weight: -45
-  menu_name: main
-
-sb_core.bookbinding:
-  url: route:<nolink>
-  title: 'Bookbinding'
-  parent: sb_core.materiality
-  weight: -50
-  menu_name: main
-
-sb_core.fitting:
-  url: route:<nolink>
-  title: 'Fitting'
-  parent: sb_core.materiality
-  weight: -20
-  menu_name: main

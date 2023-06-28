@@ -84,6 +84,7 @@ dependencies:
     - field.field.node.materiality.field_number_sewing_stations
     - field.field.node.materiality.field_observations
     - field.field.node.materiality.field_paper_marks
+    - field.field.node.materiality.field_parent_record
     - field.field.node.materiality.field_past_interventions
     - field.field.node.materiality.field_past_interventions_bb
     - field.field.node.materiality.field_pos_channels_sewing_sup
@@ -791,6 +792,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_parent_record:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 120
     region: content
   field_past_interventions:
     type: entity_reference_label

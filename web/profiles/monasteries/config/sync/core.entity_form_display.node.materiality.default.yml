@@ -84,6 +84,7 @@ dependencies:
     - field.field.node.materiality.field_number_sewing_stations
     - field.field.node.materiality.field_observations
     - field.field.node.materiality.field_paper_marks
+    - field.field.node.materiality.field_parent_record
     - field.field.node.materiality.field_past_interventions
     - field.field.node.materiality.field_past_interventions_bb
     - field.field.node.materiality.field_pos_channels_sewing_sup
@@ -570,6 +571,7 @@ third_party_settings:
       children:
         - langcode
         - title
+        - field_parent_record
         - field_observations
       label: 'Page settings'
       region: content
@@ -1104,7 +1106,7 @@ content:
     third_party_settings: {  }
   field_observations:
     type: text_textarea
-    weight: 3
+    weight: 4
     region: content
     settings:
       rows: 5
@@ -1115,6 +1117,16 @@ content:
     weight: 5
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_parent_record:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_past_interventions:
     type: multiselect

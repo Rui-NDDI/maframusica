@@ -182,10 +182,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_archive:
-    type: multiselect
+    type: entity_reference_autocomplete
     weight: 5
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_authorship:
     type: multiselect
@@ -270,10 +274,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_main_place_of_use:
-    type: multiselect
+    type: entity_reference_autocomplete
     weight: 15
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_major_decoration:
     type: entity_reference_autocomplete
@@ -318,10 +326,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_origin:
-    type: multiselect
+    type: entity_reference_autocomplete
     weight: 13
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_parties:
     type: entity_reference_autocomplete
@@ -342,10 +354,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_provenance:
-    type: multiselect
+    type: entity_reference_autocomplete
     weight: 14
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_publication_info:
     type: text_textarea
@@ -364,10 +380,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_relative_record:
-    type: multiselect
+    type: entity_reference_autocomplete
     weight: 25
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_revised_by:
     type: entity_reference_autocomplete

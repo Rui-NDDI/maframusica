@@ -1,0 +1,9 @@
+label: 'Pesquisa Materialidade'
+display:
+  default:
+    display_options:
+      title: Materialidade
+  page_1:
+    display_options:
+      menu:
+        title: Materialidade

@@ -12,13 +12,13 @@ definitions:
     parent: sb_core.materiality
     weight: -49
     expanded: false
-    enabled: true
+    enabled: false
   sb_core__fitting:
     menu_name: main
     parent: sb_core.bookbinding
     weight: -44
     expanded: false
-    enabled: true
+    enabled: false
   sb_core__sewing:
     menu_name: main
     parent: sb_core.bookbinding
@@ -52,6 +52,6 @@ definitions:
   sb_core__materiality:
     menu_name: main
     parent: ''
-    weight: -46
+    weight: -45
     expanded: false
-    enabled: true
+    enabled: false
