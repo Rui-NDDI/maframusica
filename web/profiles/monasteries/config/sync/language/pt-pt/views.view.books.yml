@@ -29,6 +29,17 @@ display:
           submit_button: Aplicar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
+      fields:
+        title:
+          label: Título
+        field_type:
+          label: Tipo
+        field_subcategory:
+          label: Subcategoria
+        field_book_date:
+          label: Data
+        field_images:
+          label: Imagem
   page:
     display_options:
       menu:
