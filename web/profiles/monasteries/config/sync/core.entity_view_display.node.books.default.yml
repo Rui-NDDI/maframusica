@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.books.field_observations
     - field.field.node.books.field_origin
     - field.field.node.books.field_parties
+    - field.field.node.books.field_physical_description
     - field.field.node.books.field_provenance
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
@@ -53,7 +54,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   field_archive:
     type: entity_reference_label
@@ -69,7 +70,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 31
+    weight: 32
     region: content
   field_book_date:
     type: string
@@ -77,7 +78,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_century:
     type: entity_reference_label
@@ -85,7 +86,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_completeness:
     type: entity_reference_label
@@ -93,7 +94,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_cursus:
     type: entity_reference_label
@@ -101,7 +102,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_date_last_change:
     type: datetime_default
@@ -110,7 +111,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 33
+    weight: 34
     region: content
   field_entities:
     type: entity_reference_label
@@ -118,7 +119,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 21
+    weight: 22
     region: content
   field_external_references:
     type: link
@@ -130,7 +131,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 28
+    weight: 29
     region: content
   field_font_type:
     type: entity_reference_label
@@ -138,7 +139,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_images:
     type: image
@@ -149,7 +150,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 30
+    weight: 31
     region: content
   field_liturgical_occasion:
     type: entity_reference_label
@@ -157,7 +158,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 20
+    weight: 21
     region: content
   field_main_place_of_use:
     type: entity_reference_label
@@ -165,7 +166,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_monastery:
     type: entity_reference_label
@@ -181,7 +182,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_music_notation:
     type: entity_reference_label
@@ -189,14 +190,14 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 24
+    weight: 25
     region: content
   field_observations:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 27
     region: content
   field_origin:
     type: entity_reference_label
@@ -204,7 +205,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_parties:
     type: entity_reference_label
@@ -212,7 +213,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 19
+    weight: 20
+    region: content
+  field_physical_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_provenance:
     type: entity_reference_label
@@ -220,21 +228,21 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_publication_info:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_references:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 27
+    weight: 28
     region: content
   field_relative_record:
     type: entity_reference_label
@@ -242,7 +250,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 25
+    weight: 26
     region: content
   field_revised_by:
     type: entity_reference_label
@@ -250,7 +258,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 32
+    weight: 33
     region: content
   field_shelfmark:
     type: string
@@ -274,7 +282,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 22
+    weight: 23
     region: content
   field_tradition:
     type: entity_reference_label
@@ -282,7 +290,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_txt_siglum:
     type: string
@@ -306,7 +314,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_writing_type:
     type: entity_reference_label
@@ -314,12 +322,12 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 23
+    weight: 24
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 29
+    weight: 30
     region: content
 hidden:
   langcode: true

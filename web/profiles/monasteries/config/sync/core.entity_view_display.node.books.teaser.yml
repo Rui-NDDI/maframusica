@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.books.field_observations
     - field.field.node.books.field_origin
     - field.field.node.books.field_parties
+    - field.field.node.books.field_physical_description
     - field.field.node.books.field_provenance
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
@@ -79,6 +80,7 @@ hidden:
   field_observations: true
   field_origin: true
   field_parties: true
+  field_physical_description: true
   field_provenance: true
   field_publication_info: true
   field_references: true

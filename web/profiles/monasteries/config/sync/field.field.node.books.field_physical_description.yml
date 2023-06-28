@@ -1,0 +1,19 @@
+uuid: 81ca2dc2-f9c0-4302-adbb-9c6b18f75113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_description
+    - node.type.books
+id: node.books.field_physical_description
+field_name: field_physical_description
+entity_type: node
+bundle: books
+label: 'Physical description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
