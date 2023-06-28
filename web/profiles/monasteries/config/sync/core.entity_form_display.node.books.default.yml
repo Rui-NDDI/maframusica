@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.books.field_archive
     - field.field.node.books.field_authorship
     - field.field.node.books.field_book_date
+    - field.field.node.books.field_bookbinding
     - field.field.node.books.field_century
     - field.field.node.books.field_completeness
     - field.field.node.books.field_cursus
@@ -17,6 +18,8 @@ dependencies:
     - field.field.node.books.field_images
     - field.field.node.books.field_liturgical_occasion
     - field.field.node.books.field_main_place_of_use
+    - field.field.node.books.field_major_decoration
+    - field.field.node.books.field_major_decoration_id
     - field.field.node.books.field_monastery
     - field.field.node.books.field_music
     - field.field.node.books.field_music_notation
@@ -198,6 +201,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_bookbinding:
+    type: entity_reference_autocomplete
+    weight: 30
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_century:
     type: multiselect
     weight: 10
@@ -259,6 +272,22 @@ content:
   field_main_place_of_use:
     type: multiselect
     weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_major_decoration:
+    type: entity_reference_autocomplete
+    weight: 29
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_major_decoration_id:
+    type: multiselect
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

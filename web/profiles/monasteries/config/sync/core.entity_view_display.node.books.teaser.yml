@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.books.field_archive
     - field.field.node.books.field_authorship
     - field.field.node.books.field_book_date
+    - field.field.node.books.field_bookbinding
     - field.field.node.books.field_century
     - field.field.node.books.field_completeness
     - field.field.node.books.field_cursus
@@ -18,6 +19,8 @@ dependencies:
     - field.field.node.books.field_images
     - field.field.node.books.field_liturgical_occasion
     - field.field.node.books.field_main_place_of_use
+    - field.field.node.books.field_major_decoration
+    - field.field.node.books.field_major_decoration_id
     - field.field.node.books.field_monastery
     - field.field.node.books.field_music
     - field.field.node.books.field_music_notation
@@ -64,6 +67,7 @@ hidden:
   field_archive: true
   field_authorship: true
   field_book_date: true
+  field_bookbinding: true
   field_century: true
   field_completeness: true
   field_cursus: true
@@ -74,6 +78,8 @@ hidden:
   field_images: true
   field_liturgical_occasion: true
   field_main_place_of_use: true
+  field_major_decoration: true
+  field_major_decoration_id: true
   field_monastery: true
   field_music: true
   field_music_notation: true

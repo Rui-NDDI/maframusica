@@ -6013,3 +6013,66 @@ function sb_core_deploy_108097(): void {
     ])->save();
   }
 }
+
+/**
+ * Feed type_of_bookbinding taxonomy.
+ */
+function sb_core_deploy_108098(): void {
+  $taxonomy_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+  $terms = $taxonomy_storage->loadByProperties(['vid' => 'type_of_bookbinding']);
+
+  foreach ($terms as $term) {
+    $term->delete();
+  }
+
+  $list_terms = [
+    ['Inboard', 'Rígida'],
+    ['Limp', 'Flexível'],
+    ['Medieval', 'Medieval'],
+    ['Romanesque', 'Românica'],
+    ['Gothic', 'Gótica'],
+    ['Manueline', 'Manuelina'],
+    ['Renaissance', 'Renascentista'],
+    ['Contemporary', 'Contemporânea'],
+    ['Monastic', 'Monástica'],
+    ['Cistercian', 'Cisterciense'],
+    ['Alcobaça white', 'Alcobacense branca'],
+    ['Alcobaça brown', 'Alcobacense castanha'],
+    ['Mozarab', 'Moçárabe'],
+    ['Mudejar', 'Mudéjar'],
+    ['Byzantine', 'Bizantina'],
+    ['Islamic', 'Islâmica'],
+    ['With extensions', 'Com abas'],
+    ['Envelope', 'De envelope/solapa'],
+    ['With ties', 'À ataca'],
+    ['Full', 'Inteira'],
+    ['Quarter', 'Meia'],
+    ['Half', 'A três quartos'],
+    ['Treasure', 'De luxo e/ou ourivesaria'],
+    ['Heraldic', 'Heráldica'],
+    ['Album', 'Álbum'],
+    ['Industrial', 'Industrial'],
+    ['Library/preservation', 'De biblioteca/preservação'],
+    ['Archival', 'De arquivo'],
+    ['Medieval facsimile', 'Fac-símile medieval'],
+    ['Original dated', 'Original datada'],
+    ['Original undated', 'Original não datada'],
+    ['Unoriginal dated', 'Não original não datada'],
+    ['Unoriginal undated', 'Não original datada'],
+    ['Other', 'Outra'],
+  ];
+
+  foreach ($list_terms as $terms_arr) {
+    $term = $taxonomy_storage->create([
+      'vid' => 'type_of_bookbinding',
+      'name' => $terms_arr[0],
+      'langcode' => 'en',
+    ]);
+
+    $term->enforceIsNew();
+    $term->save();
+    $term->addTranslation('pt-pt', [
+      'name' => $terms_arr[1],
+    ])->save();
+  }
+}
