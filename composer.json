@@ -103,7 +103,7 @@
         },
         "drupal-scaffold": {
             "locations": {
-                "web-root": "web/"
+                "web-root": "./"
             }
         },
         "enable-patching": true,
@@ -111,30 +111,30 @@
             "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ],
-            "web/core": [
+            "core": [
                 "type:drupal-core"
             ],
-            "web/libraries/{$name}": [
+            "libraries/{$name}": [
                 "type:drupal-library",
                 "type:npm-asset",
                 "type:bower-asset"
             ],
-            "web/modules/contrib/{$name}": [
+            "modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/modules/custom/{$name}": [
+            "modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/profiles/custom/{$name}": [
+            "profiles/custom/{$name}": [
                 "type:drupal-custom-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "web/themes/custom/{$name}": [
+            "themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
         },

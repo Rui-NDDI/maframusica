@@ -3,11 +3,11 @@
 /drush/contrib/
 /node_modules/
 /vendor/
-/web/core/
-/web/libraries/
-/web/modules/contrib/
-/web/profiles/contrib/
-/web/themes/contrib/
+/core/
+/libraries/
+/modules/contrib/
+/profiles/contrib/
+/themes/contrib/
 
 # Ignore dist build location
 /dist/
@@ -16,15 +16,15 @@
 /local/
 
 # Ignore sensitive information
-/web/sites/sites.php
-/web/sites/*/settings.override.php
+/sites/sites.php
+/sites/*/settings.override.php
 
 # Ignore Drupal's file directories.
-/web/sites/*/files/
+/sites/*/files/
 /private/
 
 # Ignore SimpleTest multi-site environment.
-/web/sites/simpletest/
+/sites/simpletest/
 
 # Ignore environment specific settings
 /.env
@@ -32,7 +32,6 @@
 /grumphp.yml
 /phpcs.xml
 /runner.yml
-/web/sites/default/services.yml
 /.phpunit.result.cache
 
 # Used by the CI for artifacts.
@@ -53,6 +52,7 @@ Icon
 Thumbs.db
 ._*
 .php_cs.cache
+.docksal
 
 # Vim generated files #
 ######################

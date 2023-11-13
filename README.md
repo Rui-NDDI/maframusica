@@ -1,26 +1,75 @@
-# mosteiros
-Mosteiro Lorvão, Alcobaça e Arouca (Perfil Histórico)
+<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
-## Instructions
+Drupal is an open source content management platform supporting a variety of
+websites ranging from personal weblogs to large community-driven websites. For
+more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
+the [Drupal community][Drupal community].
 
-### First config import is recommended to be done via drush by running:
-```
-drush site:install monasteries --existing-config
-```
+## Contributing
 
-### Quick tip: generating a hash salt for Drupal
-```
-drush php-eval 'echo \Drupal\Component\Utility\Crypt::hashBase64(55) . "\n";'
-```
+Drupal is developed on [Drupal.org][Drupal.org], the home of the international
+Drupal community since 2001!
 
-### Export Content
+[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
+its [issue queue][issue queue], and its [documentation][documentation]. Before
+you start working on code, be sure to search the [issue queue][issue queue] and
+create an issue if your aren't able to find an existing issue.
 
-##### Taxonomies
-```
-drush dcer taxonomy_term --bundles=archive,articulation_cover,articulation_system,attach_sewing_support_folder,bifolios_notebook,binders,book_body_composition,book_subcategory,book_type,brooch_typology,closure_typology,color,completeness,cover_decoration,cursus,cut,decoration_type,document_type,document_validation,dyestuff,edge_treatments,finial,folder_articulation,font_type,format,guards_registration,guards_typology,identification_method,label_brand_typology,leading_orientation,liturgical_occasion,loads,location,locations,location_seam_attach_gutter,material,materiality_book_body,materiality_shape,materiality_support,music,music_notation,nature,parties,pebbles,pigment,regularity,tanning,text_language,thread_season,tool_brands,tradition,tranchephil_typology,typology_according_loop,typology_according_number_books,typology_according_route,typology_sewing_supports,writing_type --folder=modules/custom/sb_content/content/
-```
+Every issue on Drupal.org automatically creates a new community-accessible fork
+that you can contribute to. Learn more about the code contribution process on
+the [Issue forks & merge requests page][issue forks].
 
-##### Nodes
-```
-drush dcer node --folder=modules/custom/sb_content/content/
-```
+## Usage
+
+For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
+guides, API references, and more by visiting Drupal's [documentation
+page][documentation].
+
+You can quickly extend Drupal's core feature set by installing any of its
+[thousands of free and open source modules][modules]. With Drupal and its
+module ecosystem, you can often build most or all of what your project needs
+before writing a single line of code.
+
+## Changelog
+
+Drupal keeps detailed [change records][changelog]. You can search Drupal's
+changes for a record of every notable breaking change and new feature since
+2011.
+
+## Security
+
+For a list of security announcements, see the [Security advisories
+page][Security advisories] (available as [an RSS feed][security RSS]). This
+page also describes how to subscribe to these announcements via email.
+
+For information about the Drupal security process, or to find out how to report
+a potential security issue to the Drupal security team, see the [Security team
+page][security team].
+
+## Need a helping hand?
+
+Visit the [Support page][support] or browse [over a thousand Drupal
+providers][service providers] offering design, strategy, development, and
+hosting services.
+
+## Legal matters
+
+Know your rights when using Drupal by reading Drupal core's
+[license](/core/LICENSE.txt).
+
+Learn about the [Drupal trademark and logo policy here][trademark].
+
+[Drupal.org]: https://www.drupal.org
+[Drupal community]: https://www.drupal.org/community
+[GitLab repository]: https://git.drupalcode.org/project/drupal
+[issue queue]: https://www.drupal.org/project/issues/drupal
+[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
+[documentation]: https://www.drupal.org/documentation
+[changelog]: https://www.drupal.org/list-changes/drupal
+[modules]: https://www.drupal.org/project/project_module
+[security advisories]: https://www.drupal.org/security
+[security RSS]: https://www.drupal.org/security/rss.xml
+[security team]: https://www.drupal.org/drupal-security-team
+[service providers]: https://www.drupal.org/drupal-services
+[support]: https://www.drupal.org/support
+[trademark]: https://www.drupal.com/trademark
