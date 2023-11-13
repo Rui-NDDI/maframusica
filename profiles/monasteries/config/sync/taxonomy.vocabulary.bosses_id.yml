@@ -1,8 +1,0 @@
-uuid: a630c52e-1ef4-4de0-a1eb-c6350272569b
-langcode: en
-status: true
-dependencies: {  }
-name: 'Bosses ID'
-vid: bosses_id
-description: 'Contains a list of bosses id types within the site.'
-weight: 0

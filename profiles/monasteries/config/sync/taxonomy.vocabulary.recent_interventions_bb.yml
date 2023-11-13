@@ -1,8 +1,0 @@
-uuid: 9afca6aa-7a56-4af5-9218-2ddb4d3f79a7
-langcode: en
-status: true
-dependencies: {  }
-name: 'Recent interventions (Bookbinding)'
-vid: recent_interventions_bb
-description: 'Contains a list of recent intervention types within the site.'
-weight: 0

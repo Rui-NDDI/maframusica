@@ -1,8 +1,0 @@
-uuid: 01c64c1f-e470-4cf3-8e33-ec7ed17f4243
-langcode: en
-status: true
-dependencies: {  }
-name: 'Shape of bosses'
-vid: shape_bosses
-description: 'Contains a list of shape of bosses types within the site.'
-weight: 0

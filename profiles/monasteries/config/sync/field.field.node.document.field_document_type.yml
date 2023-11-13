@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_document_type
     - node.type.document
-    - taxonomy.vocabulary.document_type
 id: node.document.field_document_type
 field_name: field_document_type
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      document_type: document_type
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

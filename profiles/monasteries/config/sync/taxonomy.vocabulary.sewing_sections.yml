@@ -1,8 +1,0 @@
-uuid: 2e13219f-0f70-480c-882d-e4f29e29219a
-langcode: en
-status: true
-dependencies: {  }
-name: 'Sewing sections'
-vid: sewing_sections
-description: 'Contains a list of sewing sections types within the site.'
-weight: 0

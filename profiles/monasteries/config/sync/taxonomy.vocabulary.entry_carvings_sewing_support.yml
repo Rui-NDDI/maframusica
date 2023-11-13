@@ -1,8 +1,0 @@
-uuid: a5313738-1ca8-4326-998c-8e8f37fef470
-langcode: en
-status: true
-dependencies: {  }
-name: 'Entry carvings for sewing supports'
-vid: entry_carvings_sewing_support
-description: 'Contains a list of entry carvings types within the site.'
-weight: 0

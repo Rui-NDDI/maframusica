@@ -1,8 +1,0 @@
-uuid: b568bd2a-bf2b-403e-9128-f3ab1af06b99
-langcode: en
-status: true
-dependencies: {  }
-name: 'Document type'
-vid: font_type
-description: 'Contains a list of document types within the site.'
-weight: 0

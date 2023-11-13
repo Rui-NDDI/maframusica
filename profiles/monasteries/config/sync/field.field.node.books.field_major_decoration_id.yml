@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_major_decoration_id
     - node.type.books
-    - taxonomy.vocabulary.major_decoration_id
 id: node.books.field_major_decoration_id
 field_name: field_major_decoration_id
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      major_decoration_id: major_decoration_id
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

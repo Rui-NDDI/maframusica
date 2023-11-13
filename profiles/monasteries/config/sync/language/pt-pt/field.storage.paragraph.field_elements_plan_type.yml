@@ -1,8 +1,0 @@
-settings:
-  allowed_values:
-    -
-      label: Anterior
-    -
-      label: Interior
-    -
-      label: Igual

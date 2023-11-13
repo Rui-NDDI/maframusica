@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_decoration_type
     - node.type.materiality
-    - taxonomy.vocabulary.decoration_type
 id: node.materiality.field_decoration_type
 field_name: field_decoration_type
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      decoration_type: decoration_type
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

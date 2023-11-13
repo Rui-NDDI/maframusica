@@ -1,8 +1,0 @@
-uuid: c522278b-f754-43f0-a40d-e5492c1387c3
-langcode: en
-status: true
-dependencies: {  }
-name: 'Cover decoration ID'
-vid: cover_decoration_id
-description: 'Contains a list of cover decoration types within the site.'
-weight: 0

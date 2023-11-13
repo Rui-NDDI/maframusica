@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_colours_minor_decoration
     - node.type.materiality
-    - taxonomy.vocabulary.color
 id: node.materiality.field_colours_minor_decoration
 field_name: field_colours_minor_decoration
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      color: color
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

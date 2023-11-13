@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_monastery
     - node.type.books
-    - taxonomy.vocabulary.monastery
 id: node.books.field_monastery
 field_name: field_monastery
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      monastery: monastery
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

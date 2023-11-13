@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_board_attachment_securing
     - node.type.materiality
-    - taxonomy.vocabulary.board_attachment_securing
 id: node.materiality.field_board_attachment_securing
 field_name: field_board_attachment_securing
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      board_attachment_securing: board_attachment_securing
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

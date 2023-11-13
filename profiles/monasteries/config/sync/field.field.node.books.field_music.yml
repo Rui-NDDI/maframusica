@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_music
     - node.type.books
-    - taxonomy.vocabulary.music
 id: node.books.field_music
 field_name: field_music
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      music: music
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

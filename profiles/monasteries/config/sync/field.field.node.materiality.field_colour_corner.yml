@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_colour_corner
     - node.type.materiality
-    - taxonomy.vocabulary.color
 id: node.materiality.field_colour_corner
 field_name: field_colour_corner
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      color: color
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

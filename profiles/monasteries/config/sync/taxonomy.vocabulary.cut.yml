@@ -1,8 +1,0 @@
-uuid: 16b3cdee-7b9b-420f-968c-da42e019b2d0
-langcode: en
-status: true
-dependencies: {  }
-name: Cut
-vid: cut
-description: 'Contains all the cut types to be used on the materiality.'
-weight: 0

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_decoration_fastenin
     - node.type.materiality
-    - taxonomy.vocabulary.decoration_fastening
 id: node.materiality.field_decoration_fastenin
 field_name: field_decoration_fastenin
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      decoration_fastening: decoration_fastening
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

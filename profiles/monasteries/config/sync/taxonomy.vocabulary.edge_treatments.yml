@@ -1,8 +1,0 @@
-uuid: cc6f6dba-479b-450d-9b25-b3135863100e
-langcode: en
-status: true
-dependencies: {  }
-name: 'Edge treatments'
-vid: edge_treatments
-description: 'Contains all the treatment edges to be used on the materiality.'
-weight: 0

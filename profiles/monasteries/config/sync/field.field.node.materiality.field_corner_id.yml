@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_corner_id
     - node.type.materiality
-    - taxonomy.vocabulary.corner_id
 id: node.materiality.field_corner_id
 field_name: field_corner_id
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      corner_id: corner_id
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

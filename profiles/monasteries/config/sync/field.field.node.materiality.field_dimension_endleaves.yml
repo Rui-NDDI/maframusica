@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_dimension_endleaves
     - node.type.materiality
-    - taxonomy.vocabulary.dimension_endleaves
 id: node.materiality.field_dimension_endleaves
 field_name: field_dimension_endleaves
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      dimension_endleaves: dimension_endleaves
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

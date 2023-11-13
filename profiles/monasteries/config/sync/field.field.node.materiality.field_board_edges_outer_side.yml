@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_board_edges_outer_side
     - node.type.materiality
-    - taxonomy.vocabulary.board_edges_outer_side
 id: node.materiality.field_board_edges_outer_side
 field_name: field_board_edges_outer_side
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      board_edges_outer_side: board_edges_outer_side
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

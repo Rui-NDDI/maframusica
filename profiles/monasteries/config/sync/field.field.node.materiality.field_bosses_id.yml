@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_bosses_id
     - node.type.materiality
-    - taxonomy.vocabulary.bosses_id
 id: node.materiality.field_bosses_id
 field_name: field_bosses_id
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      bosses_id: bosses_id
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

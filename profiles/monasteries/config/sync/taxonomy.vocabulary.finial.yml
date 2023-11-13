@@ -1,8 +1,0 @@
-uuid: aa7bc59b-ed45-4a30-9a12-411e422ab119
-langcode: en
-status: true
-dependencies: {  }
-name: Finial
-vid: finial
-description: 'Contains all the finial types to be used on the materiality.'
-weight: 0

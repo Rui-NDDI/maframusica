@@ -1,8 +1,0 @@
-uuid: f83c841a-897c-4d8e-a03d-0a8bebff80e3
-langcode: en
-status: true
-dependencies: {  }
-name: 'Endleaves ID'
-vid: endleaves_id
-description: 'Contains a list of endleaves id types within the site.'
-weight: 0

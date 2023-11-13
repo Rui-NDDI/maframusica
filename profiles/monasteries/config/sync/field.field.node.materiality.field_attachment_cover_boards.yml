@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_attachment_cover_boards
     - node.type.materiality
-    - taxonomy.vocabulary.attachment_cover_boards
 id: node.materiality.field_attachment_cover_boards
 field_name: field_attachment_cover_boards
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      attachment_cover_boards: attachment_cover_boards
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

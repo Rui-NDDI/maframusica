@@ -1,8 +1,0 @@
-uuid: d6261566-f991-46ab-97b8-9ac5b5f7d30d
-langcode: en
-status: true
-dependencies: {  }
-name: 'Articulation system'
-vid: articulation_system
-description: 'Contains all the types of articulation system to be used on the materiality.'
-weight: 0

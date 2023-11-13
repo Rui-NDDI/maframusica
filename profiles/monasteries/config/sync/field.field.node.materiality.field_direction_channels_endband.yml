@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_direction_channels_endband
     - node.type.materiality
-    - taxonomy.vocabulary.direction_channels_endband_cores
 id: node.materiality.field_direction_channels_endband
 field_name: field_direction_channels_endband
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      direction_channels_endband_cores: direction_channels_endband_cores
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

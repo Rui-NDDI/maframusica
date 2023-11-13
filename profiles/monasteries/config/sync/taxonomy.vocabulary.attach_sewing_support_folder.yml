@@ -1,8 +1,0 @@
-uuid: 15420754-1464-4786-9f5a-02508e4e5257
-langcode: en
-status: true
-dependencies: {  }
-name: 'Attach sewing support to folder'
-vid: attach_sewing_support_folder
-description: 'Contains all the attaching types from the swing support to a folder to be used on the materiality.'
-weight: 0

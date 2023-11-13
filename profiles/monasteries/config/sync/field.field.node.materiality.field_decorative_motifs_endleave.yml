@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_decorative_motifs_endleave
     - node.type.materiality
-    - taxonomy.vocabulary.decorative_motifs_endleave
 id: node.materiality.field_decorative_motifs_endleave
 field_name: field_decorative_motifs_endleave
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      decorative_motifs_endleave: decorative_motifs_endleave
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

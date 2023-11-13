@@ -1,8 +1,0 @@
-uuid: 45986731-a0b7-49cd-9237-ff442a1b3804
-langcode: en
-status: true
-dependencies: {  }
-name: 'Decorative motifs of the endleaves'
-vid: decorative_motifs_endleave
-description: 'Contains a list of decorative motifs types within the site.'
-weight: 0

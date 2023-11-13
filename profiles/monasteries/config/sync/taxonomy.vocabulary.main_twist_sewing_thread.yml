@@ -1,8 +1,0 @@
-uuid: cee20a94-a14c-4260-a5de-8d5392e998d5
-langcode: en
-status: true
-dependencies: {  }
-name: 'Main twist of the sewing thread'
-vid: main_twist_sewing_thread
-description: 'Contains a list of sewing thread types within the site.'
-weight: 0

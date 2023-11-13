@@ -1,8 +1,0 @@
-uuid: a642346c-2d86-4815-b3a4-7dba65f957ab
-langcode: en
-status: true
-dependencies: {  }
-name: 'Direction of the fastening(s)'
-vid: direction_fastening
-description: 'Contains a list of direction types within the site.'
-weight: 0

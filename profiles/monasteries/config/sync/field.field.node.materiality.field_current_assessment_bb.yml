@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_current_assessment_bb
     - node.type.materiality
-    - taxonomy.vocabulary.current_assessment_bb
 id: node.materiality.field_current_assessment_bb
 field_name: field_current_assessment_bb
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      current_assessment_bb: current_assessment_bb
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

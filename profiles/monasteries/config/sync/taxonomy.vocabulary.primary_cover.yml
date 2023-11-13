@@ -1,8 +1,0 @@
-uuid: 88941e69-56e7-4be6-9102-c3845e81be75
-langcode: en
-status: true
-dependencies: {  }
-name: 'Primary cover'
-vid: primary_cover
-description: 'Contains a list of primary cover types within the site.'
-weight: 0

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_conservation_condition
     - node.type.materiality
-    - taxonomy.vocabulary.conservation_condition
 id: node.materiality.field_conservation_condition
 field_name: field_conservation_condition
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      conservation_condition: conservation_condition
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

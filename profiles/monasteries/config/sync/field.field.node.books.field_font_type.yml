@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_font_type
     - node.type.books
-    - taxonomy.vocabulary.font_type
 id: node.books.field_font_type
 field_name: field_font_type
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      font_type: font_type
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

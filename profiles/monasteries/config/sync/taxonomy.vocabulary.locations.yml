@@ -1,8 +1,0 @@
-uuid: 768f4606-70f8-4c77-ade1-5bdb94ba42bf
-langcode: en
-status: true
-dependencies: {  }
-name: 'Main Place (Origin/Provenance)'
-vid: locations
-description: 'Contains a list of places within the site.'
-weight: 0

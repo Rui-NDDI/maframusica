@@ -1,8 +1,0 @@
-uuid: 88ad765e-cc54-4b88-8977-59c6e0fb79f0
-langcode: en
-status: true
-dependencies: {  }
-name: 'Pricking location'
-vid: pricking_location
-description: 'Contains a list of pricking location types within the site.'
-weight: 0

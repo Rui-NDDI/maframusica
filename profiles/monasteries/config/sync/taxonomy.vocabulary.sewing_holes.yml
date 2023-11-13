@@ -1,8 +1,0 @@
-uuid: 6762fb1d-2956-4423-9695-9c6f14f8074d
-langcode: en
-status: true
-dependencies: {  }
-name: 'Sewing holes'
-vid: sewing_holes
-description: 'Contains a list of sewing hole types within the site.'
-weight: 0

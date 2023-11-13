@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_cover_mitres
     - node.type.materiality
-    - taxonomy.vocabulary.cover_mitres
 id: node.materiality.field_cover_mitres
 field_name: field_cover_mitres
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      cover_mitres: cover_mitres
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

@@ -1,8 +1,0 @@
-uuid: ee386d91-f29e-4c85-afbc-75118f6ed58a
-langcode: en
-status: true
-dependencies: {  }
-name: 'Direction of channels for sewing supports'
-vid: direction_channel_sewing_support
-description: 'Contains a list of direction of channel types within the site.'
-weight: 0

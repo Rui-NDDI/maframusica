@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_validation
     - node.type.document
-    - taxonomy.vocabulary.document_validation
 id: node.document.field_validation
 field_name: field_validation
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      document_validation: document_validation
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

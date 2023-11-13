@@ -1,8 +1,0 @@
-uuid: a515cd84-0f22-4a22-a306-290c7b8b7672
-langcode: en
-status: true
-dependencies: {  }
-name: 'Grain direction'
-vid: grain_direction
-description: 'Contains a list of grain directions within the site.'
-weight: 0

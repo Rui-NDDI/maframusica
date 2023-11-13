@@ -1,8 +1,0 @@
-uuid: 86409606-34b8-423b-9678-f8a01affc322
-langcode: en
-status: true
-dependencies: {  }
-name: 'Watermarks on the endleaves'
-vid: watermarks_endleaves
-description: 'Contains a list of watermarks types within the site.'
-weight: 0
