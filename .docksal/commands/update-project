@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-## Update your local instance after pulling in changes or changing branch.
-##!!! This will overwrite config you haven't committed yet, export your config first if you haven't !!!
-##
-## Usage: fin update-project
-
-fin composer install
-fin drush deploy

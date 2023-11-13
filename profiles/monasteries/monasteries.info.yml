@@ -1,4 +1,4 @@
-name: monasteries
+name: 'Fontes Históricas'
 type: profile
-description: ''
+description: 'Provides the default profile for Fontes Históricas.'
 core_version_requirement: '>=9'

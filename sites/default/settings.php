@@ -755,20 +755,17 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 switch (getenv('SB_ENVIRONMENT')){
   case 'live':
   case 'prod':
-    $settings['config_readonly'] = TRUE;
     $config['laf']['env'] = 'prod';
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
     break;
 
   case 'test':
   case 'stag':
-    $settings['config_readonly'] = TRUE;
     $config['laf']['env'] = 'stag';
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
     break;
 
   default:
-    $settings['config_readonly'] = FALSE;
     $config['laf']['env'] = 'dev';
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.services.yml';
     $settings['extension_discovery_scan_tests'] = FALSE;
@@ -838,3 +835,9 @@ $settings['s3fs.upload_as_private'] = FALSE;
 $settings['s3fs.use_s3_for_private'] = FALSE;
 $settings['s3fs.access_key'] = getenv('S3_ACCESS_KEY');
 $settings['s3fs.secret_key'] = getenv('S3_SECRET_KEY');
+
+// Automatically generated include for settings managed by ddev.
+$ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
+if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
+  require $ddev_settings;
+}

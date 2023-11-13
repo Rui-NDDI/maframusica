@@ -36,7 +36,7 @@
         "drupal/sitemap": "^2.0@beta",
         "drupal/twig_field_value": "^2.0.2@dev",
         "drupal/upgrade_status": "^4.0@alpha",
-        "drush/drush": "^11.6.0",
+        "drush/drush": "^11.6",
         "oomphinc/composer-installers-extender": "^2.0.1",
         "vlucas/phpdotenv": "^5.6"
     },

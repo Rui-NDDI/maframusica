@@ -1,7 +1,10 @@
+label: 'Blocos de conteúdo'
+description: 'Encontrar e gerir blocos de conteúdo.'
 display:
   default:
     display_title: Predefinido
     display_options:
+      title: 'Blocos de conteúdo'
       fields:
         info:
           label: 'Descrição do bloco'
@@ -29,6 +32,9 @@ display:
           exposed_sorts_label: 'Ordenar por'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Não existem blocos de conteúdo disponíveis.'
       filters:
         info:
           expose:
@@ -41,3 +47,4 @@ display:
     display_options:
       menu:
         title: Blocos
+        description: 'Criar e editar blocos de conteúdo.'
