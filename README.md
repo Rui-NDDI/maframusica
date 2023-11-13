@@ -1,26 +1,37 @@
-# mosteiros
-Mosteiro Lorvão, Alcobaça e Arouca (Perfil Histórico)
+# fontes-históricas
+Perfil Histórico
 
-## Instructions
+### Instructions
 
-### First config import is recommended to be done via drush by running:
+## DDEV
+Perfil Histórico can be installed locally using [DDEV](https://ddev.com/).
+* Download and install [DDEV](https://github.com/drud/ddev)
+* Start ddev:
 ```
-drush site:install monasteries --existing-config
+ddev start
 ```
-
-### Quick tip: generating a hash salt for Drupal
+* Run composer install:
 ```
-drush php-eval 'echo \Drupal\Component\Utility\Crypt::hashBase64(55) . "\n";'
+ddev composer install
 ```
-
-### Export Content
-
-##### Taxonomies
+* You may be prompted to add your GitHub token. Follow the on-screen instructions for public repositories.
+* Launch your new ddev project:
 ```
-drush dcer taxonomy_term --bundles=archive,articulation_cover,articulation_system,attach_sewing_support_folder,bifolios_notebook,binders,book_body_composition,book_subcategory,book_type,brooch_typology,closure_typology,color,completeness,cover_decoration,cursus,cut,decoration_type,document_type,document_validation,dyestuff,edge_treatments,finial,folder_articulation,font_type,format,guards_registration,guards_typology,identification_method,label_brand_typology,leading_orientation,liturgical_occasion,loads,location,locations,location_seam_attach_gutter,material,materiality_book_body,materiality_shape,materiality_support,music,music_notation,nature,parties,pebbles,pigment,regularity,tanning,text_language,thread_season,tool_brands,tradition,tranchephil_typology,typology_according_loop,typology_according_number_books,typology_according_route,typology_sewing_supports,writing_type --folder=modules/custom/sb_content/content/
+ddev launch
 ```
-
-##### Nodes
+* First config import is recommended to be done via drush by running:
 ```
-drush dcer node --folder=modules/custom/sb_content/content/
+ddev drush site:install monasteries --existing-config
+```
+* Quick tip: generating a hash salt for Drupal
+```
+ddev drush php-eval 'echo \Drupal\Component\Utility\Crypt::hashBase64(55) . "\n";'
+```
+* Export updated configurations:
+```
+ddev drush cex
+```
+* Import configurations:
+```
+ddev drush cim
 ```
