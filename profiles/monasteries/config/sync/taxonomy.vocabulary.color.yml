@@ -1,8 +1,0 @@
-uuid: fb5cb8bd-e635-400c-962e-6598a2f2a587
-langcode: en
-status: true
-dependencies: {  }
-name: Color
-vid: color
-description: 'Contains all the colors to be used on the materiality.'
-weight: 0

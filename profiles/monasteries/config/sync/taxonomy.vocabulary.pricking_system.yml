@@ -1,8 +1,0 @@
-uuid: 03609833-59d9-4c31-8d5c-d4dd03c1b645
-langcode: en
-status: true
-dependencies: {  }
-name: 'Pricking system'
-vid: pricking_system
-description: 'Contains a list of pricking system types within the site.'
-weight: 0

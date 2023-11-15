@@ -1,8 +1,0 @@
-uuid: ec8d008b-70e8-49b9-8920-13ebac0b0c92
-langcode: en
-status: true
-dependencies: {  }
-name: 'Cover mitres'
-vid: cover_mitres
-description: 'Contains a list of cover mitres types within the site.'
-weight: 0

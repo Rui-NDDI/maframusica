@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_leading_orientation
     - paragraphs.paragraphs_type.closure
-    - taxonomy.vocabulary.leading_orientation
 id: paragraph.closure.field_leading_orientation
 field_name: field_leading_orientation
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      leading_orientation: leading_orientation
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

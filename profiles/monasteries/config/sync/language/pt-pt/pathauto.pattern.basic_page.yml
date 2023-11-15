@@ -1,4 +1,0 @@
-label: 'Página básica'
-relationships:
-  'node:langcode:language':
-    label: Linguagem

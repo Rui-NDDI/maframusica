@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_decoration
     - paragraphs.paragraphs_type.fitting_brooches
-    - taxonomy.vocabulary.decoration_type
 id: paragraph.fitting_brooches.field_decoration
 field_name: field_decoration
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      decoration_type: decoration_type
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

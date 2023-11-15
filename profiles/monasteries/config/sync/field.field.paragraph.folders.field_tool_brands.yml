@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_tool_brands
     - paragraphs.paragraphs_type.folders
-    - taxonomy.vocabulary.tool_brands
 id: paragraph.folders.field_tool_brands
 field_name: field_tool_brands
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      tool_brands: tool_brands
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_nature
     - paragraphs.paragraphs_type.folders
-    - taxonomy.vocabulary.nature
 id: paragraph.folders.field_nature
 field_name: field_nature
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      nature: nature
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

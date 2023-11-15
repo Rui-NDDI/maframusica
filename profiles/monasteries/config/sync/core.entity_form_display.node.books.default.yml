@@ -4,30 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.node.books.body
-    - field.field.node.books.field_archive
     - field.field.node.books.field_authorship
     - field.field.node.books.field_book_date
-    - field.field.node.books.field_bookbinding
-    - field.field.node.books.field_century
     - field.field.node.books.field_completeness
     - field.field.node.books.field_cursus
     - field.field.node.books.field_date_last_change
     - field.field.node.books.field_entities
     - field.field.node.books.field_external_references
-    - field.field.node.books.field_font_type
     - field.field.node.books.field_images
     - field.field.node.books.field_liturgical_occasion
-    - field.field.node.books.field_main_place_of_use
-    - field.field.node.books.field_major_decoration
-    - field.field.node.books.field_major_decoration_id
-    - field.field.node.books.field_monastery
-    - field.field.node.books.field_music
     - field.field.node.books.field_music_notation
     - field.field.node.books.field_observations
-    - field.field.node.books.field_origin
     - field.field.node.books.field_parties
     - field.field.node.books.field_physical_description
-    - field.field.node.books.field_provenance
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
     - field.field.node.books.field_relative_record
@@ -39,7 +28,6 @@ dependencies:
     - field.field.node.books.field_txt_siglum
     - field.field.node.books.field_type
     - field.field.node.books.field_use
-    - field.field.node.books.field_writing_type
     - image.style.thumbnail
     - node.type.books
   module:
@@ -181,16 +169,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_archive:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_authorship:
     type: multiselect
     weight: 11
@@ -204,22 +182,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_bookbinding:
-    type: entity_reference_autocomplete
-    weight: 30
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_century:
-    type: multiselect
-    weight: 10
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_completeness:
     type: options_buttons
@@ -253,12 +215,6 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_font_type:
-    type: options_buttons
-    weight: 12
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_images:
     type: image_image
     weight: 0
@@ -270,44 +226,6 @@ content:
   field_liturgical_occasion:
     type: options_select
     weight: 20
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_main_place_of_use:
-    type: entity_reference_autocomplete
-    weight: 15
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_major_decoration:
-    type: entity_reference_autocomplete
-    weight: 29
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_major_decoration_id:
-    type: multiselect
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_monastery:
-    type: multiselect
-    weight: 26
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_music:
-    type: multiselect
-    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -323,16 +241,6 @@ content:
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_origin:
-    type: entity_reference_autocomplete
-    weight: 13
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_parties:
@@ -351,16 +259,6 @@ content:
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_provenance:
-    type: entity_reference_autocomplete
-    weight: 14
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_publication_info:
@@ -442,12 +340,6 @@ content:
   field_use:
     type: multiselect
     weight: 18
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_writing_type:
-    type: multiselect
-    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,8 +1,0 @@
-uuid: 3a0ad108-0453-4417-aa81-eb4ca3a038e8
-langcode: en
-status: true
-dependencies: {  }
-name: 'Typology (according loop)'
-vid: typology_according_loop
-description: 'Contains all the typologies (according loop) to be used on the materiality.'
-weight: 0

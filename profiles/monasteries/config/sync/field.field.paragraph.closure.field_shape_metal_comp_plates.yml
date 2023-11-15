@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_shape_metal_comp_plates
     - paragraphs.paragraphs_type.closure
-    - taxonomy.vocabulary.materiality_shape
 id: paragraph.closure.field_shape_metal_comp_plates
 field_name: field_shape_metal_comp_plates
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      materiality_shape: materiality_shape
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

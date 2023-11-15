@@ -1,8 +1,0 @@
-uuid: 606b668b-28e2-426a-a9e8-730d9997fa9d
-langcode: en
-status: true
-dependencies: {  }
-name: 'Identification method'
-vid: identification_method
-description: 'Contains a list of identification methods within the site.'
-weight: 0

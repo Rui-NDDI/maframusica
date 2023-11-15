@@ -1,8 +1,0 @@
-uuid: 719de679-0d54-483c-bb4d-901b7b486cde
-langcode: en
-status: true
-dependencies: {  }
-name: 'Liturgical occasion'
-vid: liturgical_occasion
-description: 'Contains a list of liturgical occasion types within the site.'
-weight: 0

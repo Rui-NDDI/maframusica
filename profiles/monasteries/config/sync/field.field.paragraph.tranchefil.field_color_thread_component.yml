@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_color_thread_component
     - paragraphs.paragraphs_type.tranchefil
-    - taxonomy.vocabulary.color
 id: paragraph.tranchefil.field_color_thread_component
 field_name: field_color_thread_component
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      color: color
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

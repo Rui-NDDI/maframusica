@@ -1,8 +1,0 @@
-uuid: 9436e3af-a599-4bb5-8292-0e88cc6737ee
-langcode: en
-status: true
-dependencies: {  }
-name: 'Record type'
-vid: document_type
-description: 'Contains all the document types within the site.'
-weight: 0

@@ -1,8 +1,0 @@
-uuid: 7f79cf13-29ec-48a2-8fe9-776306233b40
-langcode: en
-status: true
-dependencies: {  }
-name: 'Attachment of the cover to the boards'
-vid: attachment_cover_boards
-description: 'Contains a list of attachment cover types within the site.'
-weight: 0

@@ -1,8 +1,0 @@
-uuid: 52aa9868-a222-4b79-8081-66328882ef35
-langcode: en
-status: true
-dependencies: {  }
-name: Loads
-vid: loads
-description: 'Contains all the load types to be used on the materiality.'
-weight: 0

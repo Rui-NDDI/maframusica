@@ -1,8 +1,0 @@
-uuid: 4f26a1e8-0def-4953-8a22-cab217f6b1e9
-langcode: en
-status: true
-dependencies: {  }
-name: 'Bifolios per notebook'
-vid: bifolios_notebook
-description: 'Contains all the types of bifolios per notebook to be used on the materiality.'
-weight: 0

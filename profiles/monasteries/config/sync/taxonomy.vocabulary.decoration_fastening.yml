@@ -1,8 +1,0 @@
-uuid: c9067c77-3381-41ba-81fd-e707ec5b5a19
-langcode: en
-status: true
-dependencies: {  }
-name: 'Decoration of the fastening(s)'
-vid: decoration_fastening
-description: 'Contains a list of decoration types within the site.'
-weight: 0

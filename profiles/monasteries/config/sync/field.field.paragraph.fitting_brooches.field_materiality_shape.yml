@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_materiality_shape
     - paragraphs.paragraphs_type.fitting_brooches
-    - taxonomy.vocabulary.materiality_shape
 id: paragraph.fitting_brooches.field_materiality_shape
 field_name: field_materiality_shape
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      materiality_shape: materiality_shape
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

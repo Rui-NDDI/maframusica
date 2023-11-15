@@ -1,8 +1,0 @@
-uuid: f4fa7b2e-1c0e-4114-87ec-5b18924a0402
-langcode: en
-status: true
-dependencies: {  }
-name: 'Type of endbands'
-vid: type_of_endbands
-description: 'Contains a list of endbands types within the site.'
-weight: 0

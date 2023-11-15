@@ -1,8 +1,0 @@
-uuid: 3bfe07c7-0a35-4cc5-ac09-47f171626285
-langcode: en
-status: true
-dependencies: {  }
-name: 'Book body composition'
-vid: book_body_composition
-description: 'Contains all the types of body book composition to be used on the materiality.'
-weight: 0

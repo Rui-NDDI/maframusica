@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_folder_articulation
     - paragraphs.paragraphs_type.closure
-    - taxonomy.vocabulary.folder_articulation
 id: paragraph.closure.field_folder_articulation
 field_name: field_folder_articulation
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      folder_articulation: folder_articulation
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

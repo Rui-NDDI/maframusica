@@ -1,8 +1,0 @@
-uuid: 0c74cdda-9e13-4a78-95e3-020f5bf2c4ef
-langcode: en
-status: true
-dependencies: {  }
-name: 'Boards ID'
-vid: boards_id
-description: 'Contains a list of board id types within the site.'
-weight: 0

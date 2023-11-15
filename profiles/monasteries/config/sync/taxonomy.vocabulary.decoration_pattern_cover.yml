@@ -1,8 +1,0 @@
-uuid: 9728d633-7aa7-4662-a780-5cdabb55d280
-langcode: en
-status: true
-dependencies: {  }
-name: 'Decoration pattern/motif(s) of the cover'
-vid: decoration_pattern_cover
-description: 'Contains a list of decoration pattern types within the site.'
-weight: 0

@@ -1,8 +1,0 @@
-uuid: cef4a17c-8a0d-44f3-9b60-b50f498f531b
-langcode: en
-status: true
-dependencies: {  }
-name: 'Materiality support'
-vid: materiality_support
-description: 'Contains all the support types to be used on the materiality.'
-weight: 0

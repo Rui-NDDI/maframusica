@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_nature_tranchefil_support
     - paragraphs.paragraphs_type.tranchefil
-    - taxonomy.vocabulary.nature
 id: paragraph.tranchefil.field_nature_tranchefil_support
 field_name: field_nature_tranchefil_support
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      nature: nature
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

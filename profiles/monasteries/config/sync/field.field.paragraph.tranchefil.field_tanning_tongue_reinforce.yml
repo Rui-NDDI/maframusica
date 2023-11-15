@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_tanning_tongue_reinforce
     - paragraphs.paragraphs_type.tranchefil
-    - taxonomy.vocabulary.tanning
 id: paragraph.tranchefil.field_tanning_tongue_reinforce
 field_name: field_tanning_tongue_reinforce
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      tanning: tanning
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

@@ -4,30 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.node.books.body
-    - field.field.node.books.field_archive
     - field.field.node.books.field_authorship
     - field.field.node.books.field_book_date
-    - field.field.node.books.field_bookbinding
-    - field.field.node.books.field_century
     - field.field.node.books.field_completeness
     - field.field.node.books.field_cursus
     - field.field.node.books.field_date_last_change
     - field.field.node.books.field_entities
     - field.field.node.books.field_external_references
-    - field.field.node.books.field_font_type
     - field.field.node.books.field_images
     - field.field.node.books.field_liturgical_occasion
-    - field.field.node.books.field_main_place_of_use
-    - field.field.node.books.field_major_decoration
-    - field.field.node.books.field_major_decoration_id
-    - field.field.node.books.field_monastery
-    - field.field.node.books.field_music
     - field.field.node.books.field_music_notation
     - field.field.node.books.field_observations
-    - field.field.node.books.field_origin
     - field.field.node.books.field_parties
     - field.field.node.books.field_physical_description
-    - field.field.node.books.field_provenance
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
     - field.field.node.books.field_relative_record
@@ -39,7 +28,6 @@ dependencies:
     - field.field.node.books.field_txt_siglum
     - field.field.node.books.field_type
     - field.field.node.books.field_use
-    - field.field.node.books.field_writing_type
     - node.type.books
   module:
     - datetime
@@ -59,14 +47,6 @@ content:
     third_party_settings: {  }
     weight: 19
     region: content
-  field_archive:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_authorship:
     type: entity_reference_label
     label: above
@@ -82,22 +62,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 15
-    region: content
-  field_bookbinding:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 36
-    region: content
-  field_century:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 9
     region: content
   field_completeness:
     type: entity_reference_label
@@ -144,14 +108,6 @@ content:
     third_party_settings: {  }
     weight: 29
     region: content
-  field_font_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 11
-    region: content
   field_images:
     type: image
     label: above
@@ -171,46 +127,6 @@ content:
     third_party_settings: {  }
     weight: 21
     region: content
-  field_main_place_of_use:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 14
-    region: content
-  field_major_decoration:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 35
-    region: content
-  field_major_decoration_id:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 23
-    region: content
-  field_monastery:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_music:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 7
-    region: content
   field_music_notation:
     type: entity_reference_label
     label: above
@@ -226,14 +142,6 @@ content:
     third_party_settings: {  }
     weight: 27
     region: content
-  field_origin:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 12
-    region: content
   field_parties:
     type: entity_reference_label
     label: above
@@ -248,14 +156,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 6
-    region: content
-  field_provenance:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 13
     region: content
   field_publication_info:
     type: text_default
@@ -342,14 +242,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 18
-    region: content
-  field_writing_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 24
     region: content
   links:
     settings: {  }

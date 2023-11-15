@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_guards_typology
     - paragraphs.paragraphs_type.binding_guards_plans
-    - taxonomy.vocabulary.guards_typology
 id: paragraph.binding_guards_plans.field_guards_typology
 field_name: field_guards_typology
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      guards_typology: guards_typology
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

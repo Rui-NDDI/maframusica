@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_articulation_book_body
     - paragraphs.paragraphs_type.tranchefil
-    - taxonomy.vocabulary.articulation_cover
 id: paragraph.tranchefil.field_articulation_book_body
 field_name: field_articulation_book_body
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      articulation_cover: articulation_cover
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

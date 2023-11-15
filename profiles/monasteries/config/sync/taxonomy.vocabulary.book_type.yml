@@ -1,8 +1,0 @@
-uuid: fbc2abdc-808b-48ce-8504-1674c22239fb
-langcode: en
-status: true
-dependencies: {  }
-name: 'Book type'
-vid: book_type
-description: 'Contains a list of book types to be used on books.'
-weight: 0

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_cut
     - paragraphs.paragraphs_type.folders
-    - taxonomy.vocabulary.cut
 id: paragraph.folders.field_cut
 field_name: field_cut
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      cut: cut
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

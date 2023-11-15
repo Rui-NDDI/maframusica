@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_pebbles
     - paragraphs.paragraphs_type.folders
-    - taxonomy.vocabulary.pebbles
 id: paragraph.folders.field_pebbles
 field_name: field_pebbles
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      pebbles: pebbles
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

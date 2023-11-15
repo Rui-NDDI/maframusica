@@ -1,8 +1,0 @@
-uuid: 4a34b0ef-8537-42e2-90c6-6a8db0e97592
-langcode: en
-status: true
-dependencies: {  }
-name: 'Paper marks'
-vid: paper_marks
-description: 'Contains a list of paper marks within the site.'
-weight: 0

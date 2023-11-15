@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_attach_sewing_hold_folder
     - paragraphs.paragraphs_type.tranchefil
-    - taxonomy.vocabulary.attach_sewing_support_folder
 id: paragraph.tranchefil.field_attach_sewing_hold_folder
 field_name: field_attach_sewing_hold_folder
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      attach_sewing_support_folder: attach_sewing_support_folder
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

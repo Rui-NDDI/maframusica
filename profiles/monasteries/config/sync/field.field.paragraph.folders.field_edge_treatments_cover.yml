@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_edge_treatments_cover
     - paragraphs.paragraphs_type.folders
-    - taxonomy.vocabulary.edge_treatments
 id: paragraph.folders.field_edge_treatments_cover
 field_name: field_edge_treatments_cover
 entity_type: paragraph
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      edge_treatments: edge_treatments
+    target_bundles: {  }
     sort:
       field: name
       direction: asc

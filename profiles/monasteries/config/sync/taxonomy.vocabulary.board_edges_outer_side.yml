@@ -1,8 +1,0 @@
-uuid: 44c0e0ae-8a37-415f-b4f2-b6e124d59dca
-langcode: en
-status: true
-dependencies: {  }
-name: 'Board edges (outer side)'
-vid: board_edges_outer_side
-description: 'Contains a list of board edges types within the site.'
-weight: 0

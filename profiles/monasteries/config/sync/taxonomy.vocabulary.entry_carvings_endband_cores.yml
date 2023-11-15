@@ -1,8 +1,0 @@
-uuid: e7f58434-5b32-405f-94bb-99c4282f5521
-langcode: en
-status: true
-dependencies: {  }
-name: 'Entry carvings for endband cores'
-vid: entry_carvings_endband_cores
-description: 'Contains a list of entry carvings types within the site.'
-weight: 0
