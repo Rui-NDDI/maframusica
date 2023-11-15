@@ -1,0 +1,20 @@
+uuid: d3230e56-421e-4524-85d7-86aea081997c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_material_no_metal_comp
+field_name: field_material_no_metal_comp
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

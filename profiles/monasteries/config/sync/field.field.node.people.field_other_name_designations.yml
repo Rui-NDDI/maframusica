@@ -1,0 +1,19 @@
+uuid: c67f194d-cbfd-462e-88a7-48ffb6e1d9c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_name_designations
+    - node.type.people
+id: node.people.field_other_name_designations
+field_name: field_other_name_designations
+entity_type: node
+bundle: people
+label: 'Other form of name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

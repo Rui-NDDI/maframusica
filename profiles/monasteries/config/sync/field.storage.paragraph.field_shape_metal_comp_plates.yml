@@ -1,0 +1,20 @@
+uuid: 2a2823fc-3497-4b1a-b597-755bd4eff256
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_shape_metal_comp_plates
+field_name: field_shape_metal_comp_plates
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

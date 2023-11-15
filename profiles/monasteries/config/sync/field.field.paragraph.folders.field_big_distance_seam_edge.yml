@@ -1,0 +1,23 @@
+uuid: a2e28319-25d6-4641-a2d2-a1bdc11d77ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_big_distance_seam_edge
+    - paragraphs.paragraphs_type.folders
+id: paragraph.folders.field_big_distance_seam_edge
+field_name: field_big_distance_seam_edge
+entity_type: paragraph
+bundle: folders
+label: 'Biggest distance between spine edge and 1st route hole of seam supports (back cover)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

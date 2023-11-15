@@ -1,0 +1,27 @@
+uuid: 2e69b8c5-0735-4480-bfd8-f29803d80f22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_tranchefil_support
+    - paragraphs.paragraphs_type.tranchefil
+id: paragraph.tranchefil.field_color_tranchefil_support
+field_name: field_color_tranchefil_support
+entity_type: paragraph
+bundle: tranchefil
+label: 'Color - tranchefil support'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

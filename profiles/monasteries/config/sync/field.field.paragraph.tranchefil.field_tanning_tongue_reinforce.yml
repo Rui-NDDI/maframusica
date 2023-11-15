@@ -1,0 +1,27 @@
+uuid: 18e40714-c9e4-4c06-919c-06ef8d59c018
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tanning_tongue_reinforce
+    - paragraphs.paragraphs_type.tranchefil
+id: paragraph.tranchefil.field_tanning_tongue_reinforce
+field_name: field_tanning_tongue_reinforce
+entity_type: paragraph
+bundle: tranchefil
+label: 'Tanning - tongue and/or reinforcement(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

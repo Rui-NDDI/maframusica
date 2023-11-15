@@ -1,0 +1,22 @@
+uuid: 40b13d28-97d0-4b1a-b704-2d1278b5cafa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.parties
+  module:
+    - text
+id: node.parties.field_notes
+field_name: field_notes
+entity_type: node
+bundle: parties
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

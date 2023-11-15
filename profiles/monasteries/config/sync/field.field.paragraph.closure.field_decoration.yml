@@ -1,0 +1,27 @@
+uuid: cc32f097-b267-43a3-9e57-72951a11b078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_decoration
+    - paragraphs.paragraphs_type.closure
+id: paragraph.closure.field_decoration
+field_name: field_decoration
+entity_type: paragraph
+bundle: closure
+label: Decoration
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

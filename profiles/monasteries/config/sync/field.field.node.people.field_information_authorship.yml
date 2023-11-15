@@ -1,0 +1,33 @@
+uuid: 78f23289-6c6e-4c24-8455-446ad891978b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_authorship
+    - node.type.people
+id: node.people.field_information_authorship
+field_name: field_information_authorship
+entity_type: node
+bundle: people
+label: 'Description author/s'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        content_editor: content_editor
+        content_contributor: content_contributor
+        administrator: '0'
+    include_anonymous: true
+field_type: entity_reference

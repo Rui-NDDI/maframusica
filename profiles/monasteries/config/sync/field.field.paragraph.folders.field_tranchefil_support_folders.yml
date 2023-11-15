@@ -1,0 +1,21 @@
+uuid: e78ff0e8-5954-4b92-bf82-e54ba0cfef6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tranchefil_support_folders
+    - paragraphs.paragraphs_type.folders
+  module:
+    - options
+id: paragraph.folders.field_tranchefil_support_folders
+field_name: field_tranchefil_support_folders
+entity_type: paragraph
+bundle: folders
+label: 'Entry tranchefil support(s) in folders'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

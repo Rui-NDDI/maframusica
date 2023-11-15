@@ -1,0 +1,29 @@
+uuid: d6959d9b-44eb-42f5-afec-64874adbb015
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_material_tongue_reinforce
+    - paragraphs.paragraphs_type.tranchefil
+    - taxonomy.vocabulary.material
+id: paragraph.tranchefil.field_material_tongue_reinforce
+field_name: field_material_tongue_reinforce
+entity_type: paragraph
+bundle: tranchefil
+label: 'Material - tongue and/or reinforcement(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      material: material
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

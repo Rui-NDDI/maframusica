@@ -1,0 +1,21 @@
+uuid: 8b7c73bc-36a4-43b6-b7c4-f725d06e92cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_folder_type
+    - paragraphs.paragraphs_type.folders
+  module:
+    - options
+id: paragraph.folders.field_folder_type
+field_name: field_folder_type
+entity_type: paragraph
+bundle: folders
+label: 'Folder type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

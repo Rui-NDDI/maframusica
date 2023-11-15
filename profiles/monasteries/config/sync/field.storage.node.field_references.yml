@@ -1,0 +1,19 @@
+uuid: 792d4c5d-5c0e-486c-b586-640949505f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_references
+field_name: field_references
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

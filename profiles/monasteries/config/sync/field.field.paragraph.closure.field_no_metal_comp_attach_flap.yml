@@ -1,0 +1,21 @@
+uuid: faedc806-2478-4363-83fa-bc80c9a57ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_no_metal_comp_attach_flap
+    - paragraphs.paragraphs_type.closure
+  module:
+    - options
+id: paragraph.closure.field_no_metal_comp_attach_flap
+field_name: field_no_metal_comp_attach_flap
+entity_type: paragraph
+bundle: closure
+label: 'Non-metallic component attached to the flap'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: 2ee9b270-53e0-4bae-8938-b80b504c6793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_edge_treatments_back_cover
+    - paragraphs.paragraphs_type.folders
+id: paragraph.folders.field_edge_treatments_back_cover
+field_name: field_edge_treatments_back_cover
+entity_type: paragraph
+bundle: folders
+label: 'Edge treatments (back cover)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

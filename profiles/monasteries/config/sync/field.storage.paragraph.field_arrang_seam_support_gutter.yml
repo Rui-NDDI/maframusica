@@ -1,0 +1,27 @@
+uuid: 4da0057a-129d-43cc-97f8-8d40c9c4b0fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_arrang_seam_support_gutter
+field_name: field_arrang_seam_support_gutter
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: visually-aligned
+      label: 'Visually aligned'
+    -
+      value: not-visually-aligned
+      label: 'Not visually aligned'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

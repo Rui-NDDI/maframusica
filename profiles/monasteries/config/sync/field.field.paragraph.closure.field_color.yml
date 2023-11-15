@@ -1,0 +1,27 @@
+uuid: ee3c2876-bb95-46e1-b646-2828b6e87261
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.closure
+id: paragraph.closure.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: closure
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
