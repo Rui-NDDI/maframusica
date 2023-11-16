@@ -92,3 +92,4 @@ web/sites/development.services.yml
 web/sites/default/default.settings.php
 web/sites/default/default.services.yml
 web/README.md
+/README.md

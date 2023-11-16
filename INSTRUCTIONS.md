@@ -19,19 +19,25 @@ ddev composer install
 ```
 ddev launch
 ```
+* Create .env file with:
+```
+DRUPAL_BASE_URL=http://project-name.ddev.site
+DRUSH_VERBOSE=no
+DRUSH_OPTIONS_URI=http://project-name.ddev.site
+```
 * First config import is recommended to be done via drush by running:
 ```
-ddev drush site:install monasteries --existing-config
+ddev exec drush site:install monasteries --existing-config
 ```
 * Quick tip: generating a hash salt for Drupal
 ```
-ddev drush php-eval 'echo \Drupal\Component\Utility\Crypt::hashBase64(55) . "\n";'
+ddev exec drush php-eval 'echo \Drupal\Component\Utility\Crypt::hashBase64(55) . "\n";'
 ```
 * Export updated configurations:
 ```
-ddev drush cex
+ddev exec drush cex
 ```
 * Import configurations:
 ```
-ddev drush cim
+ddev exec drush cim
 ```
