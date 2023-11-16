@@ -1,4 +1,4 @@
-name: perfilhist
+name: fontes-historicas
 type: drupal10
 docroot: ""
 php_version: "8.1"
@@ -12,7 +12,6 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-default_container_timeout: "240"
 
 # Key features of DDEV's config.yaml:
 
