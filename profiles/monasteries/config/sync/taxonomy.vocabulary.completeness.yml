@@ -1,0 +1,8 @@
+uuid: 25999ca2-ffb3-4cee-a917-57b3ea97b836
+langcode: en
+status: true
+dependencies: {  }
+name: Completeness
+vid: completeness
+description: 'Contains a list of completeness types to be used on books.'
+weight: 0

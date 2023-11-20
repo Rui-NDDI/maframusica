@@ -1,6 +1,6 @@
 uuid: a8404774-8fc5-4a6b-b31f-743c85e6ef78
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - sb_core

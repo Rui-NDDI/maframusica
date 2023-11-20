@@ -3,5 +3,3 @@ description: 'Contains shared code for Squarebit.'
 type: module
 package: Squarebit
 core_version_requirement: ">= 9.4"
-dependencies:
-  - drupal:taxonomy

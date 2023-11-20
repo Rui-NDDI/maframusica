@@ -1,0 +1,5 @@
+label: Livros
+display:
+  default:
+    display_options:
+      title: Livros

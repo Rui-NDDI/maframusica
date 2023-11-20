@@ -1,0 +1,18 @@
+uuid: 5d438e7c-cd47-4bef-a329-e8b3cb8c7700
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.book_subcategory
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.book_subcategory
+target_entity_type_id: taxonomy_term
+target_bundle: book_subcategory
+default_langcode: site_default
+language_alterable: true

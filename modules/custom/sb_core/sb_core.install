@@ -6,38 +6,3 @@
  */
 
 declare(strict_types = 1);
-
-use Drupal\taxonomy\Entity\Term;
-
-/**
- * Implements hook_install().
- *
- * @see hook_install()
- *
- * @ingroup sb_core
- */
-function sb_core_install(): void {
-  $alcobaca = Term::create([
-    'vid' => 'monastery',
-    'name' => 'Monastery of Alcobaça',
-  ]);
-
-  $alcobaca->enforceIsNew();
-  $alcobaca->save();
-
-  $arouca = Term::create([
-    'vid' => 'monastery',
-    'name' => 'Monastery of Arouca',
-  ]);
-
-  $arouca->enforceIsNew();
-  $arouca->save();
-
-  $lorvao = Term::create([
-    'vid' => 'monastery',
-    'name' => 'Monastery of Lorvão',
-  ]);
-
-  $lorvao->enforceIsNew();
-  $lorvao->save();
-}

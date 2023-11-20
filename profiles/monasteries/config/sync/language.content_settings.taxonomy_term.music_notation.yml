@@ -1,0 +1,18 @@
+uuid: 6f24deb7-2b1a-49a5-b58b-59757c68bed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.music_notation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.music_notation
+target_entity_type_id: taxonomy_term
+target_bundle: music_notation
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,8 @@
+uuid: d2c003d1-0c34-4edb-9cf6-06331eeda0d4
+langcode: en
+status: true
+dependencies: {  }
+name: Cursus
+vid: cursus
+description: 'Contains a list of cursus types within the site.'
+weight: 0
