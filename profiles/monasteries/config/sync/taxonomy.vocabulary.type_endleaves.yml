@@ -1,8 +1,0 @@
-uuid: b1ed1f0e-52fb-4a13-bbbe-147b175d943d
-langcode: en
-status: true
-dependencies: {  }
-name: 'Type of endleaves'
-vid: type_endleaves
-description: 'Contains a list of endleaves types within the site.'
-weight: 0

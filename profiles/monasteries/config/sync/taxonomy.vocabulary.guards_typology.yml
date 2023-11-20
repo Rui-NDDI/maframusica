@@ -1,8 +1,0 @@
-uuid: 6b3b4392-5b40-4788-a1a6-1821592b68a5
-langcode: en
-status: true
-dependencies: {  }
-name: 'Guards - typology'
-vid: guards_typology
-description: 'Contains all the typology types of guards to be used on the materiality.'
-weight: 0

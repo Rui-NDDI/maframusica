@@ -11,10 +11,7 @@ dependencies:
     - node.type.books
     - system.menu.main
     - taxonomy.vocabulary.book_type
-    - taxonomy.vocabulary.font_type
-    - taxonomy.vocabulary.monastery
     - taxonomy.vocabulary.music_notation
-    - taxonomy.vocabulary.writing_type
   module:
     - image
     - node
@@ -440,99 +437,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_monastery_target_id:
-          id: field_monastery_target_id
-          table: node__field_monastery
-          field: field_monastery_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_monastery_target_id_op
-            label: Monastery
-            description: ''
-            use_operator: false
-            operator: field_monastery_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: monastery
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              content_contributor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: monastery
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_century_value:
-          id: field_century_value
-          table: node__field_century
-          field: field_century_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: list_field
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_century_value_op
-            label: Century
-            description: ''
-            use_operator: false
-            operator: field_century_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: century
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              content_contributor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
         field_type_target_id:
           id: field_type_target_id
           table: node__field_type
@@ -582,55 +486,6 @@ display:
           hierarchy: false
           limit: true
           error_message: true
-        field_font_type_target_id:
-          id: field_font_type_target_id
-          table: node__field_font_type
-          field: field_font_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_font_type_target_id_op
-            label: 'Document type'
-            description: ''
-            use_operator: false
-            operator: field_font_type_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: font_type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              content_contributor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: font_type
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
         field_music_notation_target_id:
           id: field_music_notation_target_id
           table: node__field_music_notation
@@ -676,55 +531,6 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: music_notation
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        field_writing_type_target_id:
-          id: field_writing_type_target_id
-          table: node__field_writing_type
-          field: field_writing_type_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_writing_type_target_id_op
-            label: 'Type of script'
-            description: ''
-            use_operator: false
-            operator: field_writing_type_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: writing_type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              content_contributor: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: writing_type
           type: select
           hierarchy: false
           limit: true

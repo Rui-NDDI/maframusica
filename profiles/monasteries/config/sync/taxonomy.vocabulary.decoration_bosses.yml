@@ -1,8 +1,0 @@
-uuid: ae6d8608-8767-46f8-aace-8a9cf9d3fa17
-langcode: en
-status: true
-dependencies: {  }
-name: 'Decoration of the bosses'
-vid: decoration_bosses
-description: 'Contains a list of decoration types within the site.'
-weight: 0

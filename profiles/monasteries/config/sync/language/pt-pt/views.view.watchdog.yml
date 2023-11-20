@@ -8,6 +8,8 @@ display:
       fields:
         nothing:
           admin_label: Ícone
+        wid:
+          label: WID
         severity:
           label: Severidade
         type:
@@ -17,6 +19,7 @@ display:
         message:
           label: Mensagem
           alter:
+            path: 'admin/reports/dblog/event/{{ wid }}'
             alt: '{{ message }}'
         name:
           label: Utilizador

@@ -1,8 +1,0 @@
-uuid: fe838c89-e376-4882-8635-aed06abe7a23
-langcode: en
-status: true
-dependencies: {  }
-name: 'Ruling system'
-vid: ruling_system
-description: 'Contains a list of ruling system types within the site.'
-weight: 0

@@ -1,4 +1,5 @@
 label: 'Biblioteca de mídia'
+description: 'Encontrar e gerir media.'
 display:
   default:
     display_title: Predefinido
@@ -67,8 +68,14 @@ display:
         name:
           separator: ', '
         edit_media:
+          alter:
+            text: 'Editar {{ name }}'
+            alt: 'Editar {{ name }}'
           text: Editar
         delete_media:
+          alter:
+            text: 'Eliminar {{ name }}'
+            alt: 'Eliminar {{ name }}'
           text: Eliminar
   widget:
     display_title: Widget
@@ -87,6 +94,7 @@ display:
         display_link_table:
           label: Tabela
   widget_table:
+    display_title: 'Widget (tabela)'
     display_options:
       fields:
         thumbnail__target_id:

@@ -1,8 +1,0 @@
-uuid: d51ecbda-dff8-4d77-895c-5daf5a299b76
-langcode: en
-status: true
-dependencies: {  }
-name: 'Current assessment (Bookbinding)'
-vid: current_assessment_bb
-description: 'Contains a list of current assessment types within the site.'
-weight: 0

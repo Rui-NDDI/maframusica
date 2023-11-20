@@ -1,8 +1,0 @@
-uuid: 2c1eebed-c412-4261-ad52-56f393e60c54
-langcode: en
-status: true
-dependencies: {  }
-name: Century
-vid: century
-description: 'Contains a list of centuries within the site.'
-weight: 0

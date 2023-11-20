@@ -19,8 +19,14 @@ display:
           label: 'Grupos de utilizador'
         created:
           label: 'Membro desde'
+          settings:
+            future_format: '@interval'
+            past_format: '@interval'
         access:
           label: 'Último acesso'
+          settings:
+            future_format: '@interval a contar deste momento'
+            past_format: '@interval atrás'
         operations:
           label: Operações
         mail:

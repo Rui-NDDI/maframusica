@@ -1,8 +1,0 @@
-uuid: 77dadf90-6a51-43a3-93e9-a7e28fa5dfe0
-langcode: en
-status: true
-dependencies: {  }
-name: 'Folder articulation'
-vid: folder_articulation
-description: 'Contains all the folder articulation types to be used on the materiality.'
-weight: 0

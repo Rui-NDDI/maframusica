@@ -1,8 +1,0 @@
-uuid: 0a912ab1-c509-46a5-8643-537d68446748
-langcode: en
-status: true
-dependencies: {  }
-name: 'Current assessment (Bookblock)'
-vid: current_assessment
-description: 'Contains a list of current assessment types within the site.'
-weight: 0

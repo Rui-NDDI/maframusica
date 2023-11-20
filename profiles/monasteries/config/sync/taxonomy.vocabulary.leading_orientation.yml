@@ -1,8 +1,0 @@
-uuid: 663d6991-c26d-46e6-b963-dfc28c8f0ea9
-langcode: en
-status: true
-dependencies: {  }
-name: Leading\Orientation
-vid: leading_orientation
-description: 'Contains all the orientation types to be used on the materiality.'
-weight: 0

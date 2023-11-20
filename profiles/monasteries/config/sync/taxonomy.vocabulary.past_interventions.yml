@@ -1,8 +1,0 @@
-uuid: de022e8f-caa5-42ac-9627-15445e3a8c98
-langcode: en
-status: true
-dependencies: {  }
-name: 'Past interventions (Bookblock)'
-vid: past_interventions
-description: 'Contains a list of past intervention types within the site.'
-weight: 0

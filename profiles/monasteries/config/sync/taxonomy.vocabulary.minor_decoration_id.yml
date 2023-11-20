@@ -1,8 +1,0 @@
-uuid: de5a785a-6698-4958-8c7b-814328be6a09
-langcode: en
-status: true
-dependencies: {  }
-name: 'Minor decoration ID'
-vid: minor_decoration_id
-description: 'Contains a list of minor decoration id types within the site.'
-weight: 0

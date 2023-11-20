@@ -9,7 +9,6 @@ dependencies:
     - node.type.page
     - node.type.parties
     - node.type.people
-    - taxonomy.vocabulary.location_seam_attach_gutter
   module:
     - content_translation
     - contextual
@@ -57,7 +56,6 @@ permissions:
   - 'edit own people content'
   - 'revert all revisions'
   - 'translate books node'
-  - 'translate location_seam_attach_gutter taxonomy_term'
   - 'translate people node'
   - 'update content translations'
   - 'update media'

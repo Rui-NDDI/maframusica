@@ -1,8 +1,0 @@
-uuid: d15b2bc6-fe70-4a5f-98b6-9e32fb39025a
-langcode: en
-status: true
-dependencies: {  }
-name: 'Wear marks on the endleaves'
-vid: wear_marks_endleaves
-description: 'Contains a list of wear marks types within the site.'
-weight: 0

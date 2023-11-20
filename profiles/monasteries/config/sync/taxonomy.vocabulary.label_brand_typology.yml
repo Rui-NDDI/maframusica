@@ -1,8 +1,0 @@
-uuid: 93144ae2-8af9-4c66-b12c-925f9f0933f0
-langcode: en
-status: true
-dependencies: {  }
-name: 'Label\Brand - typology'
-vid: label_brand_typology
-description: 'Contains all the typology types from the brand to be used on the materiality.'
-weight: 0
