@@ -1,0 +1,8 @@
+uuid: a48de2f2-6a02-45fd-bd36-3abd52d2b9d8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of corner(s)'
+vid: type_corner
+description: 'Contains a list of corner types within the site.'
+weight: 0

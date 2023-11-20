@@ -1,0 +1,8 @@
+uuid: 6dbb8f05-3b90-405f-8715-681c7e5747fd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of bookbinding'
+vid: type_of_bookbinding
+description: ''
+weight: 0

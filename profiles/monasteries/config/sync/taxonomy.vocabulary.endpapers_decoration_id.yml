@@ -1,0 +1,8 @@
+uuid: 8388b4a5-06c0-418e-9905-e3efc6e7cf47
+langcode: en
+status: true
+dependencies: {  }
+name: 'Endpapers decoration ID'
+vid: endpapers_decoration_id
+description: 'Contains a list of minor endpapers decoration id types within the site.'
+weight: 0

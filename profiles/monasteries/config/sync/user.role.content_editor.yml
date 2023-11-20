@@ -1,0 +1,69 @@
+uuid: 9f27e13f-ee77-4d21-add3-cded51df0a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.image
+    - node.type.books
+    - node.type.page
+    - node.type.parties
+    - node.type.people
+    - taxonomy.vocabulary.location_seam_attach_gutter
+  module:
+    - content_translation
+    - contextual
+    - file
+    - filter
+    - media
+    - node
+    - path
+    - system
+    - toolbar
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: editor
+weight: -7
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create books content'
+  - 'create content translations'
+  - 'create image media'
+  - 'create media'
+  - 'create people content'
+  - 'create url aliases'
+  - 'delete any image media'
+  - 'delete media'
+  - 'delete own books content'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own parties content'
+  - 'delete own people content'
+  - 'delete page revisions'
+  - 'edit any books content'
+  - 'edit any image media'
+  - 'edit any people content'
+  - 'edit own books content'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own people content'
+  - 'revert all revisions'
+  - 'translate books node'
+  - 'translate location_seam_attach_gutter taxonomy_term'
+  - 'translate people node'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format full_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

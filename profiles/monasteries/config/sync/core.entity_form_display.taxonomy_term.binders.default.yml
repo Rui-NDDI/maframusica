@@ -1,0 +1,83 @@
+uuid: 848992d1-7c83-44b3-bb56-e4f6baa3f226
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.binders.field_chemical_form_compose
+    - field.field.taxonomy_term.binders.field_ftir_spectrum
+    - field.field.taxonomy_term.binders.field_identification_method
+    - field.field.taxonomy_term.binders.field_image
+    - field.field.taxonomy_term.binders.field_uv_vis_nir_spectrum
+    - taxonomy.vocabulary.binders
+  module:
+    - media_library
+id: taxonomy_term.binders.default
+targetEntityType: taxonomy_term
+bundle: binders
+mode: default
+content:
+  field_chemical_form_compose:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ftir_spectrum:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_identification_method:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 6
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_uv_vis_nir_spectrum:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

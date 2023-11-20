@@ -1,0 +1,33 @@
+uuid: aebfbabb-7897-4367-ae67-961dd05e5a84
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: party_en
+label: Feast
+type: 'canonical_entities:taxonomy_term'
+pattern: 'feast/[term:name]'
+selection_criteria:
+  d2fd8f5a-4f36-48a0-8e17-72a80689c7c4:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: d2fd8f5a-4f36-48a0-8e17-72a80689c7c4
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      parties: parties
+  b420c2ba-487d-4894-b551-65df609fb684:
+    id: language
+    negate: false
+    uuid: b420c2ba-487d-4894-b551-65df609fb684
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

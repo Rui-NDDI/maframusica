@@ -1,0 +1,4 @@
+label: 'Mosteiro PT'
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Linguagem

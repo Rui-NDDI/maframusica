@@ -1,0 +1,16 @@
+uuid: 0f109489-e1b0-4eaf-af19-23f154e2ccc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sewing_supports_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.sewing_supports_id
+target_entity_type_id: taxonomy_term
+target_bundle: sewing_supports_id
+default_langcode: site_default
+language_alterable: true

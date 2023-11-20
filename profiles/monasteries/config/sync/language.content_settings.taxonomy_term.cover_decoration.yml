@@ -1,0 +1,18 @@
+uuid: a42ab399-46b2-460d-bcc0-2f92599f3b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cover_decoration
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.cover_decoration
+target_entity_type_id: taxonomy_term
+target_bundle: cover_decoration
+default_langcode: site_default
+language_alterable: true

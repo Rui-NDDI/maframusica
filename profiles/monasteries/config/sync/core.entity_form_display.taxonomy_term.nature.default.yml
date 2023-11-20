@@ -1,0 +1,41 @@
+uuid: d916b6c6-1853-42d4-8e27-d3153b371942
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nature
+id: taxonomy_term.nature.default
+targetEntityType: taxonomy_term
+bundle: nature
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: false
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

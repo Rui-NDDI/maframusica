@@ -1,0 +1,8 @@
+uuid: a9d4a0d5-6a08-4904-bc28-83f5462c40f5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Past interventions (Bookbinding)'
+vid: past_interventions_bb
+description: 'Contains a list of past intervention types within the site.'
+weight: 0

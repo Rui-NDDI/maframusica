@@ -1,0 +1,14 @@
+uuid: 32b5eaec-2df3-48be-a66e-054c7930046a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.empty_stations
+id: taxonomy_vocabulary_empty_stations
+entity_type_id: taxonomy_vocabulary
+entity_id: empty_stations
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

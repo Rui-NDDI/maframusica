@@ -1,0 +1,16 @@
+uuid: a4b76b9c-f053-4e94-903d-38589265f36d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.major_decoration_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.major_decoration_id
+target_entity_type_id: taxonomy_term
+target_bundle: major_decoration_id
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,29 @@
+uuid: e0cbcec6-ac84-4a48-a21a-9ad3b0e957c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_raman_spectrum
+    - media.type.image
+    - taxonomy.vocabulary.dyestuff
+id: taxonomy_term.dyestuff.field_raman_spectrum
+field_name: field_raman_spectrum
+entity_type: taxonomy_term
+bundle: dyestuff
+label: 'Raman spectrum'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

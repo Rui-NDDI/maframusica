@@ -1,0 +1,14 @@
+uuid: e079dd68-9b54-4d92-aa50-88686ae27de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.standard_size_folia
+id: taxonomy_vocabulary_standard_size_folia
+entity_type_id: taxonomy_vocabulary
+entity_id: standard_size_folia
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

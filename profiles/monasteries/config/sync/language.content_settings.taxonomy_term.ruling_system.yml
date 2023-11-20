@@ -1,0 +1,16 @@
+uuid: a4c7ccf7-0b3f-4450-bc87-2ed7150a3a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ruling_system
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.ruling_system
+target_entity_type_id: taxonomy_term
+target_bundle: ruling_system
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,8 @@
+uuid: 573d8d5f-4888-4eb7-a02a-81569139ea80
+langcode: en
+status: true
+dependencies: {  }
+name: 'Conservation condition'
+vid: conservation_condition
+description: 'Contains a list of conservation condition types within the site.'
+weight: 0

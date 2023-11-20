@@ -1,0 +1,8 @@
+uuid: a9b12ccb-3ebe-4f68-9230-95051faaf8c4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of script'
+vid: writing_type
+description: 'Contains a list of type of scripts within the site.'
+weight: 0

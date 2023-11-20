@@ -1,0 +1,14 @@
+uuid: 37a2a32c-da22-45f4-979c-f667f0f6eca1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cursus
+id: taxonomy_vocabulary_cursus
+entity_type_id: taxonomy_vocabulary
+entity_id: cursus
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

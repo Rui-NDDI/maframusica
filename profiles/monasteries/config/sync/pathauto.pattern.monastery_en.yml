@@ -1,0 +1,33 @@
+uuid: 8ac1ea8b-11f7-4e18-93c4-740af9829d01
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: monastery_en
+label: Monastery
+type: 'canonical_entities:taxonomy_term'
+pattern: 'monastery/[term:name]'
+selection_criteria:
+  207ef496-16ee-4c70-9575-1cb889c281a4:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 207ef496-16ee-4c70-9575-1cb889c281a4
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      monastery: monastery
+  9449680e-3815-40f7-bfc5-f78d52313f0d:
+    id: language
+    negate: false
+    uuid: 9449680e-3815-40f7-bfc5-f78d52313f0d
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

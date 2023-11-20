@@ -1,0 +1,16 @@
+uuid: 37ec580a-5215-4e1b-94af-c51a62a2d6c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_of_endbands
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.type_of_endbands
+target_entity_type_id: taxonomy_term
+target_bundle: type_of_endbands
+default_langcode: site_default
+language_alterable: true

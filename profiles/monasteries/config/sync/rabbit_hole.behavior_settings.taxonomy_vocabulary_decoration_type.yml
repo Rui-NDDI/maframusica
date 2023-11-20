@@ -1,0 +1,14 @@
+uuid: 5451ccc9-0c73-43c2-9e5b-0589c28fc675
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_type
+id: taxonomy_vocabulary_decoration_type
+entity_type_id: taxonomy_vocabulary
+entity_id: decoration_type
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

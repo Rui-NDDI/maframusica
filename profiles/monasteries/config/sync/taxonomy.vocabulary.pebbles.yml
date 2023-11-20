@@ -1,0 +1,8 @@
+uuid: 67e24dd8-1f9b-4896-b04b-d86dbb99a9b9
+langcode: en
+status: true
+dependencies: {  }
+name: Pebbles
+vid: pebbles
+description: 'Contains all the pebbles to be used on the materiality.'
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 166f9ace-ab8b-4b98-b258-ad93d23693f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_of_endbands
+id: taxonomy_vocabulary_type_of_endbands
+entity_type_id: taxonomy_vocabulary
+entity_id: type_of_endbands
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

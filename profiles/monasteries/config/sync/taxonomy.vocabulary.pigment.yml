@@ -1,0 +1,8 @@
+uuid: 76e2bad1-48da-48af-a0e1-35ea11bb35c9
+langcode: en
+status: true
+dependencies: {  }
+name: Pigment
+vid: pigment
+description: 'Contains all the pigment types to be used on the materiality.'
+weight: 0

@@ -20,7 +20,6 @@ dependencies:
     - field.field.node.books.field_physical_description
     - field.field.node.books.field_publication_info
     - field.field.node.books.field_references
-    - field.field.node.books.field_relative_record
     - field.field.node.books.field_revised_by
     - field.field.node.books.field_shelfmark
     - field.field.node.books.field_subcategory
@@ -67,7 +66,6 @@ hidden:
   field_physical_description: true
   field_publication_info: true
   field_references: true
-  field_relative_record: true
   field_revised_by: true
   field_shelfmark: true
   field_subcategory: true

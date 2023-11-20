@@ -1,0 +1,24 @@
+uuid: e7d63dc9-954a-4be7-a9e8-e53df639109d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.loads.field_chemical_form_compose
+    - field.field.taxonomy_term.loads.field_ftir_spectrum
+    - field.field.taxonomy_term.loads.field_identification_method
+    - field.field.taxonomy_term.loads.field_image
+    - field.field.taxonomy_term.loads.field_raman_spectrum
+    - taxonomy.vocabulary.loads
+id: taxonomy_term.loads.default
+targetEntityType: taxonomy_term
+bundle: loads
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_chemical_form_compose: true
+  field_ftir_spectrum: true
+  field_identification_method: true
+  field_image: true
+  field_raman_spectrum: true
+  langcode: true

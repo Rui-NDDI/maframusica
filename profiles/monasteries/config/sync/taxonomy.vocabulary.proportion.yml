@@ -1,0 +1,8 @@
+uuid: 449f2708-4815-4519-aac9-d672d8dadd47
+langcode: en
+status: true
+dependencies: {  }
+name: 'Proportion (H/L)'
+vid: proportion
+description: 'Contains a list of proportion types within the site.'
+weight: 0

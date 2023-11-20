@@ -1,0 +1,18 @@
+uuid: bb56b34c-2428-4a47-a5fc-c8b7cb4f4456
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.typology_according_number_books
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.typology_according_number_books
+target_entity_type_id: taxonomy_term
+target_bundle: typology_according_number_books
+default_langcode: site_default
+language_alterable: true

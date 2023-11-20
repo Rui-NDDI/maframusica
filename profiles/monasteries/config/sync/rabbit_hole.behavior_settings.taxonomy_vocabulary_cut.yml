@@ -1,0 +1,14 @@
+uuid: 5467c149-ef83-4bdd-9135-c64271724661
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cut
+id: taxonomy_vocabulary_cut
+entity_type_id: taxonomy_vocabulary
+entity_id: cut
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

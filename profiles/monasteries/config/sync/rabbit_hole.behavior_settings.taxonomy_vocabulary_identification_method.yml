@@ -1,0 +1,14 @@
+uuid: f96051de-628f-46e8-9129-d868ebbd3ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.identification_method
+id: taxonomy_vocabulary_identification_method
+entity_type_id: taxonomy_vocabulary
+entity_id: identification_method
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

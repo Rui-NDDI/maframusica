@@ -1,0 +1,16 @@
+uuid: 04048304-2738-4ed9-902f-647aea042b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_wear_marks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.type_wear_marks
+target_entity_type_id: taxonomy_term
+target_bundle: type_wear_marks
+default_langcode: site_default
+language_alterable: true

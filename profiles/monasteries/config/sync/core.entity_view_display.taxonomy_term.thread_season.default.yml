@@ -1,0 +1,14 @@
+uuid: c8f99991-9598-4413-b782-dc8e886c2bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thread_season
+id: taxonomy_term.thread_season.default
+targetEntityType: taxonomy_term
+bundle: thread_season
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,14 @@
+uuid: 8b71395b-524a-49be-83ca-19e7dc2e6377
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_endleaves
+id: taxonomy_vocabulary_type_endleaves
+entity_type_id: taxonomy_vocabulary
+entity_id: type_endleaves
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

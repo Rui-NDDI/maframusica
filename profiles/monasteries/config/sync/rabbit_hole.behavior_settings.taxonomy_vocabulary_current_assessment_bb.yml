@@ -1,0 +1,14 @@
+uuid: 048cb818-3036-4360-9e85-ef6b083b17ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.current_assessment_bb
+id: taxonomy_vocabulary_current_assessment_bb
+entity_type_id: taxonomy_vocabulary
+entity_id: current_assessment_bb
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

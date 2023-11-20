@@ -1,0 +1,16 @@
+uuid: 66f4b799-a16a-411a-8424-4365d8a839e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.decoration_technique_cover
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.decoration_technique_cover
+target_entity_type_id: taxonomy_term
+target_bundle: decoration_technique_cover
+default_langcode: site_default
+language_alterable: true

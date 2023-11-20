@@ -1,0 +1,14 @@
+uuid: d1097f96-3238-4279-a6cc-1a40eb4e2ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.materiality_shape
+id: taxonomy_vocabulary_materiality_shape
+entity_type_id: taxonomy_vocabulary
+entity_id: materiality_shape
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

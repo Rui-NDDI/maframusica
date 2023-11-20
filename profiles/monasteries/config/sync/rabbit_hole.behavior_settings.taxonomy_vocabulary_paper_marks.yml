@@ -1,0 +1,14 @@
+uuid: b0baafc6-98e0-4c00-b178-95616c5d833d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paper_marks
+id: taxonomy_vocabulary_paper_marks
+entity_type_id: taxonomy_vocabulary
+entity_id: paper_marks
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

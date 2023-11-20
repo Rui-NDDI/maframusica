@@ -1,0 +1,14 @@
+uuid: 3c90fd0e-4fd8-4ac5-935d-4fa954b454e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pricking_system
+id: taxonomy_vocabulary_pricking_system
+entity_type_id: taxonomy_vocabulary
+entity_id: pricking_system
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

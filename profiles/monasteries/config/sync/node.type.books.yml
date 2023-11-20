@@ -1,0 +1,23 @@
+uuid: 181e3ece-455a-4459-bc50-737a6ca994f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - autotitle
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  autotitle:
+    enabled: true
+    field: field_references
+    fallback_title: '[node:field_archive:entity:name] [node:field_shelfmark:value]'
+    headings: {  }
+name: Books
+type: books
+description: 'Use this content type for creating books.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

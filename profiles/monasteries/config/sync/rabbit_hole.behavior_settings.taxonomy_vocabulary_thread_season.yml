@@ -1,0 +1,14 @@
+uuid: c4e77e8d-3260-47de-9c14-27fa6d364988
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thread_season
+id: taxonomy_vocabulary_thread_season
+entity_type_id: taxonomy_vocabulary
+entity_id: thread_season
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

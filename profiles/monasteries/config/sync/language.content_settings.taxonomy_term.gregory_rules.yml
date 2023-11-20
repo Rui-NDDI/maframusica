@@ -1,0 +1,16 @@
+uuid: f6418793-9614-4f67-af17-df2544f00cd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.gregory_rules
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.gregory_rules
+target_entity_type_id: taxonomy_term
+target_bundle: gregory_rules
+default_langcode: site_default
+language_alterable: true

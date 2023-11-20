@@ -1,0 +1,8 @@
+uuid: 066e1063-27bc-4eae-82fe-d5801625c430
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location seam support attachment to gutter'
+vid: location_seam_attach_gutter
+description: 'Contains all the locations of the seam attachment to the gutter to be used on the materiality.'
+weight: 0

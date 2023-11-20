@@ -1,0 +1,16 @@
+uuid: 9f68ea2c-99fe-48f3-a86e-c011ed192656
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paper_marks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.paper_marks
+target_entity_type_id: taxonomy_term
+target_bundle: paper_marks
+default_langcode: site_default
+language_alterable: true

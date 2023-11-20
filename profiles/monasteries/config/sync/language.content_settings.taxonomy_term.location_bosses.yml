@@ -1,0 +1,16 @@
+uuid: 2efb60eb-af19-480c-8d1e-cbd7633993bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location_bosses
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.location_bosses
+target_entity_type_id: taxonomy_term
+target_bundle: location_bosses
+default_langcode: site_default
+language_alterable: true

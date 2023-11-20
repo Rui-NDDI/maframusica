@@ -1,0 +1,29 @@
+uuid: c9f3d194-c315-4e94-af62-393c3f4d06dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_uv_vis_nir_spectrum
+    - media.type.image
+    - taxonomy.vocabulary.binders
+id: taxonomy_term.binders.field_uv_vis_nir_spectrum
+field_name: field_uv_vis_nir_spectrum
+entity_type: taxonomy_term
+bundle: binders
+label: 'UV-Vis-NIR spectrum'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

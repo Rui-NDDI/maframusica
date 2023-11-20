@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: Instituição
+    -
+      label: Pessoa

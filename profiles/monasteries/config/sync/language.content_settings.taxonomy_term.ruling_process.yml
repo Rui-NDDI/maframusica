@@ -1,0 +1,16 @@
+uuid: 3ab462bb-a8c9-439f-952e-eb2b6fe6d2e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ruling_process
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.ruling_process
+target_entity_type_id: taxonomy_term
+target_bundle: ruling_process
+default_langcode: site_default
+language_alterable: true

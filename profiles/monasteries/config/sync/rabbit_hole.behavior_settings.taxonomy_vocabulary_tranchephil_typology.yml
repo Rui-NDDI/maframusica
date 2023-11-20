@@ -1,0 +1,14 @@
+uuid: fb1564f4-ad32-4baf-8e9d-c9ea784d374f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tranchephil_typology
+id: taxonomy_vocabulary_tranchephil_typology
+entity_type_id: taxonomy_vocabulary
+entity_id: tranchephil_typology
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,8 @@
+uuid: 144bcbdb-a5a2-44c7-aff8-617995bbc8a2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Fastening(s) ID'
+vid: fastening_id
+description: 'Contains a list of fastening id types within the site.'
+weight: 0

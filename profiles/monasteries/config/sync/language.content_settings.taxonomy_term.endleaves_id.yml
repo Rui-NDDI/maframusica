@@ -1,0 +1,16 @@
+uuid: f962e6bf-8857-454e-ba61-96520508dd0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.endleaves_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.endleaves_id
+target_entity_type_id: taxonomy_term
+target_bundle: endleaves_id
+default_langcode: site_default
+language_alterable: true

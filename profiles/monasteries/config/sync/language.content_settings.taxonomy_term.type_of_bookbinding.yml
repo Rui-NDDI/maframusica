@@ -1,0 +1,16 @@
+uuid: 7bbcb4b7-2947-4b94-bf28-e00250006f4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_of_bookbinding
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.type_of_bookbinding
+target_entity_type_id: taxonomy_term
+target_bundle: type_of_bookbinding
+default_langcode: site_default
+language_alterable: false

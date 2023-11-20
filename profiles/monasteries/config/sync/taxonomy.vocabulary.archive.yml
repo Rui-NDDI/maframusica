@@ -1,0 +1,8 @@
+uuid: 8ee670c6-dee9-45ec-b927-27422b3d7cb0
+langcode: en
+status: true
+dependencies: {  }
+name: Archive
+vid: archive
+description: 'Contains the archive types to be used on the books.'
+weight: 0

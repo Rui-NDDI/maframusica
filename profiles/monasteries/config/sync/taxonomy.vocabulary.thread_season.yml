@@ -1,0 +1,8 @@
+uuid: 83fe5f50-8668-47e3-8571-a45c1949dcf4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Thread season'
+vid: thread_season
+description: 'Contains all the season threads to be used on the materiality.'
+weight: 0

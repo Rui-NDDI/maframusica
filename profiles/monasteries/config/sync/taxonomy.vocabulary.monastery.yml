@@ -1,0 +1,8 @@
+uuid: 17e6e2df-c8b9-4f65-bb5b-24051e28cefd
+langcode: en
+status: true
+dependencies: {  }
+name: Monastery
+vid: monastery
+description: 'Contains a list of monastery types within the site.'
+weight: 0

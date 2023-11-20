@@ -1,0 +1,16 @@
+uuid: ff88c746-5940-4571-85ab-07c25ff343bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.shape_fastenings
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.shape_fastenings
+target_entity_type_id: taxonomy_term
+target_bundle: shape_fastenings
+default_langcode: site_default
+language_alterable: true

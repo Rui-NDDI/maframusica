@@ -1,0 +1,8 @@
+uuid: 1ea34933-34f4-48d4-8b0f-d6d6a1383ca8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of minor decoration'
+vid: type_minor_decoration
+description: 'Contains a list of minor decoration types within the site.'
+weight: 0
