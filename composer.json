@@ -148,11 +148,5 @@
         "patches-file": "composer.patches.json"
     },
     "scripts": {
-        "post-install-cmd": [
-            "@php -r \"file_exists('grumphp.yml') || copy('grumphp.yml.dist', 'grumphp.yml');\""
-        ],
-        "post-update-cmd": [
-            "@php -r \"file_exists('grumphp.yml') || copy('grumphp.yml.dist', 'grumphp.yml');\""
-        ]
     }
 }
